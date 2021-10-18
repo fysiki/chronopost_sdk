@@ -32,14 +32,15 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $skybill = null;
+
     /**
      * Constructor method for resultGetReservedSkybillValue
-     * @uses ResultGetReservedSkybillValue::setErrorCode()
-     * @uses ResultGetReservedSkybillValue::setErrorMessage()
-     * @uses ResultGetReservedSkybillValue::setSkybill()
      * @param int $errorCode
      * @param string $errorMessage
      * @param string $skybill
+     * @uses ResultGetReservedSkybillValue::setErrorCode()
+     * @uses ResultGetReservedSkybillValue::setErrorMessage()
+     * @uses ResultGetReservedSkybillValue::setSkybill()
      */
     public function __construct(?int $errorCode = null, ?string $errorMessage = null, ?string $skybill = null)
     {
@@ -48,6 +49,7 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
             ->setErrorMessage($errorMessage)
             ->setSkybill($skybill);
     }
+
     /**
      * Get errorCode value
      * @return int|null
@@ -56,10 +58,11 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
     {
         return $this->errorCode;
     }
+
     /**
      * Set errorCode value
      * @param int $errorCode
-     * @return \StructType\ResultGetReservedSkybillValue
+     * @return ResultGetReservedSkybillValue
      */
     public function setErrorCode(?int $errorCode = null): self
     {
@@ -68,9 +71,10 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($errorCode, true), gettype($errorCode)), __LINE__);
         }
         $this->errorCode = $errorCode;
-        
+
         return $this;
     }
+
     /**
      * Get errorMessage value
      * @return string|null
@@ -79,10 +83,11 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
     {
         return $this->errorMessage;
     }
+
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \StructType\ResultGetReservedSkybillValue
+     * @return ResultGetReservedSkybillValue
      */
     public function setErrorMessage(?string $errorMessage = null): self
     {
@@ -91,9 +96,10 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($errorMessage, true), gettype($errorMessage)), __LINE__);
         }
         $this->errorMessage = $errorMessage;
-        
+
         return $this;
     }
+
     /**
      * Get skybill value
      * @return string|null
@@ -102,10 +108,11 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
     {
         return $this->skybill;
     }
+
     /**
      * Set skybill value
      * @param string $skybill
-     * @return \StructType\ResultGetReservedSkybillValue
+     * @return ResultGetReservedSkybillValue
      */
     public function setSkybill(?string $skybill = null): self
     {
@@ -114,7 +121,7 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($skybill, true), gettype($skybill)), __LINE__);
         }
         $this->skybill = $skybill;
-        
+
         return $this;
     }
 }

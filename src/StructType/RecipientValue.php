@@ -102,21 +102,9 @@ class RecipientValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $recipientZipCode = null;
+
     /**
      * Constructor method for recipientValue
-     * @uses RecipientValue::setRecipientAdress1()
-     * @uses RecipientValue::setRecipientAdress2()
-     * @uses RecipientValue::setRecipientCity()
-     * @uses RecipientValue::setRecipientContactName()
-     * @uses RecipientValue::setRecipientCountry()
-     * @uses RecipientValue::setRecipientCountryName()
-     * @uses RecipientValue::setRecipientEmail()
-     * @uses RecipientValue::setRecipientMobilePhone()
-     * @uses RecipientValue::setRecipientName()
-     * @uses RecipientValue::setRecipientName2()
-     * @uses RecipientValue::setRecipientPhone()
-     * @uses RecipientValue::setRecipientPreAlert()
-     * @uses RecipientValue::setRecipientZipCode()
      * @param string $recipientAdress1
      * @param string $recipientAdress2
      * @param string $recipientCity
@@ -130,6 +118,19 @@ class RecipientValue extends AbstractStructBase
      * @param string $recipientPhone
      * @param int $recipientPreAlert
      * @param string $recipientZipCode
+     * @uses RecipientValue::setRecipientAdress1()
+     * @uses RecipientValue::setRecipientAdress2()
+     * @uses RecipientValue::setRecipientCity()
+     * @uses RecipientValue::setRecipientContactName()
+     * @uses RecipientValue::setRecipientCountry()
+     * @uses RecipientValue::setRecipientCountryName()
+     * @uses RecipientValue::setRecipientEmail()
+     * @uses RecipientValue::setRecipientMobilePhone()
+     * @uses RecipientValue::setRecipientName()
+     * @uses RecipientValue::setRecipientName2()
+     * @uses RecipientValue::setRecipientPhone()
+     * @uses RecipientValue::setRecipientPreAlert()
+     * @uses RecipientValue::setRecipientZipCode()
      */
     public function __construct(?string $recipientAdress1 = null, ?string $recipientAdress2 = null, ?string $recipientCity = null, ?string $recipientContactName = null, ?string $recipientCountry = null, ?string $recipientCountryName = null, ?string $recipientEmail = null, ?string $recipientMobilePhone = null, ?string $recipientName = null, ?string $recipientName2 = null, ?string $recipientPhone = null, ?int $recipientPreAlert = null, ?string $recipientZipCode = null)
     {
@@ -148,6 +149,7 @@ class RecipientValue extends AbstractStructBase
             ->setRecipientPreAlert($recipientPreAlert)
             ->setRecipientZipCode($recipientZipCode);
     }
+
     /**
      * Get recipientAdress1 value
      * @return string|null
@@ -156,10 +158,11 @@ class RecipientValue extends AbstractStructBase
     {
         return $this->recipientAdress1;
     }
+
     /**
      * Set recipientAdress1 value
      * @param string $recipientAdress1
-     * @return \StructType\RecipientValue
+     * @return RecipientValue
      */
     public function setRecipientAdress1(?string $recipientAdress1 = null): self
     {
@@ -168,9 +171,10 @@ class RecipientValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientAdress1, true), gettype($recipientAdress1)), __LINE__);
         }
         $this->recipientAdress1 = $recipientAdress1;
-        
+
         return $this;
     }
+
     /**
      * Get recipientAdress2 value
      * @return string|null
@@ -179,10 +183,11 @@ class RecipientValue extends AbstractStructBase
     {
         return $this->recipientAdress2;
     }
+
     /**
      * Set recipientAdress2 value
      * @param string $recipientAdress2
-     * @return \StructType\RecipientValue
+     * @return RecipientValue
      */
     public function setRecipientAdress2(?string $recipientAdress2 = null): self
     {
@@ -191,9 +196,10 @@ class RecipientValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientAdress2, true), gettype($recipientAdress2)), __LINE__);
         }
         $this->recipientAdress2 = $recipientAdress2;
-        
+
         return $this;
     }
+
     /**
      * Get recipientCity value
      * @return string|null
@@ -202,10 +208,11 @@ class RecipientValue extends AbstractStructBase
     {
         return $this->recipientCity;
     }
+
     /**
      * Set recipientCity value
      * @param string $recipientCity
-     * @return \StructType\RecipientValue
+     * @return RecipientValue
      */
     public function setRecipientCity(?string $recipientCity = null): self
     {
@@ -214,9 +221,10 @@ class RecipientValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientCity, true), gettype($recipientCity)), __LINE__);
         }
         $this->recipientCity = $recipientCity;
-        
+
         return $this;
     }
+
     /**
      * Get recipientContactName value
      * @return string|null
@@ -225,10 +233,11 @@ class RecipientValue extends AbstractStructBase
     {
         return $this->recipientContactName;
     }
+
     /**
      * Set recipientContactName value
      * @param string $recipientContactName
-     * @return \StructType\RecipientValue
+     * @return RecipientValue
      */
     public function setRecipientContactName(?string $recipientContactName = null): self
     {
@@ -237,9 +246,10 @@ class RecipientValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientContactName, true), gettype($recipientContactName)), __LINE__);
         }
         $this->recipientContactName = $recipientContactName;
-        
+
         return $this;
     }
+
     /**
      * Get recipientCountry value
      * @return string|null
@@ -248,10 +258,11 @@ class RecipientValue extends AbstractStructBase
     {
         return $this->recipientCountry;
     }
+
     /**
      * Set recipientCountry value
      * @param string $recipientCountry
-     * @return \StructType\RecipientValue
+     * @return RecipientValue
      */
     public function setRecipientCountry(?string $recipientCountry = null): self
     {
@@ -260,9 +271,10 @@ class RecipientValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientCountry, true), gettype($recipientCountry)), __LINE__);
         }
         $this->recipientCountry = $recipientCountry;
-        
+
         return $this;
     }
+
     /**
      * Get recipientCountryName value
      * @return string|null
@@ -271,10 +283,11 @@ class RecipientValue extends AbstractStructBase
     {
         return $this->recipientCountryName;
     }
+
     /**
      * Set recipientCountryName value
      * @param string $recipientCountryName
-     * @return \StructType\RecipientValue
+     * @return RecipientValue
      */
     public function setRecipientCountryName(?string $recipientCountryName = null): self
     {
@@ -283,9 +296,10 @@ class RecipientValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientCountryName, true), gettype($recipientCountryName)), __LINE__);
         }
         $this->recipientCountryName = $recipientCountryName;
-        
+
         return $this;
     }
+
     /**
      * Get recipientEmail value
      * @return string|null
@@ -294,10 +308,11 @@ class RecipientValue extends AbstractStructBase
     {
         return $this->recipientEmail;
     }
+
     /**
      * Set recipientEmail value
      * @param string $recipientEmail
-     * @return \StructType\RecipientValue
+     * @return RecipientValue
      */
     public function setRecipientEmail(?string $recipientEmail = null): self
     {
@@ -306,9 +321,10 @@ class RecipientValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientEmail, true), gettype($recipientEmail)), __LINE__);
         }
         $this->recipientEmail = $recipientEmail;
-        
+
         return $this;
     }
+
     /**
      * Get recipientMobilePhone value
      * @return string|null
@@ -317,10 +333,11 @@ class RecipientValue extends AbstractStructBase
     {
         return $this->recipientMobilePhone;
     }
+
     /**
      * Set recipientMobilePhone value
      * @param string $recipientMobilePhone
-     * @return \StructType\RecipientValue
+     * @return RecipientValue
      */
     public function setRecipientMobilePhone(?string $recipientMobilePhone = null): self
     {
@@ -329,9 +346,10 @@ class RecipientValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientMobilePhone, true), gettype($recipientMobilePhone)), __LINE__);
         }
         $this->recipientMobilePhone = $recipientMobilePhone;
-        
+
         return $this;
     }
+
     /**
      * Get recipientName value
      * @return string|null
@@ -340,10 +358,11 @@ class RecipientValue extends AbstractStructBase
     {
         return $this->recipientName;
     }
+
     /**
      * Set recipientName value
      * @param string $recipientName
-     * @return \StructType\RecipientValue
+     * @return RecipientValue
      */
     public function setRecipientName(?string $recipientName = null): self
     {
@@ -352,9 +371,10 @@ class RecipientValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientName, true), gettype($recipientName)), __LINE__);
         }
         $this->recipientName = $recipientName;
-        
+
         return $this;
     }
+
     /**
      * Get recipientName2 value
      * @return string|null
@@ -363,10 +383,11 @@ class RecipientValue extends AbstractStructBase
     {
         return $this->recipientName2;
     }
+
     /**
      * Set recipientName2 value
      * @param string $recipientName2
-     * @return \StructType\RecipientValue
+     * @return RecipientValue
      */
     public function setRecipientName2(?string $recipientName2 = null): self
     {
@@ -375,9 +396,10 @@ class RecipientValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientName2, true), gettype($recipientName2)), __LINE__);
         }
         $this->recipientName2 = $recipientName2;
-        
+
         return $this;
     }
+
     /**
      * Get recipientPhone value
      * @return string|null
@@ -386,10 +408,11 @@ class RecipientValue extends AbstractStructBase
     {
         return $this->recipientPhone;
     }
+
     /**
      * Set recipientPhone value
      * @param string $recipientPhone
-     * @return \StructType\RecipientValue
+     * @return RecipientValue
      */
     public function setRecipientPhone(?string $recipientPhone = null): self
     {
@@ -398,9 +421,10 @@ class RecipientValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientPhone, true), gettype($recipientPhone)), __LINE__);
         }
         $this->recipientPhone = $recipientPhone;
-        
+
         return $this;
     }
+
     /**
      * Get recipientPreAlert value
      * @return int|null
@@ -409,10 +433,11 @@ class RecipientValue extends AbstractStructBase
     {
         return $this->recipientPreAlert;
     }
+
     /**
      * Set recipientPreAlert value
      * @param int $recipientPreAlert
-     * @return \StructType\RecipientValue
+     * @return RecipientValue
      */
     public function setRecipientPreAlert(?int $recipientPreAlert = null): self
     {
@@ -421,9 +446,10 @@ class RecipientValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($recipientPreAlert, true), gettype($recipientPreAlert)), __LINE__);
         }
         $this->recipientPreAlert = $recipientPreAlert;
-        
+
         return $this;
     }
+
     /**
      * Get recipientZipCode value
      * @return string|null
@@ -432,10 +458,11 @@ class RecipientValue extends AbstractStructBase
     {
         return $this->recipientZipCode;
     }
+
     /**
      * Set recipientZipCode value
      * @param string $recipientZipCode
-     * @return \StructType\RecipientValue
+     * @return RecipientValue
      */
     public function setRecipientZipCode(?string $recipientZipCode = null): self
     {
@@ -444,7 +471,7 @@ class RecipientValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientZipCode, true), gettype($recipientZipCode)), __LINE__);
         }
         $this->recipientZipCode = $recipientZipCode;
-        
+
         return $this;
     }
 }

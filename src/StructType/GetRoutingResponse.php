@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class GetRoutingResponse extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ResultGetRouting|null
+     * @var ResultGetRouting|null
      */
-    protected ?\StructType\ResultGetRouting $return = null;
+    protected ?ResultGetRouting $return = null;
+
     /**
      * Constructor method for getRoutingResponse
+     * @param ResultGetRouting $return
      * @uses GetRoutingResponse::setReturn()
-     * @param \StructType\ResultGetRouting $return
      */
-    public function __construct(?\StructType\ResultGetRouting $return = null)
+    public function __construct(?ResultGetRouting $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\ResultGetRouting|null
+     * @return ResultGetRouting|null
      */
-    public function getReturn(): ?\StructType\ResultGetRouting
+    public function getReturn(): ?ResultGetRouting
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\ResultGetRouting $return
-     * @return \StructType\GetRoutingResponse
+     * @param ResultGetRouting $return
+     * @return GetRoutingResponse
      */
-    public function setReturn(?\StructType\ResultGetRouting $return = null): self
+    public function setReturn(?ResultGetRouting $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

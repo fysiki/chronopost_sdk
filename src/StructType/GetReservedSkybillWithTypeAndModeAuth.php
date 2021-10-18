@@ -41,16 +41,17 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
      * @var string|null
      */
     protected ?string $password = null;
+
     /**
      * Constructor method for getReservedSkybillWithTypeAndModeAuth
-     * @uses GetReservedSkybillWithTypeAndModeAuth::setNumberSearch()
-     * @uses GetReservedSkybillWithTypeAndModeAuth::setMode()
-     * @uses GetReservedSkybillWithTypeAndModeAuth::setAccountNumber()
-     * @uses GetReservedSkybillWithTypeAndModeAuth::setPassword()
      * @param string $numberSearch
      * @param string $mode
      * @param int $accountNumber
      * @param string $password
+     * @uses GetReservedSkybillWithTypeAndModeAuth::setNumberSearch()
+     * @uses GetReservedSkybillWithTypeAndModeAuth::setMode()
+     * @uses GetReservedSkybillWithTypeAndModeAuth::setAccountNumber()
+     * @uses GetReservedSkybillWithTypeAndModeAuth::setPassword()
      */
     public function __construct(?string $numberSearch = null, ?string $mode = null, ?int $accountNumber = null, ?string $password = null)
     {
@@ -60,6 +61,7 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
             ->setAccountNumber($accountNumber)
             ->setPassword($password);
     }
+
     /**
      * Get numberSearch value
      * @return string|null
@@ -68,10 +70,11 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
     {
         return $this->numberSearch;
     }
+
     /**
      * Set numberSearch value
      * @param string $numberSearch
-     * @return \StructType\GetReservedSkybillWithTypeAndModeAuth
+     * @return GetReservedSkybillWithTypeAndModeAuth
      */
     public function setNumberSearch(?string $numberSearch = null): self
     {
@@ -80,9 +83,10 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($numberSearch, true), gettype($numberSearch)), __LINE__);
         }
         $this->numberSearch = $numberSearch;
-        
+
         return $this;
     }
+
     /**
      * Get mode value
      * @return string|null
@@ -91,10 +95,11 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
     {
         return $this->mode;
     }
+
     /**
      * Set mode value
      * @param string $mode
-     * @return \StructType\GetReservedSkybillWithTypeAndModeAuth
+     * @return GetReservedSkybillWithTypeAndModeAuth
      */
     public function setMode(?string $mode = null): self
     {
@@ -103,9 +108,10 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mode, true), gettype($mode)), __LINE__);
         }
         $this->mode = $mode;
-        
+
         return $this;
     }
+
     /**
      * Get accountNumber value
      * @return int|null
@@ -114,10 +120,11 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
     {
         return $this->accountNumber;
     }
+
     /**
      * Set accountNumber value
      * @param int $accountNumber
-     * @return \StructType\GetReservedSkybillWithTypeAndModeAuth
+     * @return GetReservedSkybillWithTypeAndModeAuth
      */
     public function setAccountNumber(?int $accountNumber = null): self
     {
@@ -126,9 +133,10 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($accountNumber, true), gettype($accountNumber)), __LINE__);
         }
         $this->accountNumber = $accountNumber;
-        
+
         return $this;
     }
+
     /**
      * Get password value
      * @return string|null
@@ -137,10 +145,11 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
     {
         return $this->password;
     }
+
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\GetReservedSkybillWithTypeAndModeAuth
+     * @return GetReservedSkybillWithTypeAndModeAuth
      */
     public function setPassword(?string $password = null): self
     {
@@ -149,7 +158,7 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($password, true), gettype($password)), __LINE__);
         }
         $this->password = $password;
-        
+
         return $this;
     }
 }

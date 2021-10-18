@@ -25,12 +25,13 @@ class ResultShippingValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $errorMessage = null;
+
     /**
      * Constructor method for resultShippingValue
-     * @uses ResultShippingValue::setErrorCode()
-     * @uses ResultShippingValue::setErrorMessage()
      * @param int $errorCode
      * @param string $errorMessage
+     * @uses ResultShippingValue::setErrorCode()
+     * @uses ResultShippingValue::setErrorMessage()
      */
     public function __construct(?int $errorCode = null, ?string $errorMessage = null)
     {
@@ -38,6 +39,7 @@ class ResultShippingValue extends AbstractStructBase
             ->setErrorCode($errorCode)
             ->setErrorMessage($errorMessage);
     }
+
     /**
      * Get errorCode value
      * @return int|null
@@ -46,10 +48,11 @@ class ResultShippingValue extends AbstractStructBase
     {
         return $this->errorCode;
     }
+
     /**
      * Set errorCode value
      * @param int $errorCode
-     * @return \StructType\ResultShippingValue
+     * @return ResultShippingValue
      */
     public function setErrorCode(?int $errorCode = null): self
     {
@@ -58,9 +61,10 @@ class ResultShippingValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($errorCode, true), gettype($errorCode)), __LINE__);
         }
         $this->errorCode = $errorCode;
-        
+
         return $this;
     }
+
     /**
      * Get errorMessage value
      * @return string|null
@@ -69,10 +73,11 @@ class ResultShippingValue extends AbstractStructBase
     {
         return $this->errorMessage;
     }
+
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \StructType\ResultShippingValue
+     * @return ResultShippingValue
      */
     public function setErrorMessage(?string $errorMessage = null): self
     {
@@ -81,7 +86,7 @@ class ResultShippingValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($errorMessage, true), gettype($errorMessage)), __LINE__);
         }
         $this->errorMessage = $errorMessage;
-        
+
         return $this;
     }
 }

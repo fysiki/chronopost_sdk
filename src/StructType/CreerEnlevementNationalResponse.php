@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class CreerEnlevementNationalResponse extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ResultEnlevementNational|null
+     * @var ResultEnlevementNational|null
      */
-    protected ?\StructType\ResultEnlevementNational $return = null;
+    protected ?ResultEnlevementNational $return = null;
+
     /**
      * Constructor method for creerEnlevementNationalResponse
+     * @param ResultEnlevementNational $return
      * @uses CreerEnlevementNationalResponse::setReturn()
-     * @param \StructType\ResultEnlevementNational $return
      */
-    public function __construct(?\StructType\ResultEnlevementNational $return = null)
+    public function __construct(?ResultEnlevementNational $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\ResultEnlevementNational|null
+     * @return ResultEnlevementNational|null
      */
-    public function getReturn(): ?\StructType\ResultEnlevementNational
+    public function getReturn(): ?ResultEnlevementNational
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\ResultEnlevementNational $return
-     * @return \StructType\CreerEnlevementNationalResponse
+     * @param ResultEnlevementNational $return
+     * @return CreerEnlevementNationalResponse
      */
-    public function setReturn(?\StructType\ResultEnlevementNational $return = null): self
+    public function setReturn(?ResultEnlevementNational $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

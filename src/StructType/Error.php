@@ -17,9 +17,9 @@ class Error extends AbstractStructBase
      * The detail
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Detail|null
+     * @var Detail|null
      */
-    protected ?\StructType\Detail $detail = null;
+    protected ?Detail $detail = null;
     /**
      * The errorCode
      * @var int|null
@@ -32,41 +32,45 @@ class Error extends AbstractStructBase
      * @var string|null
      */
     protected ?string $errorMessage = null;
+
     /**
      * Constructor method for error
+     * @param Detail $detail
+     * @param int $errorCode
+     * @param string $errorMessage
      * @uses Error::setDetail()
      * @uses Error::setErrorCode()
      * @uses Error::setErrorMessage()
-     * @param \StructType\Detail $detail
-     * @param int $errorCode
-     * @param string $errorMessage
      */
-    public function __construct(?\StructType\Detail $detail = null, ?int $errorCode = null, ?string $errorMessage = null)
+    public function __construct(?Detail $detail = null, ?int $errorCode = null, ?string $errorMessage = null)
     {
         $this
             ->setDetail($detail)
             ->setErrorCode($errorCode)
             ->setErrorMessage($errorMessage);
     }
+
     /**
      * Get detail value
-     * @return \StructType\Detail|null
+     * @return Detail|null
      */
-    public function getDetail(): ?\StructType\Detail
+    public function getDetail(): ?Detail
     {
         return $this->detail;
     }
+
     /**
      * Set detail value
-     * @param \StructType\Detail $detail
-     * @return \StructType\Error
+     * @param Detail $detail
+     * @return Error
      */
-    public function setDetail(?\StructType\Detail $detail = null): self
+    public function setDetail(?Detail $detail = null): self
     {
         $this->detail = $detail;
-        
+
         return $this;
     }
+
     /**
      * Get errorCode value
      * @return int|null
@@ -75,10 +79,11 @@ class Error extends AbstractStructBase
     {
         return $this->errorCode;
     }
+
     /**
      * Set errorCode value
      * @param int $errorCode
-     * @return \StructType\Error
+     * @return Error
      */
     public function setErrorCode(?int $errorCode = null): self
     {
@@ -87,9 +92,10 @@ class Error extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($errorCode, true), gettype($errorCode)), __LINE__);
         }
         $this->errorCode = $errorCode;
-        
+
         return $this;
     }
+
     /**
      * Get errorMessage value
      * @return string|null
@@ -98,10 +104,11 @@ class Error extends AbstractStructBase
     {
         return $this->errorMessage;
     }
+
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \StructType\Error
+     * @return Error
      */
     public function setErrorMessage(?string $errorMessage = null): self
     {
@@ -110,7 +117,7 @@ class Error extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($errorMessage, true), gettype($errorMessage)), __LINE__);
         }
         $this->errorMessage = $errorMessage;
-        
+
         return $this;
     }
 }

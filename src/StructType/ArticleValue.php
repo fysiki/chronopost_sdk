@@ -83,18 +83,9 @@ class ArticleValue extends AbstractStructBase
      * @var float|null
      */
     protected ?float $value = null;
+
     /**
      * Constructor method for articleValue
-     * @uses ArticleValue::setContent()
-     * @uses ArticleValue::setContentInLanguage()
-     * @uses ArticleValue::setGrossWeight()
-     * @uses ArticleValue::setHscode()
-     * @uses ArticleValue::setNetWeight()
-     * @uses ArticleValue::setOrigin()
-     * @uses ArticleValue::setPosition()
-     * @uses ArticleValue::setQuantity()
-     * @uses ArticleValue::setRegime()
-     * @uses ArticleValue::setValue()
      * @param string $content
      * @param string $contentInLanguage
      * @param float $grossWeight
@@ -105,6 +96,16 @@ class ArticleValue extends AbstractStructBase
      * @param int $quantity
      * @param string $regime
      * @param float $value
+     * @uses ArticleValue::setContent()
+     * @uses ArticleValue::setContentInLanguage()
+     * @uses ArticleValue::setGrossWeight()
+     * @uses ArticleValue::setHscode()
+     * @uses ArticleValue::setNetWeight()
+     * @uses ArticleValue::setOrigin()
+     * @uses ArticleValue::setPosition()
+     * @uses ArticleValue::setQuantity()
+     * @uses ArticleValue::setRegime()
+     * @uses ArticleValue::setValue()
      */
     public function __construct(?string $content = null, ?string $contentInLanguage = null, ?float $grossWeight = null, ?string $hscode = null, ?float $netWeight = null, ?string $origin = null, ?int $position = null, ?int $quantity = null, ?string $regime = null, ?float $value = null)
     {
@@ -120,6 +121,7 @@ class ArticleValue extends AbstractStructBase
             ->setRegime($regime)
             ->setValue($value);
     }
+
     /**
      * Get content value
      * @return string|null
@@ -128,10 +130,11 @@ class ArticleValue extends AbstractStructBase
     {
         return $this->content;
     }
+
     /**
      * Set content value
      * @param string $content
-     * @return \StructType\ArticleValue
+     * @return ArticleValue
      */
     public function setContent(?string $content = null): self
     {
@@ -140,9 +143,10 @@ class ArticleValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($content, true), gettype($content)), __LINE__);
         }
         $this->content = $content;
-        
+
         return $this;
     }
+
     /**
      * Get contentInLanguage value
      * @return string|null
@@ -151,10 +155,11 @@ class ArticleValue extends AbstractStructBase
     {
         return $this->contentInLanguage;
     }
+
     /**
      * Set contentInLanguage value
      * @param string $contentInLanguage
-     * @return \StructType\ArticleValue
+     * @return ArticleValue
      */
     public function setContentInLanguage(?string $contentInLanguage = null): self
     {
@@ -163,9 +168,10 @@ class ArticleValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($contentInLanguage, true), gettype($contentInLanguage)), __LINE__);
         }
         $this->contentInLanguage = $contentInLanguage;
-        
+
         return $this;
     }
+
     /**
      * Get grossWeight value
      * @return float|null
@@ -174,10 +180,11 @@ class ArticleValue extends AbstractStructBase
     {
         return $this->grossWeight;
     }
+
     /**
      * Set grossWeight value
      * @param float $grossWeight
-     * @return \StructType\ArticleValue
+     * @return ArticleValue
      */
     public function setGrossWeight(?float $grossWeight = null): self
     {
@@ -186,9 +193,10 @@ class ArticleValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($grossWeight, true), gettype($grossWeight)), __LINE__);
         }
         $this->grossWeight = $grossWeight;
-        
+
         return $this;
     }
+
     /**
      * Get hscode value
      * @return string|null
@@ -197,10 +205,11 @@ class ArticleValue extends AbstractStructBase
     {
         return $this->hscode;
     }
+
     /**
      * Set hscode value
      * @param string $hscode
-     * @return \StructType\ArticleValue
+     * @return ArticleValue
      */
     public function setHscode(?string $hscode = null): self
     {
@@ -209,9 +218,10 @@ class ArticleValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($hscode, true), gettype($hscode)), __LINE__);
         }
         $this->hscode = $hscode;
-        
+
         return $this;
     }
+
     /**
      * Get netWeight value
      * @return float|null
@@ -220,10 +230,11 @@ class ArticleValue extends AbstractStructBase
     {
         return $this->netWeight;
     }
+
     /**
      * Set netWeight value
      * @param float $netWeight
-     * @return \StructType\ArticleValue
+     * @return ArticleValue
      */
     public function setNetWeight(?float $netWeight = null): self
     {
@@ -232,9 +243,10 @@ class ArticleValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($netWeight, true), gettype($netWeight)), __LINE__);
         }
         $this->netWeight = $netWeight;
-        
+
         return $this;
     }
+
     /**
      * Get origin value
      * @return string|null
@@ -243,10 +255,11 @@ class ArticleValue extends AbstractStructBase
     {
         return $this->origin;
     }
+
     /**
      * Set origin value
      * @param string $origin
-     * @return \StructType\ArticleValue
+     * @return ArticleValue
      */
     public function setOrigin(?string $origin = null): self
     {
@@ -255,9 +268,10 @@ class ArticleValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($origin, true), gettype($origin)), __LINE__);
         }
         $this->origin = $origin;
-        
+
         return $this;
     }
+
     /**
      * Get position value
      * @return int|null
@@ -266,10 +280,11 @@ class ArticleValue extends AbstractStructBase
     {
         return $this->position;
     }
+
     /**
      * Set position value
      * @param int $position
-     * @return \StructType\ArticleValue
+     * @return ArticleValue
      */
     public function setPosition(?int $position = null): self
     {
@@ -278,9 +293,10 @@ class ArticleValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($position, true), gettype($position)), __LINE__);
         }
         $this->position = $position;
-        
+
         return $this;
     }
+
     /**
      * Get quantity value
      * @return int|null
@@ -289,10 +305,11 @@ class ArticleValue extends AbstractStructBase
     {
         return $this->quantity;
     }
+
     /**
      * Set quantity value
      * @param int $quantity
-     * @return \StructType\ArticleValue
+     * @return ArticleValue
      */
     public function setQuantity(?int $quantity = null): self
     {
@@ -301,9 +318,10 @@ class ArticleValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($quantity, true), gettype($quantity)), __LINE__);
         }
         $this->quantity = $quantity;
-        
+
         return $this;
     }
+
     /**
      * Get regime value
      * @return string|null
@@ -312,10 +330,11 @@ class ArticleValue extends AbstractStructBase
     {
         return $this->regime;
     }
+
     /**
      * Set regime value
      * @param string $regime
-     * @return \StructType\ArticleValue
+     * @return ArticleValue
      */
     public function setRegime(?string $regime = null): self
     {
@@ -324,9 +343,10 @@ class ArticleValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($regime, true), gettype($regime)), __LINE__);
         }
         $this->regime = $regime;
-        
+
         return $this;
     }
+
     /**
      * Get value value
      * @return float|null
@@ -335,10 +355,11 @@ class ArticleValue extends AbstractStructBase
     {
         return $this->value;
     }
+
     /**
      * Set value value
      * @param float $value
-     * @return \StructType\ArticleValue
+     * @return ArticleValue
      */
     public function setValue(?float $value = null): self
     {
@@ -347,7 +368,7 @@ class ArticleValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($value, true), gettype($value)), __LINE__);
         }
         $this->value = $value;
-        
+
         return $this;
     }
 }

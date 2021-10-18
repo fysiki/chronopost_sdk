@@ -17,9 +17,9 @@ class ScheduledValue extends AbstractStructBase
      * The appointmentValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AppointmentValue|null
+     * @var AppointmentValue|null
      */
-    protected ?\StructType\AppointmentValue $appointmentValue = null;
+    protected ?AppointmentValue $appointmentValue = null;
     /**
      * The expirationDate
      * Meta information extracted from the WSDL
@@ -34,41 +34,45 @@ class ScheduledValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $sellByDate = null;
+
     /**
      * Constructor method for scheduledValue
+     * @param AppointmentValue $appointmentValue
+     * @param string $expirationDate
+     * @param string $sellByDate
      * @uses ScheduledValue::setAppointmentValue()
      * @uses ScheduledValue::setExpirationDate()
      * @uses ScheduledValue::setSellByDate()
-     * @param \StructType\AppointmentValue $appointmentValue
-     * @param string $expirationDate
-     * @param string $sellByDate
      */
-    public function __construct(?\StructType\AppointmentValue $appointmentValue = null, ?string $expirationDate = null, ?string $sellByDate = null)
+    public function __construct(?AppointmentValue $appointmentValue = null, ?string $expirationDate = null, ?string $sellByDate = null)
     {
         $this
             ->setAppointmentValue($appointmentValue)
             ->setExpirationDate($expirationDate)
             ->setSellByDate($sellByDate);
     }
+
     /**
      * Get appointmentValue value
-     * @return \StructType\AppointmentValue|null
+     * @return AppointmentValue|null
      */
-    public function getAppointmentValue(): ?\StructType\AppointmentValue
+    public function getAppointmentValue(): ?AppointmentValue
     {
         return $this->appointmentValue;
     }
+
     /**
      * Set appointmentValue value
-     * @param \StructType\AppointmentValue $appointmentValue
-     * @return \StructType\ScheduledValue
+     * @param AppointmentValue $appointmentValue
+     * @return ScheduledValue
      */
-    public function setAppointmentValue(?\StructType\AppointmentValue $appointmentValue = null): self
+    public function setAppointmentValue(?AppointmentValue $appointmentValue = null): self
     {
         $this->appointmentValue = $appointmentValue;
-        
+
         return $this;
     }
+
     /**
      * Get expirationDate value
      * @return string|null
@@ -77,10 +81,11 @@ class ScheduledValue extends AbstractStructBase
     {
         return $this->expirationDate;
     }
+
     /**
      * Set expirationDate value
      * @param string $expirationDate
-     * @return \StructType\ScheduledValue
+     * @return ScheduledValue
      */
     public function setExpirationDate(?string $expirationDate = null): self
     {
@@ -89,9 +94,10 @@ class ScheduledValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($expirationDate, true), gettype($expirationDate)), __LINE__);
         }
         $this->expirationDate = $expirationDate;
-        
+
         return $this;
     }
+
     /**
      * Get sellByDate value
      * @return string|null
@@ -100,10 +106,11 @@ class ScheduledValue extends AbstractStructBase
     {
         return $this->sellByDate;
     }
+
     /**
      * Set sellByDate value
      * @param string $sellByDate
-     * @return \StructType\ScheduledValue
+     * @return ScheduledValue
      */
     public function setSellByDate(?string $sellByDate = null): self
     {
@@ -112,7 +119,7 @@ class ScheduledValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sellByDate, true), gettype($sellByDate)), __LINE__);
         }
         $this->sellByDate = $sellByDate;
-        
+
         return $this;
     }
 }

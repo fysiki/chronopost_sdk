@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -17,65 +16,70 @@ class ResultShippingInfo extends AbstractStructBase
      * The error
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Error|null
+     * @var Error|null
      */
-    protected ?\StructType\Error $error = null;
+    protected ?Error $error = null;
     /**
      * The shippingInfo
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ShippingInfo|null
+     * @var ShippingInfo|null
      */
-    protected ?\StructType\ShippingInfo $shippingInfo = null;
+    protected ?ShippingInfo $shippingInfo = null;
+
     /**
      * Constructor method for resultShippingInfo
+     * @param Error $error
+     * @param ShippingInfo $shippingInfo
      * @uses ResultShippingInfo::setError()
      * @uses ResultShippingInfo::setShippingInfo()
-     * @param \StructType\Error $error
-     * @param \StructType\ShippingInfo $shippingInfo
      */
-    public function __construct(?\StructType\Error $error = null, ?\StructType\ShippingInfo $shippingInfo = null)
+    public function __construct(?Error $error = null, ?ShippingInfo $shippingInfo = null)
     {
         $this
             ->setError($error)
             ->setShippingInfo($shippingInfo);
     }
+
     /**
      * Get error value
-     * @return \StructType\Error|null
+     * @return Error|null
      */
-    public function getError(): ?\StructType\Error
+    public function getError(): ?Error
     {
         return $this->error;
     }
+
     /**
      * Set error value
-     * @param \StructType\Error $error
-     * @return \StructType\ResultShippingInfo
+     * @param Error $error
+     * @return ResultShippingInfo
      */
-    public function setError(?\StructType\Error $error = null): self
+    public function setError(?Error $error = null): self
     {
         $this->error = $error;
-        
+
         return $this;
     }
+
     /**
      * Get shippingInfo value
-     * @return \StructType\ShippingInfo|null
+     * @return ShippingInfo|null
      */
-    public function getShippingInfo(): ?\StructType\ShippingInfo
+    public function getShippingInfo(): ?ShippingInfo
     {
         return $this->shippingInfo;
     }
+
     /**
      * Set shippingInfo value
-     * @param \StructType\ShippingInfo $shippingInfo
-     * @return \StructType\ResultShippingInfo
+     * @param ShippingInfo $shippingInfo
+     * @return ResultShippingInfo
      */
-    public function setShippingInfo(?\StructType\ShippingInfo $shippingInfo = null): self
+    public function setShippingInfo(?ShippingInfo $shippingInfo = null): self
     {
         $this->shippingInfo = $shippingInfo;
-        
+
         return $this;
     }
 }

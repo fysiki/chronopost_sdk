@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class RechercherContraintesEnlevementResponse extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\EsdResultContraintesAgenceValue|null
+     * @var EsdResultContraintesAgenceValue|null
      */
-    protected ?\StructType\EsdResultContraintesAgenceValue $return = null;
+    protected ?EsdResultContraintesAgenceValue $return = null;
+
     /**
      * Constructor method for rechercherContraintesEnlevementResponse
+     * @param EsdResultContraintesAgenceValue $return
      * @uses RechercherContraintesEnlevementResponse::setReturn()
-     * @param \StructType\EsdResultContraintesAgenceValue $return
      */
-    public function __construct(?\StructType\EsdResultContraintesAgenceValue $return = null)
+    public function __construct(?EsdResultContraintesAgenceValue $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\EsdResultContraintesAgenceValue|null
+     * @return EsdResultContraintesAgenceValue|null
      */
-    public function getReturn(): ?\StructType\EsdResultContraintesAgenceValue
+    public function getReturn(): ?EsdResultContraintesAgenceValue
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\EsdResultContraintesAgenceValue $return
-     * @return \StructType\RechercherContraintesEnlevementResponse
+     * @param EsdResultContraintesAgenceValue $return
+     * @return RechercherContraintesEnlevementResponse
      */
-    public function setReturn(?\StructType\EsdResultContraintesAgenceValue $return = null): self
+    public function setReturn(?EsdResultContraintesAgenceValue $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

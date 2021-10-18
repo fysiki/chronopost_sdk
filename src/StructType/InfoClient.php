@@ -48,18 +48,19 @@ class InfoClient extends AbstractStructBase
      * @var string|null
      */
     protected ?string $service = null;
+
     /**
      * Constructor method for infoClient
-     * @uses InfoClient::setContenu()
-     * @uses InfoClient::setDevise()
-     * @uses InfoClient::setMontant()
-     * @uses InfoClient::setRefEsdClient()
-     * @uses InfoClient::setService()
      * @param string $contenu
      * @param string $devise
      * @param float $montant
      * @param string $refEsdClient
      * @param string $service
+     * @uses InfoClient::setContenu()
+     * @uses InfoClient::setDevise()
+     * @uses InfoClient::setMontant()
+     * @uses InfoClient::setRefEsdClient()
+     * @uses InfoClient::setService()
      */
     public function __construct(?string $contenu = null, ?string $devise = null, ?float $montant = null, ?string $refEsdClient = null, ?string $service = null)
     {
@@ -70,6 +71,7 @@ class InfoClient extends AbstractStructBase
             ->setRefEsdClient($refEsdClient)
             ->setService($service);
     }
+
     /**
      * Get contenu value
      * @return string|null
@@ -78,10 +80,11 @@ class InfoClient extends AbstractStructBase
     {
         return $this->contenu;
     }
+
     /**
      * Set contenu value
      * @param string $contenu
-     * @return \StructType\InfoClient
+     * @return InfoClient
      */
     public function setContenu(?string $contenu = null): self
     {
@@ -90,9 +93,10 @@ class InfoClient extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($contenu, true), gettype($contenu)), __LINE__);
         }
         $this->contenu = $contenu;
-        
+
         return $this;
     }
+
     /**
      * Get devise value
      * @return string|null
@@ -101,10 +105,11 @@ class InfoClient extends AbstractStructBase
     {
         return $this->devise;
     }
+
     /**
      * Set devise value
      * @param string $devise
-     * @return \StructType\InfoClient
+     * @return InfoClient
      */
     public function setDevise(?string $devise = null): self
     {
@@ -113,9 +118,10 @@ class InfoClient extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($devise, true), gettype($devise)), __LINE__);
         }
         $this->devise = $devise;
-        
+
         return $this;
     }
+
     /**
      * Get montant value
      * @return float|null
@@ -124,10 +130,11 @@ class InfoClient extends AbstractStructBase
     {
         return $this->montant;
     }
+
     /**
      * Set montant value
      * @param float $montant
-     * @return \StructType\InfoClient
+     * @return InfoClient
      */
     public function setMontant(?float $montant = null): self
     {
@@ -136,9 +143,10 @@ class InfoClient extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($montant, true), gettype($montant)), __LINE__);
         }
         $this->montant = $montant;
-        
+
         return $this;
     }
+
     /**
      * Get refEsdClient value
      * @return string|null
@@ -147,10 +155,11 @@ class InfoClient extends AbstractStructBase
     {
         return $this->refEsdClient;
     }
+
     /**
      * Set refEsdClient value
      * @param string $refEsdClient
-     * @return \StructType\InfoClient
+     * @return InfoClient
      */
     public function setRefEsdClient(?string $refEsdClient = null): self
     {
@@ -159,9 +168,10 @@ class InfoClient extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($refEsdClient, true), gettype($refEsdClient)), __LINE__);
         }
         $this->refEsdClient = $refEsdClient;
-        
+
         return $this;
     }
+
     /**
      * Get service value
      * @return string|null
@@ -170,10 +180,11 @@ class InfoClient extends AbstractStructBase
     {
         return $this->service;
     }
+
     /**
      * Set service value
      * @param string $service
-     * @return \StructType\InfoClient
+     * @return InfoClient
      */
     public function setService(?string $service = null): self
     {
@@ -182,7 +193,7 @@ class InfoClient extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($service, true), gettype($service)), __LINE__);
         }
         $this->service = $service;
-        
+
         return $this;
     }
 }

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class FaisabiliteESDResponse extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ResultFaisabiliteESD|null
+     * @var ResultFaisabiliteESD|null
      */
-    protected ?\StructType\ResultFaisabiliteESD $return = null;
+    protected ?ResultFaisabiliteESD $return = null;
+
     /**
      * Constructor method for faisabiliteESDResponse
+     * @param ResultFaisabiliteESD $return
      * @uses FaisabiliteESDResponse::setReturn()
-     * @param \StructType\ResultFaisabiliteESD $return
      */
-    public function __construct(?\StructType\ResultFaisabiliteESD $return = null)
+    public function __construct(?ResultFaisabiliteESD $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\ResultFaisabiliteESD|null
+     * @return ResultFaisabiliteESD|null
      */
-    public function getReturn(): ?\StructType\ResultFaisabiliteESD
+    public function getReturn(): ?ResultFaisabiliteESD
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\ResultFaisabiliteESD $return
-     * @return \StructType\FaisabiliteESDResponse
+     * @param ResultFaisabiliteESD $return
+     * @return FaisabiliteESDResponse
      */
-    public function setReturn(?\StructType\ResultFaisabiliteESD $return = null): self
+    public function setReturn(?ResultFaisabiliteESD $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

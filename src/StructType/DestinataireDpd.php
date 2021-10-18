@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -17,42 +16,43 @@ class DestinataireDpd extends AbstractStructBase
      * The adresseDestinataire
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AdresseDestinataire|null
+     * @var AdresseDestinataire|null
      */
-    protected ?\StructType\AdresseDestinataire $adresseDestinataire = null;
+    protected ?AdresseDestinataire $adresseDestinataire = null;
     /**
      * The infoClient
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\InfoClient|null
+     * @var InfoClient|null
      */
-    protected ?\StructType\InfoClient $infoClient = null;
+    protected ?InfoClient $infoClient = null;
     /**
      * The particularites
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Particularites|null
+     * @var Particularites|null
      */
-    protected ?\StructType\Particularites $particularites = null;
+    protected ?Particularites $particularites = null;
     /**
      * The particularitesColisDpd
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ParticularitesColisDpd|null
+     * @var ParticularitesColisDpd|null
      */
-    protected ?\StructType\ParticularitesColisDpd $particularitesColisDpd = null;
+    protected ?ParticularitesColisDpd $particularitesColisDpd = null;
+
     /**
      * Constructor method for destinataireDpd
+     * @param AdresseDestinataire $adresseDestinataire
+     * @param InfoClient $infoClient
+     * @param Particularites $particularites
+     * @param ParticularitesColisDpd $particularitesColisDpd
      * @uses DestinataireDpd::setAdresseDestinataire()
      * @uses DestinataireDpd::setInfoClient()
      * @uses DestinataireDpd::setParticularites()
      * @uses DestinataireDpd::setParticularitesColisDpd()
-     * @param \StructType\AdresseDestinataire $adresseDestinataire
-     * @param \StructType\InfoClient $infoClient
-     * @param \StructType\Particularites $particularites
-     * @param \StructType\ParticularitesColisDpd $particularitesColisDpd
      */
-    public function __construct(?\StructType\AdresseDestinataire $adresseDestinataire = null, ?\StructType\InfoClient $infoClient = null, ?\StructType\Particularites $particularites = null, ?\StructType\ParticularitesColisDpd $particularitesColisDpd = null)
+    public function __construct(?AdresseDestinataire $adresseDestinataire = null, ?InfoClient $infoClient = null, ?Particularites $particularites = null, ?ParticularitesColisDpd $particularitesColisDpd = null)
     {
         $this
             ->setAdresseDestinataire($adresseDestinataire)
@@ -60,80 +60,88 @@ class DestinataireDpd extends AbstractStructBase
             ->setParticularites($particularites)
             ->setParticularitesColisDpd($particularitesColisDpd);
     }
+
     /**
      * Get adresseDestinataire value
-     * @return \StructType\AdresseDestinataire|null
+     * @return AdresseDestinataire|null
      */
-    public function getAdresseDestinataire(): ?\StructType\AdresseDestinataire
+    public function getAdresseDestinataire(): ?AdresseDestinataire
     {
         return $this->adresseDestinataire;
     }
+
     /**
      * Set adresseDestinataire value
-     * @param \StructType\AdresseDestinataire $adresseDestinataire
-     * @return \StructType\DestinataireDpd
+     * @param AdresseDestinataire $adresseDestinataire
+     * @return DestinataireDpd
      */
-    public function setAdresseDestinataire(?\StructType\AdresseDestinataire $adresseDestinataire = null): self
+    public function setAdresseDestinataire(?AdresseDestinataire $adresseDestinataire = null): self
     {
         $this->adresseDestinataire = $adresseDestinataire;
-        
+
         return $this;
     }
+
     /**
      * Get infoClient value
-     * @return \StructType\InfoClient|null
+     * @return InfoClient|null
      */
-    public function getInfoClient(): ?\StructType\InfoClient
+    public function getInfoClient(): ?InfoClient
     {
         return $this->infoClient;
     }
+
     /**
      * Set infoClient value
-     * @param \StructType\InfoClient $infoClient
-     * @return \StructType\DestinataireDpd
+     * @param InfoClient $infoClient
+     * @return DestinataireDpd
      */
-    public function setInfoClient(?\StructType\InfoClient $infoClient = null): self
+    public function setInfoClient(?InfoClient $infoClient = null): self
     {
         $this->infoClient = $infoClient;
-        
+
         return $this;
     }
+
     /**
      * Get particularites value
-     * @return \StructType\Particularites|null
+     * @return Particularites|null
      */
-    public function getParticularites(): ?\StructType\Particularites
+    public function getParticularites(): ?Particularites
     {
         return $this->particularites;
     }
+
     /**
      * Set particularites value
-     * @param \StructType\Particularites $particularites
-     * @return \StructType\DestinataireDpd
+     * @param Particularites $particularites
+     * @return DestinataireDpd
      */
-    public function setParticularites(?\StructType\Particularites $particularites = null): self
+    public function setParticularites(?Particularites $particularites = null): self
     {
         $this->particularites = $particularites;
-        
+
         return $this;
     }
+
     /**
      * Get particularitesColisDpd value
-     * @return \StructType\ParticularitesColisDpd|null
+     * @return ParticularitesColisDpd|null
      */
-    public function getParticularitesColisDpd(): ?\StructType\ParticularitesColisDpd
+    public function getParticularitesColisDpd(): ?ParticularitesColisDpd
     {
         return $this->particularitesColisDpd;
     }
+
     /**
      * Set particularitesColisDpd value
-     * @param \StructType\ParticularitesColisDpd $particularitesColisDpd
-     * @return \StructType\DestinataireDpd
+     * @param ParticularitesColisDpd $particularitesColisDpd
+     * @return DestinataireDpd
      */
-    public function setParticularitesColisDpd(?\StructType\ParticularitesColisDpd $particularitesColisDpd = null): self
+    public function setParticularitesColisDpd(?ParticularitesColisDpd $particularitesColisDpd = null): self
     {
         $this->particularitesColisDpd = $particularitesColisDpd;
-        
+
         return $this;
     }
 }

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for skybillWithDimensionsValueV5 StructType
@@ -27,12 +26,13 @@ class SkybillWithDimensionsValueV5 extends SkybillWithDimensionsValueV4
      * @var string|null
      */
     protected ?string $skybillBackNumber = null;
+
     /**
      * Constructor method for skybillWithDimensionsValueV5
-     * @uses SkybillWithDimensionsValueV5::setCarrier()
-     * @uses SkybillWithDimensionsValueV5::setSkybillBackNumber()
      * @param string $carrier
      * @param string $skybillBackNumber
+     * @uses SkybillWithDimensionsValueV5::setCarrier()
+     * @uses SkybillWithDimensionsValueV5::setSkybillBackNumber()
      */
     public function __construct(?string $carrier = null, ?string $skybillBackNumber = null)
     {
@@ -40,6 +40,7 @@ class SkybillWithDimensionsValueV5 extends SkybillWithDimensionsValueV4
             ->setCarrier($carrier)
             ->setSkybillBackNumber($skybillBackNumber);
     }
+
     /**
      * Get carrier value
      * @return string|null
@@ -48,10 +49,11 @@ class SkybillWithDimensionsValueV5 extends SkybillWithDimensionsValueV4
     {
         return $this->carrier;
     }
+
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \StructType\SkybillWithDimensionsValueV5
+     * @return SkybillWithDimensionsValueV5
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -60,9 +62,10 @@ class SkybillWithDimensionsValueV5 extends SkybillWithDimensionsValueV4
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($carrier, true), gettype($carrier)), __LINE__);
         }
         $this->carrier = $carrier;
-        
+
         return $this;
     }
+
     /**
      * Get skybillBackNumber value
      * @return string|null
@@ -71,10 +74,11 @@ class SkybillWithDimensionsValueV5 extends SkybillWithDimensionsValueV4
     {
         return $this->skybillBackNumber;
     }
+
     /**
      * Set skybillBackNumber value
      * @param string $skybillBackNumber
-     * @return \StructType\SkybillWithDimensionsValueV5
+     * @return SkybillWithDimensionsValueV5
      */
     public function setSkybillBackNumber(?string $skybillBackNumber = null): self
     {
@@ -83,7 +87,7 @@ class SkybillWithDimensionsValueV5 extends SkybillWithDimensionsValueV4
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($skybillBackNumber, true), gettype($skybillBackNumber)), __LINE__);
         }
         $this->skybillBackNumber = $skybillBackNumber;
-        
+
         return $this;
     }
 }

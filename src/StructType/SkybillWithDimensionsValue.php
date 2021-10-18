@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for skybillWithDimensionsValue StructType
@@ -28,14 +27,15 @@ class SkybillWithDimensionsValue extends SkybillValue
      * @var float|null
      */
     protected ?float $width = null;
+
     /**
      * Constructor method for skybillWithDimensionsValue
-     * @uses SkybillWithDimensionsValue::setHeight()
-     * @uses SkybillWithDimensionsValue::setLength()
-     * @uses SkybillWithDimensionsValue::setWidth()
      * @param float $height
      * @param float $length
      * @param float $width
+     * @uses SkybillWithDimensionsValue::setHeight()
+     * @uses SkybillWithDimensionsValue::setLength()
+     * @uses SkybillWithDimensionsValue::setWidth()
      */
     public function __construct(?float $height = null, ?float $length = null, ?float $width = null)
     {
@@ -44,6 +44,7 @@ class SkybillWithDimensionsValue extends SkybillValue
             ->setLength($length)
             ->setWidth($width);
     }
+
     /**
      * Get height value
      * @return float|null
@@ -52,10 +53,11 @@ class SkybillWithDimensionsValue extends SkybillValue
     {
         return $this->height;
     }
+
     /**
      * Set height value
      * @param float $height
-     * @return \StructType\SkybillWithDimensionsValue
+     * @return SkybillWithDimensionsValue
      */
     public function setHeight(?float $height = null): self
     {
@@ -64,9 +66,10 @@ class SkybillWithDimensionsValue extends SkybillValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($height, true), gettype($height)), __LINE__);
         }
         $this->height = $height;
-        
+
         return $this;
     }
+
     /**
      * Get length value
      * @return float|null
@@ -75,10 +78,11 @@ class SkybillWithDimensionsValue extends SkybillValue
     {
         return $this->length;
     }
+
     /**
      * Set length value
      * @param float $length
-     * @return \StructType\SkybillWithDimensionsValue
+     * @return SkybillWithDimensionsValue
      */
     public function setLength(?float $length = null): self
     {
@@ -87,9 +91,10 @@ class SkybillWithDimensionsValue extends SkybillValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($length, true), gettype($length)), __LINE__);
         }
         $this->length = $length;
-        
+
         return $this;
     }
+
     /**
      * Get width value
      * @return float|null
@@ -98,10 +103,11 @@ class SkybillWithDimensionsValue extends SkybillValue
     {
         return $this->width;
     }
+
     /**
      * Set width value
      * @param float $width
-     * @return \StructType\SkybillWithDimensionsValue
+     * @return SkybillWithDimensionsValue
      */
     public function setWidth(?float $width = null): self
     {
@@ -110,7 +116,7 @@ class SkybillWithDimensionsValue extends SkybillValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($width, true), gettype($width)), __LINE__);
         }
         $this->width = $width;
-        
+
         return $this;
     }
 }

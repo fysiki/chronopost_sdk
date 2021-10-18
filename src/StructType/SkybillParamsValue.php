@@ -27,12 +27,13 @@ class SkybillParamsValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $mode = null;
+
     /**
      * Constructor method for skybillParamsValue
-     * @uses SkybillParamsValue::setDuplicata()
-     * @uses SkybillParamsValue::setMode()
      * @param string $duplicata
      * @param string $mode
+     * @uses SkybillParamsValue::setDuplicata()
+     * @uses SkybillParamsValue::setMode()
      */
     public function __construct(?string $duplicata = null, ?string $mode = null)
     {
@@ -40,6 +41,7 @@ class SkybillParamsValue extends AbstractStructBase
             ->setDuplicata($duplicata)
             ->setMode($mode);
     }
+
     /**
      * Get duplicata value
      * @return string|null
@@ -48,10 +50,11 @@ class SkybillParamsValue extends AbstractStructBase
     {
         return $this->duplicata;
     }
+
     /**
      * Set duplicata value
      * @param string $duplicata
-     * @return \StructType\SkybillParamsValue
+     * @return SkybillParamsValue
      */
     public function setDuplicata(?string $duplicata = null): self
     {
@@ -60,9 +63,10 @@ class SkybillParamsValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($duplicata, true), gettype($duplicata)), __LINE__);
         }
         $this->duplicata = $duplicata;
-        
+
         return $this;
     }
+
     /**
      * Get mode value
      * @return string|null
@@ -71,10 +75,11 @@ class SkybillParamsValue extends AbstractStructBase
     {
         return $this->mode;
     }
+
     /**
      * Set mode value
      * @param string $mode
-     * @return \StructType\SkybillParamsValue
+     * @return SkybillParamsValue
      */
     public function setMode(?string $mode = null): self
     {
@@ -83,7 +88,7 @@ class SkybillParamsValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mode, true), gettype($mode)), __LINE__);
         }
         $this->mode = $mode;
-        
+
         return $this;
     }
 }

@@ -104,21 +104,9 @@ class ResultParcelValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $skybillNumber = null;
+
     /**
      * Constructor method for resultParcelValue
-     * @uses ResultParcelValue::setCodeDepot()
-     * @uses ResultParcelValue::setCodeService()
-     * @uses ResultParcelValue::setDSort()
-     * @uses ResultParcelValue::setDestinationDepot()
-     * @uses ResultParcelValue::setGeoPostCodeBarre()
-     * @uses ResultParcelValue::setGeoPostNumeroColis()
-     * @uses ResultParcelValue::setGroupingPriorityLabel()
-     * @uses ResultParcelValue::setOSort()
-     * @uses ResultParcelValue::setReservationNumber()
-     * @uses ResultParcelValue::setServiceMark()
-     * @uses ResultParcelValue::setServiceName()
-     * @uses ResultParcelValue::setSignaletiqueProduit()
-     * @uses ResultParcelValue::setSkybillNumber()
      * @param string $codeDepot
      * @param string $codeService
      * @param string $dSort
@@ -132,6 +120,19 @@ class ResultParcelValue extends AbstractStructBase
      * @param string $serviceName
      * @param string $signaletiqueProduit
      * @param string $skybillNumber
+     * @uses ResultParcelValue::setCodeDepot()
+     * @uses ResultParcelValue::setCodeService()
+     * @uses ResultParcelValue::setDSort()
+     * @uses ResultParcelValue::setDestinationDepot()
+     * @uses ResultParcelValue::setGeoPostCodeBarre()
+     * @uses ResultParcelValue::setGeoPostNumeroColis()
+     * @uses ResultParcelValue::setGroupingPriorityLabel()
+     * @uses ResultParcelValue::setOSort()
+     * @uses ResultParcelValue::setReservationNumber()
+     * @uses ResultParcelValue::setServiceMark()
+     * @uses ResultParcelValue::setServiceName()
+     * @uses ResultParcelValue::setSignaletiqueProduit()
+     * @uses ResultParcelValue::setSkybillNumber()
      */
     public function __construct(?string $codeDepot = null, ?string $codeService = null, ?string $dSort = null, ?string $destinationDepot = null, ?string $geoPostCodeBarre = null, ?string $geoPostNumeroColis = null, ?string $groupingPriorityLabel = null, ?string $oSort = null, ?string $reservationNumber = null, ?string $serviceMark = null, ?string $serviceName = null, ?string $signaletiqueProduit = null, ?string $skybillNumber = null)
     {
@@ -150,6 +151,7 @@ class ResultParcelValue extends AbstractStructBase
             ->setSignaletiqueProduit($signaletiqueProduit)
             ->setSkybillNumber($skybillNumber);
     }
+
     /**
      * Get codeDepot value
      * @return string|null
@@ -158,10 +160,11 @@ class ResultParcelValue extends AbstractStructBase
     {
         return $this->codeDepot;
     }
+
     /**
      * Set codeDepot value
      * @param string $codeDepot
-     * @return \StructType\ResultParcelValue
+     * @return ResultParcelValue
      */
     public function setCodeDepot(?string $codeDepot = null): self
     {
@@ -170,9 +173,10 @@ class ResultParcelValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codeDepot, true), gettype($codeDepot)), __LINE__);
         }
         $this->codeDepot = $codeDepot;
-        
+
         return $this;
     }
+
     /**
      * Get codeService value
      * @return string|null
@@ -181,10 +185,11 @@ class ResultParcelValue extends AbstractStructBase
     {
         return $this->codeService;
     }
+
     /**
      * Set codeService value
      * @param string $codeService
-     * @return \StructType\ResultParcelValue
+     * @return ResultParcelValue
      */
     public function setCodeService(?string $codeService = null): self
     {
@@ -193,9 +198,10 @@ class ResultParcelValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codeService, true), gettype($codeService)), __LINE__);
         }
         $this->codeService = $codeService;
-        
+
         return $this;
     }
+
     /**
      * Get DSort value
      * @return string|null
@@ -204,10 +210,11 @@ class ResultParcelValue extends AbstractStructBase
     {
         return $this->DSort;
     }
+
     /**
      * Set DSort value
      * @param string $dSort
-     * @return \StructType\ResultParcelValue
+     * @return ResultParcelValue
      */
     public function setDSort(?string $dSort = null): self
     {
@@ -216,9 +223,10 @@ class ResultParcelValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dSort, true), gettype($dSort)), __LINE__);
         }
         $this->DSort = $dSort;
-        
+
         return $this;
     }
+
     /**
      * Get destinationDepot value
      * @return string|null
@@ -227,10 +235,11 @@ class ResultParcelValue extends AbstractStructBase
     {
         return $this->destinationDepot;
     }
+
     /**
      * Set destinationDepot value
      * @param string $destinationDepot
-     * @return \StructType\ResultParcelValue
+     * @return ResultParcelValue
      */
     public function setDestinationDepot(?string $destinationDepot = null): self
     {
@@ -239,9 +248,10 @@ class ResultParcelValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($destinationDepot, true), gettype($destinationDepot)), __LINE__);
         }
         $this->destinationDepot = $destinationDepot;
-        
+
         return $this;
     }
+
     /**
      * Get geoPostCodeBarre value
      * @return string|null
@@ -250,10 +260,11 @@ class ResultParcelValue extends AbstractStructBase
     {
         return $this->geoPostCodeBarre;
     }
+
     /**
      * Set geoPostCodeBarre value
      * @param string $geoPostCodeBarre
-     * @return \StructType\ResultParcelValue
+     * @return ResultParcelValue
      */
     public function setGeoPostCodeBarre(?string $geoPostCodeBarre = null): self
     {
@@ -262,9 +273,10 @@ class ResultParcelValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($geoPostCodeBarre, true), gettype($geoPostCodeBarre)), __LINE__);
         }
         $this->geoPostCodeBarre = $geoPostCodeBarre;
-        
+
         return $this;
     }
+
     /**
      * Get geoPostNumeroColis value
      * @return string|null
@@ -273,10 +285,11 @@ class ResultParcelValue extends AbstractStructBase
     {
         return $this->geoPostNumeroColis;
     }
+
     /**
      * Set geoPostNumeroColis value
      * @param string $geoPostNumeroColis
-     * @return \StructType\ResultParcelValue
+     * @return ResultParcelValue
      */
     public function setGeoPostNumeroColis(?string $geoPostNumeroColis = null): self
     {
@@ -285,9 +298,10 @@ class ResultParcelValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($geoPostNumeroColis, true), gettype($geoPostNumeroColis)), __LINE__);
         }
         $this->geoPostNumeroColis = $geoPostNumeroColis;
-        
+
         return $this;
     }
+
     /**
      * Get groupingPriorityLabel value
      * @return string|null
@@ -296,10 +310,11 @@ class ResultParcelValue extends AbstractStructBase
     {
         return $this->groupingPriorityLabel;
     }
+
     /**
      * Set groupingPriorityLabel value
      * @param string $groupingPriorityLabel
-     * @return \StructType\ResultParcelValue
+     * @return ResultParcelValue
      */
     public function setGroupingPriorityLabel(?string $groupingPriorityLabel = null): self
     {
@@ -308,9 +323,10 @@ class ResultParcelValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($groupingPriorityLabel, true), gettype($groupingPriorityLabel)), __LINE__);
         }
         $this->groupingPriorityLabel = $groupingPriorityLabel;
-        
+
         return $this;
     }
+
     /**
      * Get OSort value
      * @return string|null
@@ -319,10 +335,11 @@ class ResultParcelValue extends AbstractStructBase
     {
         return $this->OSort;
     }
+
     /**
      * Set OSort value
      * @param string $oSort
-     * @return \StructType\ResultParcelValue
+     * @return ResultParcelValue
      */
     public function setOSort(?string $oSort = null): self
     {
@@ -331,9 +348,10 @@ class ResultParcelValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($oSort, true), gettype($oSort)), __LINE__);
         }
         $this->OSort = $oSort;
-        
+
         return $this;
     }
+
     /**
      * Get reservationNumber value
      * @return string|null
@@ -342,10 +360,11 @@ class ResultParcelValue extends AbstractStructBase
     {
         return $this->reservationNumber;
     }
+
     /**
      * Set reservationNumber value
      * @param string $reservationNumber
-     * @return \StructType\ResultParcelValue
+     * @return ResultParcelValue
      */
     public function setReservationNumber(?string $reservationNumber = null): self
     {
@@ -354,9 +373,10 @@ class ResultParcelValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reservationNumber, true), gettype($reservationNumber)), __LINE__);
         }
         $this->reservationNumber = $reservationNumber;
-        
+
         return $this;
     }
+
     /**
      * Get serviceMark value
      * @return string|null
@@ -365,10 +385,11 @@ class ResultParcelValue extends AbstractStructBase
     {
         return $this->serviceMark;
     }
+
     /**
      * Set serviceMark value
      * @param string $serviceMark
-     * @return \StructType\ResultParcelValue
+     * @return ResultParcelValue
      */
     public function setServiceMark(?string $serviceMark = null): self
     {
@@ -377,9 +398,10 @@ class ResultParcelValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($serviceMark, true), gettype($serviceMark)), __LINE__);
         }
         $this->serviceMark = $serviceMark;
-        
+
         return $this;
     }
+
     /**
      * Get serviceName value
      * @return string|null
@@ -388,10 +410,11 @@ class ResultParcelValue extends AbstractStructBase
     {
         return $this->serviceName;
     }
+
     /**
      * Set serviceName value
      * @param string $serviceName
-     * @return \StructType\ResultParcelValue
+     * @return ResultParcelValue
      */
     public function setServiceName(?string $serviceName = null): self
     {
@@ -400,9 +423,10 @@ class ResultParcelValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($serviceName, true), gettype($serviceName)), __LINE__);
         }
         $this->serviceName = $serviceName;
-        
+
         return $this;
     }
+
     /**
      * Get signaletiqueProduit value
      * @return string|null
@@ -411,10 +435,11 @@ class ResultParcelValue extends AbstractStructBase
     {
         return $this->signaletiqueProduit;
     }
+
     /**
      * Set signaletiqueProduit value
      * @param string $signaletiqueProduit
-     * @return \StructType\ResultParcelValue
+     * @return ResultParcelValue
      */
     public function setSignaletiqueProduit(?string $signaletiqueProduit = null): self
     {
@@ -423,9 +448,10 @@ class ResultParcelValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($signaletiqueProduit, true), gettype($signaletiqueProduit)), __LINE__);
         }
         $this->signaletiqueProduit = $signaletiqueProduit;
-        
+
         return $this;
     }
+
     /**
      * Get skybillNumber value
      * @return string|null
@@ -434,10 +460,11 @@ class ResultParcelValue extends AbstractStructBase
     {
         return $this->skybillNumber;
     }
+
     /**
      * Set skybillNumber value
      * @param string $skybillNumber
-     * @return \StructType\ResultParcelValue
+     * @return ResultParcelValue
      */
     public function setSkybillNumber(?string $skybillNumber = null): self
     {
@@ -446,7 +473,7 @@ class ResultParcelValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($skybillNumber, true), gettype($skybillNumber)), __LINE__);
         }
         $this->skybillNumber = $skybillNumber;
-        
+
         return $this;
     }
 }

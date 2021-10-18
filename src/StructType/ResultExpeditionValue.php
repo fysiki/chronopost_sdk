@@ -60,15 +60,9 @@ class ResultExpeditionValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $skybillNumber = null;
+
     /**
      * Constructor method for resultExpeditionValue
-     * @uses ResultExpeditionValue::setESDFullNumber()
-     * @uses ResultExpeditionValue::setESDNumber()
-     * @uses ResultExpeditionValue::setErrorCode()
-     * @uses ResultExpeditionValue::setErrorMessage()
-     * @uses ResultExpeditionValue::setPickupDate()
-     * @uses ResultExpeditionValue::setSkybill()
-     * @uses ResultExpeditionValue::setSkybillNumber()
      * @param string $eSDFullNumber
      * @param string $eSDNumber
      * @param int $errorCode
@@ -76,6 +70,13 @@ class ResultExpeditionValue extends AbstractStructBase
      * @param string $pickupDate
      * @param string $skybill
      * @param string $skybillNumber
+     * @uses ResultExpeditionValue::setESDFullNumber()
+     * @uses ResultExpeditionValue::setESDNumber()
+     * @uses ResultExpeditionValue::setErrorCode()
+     * @uses ResultExpeditionValue::setErrorMessage()
+     * @uses ResultExpeditionValue::setPickupDate()
+     * @uses ResultExpeditionValue::setSkybill()
+     * @uses ResultExpeditionValue::setSkybillNumber()
      */
     public function __construct(?string $eSDFullNumber = null, ?string $eSDNumber = null, ?int $errorCode = null, ?string $errorMessage = null, ?string $pickupDate = null, ?string $skybill = null, ?string $skybillNumber = null)
     {
@@ -88,6 +89,7 @@ class ResultExpeditionValue extends AbstractStructBase
             ->setSkybill($skybill)
             ->setSkybillNumber($skybillNumber);
     }
+
     /**
      * Get ESDFullNumber value
      * @return string|null
@@ -96,10 +98,11 @@ class ResultExpeditionValue extends AbstractStructBase
     {
         return $this->ESDFullNumber;
     }
+
     /**
      * Set ESDFullNumber value
      * @param string $eSDFullNumber
-     * @return \StructType\ResultExpeditionValue
+     * @return ResultExpeditionValue
      */
     public function setESDFullNumber(?string $eSDFullNumber = null): self
     {
@@ -108,9 +111,10 @@ class ResultExpeditionValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($eSDFullNumber, true), gettype($eSDFullNumber)), __LINE__);
         }
         $this->ESDFullNumber = $eSDFullNumber;
-        
+
         return $this;
     }
+
     /**
      * Get ESDNumber value
      * @return string|null
@@ -119,10 +123,11 @@ class ResultExpeditionValue extends AbstractStructBase
     {
         return $this->ESDNumber;
     }
+
     /**
      * Set ESDNumber value
      * @param string $eSDNumber
-     * @return \StructType\ResultExpeditionValue
+     * @return ResultExpeditionValue
      */
     public function setESDNumber(?string $eSDNumber = null): self
     {
@@ -131,9 +136,10 @@ class ResultExpeditionValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($eSDNumber, true), gettype($eSDNumber)), __LINE__);
         }
         $this->ESDNumber = $eSDNumber;
-        
+
         return $this;
     }
+
     /**
      * Get errorCode value
      * @return int|null
@@ -142,10 +148,11 @@ class ResultExpeditionValue extends AbstractStructBase
     {
         return $this->errorCode;
     }
+
     /**
      * Set errorCode value
      * @param int $errorCode
-     * @return \StructType\ResultExpeditionValue
+     * @return ResultExpeditionValue
      */
     public function setErrorCode(?int $errorCode = null): self
     {
@@ -154,9 +161,10 @@ class ResultExpeditionValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($errorCode, true), gettype($errorCode)), __LINE__);
         }
         $this->errorCode = $errorCode;
-        
+
         return $this;
     }
+
     /**
      * Get errorMessage value
      * @return string|null
@@ -165,10 +173,11 @@ class ResultExpeditionValue extends AbstractStructBase
     {
         return $this->errorMessage;
     }
+
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \StructType\ResultExpeditionValue
+     * @return ResultExpeditionValue
      */
     public function setErrorMessage(?string $errorMessage = null): self
     {
@@ -177,9 +186,10 @@ class ResultExpeditionValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($errorMessage, true), gettype($errorMessage)), __LINE__);
         }
         $this->errorMessage = $errorMessage;
-        
+
         return $this;
     }
+
     /**
      * Get pickupDate value
      * @return string|null
@@ -188,10 +198,11 @@ class ResultExpeditionValue extends AbstractStructBase
     {
         return $this->pickupDate;
     }
+
     /**
      * Set pickupDate value
      * @param string $pickupDate
-     * @return \StructType\ResultExpeditionValue
+     * @return ResultExpeditionValue
      */
     public function setPickupDate(?string $pickupDate = null): self
     {
@@ -200,9 +211,10 @@ class ResultExpeditionValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($pickupDate, true), gettype($pickupDate)), __LINE__);
         }
         $this->pickupDate = $pickupDate;
-        
+
         return $this;
     }
+
     /**
      * Get skybill value
      * @return string|null
@@ -211,10 +223,11 @@ class ResultExpeditionValue extends AbstractStructBase
     {
         return $this->skybill;
     }
+
     /**
      * Set skybill value
      * @param string $skybill
-     * @return \StructType\ResultExpeditionValue
+     * @return ResultExpeditionValue
      */
     public function setSkybill(?string $skybill = null): self
     {
@@ -223,9 +236,10 @@ class ResultExpeditionValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($skybill, true), gettype($skybill)), __LINE__);
         }
         $this->skybill = $skybill;
-        
+
         return $this;
     }
+
     /**
      * Get skybillNumber value
      * @return string|null
@@ -234,10 +248,11 @@ class ResultExpeditionValue extends AbstractStructBase
     {
         return $this->skybillNumber;
     }
+
     /**
      * Set skybillNumber value
      * @param string $skybillNumber
-     * @return \StructType\ResultExpeditionValue
+     * @return ResultExpeditionValue
      */
     public function setSkybillNumber(?string $skybillNumber = null): self
     {
@@ -246,7 +261,7 @@ class ResultExpeditionValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($skybillNumber, true), gettype($skybillNumber)), __LINE__);
         }
         $this->skybillNumber = $skybillNumber;
-        
+
         return $this;
     }
 }

@@ -29,9 +29,9 @@ class ResultGetRouting extends AbstractStructBase
      * The geopostResult
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GeopostResult|null
+     * @var GeopostResult|null
      */
-    protected ?\StructType\GeopostResult $geopostResult = null;
+    protected ?GeopostResult $geopostResult = null;
     /**
      * The posteComptable
      * Meta information extracted from the WSDL
@@ -39,18 +39,19 @@ class ResultGetRouting extends AbstractStructBase
      * @var string|null
      */
     protected ?string $posteComptable = null;
+
     /**
      * Constructor method for resultGetRouting
+     * @param int $errorCode
+     * @param string $errorMessage
+     * @param GeopostResult $geopostResult
+     * @param string $posteComptable
      * @uses ResultGetRouting::setErrorCode()
      * @uses ResultGetRouting::setErrorMessage()
      * @uses ResultGetRouting::setGeopostResult()
      * @uses ResultGetRouting::setPosteComptable()
-     * @param int $errorCode
-     * @param string $errorMessage
-     * @param \StructType\GeopostResult $geopostResult
-     * @param string $posteComptable
      */
-    public function __construct(?int $errorCode = null, ?string $errorMessage = null, ?\StructType\GeopostResult $geopostResult = null, ?string $posteComptable = null)
+    public function __construct(?int $errorCode = null, ?string $errorMessage = null, ?GeopostResult $geopostResult = null, ?string $posteComptable = null)
     {
         $this
             ->setErrorCode($errorCode)
@@ -58,6 +59,7 @@ class ResultGetRouting extends AbstractStructBase
             ->setGeopostResult($geopostResult)
             ->setPosteComptable($posteComptable);
     }
+
     /**
      * Get errorCode value
      * @return int|null
@@ -66,10 +68,11 @@ class ResultGetRouting extends AbstractStructBase
     {
         return $this->errorCode;
     }
+
     /**
      * Set errorCode value
      * @param int $errorCode
-     * @return \StructType\ResultGetRouting
+     * @return ResultGetRouting
      */
     public function setErrorCode(?int $errorCode = null): self
     {
@@ -78,9 +81,10 @@ class ResultGetRouting extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($errorCode, true), gettype($errorCode)), __LINE__);
         }
         $this->errorCode = $errorCode;
-        
+
         return $this;
     }
+
     /**
      * Get errorMessage value
      * @return string|null
@@ -89,10 +93,11 @@ class ResultGetRouting extends AbstractStructBase
     {
         return $this->errorMessage;
     }
+
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \StructType\ResultGetRouting
+     * @return ResultGetRouting
      */
     public function setErrorMessage(?string $errorMessage = null): self
     {
@@ -101,28 +106,31 @@ class ResultGetRouting extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($errorMessage, true), gettype($errorMessage)), __LINE__);
         }
         $this->errorMessage = $errorMessage;
-        
+
         return $this;
     }
+
     /**
      * Get geopostResult value
-     * @return \StructType\GeopostResult|null
+     * @return GeopostResult|null
      */
-    public function getGeopostResult(): ?\StructType\GeopostResult
+    public function getGeopostResult(): ?GeopostResult
     {
         return $this->geopostResult;
     }
+
     /**
      * Set geopostResult value
-     * @param \StructType\GeopostResult $geopostResult
-     * @return \StructType\ResultGetRouting
+     * @param GeopostResult $geopostResult
+     * @return ResultGetRouting
      */
-    public function setGeopostResult(?\StructType\GeopostResult $geopostResult = null): self
+    public function setGeopostResult(?GeopostResult $geopostResult = null): self
     {
         $this->geopostResult = $geopostResult;
-        
+
         return $this;
     }
+
     /**
      * Get posteComptable value
      * @return string|null
@@ -131,10 +139,11 @@ class ResultGetRouting extends AbstractStructBase
     {
         return $this->posteComptable;
     }
+
     /**
      * Set posteComptable value
      * @param string $posteComptable
-     * @return \StructType\ResultGetRouting
+     * @return ResultGetRouting
      */
     public function setPosteComptable(?string $posteComptable = null): self
     {
@@ -143,7 +152,7 @@ class ResultGetRouting extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($posteComptable, true), gettype($posteComptable)), __LINE__);
         }
         $this->posteComptable = $posteComptable;
-        
+
         return $this;
     }
 }

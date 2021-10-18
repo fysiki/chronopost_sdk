@@ -2,7 +2,7 @@
     "name": "myproject/mysdk",
     "description": "Package generated from https://ws.chronopost.fr/shipping-cxf/ShippingServiceWS?wsdl using wsdltophp/packagegenerator",
     "require": {
-        "php": ">=7.4",
+        "php": "^8.0",
         "ext-dom": "*",
         "ext-mbstring": "*",
         "ext-soap": "*",

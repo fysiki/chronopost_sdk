@@ -27,12 +27,13 @@ class Entry extends AbstractStructBase
      * @var string|null
      */
     protected ?string $value = null;
+
     /**
      * Constructor method for entry
-     * @uses Entry::setKey()
-     * @uses Entry::setValue()
      * @param string $key
      * @param string $value
+     * @uses Entry::setKey()
+     * @uses Entry::setValue()
      */
     public function __construct(?string $key = null, ?string $value = null)
     {
@@ -40,6 +41,7 @@ class Entry extends AbstractStructBase
             ->setKey($key)
             ->setValue($value);
     }
+
     /**
      * Get key value
      * @return string|null
@@ -48,10 +50,11 @@ class Entry extends AbstractStructBase
     {
         return $this->key;
     }
+
     /**
      * Set key value
      * @param string $key
-     * @return \StructType\Entry
+     * @return Entry
      */
     public function setKey(?string $key = null): self
     {
@@ -60,9 +63,10 @@ class Entry extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($key, true), gettype($key)), __LINE__);
         }
         $this->key = $key;
-        
+
         return $this;
     }
+
     /**
      * Get value value
      * @return string|null
@@ -71,10 +75,11 @@ class Entry extends AbstractStructBase
     {
         return $this->value;
     }
+
     /**
      * Set value value
      * @param string $value
-     * @return \StructType\Entry
+     * @return Entry
      */
     public function setValue(?string $value = null): self
     {
@@ -83,7 +88,7 @@ class Entry extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($value, true), gettype($value)), __LINE__);
         }
         $this->value = $value;
-        
+
         return $this;
     }
 }

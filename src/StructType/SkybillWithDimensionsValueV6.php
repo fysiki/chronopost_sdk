@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for skybillWithDimensionsValueV6 StructType
@@ -27,12 +26,13 @@ class SkybillWithDimensionsValueV6 extends SkybillWithDimensionsValueV5
      * @var string|null
      */
     protected ?string $labelNumber = null;
+
     /**
      * Constructor method for skybillWithDimensionsValueV6
-     * @uses SkybillWithDimensionsValueV6::setAlternateProductCode()
-     * @uses SkybillWithDimensionsValueV6::setLabelNumber()
      * @param string $alternateProductCode
      * @param string $labelNumber
+     * @uses SkybillWithDimensionsValueV6::setAlternateProductCode()
+     * @uses SkybillWithDimensionsValueV6::setLabelNumber()
      */
     public function __construct(?string $alternateProductCode = null, ?string $labelNumber = null)
     {
@@ -40,6 +40,7 @@ class SkybillWithDimensionsValueV6 extends SkybillWithDimensionsValueV5
             ->setAlternateProductCode($alternateProductCode)
             ->setLabelNumber($labelNumber);
     }
+
     /**
      * Get alternateProductCode value
      * @return string|null
@@ -48,10 +49,11 @@ class SkybillWithDimensionsValueV6 extends SkybillWithDimensionsValueV5
     {
         return $this->alternateProductCode;
     }
+
     /**
      * Set alternateProductCode value
      * @param string $alternateProductCode
-     * @return \StructType\SkybillWithDimensionsValueV6
+     * @return SkybillWithDimensionsValueV6
      */
     public function setAlternateProductCode(?string $alternateProductCode = null): self
     {
@@ -60,9 +62,10 @@ class SkybillWithDimensionsValueV6 extends SkybillWithDimensionsValueV5
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($alternateProductCode, true), gettype($alternateProductCode)), __LINE__);
         }
         $this->alternateProductCode = $alternateProductCode;
-        
+
         return $this;
     }
+
     /**
      * Get labelNumber value
      * @return string|null
@@ -71,10 +74,11 @@ class SkybillWithDimensionsValueV6 extends SkybillWithDimensionsValueV5
     {
         return $this->labelNumber;
     }
+
     /**
      * Set labelNumber value
      * @param string $labelNumber
-     * @return \StructType\SkybillWithDimensionsValueV6
+     * @return SkybillWithDimensionsValueV6
      */
     public function setLabelNumber(?string $labelNumber = null): self
     {
@@ -83,7 +87,7 @@ class SkybillWithDimensionsValueV6 extends SkybillWithDimensionsValueV5
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($labelNumber, true), gettype($labelNumber)), __LINE__);
         }
         $this->labelNumber = $labelNumber;
-        
+
         return $this;
     }
 }

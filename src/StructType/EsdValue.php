@@ -70,17 +70,9 @@ class EsdValue extends AbstractStructBase
      * @var float|null
      */
     protected ?float $width = null;
+
     /**
      * Constructor method for esdValue
-     * @uses EsdValue::setClosingDateTime()
-     * @uses EsdValue::setHeight()
-     * @uses EsdValue::setLength()
-     * @uses EsdValue::setRetrievalDateTime()
-     * @uses EsdValue::setShipperBuildingFloor()
-     * @uses EsdValue::setShipperCarriesCode()
-     * @uses EsdValue::setShipperServiceDirection()
-     * @uses EsdValue::setSpecificInstructions()
-     * @uses EsdValue::setWidth()
      * @param string $closingDateTime
      * @param float $height
      * @param float $length
@@ -90,6 +82,15 @@ class EsdValue extends AbstractStructBase
      * @param string $shipperServiceDirection
      * @param string $specificInstructions
      * @param float $width
+     * @uses EsdValue::setClosingDateTime()
+     * @uses EsdValue::setHeight()
+     * @uses EsdValue::setLength()
+     * @uses EsdValue::setRetrievalDateTime()
+     * @uses EsdValue::setShipperBuildingFloor()
+     * @uses EsdValue::setShipperCarriesCode()
+     * @uses EsdValue::setShipperServiceDirection()
+     * @uses EsdValue::setSpecificInstructions()
+     * @uses EsdValue::setWidth()
      */
     public function __construct(?string $closingDateTime = null, ?float $height = null, ?float $length = null, ?string $retrievalDateTime = null, ?string $shipperBuildingFloor = null, ?string $shipperCarriesCode = null, ?string $shipperServiceDirection = null, ?string $specificInstructions = null, ?float $width = null)
     {
@@ -104,6 +105,7 @@ class EsdValue extends AbstractStructBase
             ->setSpecificInstructions($specificInstructions)
             ->setWidth($width);
     }
+
     /**
      * Get closingDateTime value
      * @return string|null
@@ -112,10 +114,11 @@ class EsdValue extends AbstractStructBase
     {
         return $this->closingDateTime;
     }
+
     /**
      * Set closingDateTime value
      * @param string $closingDateTime
-     * @return \StructType\EsdValue
+     * @return EsdValue
      */
     public function setClosingDateTime(?string $closingDateTime = null): self
     {
@@ -124,9 +127,10 @@ class EsdValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($closingDateTime, true), gettype($closingDateTime)), __LINE__);
         }
         $this->closingDateTime = $closingDateTime;
-        
+
         return $this;
     }
+
     /**
      * Get height value
      * @return float|null
@@ -135,10 +139,11 @@ class EsdValue extends AbstractStructBase
     {
         return $this->height;
     }
+
     /**
      * Set height value
      * @param float $height
-     * @return \StructType\EsdValue
+     * @return EsdValue
      */
     public function setHeight(?float $height = null): self
     {
@@ -147,9 +152,10 @@ class EsdValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($height, true), gettype($height)), __LINE__);
         }
         $this->height = $height;
-        
+
         return $this;
     }
+
     /**
      * Get length value
      * @return float|null
@@ -158,10 +164,11 @@ class EsdValue extends AbstractStructBase
     {
         return $this->length;
     }
+
     /**
      * Set length value
      * @param float $length
-     * @return \StructType\EsdValue
+     * @return EsdValue
      */
     public function setLength(?float $length = null): self
     {
@@ -170,9 +177,10 @@ class EsdValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($length, true), gettype($length)), __LINE__);
         }
         $this->length = $length;
-        
+
         return $this;
     }
+
     /**
      * Get retrievalDateTime value
      * @return string|null
@@ -181,10 +189,11 @@ class EsdValue extends AbstractStructBase
     {
         return $this->retrievalDateTime;
     }
+
     /**
      * Set retrievalDateTime value
      * @param string $retrievalDateTime
-     * @return \StructType\EsdValue
+     * @return EsdValue
      */
     public function setRetrievalDateTime(?string $retrievalDateTime = null): self
     {
@@ -193,9 +202,10 @@ class EsdValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($retrievalDateTime, true), gettype($retrievalDateTime)), __LINE__);
         }
         $this->retrievalDateTime = $retrievalDateTime;
-        
+
         return $this;
     }
+
     /**
      * Get shipperBuildingFloor value
      * @return string|null
@@ -204,10 +214,11 @@ class EsdValue extends AbstractStructBase
     {
         return $this->shipperBuildingFloor;
     }
+
     /**
      * Set shipperBuildingFloor value
      * @param string $shipperBuildingFloor
-     * @return \StructType\EsdValue
+     * @return EsdValue
      */
     public function setShipperBuildingFloor(?string $shipperBuildingFloor = null): self
     {
@@ -216,9 +227,10 @@ class EsdValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperBuildingFloor, true), gettype($shipperBuildingFloor)), __LINE__);
         }
         $this->shipperBuildingFloor = $shipperBuildingFloor;
-        
+
         return $this;
     }
+
     /**
      * Get shipperCarriesCode value
      * @return string|null
@@ -227,10 +239,11 @@ class EsdValue extends AbstractStructBase
     {
         return $this->shipperCarriesCode;
     }
+
     /**
      * Set shipperCarriesCode value
      * @param string $shipperCarriesCode
-     * @return \StructType\EsdValue
+     * @return EsdValue
      */
     public function setShipperCarriesCode(?string $shipperCarriesCode = null): self
     {
@@ -239,9 +252,10 @@ class EsdValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperCarriesCode, true), gettype($shipperCarriesCode)), __LINE__);
         }
         $this->shipperCarriesCode = $shipperCarriesCode;
-        
+
         return $this;
     }
+
     /**
      * Get shipperServiceDirection value
      * @return string|null
@@ -250,10 +264,11 @@ class EsdValue extends AbstractStructBase
     {
         return $this->shipperServiceDirection;
     }
+
     /**
      * Set shipperServiceDirection value
      * @param string $shipperServiceDirection
-     * @return \StructType\EsdValue
+     * @return EsdValue
      */
     public function setShipperServiceDirection(?string $shipperServiceDirection = null): self
     {
@@ -262,9 +277,10 @@ class EsdValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperServiceDirection, true), gettype($shipperServiceDirection)), __LINE__);
         }
         $this->shipperServiceDirection = $shipperServiceDirection;
-        
+
         return $this;
     }
+
     /**
      * Get specificInstructions value
      * @return string|null
@@ -273,10 +289,11 @@ class EsdValue extends AbstractStructBase
     {
         return $this->specificInstructions;
     }
+
     /**
      * Set specificInstructions value
      * @param string $specificInstructions
-     * @return \StructType\EsdValue
+     * @return EsdValue
      */
     public function setSpecificInstructions(?string $specificInstructions = null): self
     {
@@ -285,9 +302,10 @@ class EsdValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($specificInstructions, true), gettype($specificInstructions)), __LINE__);
         }
         $this->specificInstructions = $specificInstructions;
-        
+
         return $this;
     }
+
     /**
      * Get width value
      * @return float|null
@@ -296,10 +314,11 @@ class EsdValue extends AbstractStructBase
     {
         return $this->width;
     }
+
     /**
      * Set width value
      * @param float $width
-     * @return \StructType\EsdValue
+     * @return EsdValue
      */
     public function setWidth(?float $width = null): self
     {
@@ -308,7 +327,7 @@ class EsdValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($width, true), gettype($width)), __LINE__);
         }
         $this->width = $width;
-        
+
         return $this;
     }
 }

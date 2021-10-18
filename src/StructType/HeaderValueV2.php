@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for headerValueV2 StructType
@@ -20,16 +19,18 @@ class HeaderValueV2 extends HeaderValue
      * @var string|null
      */
     protected ?string $iv4OrderId = null;
+
     /**
      * Constructor method for headerValueV2
-     * @uses HeaderValueV2::setIv4OrderId()
      * @param string $iv4OrderId
+     * @uses HeaderValueV2::setIv4OrderId()
      */
     public function __construct(?string $iv4OrderId = null)
     {
         $this
             ->setIv4OrderId($iv4OrderId);
     }
+
     /**
      * Get iv4OrderId value
      * @return string|null
@@ -38,10 +39,11 @@ class HeaderValueV2 extends HeaderValue
     {
         return $this->iv4OrderId;
     }
+
     /**
      * Set iv4OrderId value
      * @param string $iv4OrderId
-     * @return \StructType\HeaderValueV2
+     * @return HeaderValueV2
      */
     public function setIv4OrderId(?string $iv4OrderId = null): self
     {
@@ -50,7 +52,7 @@ class HeaderValueV2 extends HeaderValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($iv4OrderId, true), gettype($iv4OrderId)), __LINE__);
         }
         $this->iv4OrderId = $iv4OrderId;
-        
+
         return $this;
     }
 }

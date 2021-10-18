@@ -19,37 +19,37 @@ class ShippingMultiParcel extends AbstractStructBase
      * The esdValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\EsdValue3|null
+     * @var EsdValue3|null
      */
-    protected ?\StructType\EsdValue3 $esdValue = null;
+    protected ?EsdValue3 $esdValue = null;
     /**
      * The headerValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HeaderValue|null
+     * @var HeaderValue|null
      */
-    protected ?\StructType\HeaderValue $headerValue = null;
+    protected ?HeaderValue $headerValue = null;
     /**
      * The shipperValue
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ShipperValue[]
+     * @var ShipperValue[]
      */
     protected ?array $shipperValue = null;
     /**
      * The customerValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CustomerValue|null
+     * @var CustomerValue|null
      */
-    protected ?\StructType\CustomerValue $customerValue = null;
+    protected ?CustomerValue $customerValue = null;
     /**
      * The recipientValue
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RecipientValue[]
+     * @var RecipientValue[]
      */
     protected ?array $recipientValue = null;
     /**
@@ -57,7 +57,7 @@ class ShippingMultiParcel extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RefValue[]
+     * @var RefValue[]
      */
     protected ?array $refValue = null;
     /**
@@ -65,16 +65,16 @@ class ShippingMultiParcel extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\SkybillWithDimensionsValueV3[]
+     * @var SkybillWithDimensionsValueV3[]
      */
     protected ?array $skybillValue = null;
     /**
      * The skybillParamsValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SkybillParamsValueV2|null
+     * @var SkybillParamsValueV2|null
      */
-    protected ?\StructType\SkybillParamsValueV2 $skybillParamsValue = null;
+    protected ?SkybillParamsValueV2 $skybillParamsValue = null;
     /**
      * The password
      * Meta information extracted from the WSDL
@@ -113,11 +113,26 @@ class ShippingMultiParcel extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ScheduledValue[]
+     * @var ScheduledValue[]
      */
     protected ?array $scheduledValue = null;
+
     /**
      * Constructor method for shippingMultiParcel
+     * @param EsdValue3 $esdValue
+     * @param HeaderValue $headerValue
+     * @param ShipperValue[] $shipperValue
+     * @param CustomerValue $customerValue
+     * @param RecipientValue[] $recipientValue
+     * @param RefValue[] $refValue
+     * @param SkybillWithDimensionsValueV3[] $skybillValue
+     * @param SkybillParamsValueV2 $skybillParamsValue
+     * @param string $password
+     * @param string $modeRetour
+     * @param int $numberOfParcel
+     * @param string $version
+     * @param string $multiParcel
+     * @param ScheduledValue[] $scheduledValue
      * @uses ShippingMultiParcel::setEsdValue()
      * @uses ShippingMultiParcel::setHeaderValue()
      * @uses ShippingMultiParcel::setShipperValue()
@@ -132,22 +147,8 @@ class ShippingMultiParcel extends AbstractStructBase
      * @uses ShippingMultiParcel::setVersion()
      * @uses ShippingMultiParcel::setMultiParcel()
      * @uses ShippingMultiParcel::setScheduledValue()
-     * @param \StructType\EsdValue3 $esdValue
-     * @param \StructType\HeaderValue $headerValue
-     * @param \StructType\ShipperValue[] $shipperValue
-     * @param \StructType\CustomerValue $customerValue
-     * @param \StructType\RecipientValue[] $recipientValue
-     * @param \StructType\RefValue[] $refValue
-     * @param \StructType\SkybillWithDimensionsValueV3[] $skybillValue
-     * @param \StructType\SkybillParamsValueV2 $skybillParamsValue
-     * @param string $password
-     * @param string $modeRetour
-     * @param int $numberOfParcel
-     * @param string $version
-     * @param string $multiParcel
-     * @param \StructType\ScheduledValue[] $scheduledValue
      */
-    public function __construct(?\StructType\EsdValue3 $esdValue = null, ?\StructType\HeaderValue $headerValue = null, ?array $shipperValue = null, ?\StructType\CustomerValue $customerValue = null, ?array $recipientValue = null, ?array $refValue = null, ?array $skybillValue = null, ?\StructType\SkybillParamsValueV2 $skybillParamsValue = null, ?string $password = null, ?string $modeRetour = null, ?int $numberOfParcel = null, ?string $version = null, ?string $multiParcel = null, ?array $scheduledValue = null)
+    public function __construct(?EsdValue3 $esdValue = null, ?HeaderValue $headerValue = null, ?array $shipperValue = null, ?CustomerValue $customerValue = null, ?array $recipientValue = null, ?array $refValue = null, ?array $skybillValue = null, ?SkybillParamsValueV2 $skybillParamsValue = null, ?string $password = null, ?string $modeRetour = null, ?int $numberOfParcel = null, ?string $version = null, ?string $multiParcel = null, ?array $scheduledValue = null)
     {
         $this
             ->setEsdValue($esdValue)
@@ -165,52 +166,58 @@ class ShippingMultiParcel extends AbstractStructBase
             ->setMultiParcel($multiParcel)
             ->setScheduledValue($scheduledValue);
     }
+
     /**
      * Get esdValue value
-     * @return \StructType\EsdValue3|null
+     * @return EsdValue3|null
      */
-    public function getEsdValue(): ?\StructType\EsdValue3
+    public function getEsdValue(): ?EsdValue3
     {
         return $this->esdValue;
     }
+
     /**
      * Set esdValue value
-     * @param \StructType\EsdValue3 $esdValue
-     * @return \StructType\ShippingMultiParcel
+     * @param EsdValue3 $esdValue
+     * @return ShippingMultiParcel
      */
-    public function setEsdValue(?\StructType\EsdValue3 $esdValue = null): self
+    public function setEsdValue(?EsdValue3 $esdValue = null): self
     {
         $this->esdValue = $esdValue;
-        
+
         return $this;
     }
+
     /**
      * Get headerValue value
-     * @return \StructType\HeaderValue|null
+     * @return HeaderValue|null
      */
-    public function getHeaderValue(): ?\StructType\HeaderValue
+    public function getHeaderValue(): ?HeaderValue
     {
         return $this->headerValue;
     }
+
     /**
      * Set headerValue value
-     * @param \StructType\HeaderValue $headerValue
-     * @return \StructType\ShippingMultiParcel
+     * @param HeaderValue $headerValue
+     * @return ShippingMultiParcel
      */
-    public function setHeaderValue(?\StructType\HeaderValue $headerValue = null): self
+    public function setHeaderValue(?HeaderValue $headerValue = null): self
     {
         $this->headerValue = $headerValue;
-        
+
         return $this;
     }
+
     /**
      * Get shipperValue value
-     * @return \StructType\ShipperValue[]
+     * @return ShipperValue[]
      */
     public function getShipperValue(): ?array
     {
         return $this->shipperValue;
     }
+
     /**
      * This method is responsible for validating the values passed to the setShipperValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setShipperValue method
@@ -226,7 +233,7 @@ class ShippingMultiParcel extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $shippingMultiParcelShipperValueItem) {
             // validation for constraint: itemType
-            if (!$shippingMultiParcelShipperValueItem instanceof \StructType\ShipperValue) {
+            if (!$shippingMultiParcelShipperValueItem instanceof ShipperValue) {
                 $invalidValues[] = is_object($shippingMultiParcelShipperValueItem) ? get_class($shippingMultiParcelShipperValueItem) : sprintf('%s(%s)', gettype($shippingMultiParcelShipperValueItem), var_export($shippingMultiParcelShipperValueItem, true));
             }
         }
@@ -234,14 +241,15 @@ class ShippingMultiParcel extends AbstractStructBase
             $message = sprintf('The shipperValue property can only contain items of type \StructType\ShipperValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
+
     /**
      * Set shipperValue value
+     * @param ShipperValue[] $shipperValue
+     * @return ShippingMultiParcel
      * @throws InvalidArgumentException
-     * @param \StructType\ShipperValue[] $shipperValue
-     * @return \StructType\ShippingMultiParcel
      */
     public function setShipperValue(?array $shipperValue = null): self
     {
@@ -250,52 +258,57 @@ class ShippingMultiParcel extends AbstractStructBase
             throw new InvalidArgumentException($shipperValueArrayErrorMessage, __LINE__);
         }
         $this->shipperValue = $shipperValue;
-        
+
         return $this;
     }
+
     /**
      * Add item to shipperValue value
+     * @param ShipperValue $item
+     * @return ShippingMultiParcel
      * @throws InvalidArgumentException
-     * @param \StructType\ShipperValue $item
-     * @return \StructType\ShippingMultiParcel
      */
-    public function addToShipperValue(\StructType\ShipperValue $item): self
+    public function addToShipperValue(ShipperValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ShipperValue) {
+        if (!$item instanceof ShipperValue) {
             throw new InvalidArgumentException(sprintf('The shipperValue property can only contain items of type \StructType\ShipperValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->shipperValue[] = $item;
-        
+
         return $this;
     }
+
     /**
      * Get customerValue value
-     * @return \StructType\CustomerValue|null
+     * @return CustomerValue|null
      */
-    public function getCustomerValue(): ?\StructType\CustomerValue
+    public function getCustomerValue(): ?CustomerValue
     {
         return $this->customerValue;
     }
+
     /**
      * Set customerValue value
-     * @param \StructType\CustomerValue $customerValue
-     * @return \StructType\ShippingMultiParcel
+     * @param CustomerValue $customerValue
+     * @return ShippingMultiParcel
      */
-    public function setCustomerValue(?\StructType\CustomerValue $customerValue = null): self
+    public function setCustomerValue(?CustomerValue $customerValue = null): self
     {
         $this->customerValue = $customerValue;
-        
+
         return $this;
     }
+
     /**
      * Get recipientValue value
-     * @return \StructType\RecipientValue[]
+     * @return RecipientValue[]
      */
     public function getRecipientValue(): ?array
     {
         return $this->recipientValue;
     }
+
     /**
      * This method is responsible for validating the values passed to the setRecipientValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setRecipientValue method
@@ -311,7 +324,7 @@ class ShippingMultiParcel extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $shippingMultiParcelRecipientValueItem) {
             // validation for constraint: itemType
-            if (!$shippingMultiParcelRecipientValueItem instanceof \StructType\RecipientValue) {
+            if (!$shippingMultiParcelRecipientValueItem instanceof RecipientValue) {
                 $invalidValues[] = is_object($shippingMultiParcelRecipientValueItem) ? get_class($shippingMultiParcelRecipientValueItem) : sprintf('%s(%s)', gettype($shippingMultiParcelRecipientValueItem), var_export($shippingMultiParcelRecipientValueItem, true));
             }
         }
@@ -319,14 +332,15 @@ class ShippingMultiParcel extends AbstractStructBase
             $message = sprintf('The recipientValue property can only contain items of type \StructType\RecipientValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
+
     /**
      * Set recipientValue value
+     * @param RecipientValue[] $recipientValue
+     * @return ShippingMultiParcel
      * @throws InvalidArgumentException
-     * @param \StructType\RecipientValue[] $recipientValue
-     * @return \StructType\ShippingMultiParcel
      */
     public function setRecipientValue(?array $recipientValue = null): self
     {
@@ -335,33 +349,36 @@ class ShippingMultiParcel extends AbstractStructBase
             throw new InvalidArgumentException($recipientValueArrayErrorMessage, __LINE__);
         }
         $this->recipientValue = $recipientValue;
-        
+
         return $this;
     }
+
     /**
      * Add item to recipientValue value
+     * @param RecipientValue $item
+     * @return ShippingMultiParcel
      * @throws InvalidArgumentException
-     * @param \StructType\RecipientValue $item
-     * @return \StructType\ShippingMultiParcel
      */
-    public function addToRecipientValue(\StructType\RecipientValue $item): self
+    public function addToRecipientValue(RecipientValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RecipientValue) {
+        if (!$item instanceof RecipientValue) {
             throw new InvalidArgumentException(sprintf('The recipientValue property can only contain items of type \StructType\RecipientValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->recipientValue[] = $item;
-        
+
         return $this;
     }
+
     /**
      * Get refValue value
-     * @return \StructType\RefValue[]
+     * @return RefValue[]
      */
     public function getRefValue(): ?array
     {
         return $this->refValue;
     }
+
     /**
      * This method is responsible for validating the values passed to the setRefValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setRefValue method
@@ -377,7 +394,7 @@ class ShippingMultiParcel extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $shippingMultiParcelRefValueItem) {
             // validation for constraint: itemType
-            if (!$shippingMultiParcelRefValueItem instanceof \StructType\RefValue) {
+            if (!$shippingMultiParcelRefValueItem instanceof RefValue) {
                 $invalidValues[] = is_object($shippingMultiParcelRefValueItem) ? get_class($shippingMultiParcelRefValueItem) : sprintf('%s(%s)', gettype($shippingMultiParcelRefValueItem), var_export($shippingMultiParcelRefValueItem, true));
             }
         }
@@ -385,14 +402,15 @@ class ShippingMultiParcel extends AbstractStructBase
             $message = sprintf('The refValue property can only contain items of type \StructType\RefValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
+
     /**
      * Set refValue value
+     * @param RefValue[] $refValue
+     * @return ShippingMultiParcel
      * @throws InvalidArgumentException
-     * @param \StructType\RefValue[] $refValue
-     * @return \StructType\ShippingMultiParcel
      */
     public function setRefValue(?array $refValue = null): self
     {
@@ -401,33 +419,36 @@ class ShippingMultiParcel extends AbstractStructBase
             throw new InvalidArgumentException($refValueArrayErrorMessage, __LINE__);
         }
         $this->refValue = $refValue;
-        
+
         return $this;
     }
+
     /**
      * Add item to refValue value
+     * @param RefValue $item
+     * @return ShippingMultiParcel
      * @throws InvalidArgumentException
-     * @param \StructType\RefValue $item
-     * @return \StructType\ShippingMultiParcel
      */
-    public function addToRefValue(\StructType\RefValue $item): self
+    public function addToRefValue(RefValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RefValue) {
+        if (!$item instanceof RefValue) {
             throw new InvalidArgumentException(sprintf('The refValue property can only contain items of type \StructType\RefValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->refValue[] = $item;
-        
+
         return $this;
     }
+
     /**
      * Get skybillValue value
-     * @return \StructType\SkybillWithDimensionsValueV3[]
+     * @return SkybillWithDimensionsValueV3[]
      */
     public function getSkybillValue(): ?array
     {
         return $this->skybillValue;
     }
+
     /**
      * This method is responsible for validating the values passed to the setSkybillValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSkybillValue method
@@ -443,7 +464,7 @@ class ShippingMultiParcel extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $shippingMultiParcelSkybillValueItem) {
             // validation for constraint: itemType
-            if (!$shippingMultiParcelSkybillValueItem instanceof \StructType\SkybillWithDimensionsValueV3) {
+            if (!$shippingMultiParcelSkybillValueItem instanceof SkybillWithDimensionsValueV3) {
                 $invalidValues[] = is_object($shippingMultiParcelSkybillValueItem) ? get_class($shippingMultiParcelSkybillValueItem) : sprintf('%s(%s)', gettype($shippingMultiParcelSkybillValueItem), var_export($shippingMultiParcelSkybillValueItem, true));
             }
         }
@@ -451,14 +472,15 @@ class ShippingMultiParcel extends AbstractStructBase
             $message = sprintf('The skybillValue property can only contain items of type \StructType\SkybillWithDimensionsValueV3, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
+
     /**
      * Set skybillValue value
+     * @param SkybillWithDimensionsValueV3[] $skybillValue
+     * @return ShippingMultiParcel
      * @throws InvalidArgumentException
-     * @param \StructType\SkybillWithDimensionsValueV3[] $skybillValue
-     * @return \StructType\ShippingMultiParcel
      */
     public function setSkybillValue(?array $skybillValue = null): self
     {
@@ -467,44 +489,48 @@ class ShippingMultiParcel extends AbstractStructBase
             throw new InvalidArgumentException($skybillValueArrayErrorMessage, __LINE__);
         }
         $this->skybillValue = $skybillValue;
-        
+
         return $this;
     }
+
     /**
      * Add item to skybillValue value
+     * @param SkybillWithDimensionsValueV3 $item
+     * @return ShippingMultiParcel
      * @throws InvalidArgumentException
-     * @param \StructType\SkybillWithDimensionsValueV3 $item
-     * @return \StructType\ShippingMultiParcel
      */
-    public function addToSkybillValue(\StructType\SkybillWithDimensionsValueV3 $item): self
+    public function addToSkybillValue(SkybillWithDimensionsValueV3 $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SkybillWithDimensionsValueV3) {
+        if (!$item instanceof SkybillWithDimensionsValueV3) {
             throw new InvalidArgumentException(sprintf('The skybillValue property can only contain items of type \StructType\SkybillWithDimensionsValueV3, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->skybillValue[] = $item;
-        
+
         return $this;
     }
+
     /**
      * Get skybillParamsValue value
-     * @return \StructType\SkybillParamsValueV2|null
+     * @return SkybillParamsValueV2|null
      */
-    public function getSkybillParamsValue(): ?\StructType\SkybillParamsValueV2
+    public function getSkybillParamsValue(): ?SkybillParamsValueV2
     {
         return $this->skybillParamsValue;
     }
+
     /**
      * Set skybillParamsValue value
-     * @param \StructType\SkybillParamsValueV2 $skybillParamsValue
-     * @return \StructType\ShippingMultiParcel
+     * @param SkybillParamsValueV2 $skybillParamsValue
+     * @return ShippingMultiParcel
      */
-    public function setSkybillParamsValue(?\StructType\SkybillParamsValueV2 $skybillParamsValue = null): self
+    public function setSkybillParamsValue(?SkybillParamsValueV2 $skybillParamsValue = null): self
     {
         $this->skybillParamsValue = $skybillParamsValue;
-        
+
         return $this;
     }
+
     /**
      * Get password value
      * @return string|null
@@ -513,10 +539,11 @@ class ShippingMultiParcel extends AbstractStructBase
     {
         return $this->password;
     }
+
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\ShippingMultiParcel
+     * @return ShippingMultiParcel
      */
     public function setPassword(?string $password = null): self
     {
@@ -525,9 +552,10 @@ class ShippingMultiParcel extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($password, true), gettype($password)), __LINE__);
         }
         $this->password = $password;
-        
+
         return $this;
     }
+
     /**
      * Get modeRetour value
      * @return string|null
@@ -536,10 +564,11 @@ class ShippingMultiParcel extends AbstractStructBase
     {
         return $this->modeRetour;
     }
+
     /**
      * Set modeRetour value
      * @param string $modeRetour
-     * @return \StructType\ShippingMultiParcel
+     * @return ShippingMultiParcel
      */
     public function setModeRetour(?string $modeRetour = null): self
     {
@@ -548,9 +577,10 @@ class ShippingMultiParcel extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($modeRetour, true), gettype($modeRetour)), __LINE__);
         }
         $this->modeRetour = $modeRetour;
-        
+
         return $this;
     }
+
     /**
      * Get numberOfParcel value
      * @return int|null
@@ -559,10 +589,11 @@ class ShippingMultiParcel extends AbstractStructBase
     {
         return $this->numberOfParcel;
     }
+
     /**
      * Set numberOfParcel value
      * @param int $numberOfParcel
-     * @return \StructType\ShippingMultiParcel
+     * @return ShippingMultiParcel
      */
     public function setNumberOfParcel(?int $numberOfParcel = null): self
     {
@@ -571,9 +602,10 @@ class ShippingMultiParcel extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($numberOfParcel, true), gettype($numberOfParcel)), __LINE__);
         }
         $this->numberOfParcel = $numberOfParcel;
-        
+
         return $this;
     }
+
     /**
      * Get version value
      * @return string|null
@@ -582,10 +614,11 @@ class ShippingMultiParcel extends AbstractStructBase
     {
         return $this->version;
     }
+
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\ShippingMultiParcel
+     * @return ShippingMultiParcel
      */
     public function setVersion(?string $version = null): self
     {
@@ -594,9 +627,10 @@ class ShippingMultiParcel extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($version, true), gettype($version)), __LINE__);
         }
         $this->version = $version;
-        
+
         return $this;
     }
+
     /**
      * Get multiParcel value
      * @return string|null
@@ -605,10 +639,11 @@ class ShippingMultiParcel extends AbstractStructBase
     {
         return $this->multiParcel;
     }
+
     /**
      * Set multiParcel value
      * @param string $multiParcel
-     * @return \StructType\ShippingMultiParcel
+     * @return ShippingMultiParcel
      */
     public function setMultiParcel(?string $multiParcel = null): self
     {
@@ -617,17 +652,19 @@ class ShippingMultiParcel extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($multiParcel, true), gettype($multiParcel)), __LINE__);
         }
         $this->multiParcel = $multiParcel;
-        
+
         return $this;
     }
+
     /**
      * Get scheduledValue value
-     * @return \StructType\ScheduledValue[]
+     * @return ScheduledValue[]
      */
     public function getScheduledValue(): ?array
     {
         return $this->scheduledValue;
     }
+
     /**
      * This method is responsible for validating the values passed to the setScheduledValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setScheduledValue method
@@ -643,7 +680,7 @@ class ShippingMultiParcel extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $shippingMultiParcelScheduledValueItem) {
             // validation for constraint: itemType
-            if (!$shippingMultiParcelScheduledValueItem instanceof \StructType\ScheduledValue) {
+            if (!$shippingMultiParcelScheduledValueItem instanceof ScheduledValue) {
                 $invalidValues[] = is_object($shippingMultiParcelScheduledValueItem) ? get_class($shippingMultiParcelScheduledValueItem) : sprintf('%s(%s)', gettype($shippingMultiParcelScheduledValueItem), var_export($shippingMultiParcelScheduledValueItem, true));
             }
         }
@@ -651,14 +688,15 @@ class ShippingMultiParcel extends AbstractStructBase
             $message = sprintf('The scheduledValue property can only contain items of type \StructType\ScheduledValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
+
     /**
      * Set scheduledValue value
+     * @param ScheduledValue[] $scheduledValue
+     * @return ShippingMultiParcel
      * @throws InvalidArgumentException
-     * @param \StructType\ScheduledValue[] $scheduledValue
-     * @return \StructType\ShippingMultiParcel
      */
     public function setScheduledValue(?array $scheduledValue = null): self
     {
@@ -667,23 +705,24 @@ class ShippingMultiParcel extends AbstractStructBase
             throw new InvalidArgumentException($scheduledValueArrayErrorMessage, __LINE__);
         }
         $this->scheduledValue = $scheduledValue;
-        
+
         return $this;
     }
+
     /**
      * Add item to scheduledValue value
+     * @param ScheduledValue $item
+     * @return ShippingMultiParcel
      * @throws InvalidArgumentException
-     * @param \StructType\ScheduledValue $item
-     * @return \StructType\ShippingMultiParcel
      */
-    public function addToScheduledValue(\StructType\ScheduledValue $item): self
+    public function addToScheduledValue(ScheduledValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ScheduledValue) {
+        if (!$item instanceof ScheduledValue) {
             throw new InvalidArgumentException(sprintf('The scheduledValue property can only contain items of type \StructType\ScheduledValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->scheduledValue[] = $item;
-        
+
         return $this;
     }
 }

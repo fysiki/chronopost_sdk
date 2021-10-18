@@ -59,11 +59,19 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\ResultParcelValue[]
+     * @var ResultParcelValue[]
      */
     protected ?array $resultParcelValue = null;
+
     /**
      * Constructor method for resultReservationMultiParcelExpeditionValue
+     * @param string $eSDFullNumber
+     * @param string $eSDNumber
+     * @param int $errorCode
+     * @param string $errorMessage
+     * @param string $pickupDate
+     * @param string $reservationNumber
+     * @param ResultParcelValue[] $resultParcelValue
      * @uses ResultReservationMultiParcelExpeditionValue::setESDFullNumber()
      * @uses ResultReservationMultiParcelExpeditionValue::setESDNumber()
      * @uses ResultReservationMultiParcelExpeditionValue::setErrorCode()
@@ -71,13 +79,6 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
      * @uses ResultReservationMultiParcelExpeditionValue::setPickupDate()
      * @uses ResultReservationMultiParcelExpeditionValue::setReservationNumber()
      * @uses ResultReservationMultiParcelExpeditionValue::setResultParcelValue()
-     * @param string $eSDFullNumber
-     * @param string $eSDNumber
-     * @param int $errorCode
-     * @param string $errorMessage
-     * @param string $pickupDate
-     * @param string $reservationNumber
-     * @param \StructType\ResultParcelValue[] $resultParcelValue
      */
     public function __construct(?string $eSDFullNumber = null, ?string $eSDNumber = null, ?int $errorCode = null, ?string $errorMessage = null, ?string $pickupDate = null, ?string $reservationNumber = null, ?array $resultParcelValue = null)
     {
@@ -90,6 +91,7 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
             ->setReservationNumber($reservationNumber)
             ->setResultParcelValue($resultParcelValue);
     }
+
     /**
      * Get ESDFullNumber value
      * @return string|null
@@ -98,10 +100,11 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     {
         return $this->ESDFullNumber;
     }
+
     /**
      * Set ESDFullNumber value
      * @param string $eSDFullNumber
-     * @return \StructType\ResultReservationMultiParcelExpeditionValue
+     * @return ResultReservationMultiParcelExpeditionValue
      */
     public function setESDFullNumber(?string $eSDFullNumber = null): self
     {
@@ -110,9 +113,10 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($eSDFullNumber, true), gettype($eSDFullNumber)), __LINE__);
         }
         $this->ESDFullNumber = $eSDFullNumber;
-        
+
         return $this;
     }
+
     /**
      * Get ESDNumber value
      * @return string|null
@@ -121,10 +125,11 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     {
         return $this->ESDNumber;
     }
+
     /**
      * Set ESDNumber value
      * @param string $eSDNumber
-     * @return \StructType\ResultReservationMultiParcelExpeditionValue
+     * @return ResultReservationMultiParcelExpeditionValue
      */
     public function setESDNumber(?string $eSDNumber = null): self
     {
@@ -133,9 +138,10 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($eSDNumber, true), gettype($eSDNumber)), __LINE__);
         }
         $this->ESDNumber = $eSDNumber;
-        
+
         return $this;
     }
+
     /**
      * Get errorCode value
      * @return int|null
@@ -144,10 +150,11 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     {
         return $this->errorCode;
     }
+
     /**
      * Set errorCode value
      * @param int $errorCode
-     * @return \StructType\ResultReservationMultiParcelExpeditionValue
+     * @return ResultReservationMultiParcelExpeditionValue
      */
     public function setErrorCode(?int $errorCode = null): self
     {
@@ -156,9 +163,10 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($errorCode, true), gettype($errorCode)), __LINE__);
         }
         $this->errorCode = $errorCode;
-        
+
         return $this;
     }
+
     /**
      * Get errorMessage value
      * @return string|null
@@ -167,10 +175,11 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     {
         return $this->errorMessage;
     }
+
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \StructType\ResultReservationMultiParcelExpeditionValue
+     * @return ResultReservationMultiParcelExpeditionValue
      */
     public function setErrorMessage(?string $errorMessage = null): self
     {
@@ -179,9 +188,10 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($errorMessage, true), gettype($errorMessage)), __LINE__);
         }
         $this->errorMessage = $errorMessage;
-        
+
         return $this;
     }
+
     /**
      * Get pickupDate value
      * @return string|null
@@ -190,10 +200,11 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     {
         return $this->pickupDate;
     }
+
     /**
      * Set pickupDate value
      * @param string $pickupDate
-     * @return \StructType\ResultReservationMultiParcelExpeditionValue
+     * @return ResultReservationMultiParcelExpeditionValue
      */
     public function setPickupDate(?string $pickupDate = null): self
     {
@@ -202,9 +213,10 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($pickupDate, true), gettype($pickupDate)), __LINE__);
         }
         $this->pickupDate = $pickupDate;
-        
+
         return $this;
     }
+
     /**
      * Get reservationNumber value
      * @return string|null
@@ -213,10 +225,11 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     {
         return $this->reservationNumber;
     }
+
     /**
      * Set reservationNumber value
      * @param string $reservationNumber
-     * @return \StructType\ResultReservationMultiParcelExpeditionValue
+     * @return ResultReservationMultiParcelExpeditionValue
      */
     public function setReservationNumber(?string $reservationNumber = null): self
     {
@@ -225,20 +238,22 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reservationNumber, true), gettype($reservationNumber)), __LINE__);
         }
         $this->reservationNumber = $reservationNumber;
-        
+
         return $this;
     }
+
     /**
      * Get resultParcelValue value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\ResultParcelValue[]
+     * @return ResultParcelValue[]
      */
     public function getResultParcelValue(): ?array
     {
         return isset($this->resultParcelValue) ? $this->resultParcelValue : null;
     }
+
     /**
      * This method is responsible for validating the values passed to the setResultParcelValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setResultParcelValue method
@@ -254,7 +269,7 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $resultReservationMultiParcelExpeditionValueResultParcelValueItem) {
             // validation for constraint: itemType
-            if (!$resultReservationMultiParcelExpeditionValueResultParcelValueItem instanceof \StructType\ResultParcelValue) {
+            if (!$resultReservationMultiParcelExpeditionValueResultParcelValueItem instanceof ResultParcelValue) {
                 $invalidValues[] = is_object($resultReservationMultiParcelExpeditionValueResultParcelValueItem) ? get_class($resultReservationMultiParcelExpeditionValueResultParcelValueItem) : sprintf('%s(%s)', gettype($resultReservationMultiParcelExpeditionValueResultParcelValueItem), var_export($resultReservationMultiParcelExpeditionValueResultParcelValueItem, true));
             }
         }
@@ -262,16 +277,17 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
             $message = sprintf('The resultParcelValue property can only contain items of type \StructType\ResultParcelValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
+
     /**
      * Set resultParcelValue value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
+     * @param ResultParcelValue[] $resultParcelValue
+     * @return ResultReservationMultiParcelExpeditionValue
      * @throws InvalidArgumentException
-     * @param \StructType\ResultParcelValue[] $resultParcelValue
-     * @return \StructType\ResultReservationMultiParcelExpeditionValue
      */
     public function setResultParcelValue(?array $resultParcelValue = null): self
     {
@@ -284,23 +300,24 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
         } else {
             $this->resultParcelValue = $resultParcelValue;
         }
-        
+
         return $this;
     }
+
     /**
      * Add item to resultParcelValue value
+     * @param ResultParcelValue $item
+     * @return ResultReservationMultiParcelExpeditionValue
      * @throws InvalidArgumentException
-     * @param \StructType\ResultParcelValue $item
-     * @return \StructType\ResultReservationMultiParcelExpeditionValue
      */
-    public function addToResultParcelValue(\StructType\ResultParcelValue $item): self
+    public function addToResultParcelValue(ResultParcelValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ResultParcelValue) {
+        if (!$item instanceof ResultParcelValue) {
             throw new InvalidArgumentException(sprintf('The resultParcelValue property can only contain items of type \StructType\ResultParcelValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->resultParcelValue[] = $item;
-        
+
         return $this;
     }
 }

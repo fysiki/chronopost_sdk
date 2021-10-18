@@ -18,27 +18,30 @@ class Statut extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Entry[]
+     * @var Entry[]
      */
     protected ?array $entry = null;
+
     /**
      * Constructor method for statut
+     * @param Entry[] $entry
      * @uses Statut::setEntry()
-     * @param \StructType\Entry[] $entry
      */
     public function __construct(?array $entry = null)
     {
         $this
             ->setEntry($entry);
     }
+
     /**
      * Get entry value
-     * @return \StructType\Entry[]
+     * @return Entry[]
      */
     public function getEntry(): ?array
     {
         return $this->entry;
     }
+
     /**
      * This method is responsible for validating the values passed to the setEntry method
      * This method is willingly generated in order to preserve the one-line inline validation within the setEntry method
@@ -54,7 +57,7 @@ class Statut extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $statutEntryItem) {
             // validation for constraint: itemType
-            if (!$statutEntryItem instanceof \StructType\Entry) {
+            if (!$statutEntryItem instanceof Entry) {
                 $invalidValues[] = is_object($statutEntryItem) ? get_class($statutEntryItem) : sprintf('%s(%s)', gettype($statutEntryItem), var_export($statutEntryItem, true));
             }
         }
@@ -62,14 +65,15 @@ class Statut extends AbstractStructBase
             $message = sprintf('The entry property can only contain items of type \StructType\Entry, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
+
     /**
      * Set entry value
+     * @param Entry[] $entry
+     * @return Statut
      * @throws InvalidArgumentException
-     * @param \StructType\Entry[] $entry
-     * @return \StructType\Statut
      */
     public function setEntry(?array $entry = null): self
     {
@@ -78,23 +82,24 @@ class Statut extends AbstractStructBase
             throw new InvalidArgumentException($entryArrayErrorMessage, __LINE__);
         }
         $this->entry = $entry;
-        
+
         return $this;
     }
+
     /**
      * Add item to entry value
+     * @param Entry $item
+     * @return Statut
      * @throws InvalidArgumentException
-     * @param \StructType\Entry $item
-     * @return \StructType\Statut
      */
-    public function addToEntry(\StructType\Entry $item): self
+    public function addToEntry(Entry $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Entry) {
+        if (!$item instanceof Entry) {
             throw new InvalidArgumentException(sprintf('The entry property can only contain items of type \StructType\Entry, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->entry[] = $item;
-        
+
         return $this;
     }
 }

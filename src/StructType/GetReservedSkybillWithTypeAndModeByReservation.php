@@ -29,12 +29,13 @@ class GetReservedSkybillWithTypeAndModeByReservation extends AbstractStructBase
      * @var string|null
      */
     protected ?string $mode = null;
+
     /**
      * Constructor method for getReservedSkybillWithTypeAndModeByReservation
-     * @uses GetReservedSkybillWithTypeAndModeByReservation::setReservationNumber()
-     * @uses GetReservedSkybillWithTypeAndModeByReservation::setMode()
      * @param string $reservationNumber
      * @param string $mode
+     * @uses GetReservedSkybillWithTypeAndModeByReservation::setReservationNumber()
+     * @uses GetReservedSkybillWithTypeAndModeByReservation::setMode()
      */
     public function __construct(?string $reservationNumber = null, ?string $mode = null)
     {
@@ -42,6 +43,7 @@ class GetReservedSkybillWithTypeAndModeByReservation extends AbstractStructBase
             ->setReservationNumber($reservationNumber)
             ->setMode($mode);
     }
+
     /**
      * Get reservationNumber value
      * @return string|null
@@ -50,10 +52,11 @@ class GetReservedSkybillWithTypeAndModeByReservation extends AbstractStructBase
     {
         return $this->reservationNumber;
     }
+
     /**
      * Set reservationNumber value
      * @param string $reservationNumber
-     * @return \StructType\GetReservedSkybillWithTypeAndModeByReservation
+     * @return GetReservedSkybillWithTypeAndModeByReservation
      */
     public function setReservationNumber(?string $reservationNumber = null): self
     {
@@ -62,9 +65,10 @@ class GetReservedSkybillWithTypeAndModeByReservation extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reservationNumber, true), gettype($reservationNumber)), __LINE__);
         }
         $this->reservationNumber = $reservationNumber;
-        
+
         return $this;
     }
+
     /**
      * Get mode value
      * @return string|null
@@ -73,10 +77,11 @@ class GetReservedSkybillWithTypeAndModeByReservation extends AbstractStructBase
     {
         return $this->mode;
     }
+
     /**
      * Set mode value
      * @param string $mode
-     * @return \StructType\GetReservedSkybillWithTypeAndModeByReservation
+     * @return GetReservedSkybillWithTypeAndModeByReservation
      */
     public function setMode(?string $mode = null): self
     {
@@ -85,7 +90,7 @@ class GetReservedSkybillWithTypeAndModeByReservation extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mode, true), gettype($mode)), __LINE__);
         }
         $this->mode = $mode;
-        
+
         return $this;
     }
 }

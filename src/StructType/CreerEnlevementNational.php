@@ -19,9 +19,9 @@ class CreerEnlevementNational extends AbstractStructBase
      * The headerValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HeaderValue|null
+     * @var HeaderValue|null
      */
-    protected ?\StructType\HeaderValue $headerValue = null;
+    protected ?HeaderValue $headerValue = null;
     /**
      * The password
      * Meta information extracted from the WSDL
@@ -47,23 +47,23 @@ class CreerEnlevementNational extends AbstractStructBase
      * The donneurDOrdre
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\DonneurDOrdre|null
+     * @var DonneurDOrdre|null
      */
-    protected ?\StructType\DonneurDOrdre $donneurDOrdre = null;
+    protected ?DonneurDOrdre $donneurDOrdre = null;
     /**
      * The adresseEnlevement
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AdresseEnlevementV3|null
+     * @var AdresseEnlevementV3|null
      */
-    protected ?\StructType\AdresseEnlevementV3 $adresseEnlevement = null;
+    protected ?AdresseEnlevementV3 $adresseEnlevement = null;
     /**
      * The particulartiesEsd
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ParticularitesEsd|null
+     * @var ParticularitesEsd|null
      */
-    protected ?\StructType\ParticularitesEsd $particulartiesEsd = null;
+    protected ?ParticularitesEsd $particulartiesEsd = null;
     /**
      * The referenceEsdClient
      * Meta information extracted from the WSDL
@@ -82,9 +82,9 @@ class CreerEnlevementNational extends AbstractStructBase
      * The options
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Options|null
+     * @var Options|null
      */
-    protected ?\StructType\Options $options = null;
+    protected ?Options $options = null;
     /**
      * The locale
      * Meta information extracted from the WSDL
@@ -92,8 +92,20 @@ class CreerEnlevementNational extends AbstractStructBase
      * @var string|null
      */
     protected ?string $locale = null;
+
     /**
      * Constructor method for creerEnlevementNational
+     * @param HeaderValue $headerValue
+     * @param string $password
+     * @param string $datePassage
+     * @param string $datePassageFermeture
+     * @param DonneurDOrdre $donneurDOrdre
+     * @param AdresseEnlevementV3 $adresseEnlevement
+     * @param ParticularitesEsd $particulartiesEsd
+     * @param string $referenceEsdClient
+     * @param string $contenu
+     * @param Options $options
+     * @param string $locale
      * @uses CreerEnlevementNational::setHeaderValue()
      * @uses CreerEnlevementNational::setPassword()
      * @uses CreerEnlevementNational::setDatePassage()
@@ -105,19 +117,8 @@ class CreerEnlevementNational extends AbstractStructBase
      * @uses CreerEnlevementNational::setContenu()
      * @uses CreerEnlevementNational::setOptions()
      * @uses CreerEnlevementNational::setLocale()
-     * @param \StructType\HeaderValue $headerValue
-     * @param string $password
-     * @param string $datePassage
-     * @param string $datePassageFermeture
-     * @param \StructType\DonneurDOrdre $donneurDOrdre
-     * @param \StructType\AdresseEnlevementV3 $adresseEnlevement
-     * @param \StructType\ParticularitesEsd $particulartiesEsd
-     * @param string $referenceEsdClient
-     * @param string $contenu
-     * @param \StructType\Options $options
-     * @param string $locale
      */
-    public function __construct(?\StructType\HeaderValue $headerValue = null, ?string $password = null, ?string $datePassage = null, ?string $datePassageFermeture = null, ?\StructType\DonneurDOrdre $donneurDOrdre = null, ?\StructType\AdresseEnlevementV3 $adresseEnlevement = null, ?\StructType\ParticularitesEsd $particulartiesEsd = null, ?string $referenceEsdClient = null, ?string $contenu = null, ?\StructType\Options $options = null, ?string $locale = null)
+    public function __construct(?HeaderValue $headerValue = null, ?string $password = null, ?string $datePassage = null, ?string $datePassageFermeture = null, ?DonneurDOrdre $donneurDOrdre = null, ?AdresseEnlevementV3 $adresseEnlevement = null, ?ParticularitesEsd $particulartiesEsd = null, ?string $referenceEsdClient = null, ?string $contenu = null, ?Options $options = null, ?string $locale = null)
     {
         $this
             ->setHeaderValue($headerValue)
@@ -132,25 +133,28 @@ class CreerEnlevementNational extends AbstractStructBase
             ->setOptions($options)
             ->setLocale($locale);
     }
+
     /**
      * Get headerValue value
-     * @return \StructType\HeaderValue|null
+     * @return HeaderValue|null
      */
-    public function getHeaderValue(): ?\StructType\HeaderValue
+    public function getHeaderValue(): ?HeaderValue
     {
         return $this->headerValue;
     }
+
     /**
      * Set headerValue value
-     * @param \StructType\HeaderValue $headerValue
-     * @return \StructType\CreerEnlevementNational
+     * @param HeaderValue $headerValue
+     * @return CreerEnlevementNational
      */
-    public function setHeaderValue(?\StructType\HeaderValue $headerValue = null): self
+    public function setHeaderValue(?HeaderValue $headerValue = null): self
     {
         $this->headerValue = $headerValue;
-        
+
         return $this;
     }
+
     /**
      * Get password value
      * @return string|null
@@ -159,10 +163,11 @@ class CreerEnlevementNational extends AbstractStructBase
     {
         return $this->password;
     }
+
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\CreerEnlevementNational
+     * @return CreerEnlevementNational
      */
     public function setPassword(?string $password = null): self
     {
@@ -171,9 +176,10 @@ class CreerEnlevementNational extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($password, true), gettype($password)), __LINE__);
         }
         $this->password = $password;
-        
+
         return $this;
     }
+
     /**
      * Get datePassage value
      * @return string|null
@@ -182,10 +188,11 @@ class CreerEnlevementNational extends AbstractStructBase
     {
         return $this->datePassage;
     }
+
     /**
      * Set datePassage value
      * @param string $datePassage
-     * @return \StructType\CreerEnlevementNational
+     * @return CreerEnlevementNational
      */
     public function setDatePassage(?string $datePassage = null): self
     {
@@ -194,9 +201,10 @@ class CreerEnlevementNational extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($datePassage, true), gettype($datePassage)), __LINE__);
         }
         $this->datePassage = $datePassage;
-        
+
         return $this;
     }
+
     /**
      * Get datePassageFermeture value
      * @return string|null
@@ -205,10 +213,11 @@ class CreerEnlevementNational extends AbstractStructBase
     {
         return $this->datePassageFermeture;
     }
+
     /**
      * Set datePassageFermeture value
      * @param string $datePassageFermeture
-     * @return \StructType\CreerEnlevementNational
+     * @return CreerEnlevementNational
      */
     public function setDatePassageFermeture(?string $datePassageFermeture = null): self
     {
@@ -217,66 +226,73 @@ class CreerEnlevementNational extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($datePassageFermeture, true), gettype($datePassageFermeture)), __LINE__);
         }
         $this->datePassageFermeture = $datePassageFermeture;
-        
+
         return $this;
     }
+
     /**
      * Get donneurDOrdre value
-     * @return \StructType\DonneurDOrdre|null
+     * @return DonneurDOrdre|null
      */
-    public function getDonneurDOrdre(): ?\StructType\DonneurDOrdre
+    public function getDonneurDOrdre(): ?DonneurDOrdre
     {
         return $this->donneurDOrdre;
     }
+
     /**
      * Set donneurDOrdre value
-     * @param \StructType\DonneurDOrdre $donneurDOrdre
-     * @return \StructType\CreerEnlevementNational
+     * @param DonneurDOrdre $donneurDOrdre
+     * @return CreerEnlevementNational
      */
-    public function setDonneurDOrdre(?\StructType\DonneurDOrdre $donneurDOrdre = null): self
+    public function setDonneurDOrdre(?DonneurDOrdre $donneurDOrdre = null): self
     {
         $this->donneurDOrdre = $donneurDOrdre;
-        
+
         return $this;
     }
+
     /**
      * Get adresseEnlevement value
-     * @return \StructType\AdresseEnlevementV3|null
+     * @return AdresseEnlevementV3|null
      */
-    public function getAdresseEnlevement(): ?\StructType\AdresseEnlevementV3
+    public function getAdresseEnlevement(): ?AdresseEnlevementV3
     {
         return $this->adresseEnlevement;
     }
+
     /**
      * Set adresseEnlevement value
-     * @param \StructType\AdresseEnlevementV3 $adresseEnlevement
-     * @return \StructType\CreerEnlevementNational
+     * @param AdresseEnlevementV3 $adresseEnlevement
+     * @return CreerEnlevementNational
      */
-    public function setAdresseEnlevement(?\StructType\AdresseEnlevementV3 $adresseEnlevement = null): self
+    public function setAdresseEnlevement(?AdresseEnlevementV3 $adresseEnlevement = null): self
     {
         $this->adresseEnlevement = $adresseEnlevement;
-        
+
         return $this;
     }
+
     /**
      * Get particulartiesEsd value
-     * @return \StructType\ParticularitesEsd|null
+     * @return ParticularitesEsd|null
      */
-    public function getParticulartiesEsd(): ?\StructType\ParticularitesEsd
+    public function getParticulartiesEsd(): ?ParticularitesEsd
     {
         return $this->particulartiesEsd;
     }
+
     /**
      * Set particulartiesEsd value
-     * @param \StructType\ParticularitesEsd $particulartiesEsd
-     * @return \StructType\CreerEnlevementNational
+     * @param ParticularitesEsd $particulartiesEsd
+     * @return CreerEnlevementNational
      */
-    public function setParticulartiesEsd(?\StructType\ParticularitesEsd $particulartiesEsd = null): self
+    public function setParticulartiesEsd(?ParticularitesEsd $particulartiesEsd = null): self
     {
         $this->particulartiesEsd = $particulartiesEsd;
-        
+
         return $this;
     }
+
     /**
      * Get referenceEsdClient value
      * @return string|null
@@ -285,10 +301,11 @@ class CreerEnlevementNational extends AbstractStructBase
     {
         return $this->referenceEsdClient;
     }
+
     /**
      * Set referenceEsdClient value
      * @param string $referenceEsdClient
-     * @return \StructType\CreerEnlevementNational
+     * @return CreerEnlevementNational
      */
     public function setReferenceEsdClient(?string $referenceEsdClient = null): self
     {
@@ -297,9 +314,10 @@ class CreerEnlevementNational extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($referenceEsdClient, true), gettype($referenceEsdClient)), __LINE__);
         }
         $this->referenceEsdClient = $referenceEsdClient;
-        
+
         return $this;
     }
+
     /**
      * Get contenu value
      * @return string|null
@@ -308,10 +326,11 @@ class CreerEnlevementNational extends AbstractStructBase
     {
         return $this->contenu;
     }
+
     /**
      * Set contenu value
      * @param string $contenu
-     * @return \StructType\CreerEnlevementNational
+     * @return CreerEnlevementNational
      */
     public function setContenu(?string $contenu = null): self
     {
@@ -320,28 +339,31 @@ class CreerEnlevementNational extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($contenu, true), gettype($contenu)), __LINE__);
         }
         $this->contenu = $contenu;
-        
+
         return $this;
     }
+
     /**
      * Get options value
-     * @return \StructType\Options|null
+     * @return Options|null
      */
-    public function getOptions(): ?\StructType\Options
+    public function getOptions(): ?Options
     {
         return $this->options;
     }
+
     /**
      * Set options value
-     * @param \StructType\Options $options
-     * @return \StructType\CreerEnlevementNational
+     * @param Options $options
+     * @return CreerEnlevementNational
      */
-    public function setOptions(?\StructType\Options $options = null): self
+    public function setOptions(?Options $options = null): self
     {
         $this->options = $options;
-        
+
         return $this;
     }
+
     /**
      * Get locale value
      * @return string|null
@@ -350,10 +372,11 @@ class CreerEnlevementNational extends AbstractStructBase
     {
         return $this->locale;
     }
+
     /**
      * Set locale value
      * @param string $locale
-     * @return \StructType\CreerEnlevementNational
+     * @return CreerEnlevementNational
      */
     public function setLocale(?string $locale = null): self
     {
@@ -362,7 +385,7 @@ class CreerEnlevementNational extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($locale, true), gettype($locale)), __LINE__);
         }
         $this->locale = $locale;
-        
+
         return $this;
     }
 }

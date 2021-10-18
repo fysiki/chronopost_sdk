@@ -19,58 +19,58 @@ class Shipping extends AbstractStructBase
      * The esdValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\EsdValue|null
+     * @var EsdValue|null
      */
-    protected ?\StructType\EsdValue $esdValue = null;
+    protected ?EsdValue $esdValue = null;
     /**
      * The headerValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HeaderValue|null
+     * @var HeaderValue|null
      */
-    protected ?\StructType\HeaderValue $headerValue = null;
+    protected ?HeaderValue $headerValue = null;
     /**
      * The shipperValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ShipperValue|null
+     * @var ShipperValue|null
      */
-    protected ?\StructType\ShipperValue $shipperValue = null;
+    protected ?ShipperValue $shipperValue = null;
     /**
      * The customerValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CustomerValue|null
+     * @var CustomerValue|null
      */
-    protected ?\StructType\CustomerValue $customerValue = null;
+    protected ?CustomerValue $customerValue = null;
     /**
      * The recipientValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RecipientValue|null
+     * @var RecipientValue|null
      */
-    protected ?\StructType\RecipientValue $recipientValue = null;
+    protected ?RecipientValue $recipientValue = null;
     /**
      * The refValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RefValue|null
+     * @var RefValue|null
      */
-    protected ?\StructType\RefValue $refValue = null;
+    protected ?RefValue $refValue = null;
     /**
      * The skybillValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SkybillValue|null
+     * @var SkybillValue|null
      */
-    protected ?\StructType\SkybillValue $skybillValue = null;
+    protected ?SkybillValue $skybillValue = null;
     /**
      * The skybillParamsValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SkybillParamsValue|null
+     * @var SkybillParamsValue|null
      */
-    protected ?\StructType\SkybillParamsValue $skybillParamsValue = null;
+    protected ?SkybillParamsValue $skybillParamsValue = null;
     /**
      * The password
      * Meta information extracted from the WSDL
@@ -78,8 +78,18 @@ class Shipping extends AbstractStructBase
      * @var string|null
      */
     protected ?string $password = null;
+
     /**
      * Constructor method for shipping
+     * @param EsdValue $esdValue
+     * @param HeaderValue $headerValue
+     * @param ShipperValue $shipperValue
+     * @param CustomerValue $customerValue
+     * @param RecipientValue $recipientValue
+     * @param RefValue $refValue
+     * @param SkybillValue $skybillValue
+     * @param SkybillParamsValue $skybillParamsValue
+     * @param string $password
      * @uses Shipping::setEsdValue()
      * @uses Shipping::setHeaderValue()
      * @uses Shipping::setShipperValue()
@@ -89,17 +99,8 @@ class Shipping extends AbstractStructBase
      * @uses Shipping::setSkybillValue()
      * @uses Shipping::setSkybillParamsValue()
      * @uses Shipping::setPassword()
-     * @param \StructType\EsdValue $esdValue
-     * @param \StructType\HeaderValue $headerValue
-     * @param \StructType\ShipperValue $shipperValue
-     * @param \StructType\CustomerValue $customerValue
-     * @param \StructType\RecipientValue $recipientValue
-     * @param \StructType\RefValue $refValue
-     * @param \StructType\SkybillValue $skybillValue
-     * @param \StructType\SkybillParamsValue $skybillParamsValue
-     * @param string $password
      */
-    public function __construct(?\StructType\EsdValue $esdValue = null, ?\StructType\HeaderValue $headerValue = null, ?\StructType\ShipperValue $shipperValue = null, ?\StructType\CustomerValue $customerValue = null, ?\StructType\RecipientValue $recipientValue = null, ?\StructType\RefValue $refValue = null, ?\StructType\SkybillValue $skybillValue = null, ?\StructType\SkybillParamsValue $skybillParamsValue = null, ?string $password = null)
+    public function __construct(?EsdValue $esdValue = null, ?HeaderValue $headerValue = null, ?ShipperValue $shipperValue = null, ?CustomerValue $customerValue = null, ?RecipientValue $recipientValue = null, ?RefValue $refValue = null, ?SkybillValue $skybillValue = null, ?SkybillParamsValue $skybillParamsValue = null, ?string $password = null)
     {
         $this
             ->setEsdValue($esdValue)
@@ -112,158 +113,175 @@ class Shipping extends AbstractStructBase
             ->setSkybillParamsValue($skybillParamsValue)
             ->setPassword($password);
     }
+
     /**
      * Get esdValue value
-     * @return \StructType\EsdValue|null
+     * @return EsdValue|null
      */
-    public function getEsdValue(): ?\StructType\EsdValue
+    public function getEsdValue(): ?EsdValue
     {
         return $this->esdValue;
     }
+
     /**
      * Set esdValue value
-     * @param \StructType\EsdValue $esdValue
-     * @return \StructType\Shipping
+     * @param EsdValue $esdValue
+     * @return Shipping
      */
-    public function setEsdValue(?\StructType\EsdValue $esdValue = null): self
+    public function setEsdValue(?EsdValue $esdValue = null): self
     {
         $this->esdValue = $esdValue;
-        
+
         return $this;
     }
+
     /**
      * Get headerValue value
-     * @return \StructType\HeaderValue|null
+     * @return HeaderValue|null
      */
-    public function getHeaderValue(): ?\StructType\HeaderValue
+    public function getHeaderValue(): ?HeaderValue
     {
         return $this->headerValue;
     }
+
     /**
      * Set headerValue value
-     * @param \StructType\HeaderValue $headerValue
-     * @return \StructType\Shipping
+     * @param HeaderValue $headerValue
+     * @return Shipping
      */
-    public function setHeaderValue(?\StructType\HeaderValue $headerValue = null): self
+    public function setHeaderValue(?HeaderValue $headerValue = null): self
     {
         $this->headerValue = $headerValue;
-        
+
         return $this;
     }
+
     /**
      * Get shipperValue value
-     * @return \StructType\ShipperValue|null
+     * @return ShipperValue|null
      */
-    public function getShipperValue(): ?\StructType\ShipperValue
+    public function getShipperValue(): ?ShipperValue
     {
         return $this->shipperValue;
     }
+
     /**
      * Set shipperValue value
-     * @param \StructType\ShipperValue $shipperValue
-     * @return \StructType\Shipping
+     * @param ShipperValue $shipperValue
+     * @return Shipping
      */
-    public function setShipperValue(?\StructType\ShipperValue $shipperValue = null): self
+    public function setShipperValue(?ShipperValue $shipperValue = null): self
     {
         $this->shipperValue = $shipperValue;
-        
+
         return $this;
     }
+
     /**
      * Get customerValue value
-     * @return \StructType\CustomerValue|null
+     * @return CustomerValue|null
      */
-    public function getCustomerValue(): ?\StructType\CustomerValue
+    public function getCustomerValue(): ?CustomerValue
     {
         return $this->customerValue;
     }
+
     /**
      * Set customerValue value
-     * @param \StructType\CustomerValue $customerValue
-     * @return \StructType\Shipping
+     * @param CustomerValue $customerValue
+     * @return Shipping
      */
-    public function setCustomerValue(?\StructType\CustomerValue $customerValue = null): self
+    public function setCustomerValue(?CustomerValue $customerValue = null): self
     {
         $this->customerValue = $customerValue;
-        
+
         return $this;
     }
+
     /**
      * Get recipientValue value
-     * @return \StructType\RecipientValue|null
+     * @return RecipientValue|null
      */
-    public function getRecipientValue(): ?\StructType\RecipientValue
+    public function getRecipientValue(): ?RecipientValue
     {
         return $this->recipientValue;
     }
+
     /**
      * Set recipientValue value
-     * @param \StructType\RecipientValue $recipientValue
-     * @return \StructType\Shipping
+     * @param RecipientValue $recipientValue
+     * @return Shipping
      */
-    public function setRecipientValue(?\StructType\RecipientValue $recipientValue = null): self
+    public function setRecipientValue(?RecipientValue $recipientValue = null): self
     {
         $this->recipientValue = $recipientValue;
-        
+
         return $this;
     }
+
     /**
      * Get refValue value
-     * @return \StructType\RefValue|null
+     * @return RefValue|null
      */
-    public function getRefValue(): ?\StructType\RefValue
+    public function getRefValue(): ?RefValue
     {
         return $this->refValue;
     }
+
     /**
      * Set refValue value
-     * @param \StructType\RefValue $refValue
-     * @return \StructType\Shipping
+     * @param RefValue $refValue
+     * @return Shipping
      */
-    public function setRefValue(?\StructType\RefValue $refValue = null): self
+    public function setRefValue(?RefValue $refValue = null): self
     {
         $this->refValue = $refValue;
-        
+
         return $this;
     }
+
     /**
      * Get skybillValue value
-     * @return \StructType\SkybillValue|null
+     * @return SkybillValue|null
      */
-    public function getSkybillValue(): ?\StructType\SkybillValue
+    public function getSkybillValue(): ?SkybillValue
     {
         return $this->skybillValue;
     }
+
     /**
      * Set skybillValue value
-     * @param \StructType\SkybillValue $skybillValue
-     * @return \StructType\Shipping
+     * @param SkybillValue $skybillValue
+     * @return Shipping
      */
-    public function setSkybillValue(?\StructType\SkybillValue $skybillValue = null): self
+    public function setSkybillValue(?SkybillValue $skybillValue = null): self
     {
         $this->skybillValue = $skybillValue;
-        
+
         return $this;
     }
+
     /**
      * Get skybillParamsValue value
-     * @return \StructType\SkybillParamsValue|null
+     * @return SkybillParamsValue|null
      */
-    public function getSkybillParamsValue(): ?\StructType\SkybillParamsValue
+    public function getSkybillParamsValue(): ?SkybillParamsValue
     {
         return $this->skybillParamsValue;
     }
+
     /**
      * Set skybillParamsValue value
-     * @param \StructType\SkybillParamsValue $skybillParamsValue
-     * @return \StructType\Shipping
+     * @param SkybillParamsValue $skybillParamsValue
+     * @return Shipping
      */
-    public function setSkybillParamsValue(?\StructType\SkybillParamsValue $skybillParamsValue = null): self
+    public function setSkybillParamsValue(?SkybillParamsValue $skybillParamsValue = null): self
     {
         $this->skybillParamsValue = $skybillParamsValue;
-        
+
         return $this;
     }
+
     /**
      * Get password value
      * @return string|null
@@ -272,10 +290,11 @@ class Shipping extends AbstractStructBase
     {
         return $this->password;
     }
+
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\Shipping
+     * @return Shipping
      */
     public function setPassword(?string $password = null): self
     {
@@ -284,7 +303,7 @@ class Shipping extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($password, true), gettype($password)), __LINE__);
         }
         $this->password = $password;
-        
+
         return $this;
     }
 }

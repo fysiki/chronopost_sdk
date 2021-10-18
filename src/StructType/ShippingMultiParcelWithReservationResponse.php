@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class ShippingMultiParcelWithReservationResponse extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ResultReservationMultiParcelExpeditionValue|null
+     * @var ResultReservationMultiParcelExpeditionValue|null
      */
-    protected ?\StructType\ResultReservationMultiParcelExpeditionValue $return = null;
+    protected ?ResultReservationMultiParcelExpeditionValue $return = null;
+
     /**
      * Constructor method for shippingMultiParcelWithReservationResponse
+     * @param ResultReservationMultiParcelExpeditionValue $return
      * @uses ShippingMultiParcelWithReservationResponse::setReturn()
-     * @param \StructType\ResultReservationMultiParcelExpeditionValue $return
      */
-    public function __construct(?\StructType\ResultReservationMultiParcelExpeditionValue $return = null)
+    public function __construct(?ResultReservationMultiParcelExpeditionValue $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\ResultReservationMultiParcelExpeditionValue|null
+     * @return ResultReservationMultiParcelExpeditionValue|null
      */
-    public function getReturn(): ?\StructType\ResultReservationMultiParcelExpeditionValue
+    public function getReturn(): ?ResultReservationMultiParcelExpeditionValue
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\ResultReservationMultiParcelExpeditionValue $return
-     * @return \StructType\ShippingMultiParcelWithReservationResponse
+     * @param ResultReservationMultiParcelExpeditionValue $return
+     * @return ShippingMultiParcelWithReservationResponse
      */
-    public function setReturn(?\StructType\ResultReservationMultiParcelExpeditionValue $return = null): self
+    public function setReturn(?ResultReservationMultiParcelExpeditionValue $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

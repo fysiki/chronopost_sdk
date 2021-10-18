@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class GetReservedSkybillResponse extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ResultGetReservedSkybillValue|null
+     * @var ResultGetReservedSkybillValue|null
      */
-    protected ?\StructType\ResultGetReservedSkybillValue $return = null;
+    protected ?ResultGetReservedSkybillValue $return = null;
+
     /**
      * Constructor method for getReservedSkybillResponse
+     * @param ResultGetReservedSkybillValue $return
      * @uses GetReservedSkybillResponse::setReturn()
-     * @param \StructType\ResultGetReservedSkybillValue $return
      */
-    public function __construct(?\StructType\ResultGetReservedSkybillValue $return = null)
+    public function __construct(?ResultGetReservedSkybillValue $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\ResultGetReservedSkybillValue|null
+     * @return ResultGetReservedSkybillValue|null
      */
-    public function getReturn(): ?\StructType\ResultGetReservedSkybillValue
+    public function getReturn(): ?ResultGetReservedSkybillValue
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\ResultGetReservedSkybillValue $return
-     * @return \StructType\GetReservedSkybillResponse
+     * @param ResultGetReservedSkybillValue $return
+     * @return GetReservedSkybillResponse
      */
-    public function setReturn(?\StructType\ResultGetReservedSkybillValue $return = null): self
+    public function setReturn(?ResultGetReservedSkybillValue $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

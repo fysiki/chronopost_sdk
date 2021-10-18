@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class ShippingWithReservationResponse extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ResultReservationExpeditionValue|null
+     * @var ResultReservationExpeditionValue|null
      */
-    protected ?\StructType\ResultReservationExpeditionValue $return = null;
+    protected ?ResultReservationExpeditionValue $return = null;
+
     /**
      * Constructor method for shippingWithReservationResponse
+     * @param ResultReservationExpeditionValue $return
      * @uses ShippingWithReservationResponse::setReturn()
-     * @param \StructType\ResultReservationExpeditionValue $return
      */
-    public function __construct(?\StructType\ResultReservationExpeditionValue $return = null)
+    public function __construct(?ResultReservationExpeditionValue $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\ResultReservationExpeditionValue|null
+     * @return ResultReservationExpeditionValue|null
      */
-    public function getReturn(): ?\StructType\ResultReservationExpeditionValue
+    public function getReturn(): ?ResultReservationExpeditionValue
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\ResultReservationExpeditionValue $return
-     * @return \StructType\ShippingWithReservationResponse
+     * @param ResultReservationExpeditionValue $return
+     * @return ShippingWithReservationResponse
      */
-    public function setReturn(?\StructType\ResultReservationExpeditionValue $return = null): self
+    public function setReturn(?ResultReservationExpeditionValue $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

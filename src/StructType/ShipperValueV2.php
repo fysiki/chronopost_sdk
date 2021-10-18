@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for shipperValueV2 StructType
@@ -20,16 +19,18 @@ class ShipperValueV2 extends ShipperValue
      * @var string|null
      */
     protected ?string $shipperType = null;
+
     /**
      * Constructor method for shipperValueV2
-     * @uses ShipperValueV2::setShipperType()
      * @param string $shipperType
+     * @uses ShipperValueV2::setShipperType()
      */
     public function __construct(?string $shipperType = null)
     {
         $this
             ->setShipperType($shipperType);
     }
+
     /**
      * Get shipperType value
      * @return string|null
@@ -38,10 +39,11 @@ class ShipperValueV2 extends ShipperValue
     {
         return $this->shipperType;
     }
+
     /**
      * Set shipperType value
      * @param string $shipperType
-     * @return \StructType\ShipperValueV2
+     * @return ShipperValueV2
      */
     public function setShipperType(?string $shipperType = null): self
     {
@@ -50,7 +52,7 @@ class ShipperValueV2 extends ShipperValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperType, true), gettype($shipperType)), __LINE__);
         }
         $this->shipperType = $shipperType;
-        
+
         return $this;
     }
 }

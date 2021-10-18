@@ -32,14 +32,15 @@ class Detail extends AbstractStructBase
      * @var string|null
      */
     protected ?string $mode = null;
+
     /**
      * Constructor method for detail
-     * @uses Detail::setErrorCode()
-     * @uses Detail::setErrorMessage()
-     * @uses Detail::setMode()
      * @param int $errorCode
      * @param string $errorMessage
      * @param string $mode
+     * @uses Detail::setErrorCode()
+     * @uses Detail::setErrorMessage()
+     * @uses Detail::setMode()
      */
     public function __construct(?int $errorCode = null, ?string $errorMessage = null, ?string $mode = null)
     {
@@ -48,6 +49,7 @@ class Detail extends AbstractStructBase
             ->setErrorMessage($errorMessage)
             ->setMode($mode);
     }
+
     /**
      * Get errorCode value
      * @return int|null
@@ -56,10 +58,11 @@ class Detail extends AbstractStructBase
     {
         return $this->errorCode;
     }
+
     /**
      * Set errorCode value
      * @param int $errorCode
-     * @return \StructType\Detail
+     * @return Detail
      */
     public function setErrorCode(?int $errorCode = null): self
     {
@@ -68,9 +71,10 @@ class Detail extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($errorCode, true), gettype($errorCode)), __LINE__);
         }
         $this->errorCode = $errorCode;
-        
+
         return $this;
     }
+
     /**
      * Get errorMessage value
      * @return string|null
@@ -79,10 +83,11 @@ class Detail extends AbstractStructBase
     {
         return $this->errorMessage;
     }
+
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \StructType\Detail
+     * @return Detail
      */
     public function setErrorMessage(?string $errorMessage = null): self
     {
@@ -91,9 +96,10 @@ class Detail extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($errorMessage, true), gettype($errorMessage)), __LINE__);
         }
         $this->errorMessage = $errorMessage;
-        
+
         return $this;
     }
+
     /**
      * Get mode value
      * @return string|null
@@ -102,10 +108,11 @@ class Detail extends AbstractStructBase
     {
         return $this->mode;
     }
+
     /**
      * Set mode value
      * @param string $mode
-     * @return \StructType\Detail
+     * @return Detail
      */
     public function setMode(?string $mode = null): self
     {
@@ -114,7 +121,7 @@ class Detail extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mode, true), gettype($mode)), __LINE__);
         }
         $this->mode = $mode;
-        
+
         return $this;
     }
 }

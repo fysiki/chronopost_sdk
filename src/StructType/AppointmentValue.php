@@ -34,14 +34,15 @@ class AppointmentValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $timeSlotTariffLevel = null;
+
     /**
      * Constructor method for appointmentValue
-     * @uses AppointmentValue::setTimeSlotEndDate()
-     * @uses AppointmentValue::setTimeSlotStartDate()
-     * @uses AppointmentValue::setTimeSlotTariffLevel()
      * @param string $timeSlotEndDate
      * @param string $timeSlotStartDate
      * @param string $timeSlotTariffLevel
+     * @uses AppointmentValue::setTimeSlotEndDate()
+     * @uses AppointmentValue::setTimeSlotStartDate()
+     * @uses AppointmentValue::setTimeSlotTariffLevel()
      */
     public function __construct(?string $timeSlotEndDate = null, ?string $timeSlotStartDate = null, ?string $timeSlotTariffLevel = null)
     {
@@ -50,6 +51,7 @@ class AppointmentValue extends AbstractStructBase
             ->setTimeSlotStartDate($timeSlotStartDate)
             ->setTimeSlotTariffLevel($timeSlotTariffLevel);
     }
+
     /**
      * Get timeSlotEndDate value
      * @return string|null
@@ -58,10 +60,11 @@ class AppointmentValue extends AbstractStructBase
     {
         return $this->timeSlotEndDate;
     }
+
     /**
      * Set timeSlotEndDate value
      * @param string $timeSlotEndDate
-     * @return \StructType\AppointmentValue
+     * @return AppointmentValue
      */
     public function setTimeSlotEndDate(?string $timeSlotEndDate = null): self
     {
@@ -70,9 +73,10 @@ class AppointmentValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($timeSlotEndDate, true), gettype($timeSlotEndDate)), __LINE__);
         }
         $this->timeSlotEndDate = $timeSlotEndDate;
-        
+
         return $this;
     }
+
     /**
      * Get timeSlotStartDate value
      * @return string|null
@@ -81,10 +85,11 @@ class AppointmentValue extends AbstractStructBase
     {
         return $this->timeSlotStartDate;
     }
+
     /**
      * Set timeSlotStartDate value
      * @param string $timeSlotStartDate
-     * @return \StructType\AppointmentValue
+     * @return AppointmentValue
      */
     public function setTimeSlotStartDate(?string $timeSlotStartDate = null): self
     {
@@ -93,9 +98,10 @@ class AppointmentValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($timeSlotStartDate, true), gettype($timeSlotStartDate)), __LINE__);
         }
         $this->timeSlotStartDate = $timeSlotStartDate;
-        
+
         return $this;
     }
+
     /**
      * Get timeSlotTariffLevel value
      * @return string|null
@@ -104,10 +110,11 @@ class AppointmentValue extends AbstractStructBase
     {
         return $this->timeSlotTariffLevel;
     }
+
     /**
      * Set timeSlotTariffLevel value
      * @param string $timeSlotTariffLevel
-     * @return \StructType\AppointmentValue
+     * @return AppointmentValue
      */
     public function setTimeSlotTariffLevel(?string $timeSlotTariffLevel = null): self
     {
@@ -116,7 +123,7 @@ class AppointmentValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($timeSlotTariffLevel, true), gettype($timeSlotTariffLevel)), __LINE__);
         }
         $this->timeSlotTariffLevel = $timeSlotTariffLevel;
-        
+
         return $this;
     }
 }

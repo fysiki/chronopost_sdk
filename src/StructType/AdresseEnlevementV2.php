@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for adresseEnlevementV2 StructType
@@ -20,16 +19,18 @@ class AdresseEnlevementV2 extends AdresseEnlevement
      * @var string|null
      */
     protected ?string $email = null;
+
     /**
      * Constructor method for adresseEnlevementV2
-     * @uses AdresseEnlevementV2::setEmail()
      * @param string $email
+     * @uses AdresseEnlevementV2::setEmail()
      */
     public function __construct(?string $email = null)
     {
         $this
             ->setEmail($email);
     }
+
     /**
      * Get email value
      * @return string|null
@@ -38,10 +39,11 @@ class AdresseEnlevementV2 extends AdresseEnlevement
     {
         return $this->email;
     }
+
     /**
      * Set email value
      * @param string $email
-     * @return \StructType\AdresseEnlevementV2
+     * @return AdresseEnlevementV2
      */
     public function setEmail(?string $email = null): self
     {
@@ -50,7 +52,7 @@ class AdresseEnlevementV2 extends AdresseEnlevement
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($email, true), gettype($email)), __LINE__);
         }
         $this->email = $email;
-        
+
         return $this;
     }
 }

@@ -33,16 +33,17 @@ class Options extends AbstractStructBase
      * @var bool|null
      */
     protected ?bool $LTaImprimerParChronopost = null;
+
     /**
      * Constructor method for options
-     * @uses Options::setAviserSurRealisation()
-     * @uses Options::setChezUnTiers()
-     * @uses Options::setEnvoyerLtParMail()
-     * @uses Options::setLTaImprimerParChronopost()
      * @param bool $aviserSurRealisation
      * @param bool $chezUnTiers
      * @param bool $envoyerLtParMail
      * @param bool $lTaImprimerParChronopost
+     * @uses Options::setAviserSurRealisation()
+     * @uses Options::setChezUnTiers()
+     * @uses Options::setEnvoyerLtParMail()
+     * @uses Options::setLTaImprimerParChronopost()
      */
     public function __construct(?bool $aviserSurRealisation = null, ?bool $chezUnTiers = null, ?bool $envoyerLtParMail = null, ?bool $lTaImprimerParChronopost = null)
     {
@@ -52,6 +53,7 @@ class Options extends AbstractStructBase
             ->setEnvoyerLtParMail($envoyerLtParMail)
             ->setLTaImprimerParChronopost($lTaImprimerParChronopost);
     }
+
     /**
      * Get aviserSurRealisation value
      * @return bool|null
@@ -60,10 +62,11 @@ class Options extends AbstractStructBase
     {
         return $this->aviserSurRealisation;
     }
+
     /**
      * Set aviserSurRealisation value
      * @param bool $aviserSurRealisation
-     * @return \StructType\Options
+     * @return Options
      */
     public function setAviserSurRealisation(?bool $aviserSurRealisation = null): self
     {
@@ -72,9 +75,10 @@ class Options extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($aviserSurRealisation, true), gettype($aviserSurRealisation)), __LINE__);
         }
         $this->aviserSurRealisation = $aviserSurRealisation;
-        
+
         return $this;
     }
+
     /**
      * Get chezUnTiers value
      * @return bool|null
@@ -83,10 +87,11 @@ class Options extends AbstractStructBase
     {
         return $this->chezUnTiers;
     }
+
     /**
      * Set chezUnTiers value
      * @param bool $chezUnTiers
-     * @return \StructType\Options
+     * @return Options
      */
     public function setChezUnTiers(?bool $chezUnTiers = null): self
     {
@@ -95,9 +100,10 @@ class Options extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($chezUnTiers, true), gettype($chezUnTiers)), __LINE__);
         }
         $this->chezUnTiers = $chezUnTiers;
-        
+
         return $this;
     }
+
     /**
      * Get envoyerLtParMail value
      * @return bool|null
@@ -106,10 +112,11 @@ class Options extends AbstractStructBase
     {
         return $this->envoyerLtParMail;
     }
+
     /**
      * Set envoyerLtParMail value
      * @param bool $envoyerLtParMail
-     * @return \StructType\Options
+     * @return Options
      */
     public function setEnvoyerLtParMail(?bool $envoyerLtParMail = null): self
     {
@@ -118,9 +125,10 @@ class Options extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($envoyerLtParMail, true), gettype($envoyerLtParMail)), __LINE__);
         }
         $this->envoyerLtParMail = $envoyerLtParMail;
-        
+
         return $this;
     }
+
     /**
      * Get LTaImprimerParChronopost value
      * @return bool|null
@@ -129,10 +137,11 @@ class Options extends AbstractStructBase
     {
         return $this->LTaImprimerParChronopost;
     }
+
     /**
      * Set LTaImprimerParChronopost value
      * @param bool $lTaImprimerParChronopost
-     * @return \StructType\Options
+     * @return Options
      */
     public function setLTaImprimerParChronopost(?bool $lTaImprimerParChronopost = null): self
     {
@@ -141,7 +150,7 @@ class Options extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($lTaImprimerParChronopost, true), gettype($lTaImprimerParChronopost)), __LINE__);
         }
         $this->LTaImprimerParChronopost = $lTaImprimerParChronopost;
-        
+
         return $this;
     }
 }

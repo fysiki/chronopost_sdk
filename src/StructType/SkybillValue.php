@@ -207,36 +207,9 @@ class SkybillValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $weightUnit = null;
+
     /**
      * Constructor method for skybillValue
-     * @uses SkybillValue::setBulkNumber()
-     * @uses SkybillValue::setCodCurrency()
-     * @uses SkybillValue::setCodValue()
-     * @uses SkybillValue::setContent1()
-     * @uses SkybillValue::setContent2()
-     * @uses SkybillValue::setContent3()
-     * @uses SkybillValue::setContent4()
-     * @uses SkybillValue::setContent5()
-     * @uses SkybillValue::setCustomsCurrency()
-     * @uses SkybillValue::setCustomsValue()
-     * @uses SkybillValue::setEvtCode()
-     * @uses SkybillValue::setInsuredCurrency()
-     * @uses SkybillValue::setInsuredValue()
-     * @uses SkybillValue::setLatitude()
-     * @uses SkybillValue::setLongitude()
-     * @uses SkybillValue::setMasterSkybillNumber()
-     * @uses SkybillValue::setObjectType()
-     * @uses SkybillValue::setPortCurrency()
-     * @uses SkybillValue::setPortValue()
-     * @uses SkybillValue::setProductCode()
-     * @uses SkybillValue::setQualite()
-     * @uses SkybillValue::setService()
-     * @uses SkybillValue::setShipDate()
-     * @uses SkybillValue::setShipHour()
-     * @uses SkybillValue::setSkybillRank()
-     * @uses SkybillValue::setSource()
-     * @uses SkybillValue::setWeight()
-     * @uses SkybillValue::setWeightUnit()
      * @param string $bulkNumber
      * @param string $codCurrency
      * @param float $codValue
@@ -265,6 +238,34 @@ class SkybillValue extends AbstractStructBase
      * @param string $source
      * @param float $weight
      * @param string $weightUnit
+     * @uses SkybillValue::setBulkNumber()
+     * @uses SkybillValue::setCodCurrency()
+     * @uses SkybillValue::setCodValue()
+     * @uses SkybillValue::setContent1()
+     * @uses SkybillValue::setContent2()
+     * @uses SkybillValue::setContent3()
+     * @uses SkybillValue::setContent4()
+     * @uses SkybillValue::setContent5()
+     * @uses SkybillValue::setCustomsCurrency()
+     * @uses SkybillValue::setCustomsValue()
+     * @uses SkybillValue::setEvtCode()
+     * @uses SkybillValue::setInsuredCurrency()
+     * @uses SkybillValue::setInsuredValue()
+     * @uses SkybillValue::setLatitude()
+     * @uses SkybillValue::setLongitude()
+     * @uses SkybillValue::setMasterSkybillNumber()
+     * @uses SkybillValue::setObjectType()
+     * @uses SkybillValue::setPortCurrency()
+     * @uses SkybillValue::setPortValue()
+     * @uses SkybillValue::setProductCode()
+     * @uses SkybillValue::setQualite()
+     * @uses SkybillValue::setService()
+     * @uses SkybillValue::setShipDate()
+     * @uses SkybillValue::setShipHour()
+     * @uses SkybillValue::setSkybillRank()
+     * @uses SkybillValue::setSource()
+     * @uses SkybillValue::setWeight()
+     * @uses SkybillValue::setWeightUnit()
      */
     public function __construct(?string $bulkNumber = null, ?string $codCurrency = null, ?float $codValue = null, ?string $content1 = null, ?string $content2 = null, ?string $content3 = null, ?string $content4 = null, ?string $content5 = null, ?string $customsCurrency = null, ?float $customsValue = null, ?string $evtCode = null, ?string $insuredCurrency = null, ?float $insuredValue = null, ?string $latitude = null, ?string $longitude = null, ?string $masterSkybillNumber = null, ?string $objectType = null, ?string $portCurrency = null, ?float $portValue = null, ?string $productCode = null, ?string $qualite = null, ?string $service = null, ?string $shipDate = null, ?int $shipHour = null, ?string $skybillRank = null, ?string $source = null, ?float $weight = null, ?string $weightUnit = null)
     {
@@ -298,6 +299,7 @@ class SkybillValue extends AbstractStructBase
             ->setWeight($weight)
             ->setWeightUnit($weightUnit);
     }
+
     /**
      * Get bulkNumber value
      * @return string|null
@@ -306,10 +308,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->bulkNumber;
     }
+
     /**
      * Set bulkNumber value
      * @param string $bulkNumber
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setBulkNumber(?string $bulkNumber = null): self
     {
@@ -318,9 +321,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($bulkNumber, true), gettype($bulkNumber)), __LINE__);
         }
         $this->bulkNumber = $bulkNumber;
-        
+
         return $this;
     }
+
     /**
      * Get codCurrency value
      * @return string|null
@@ -329,10 +333,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->codCurrency;
     }
+
     /**
      * Set codCurrency value
      * @param string $codCurrency
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setCodCurrency(?string $codCurrency = null): self
     {
@@ -341,9 +346,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codCurrency, true), gettype($codCurrency)), __LINE__);
         }
         $this->codCurrency = $codCurrency;
-        
+
         return $this;
     }
+
     /**
      * Get codValue value
      * @return float|null
@@ -352,10 +358,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->codValue;
     }
+
     /**
      * Set codValue value
      * @param float $codValue
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setCodValue(?float $codValue = null): self
     {
@@ -364,9 +371,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($codValue, true), gettype($codValue)), __LINE__);
         }
         $this->codValue = $codValue;
-        
+
         return $this;
     }
+
     /**
      * Get content1 value
      * @return string|null
@@ -375,10 +383,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->content1;
     }
+
     /**
      * Set content1 value
      * @param string $content1
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setContent1(?string $content1 = null): self
     {
@@ -387,9 +396,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($content1, true), gettype($content1)), __LINE__);
         }
         $this->content1 = $content1;
-        
+
         return $this;
     }
+
     /**
      * Get content2 value
      * @return string|null
@@ -398,10 +408,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->content2;
     }
+
     /**
      * Set content2 value
      * @param string $content2
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setContent2(?string $content2 = null): self
     {
@@ -410,9 +421,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($content2, true), gettype($content2)), __LINE__);
         }
         $this->content2 = $content2;
-        
+
         return $this;
     }
+
     /**
      * Get content3 value
      * @return string|null
@@ -421,10 +433,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->content3;
     }
+
     /**
      * Set content3 value
      * @param string $content3
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setContent3(?string $content3 = null): self
     {
@@ -433,9 +446,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($content3, true), gettype($content3)), __LINE__);
         }
         $this->content3 = $content3;
-        
+
         return $this;
     }
+
     /**
      * Get content4 value
      * @return string|null
@@ -444,10 +458,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->content4;
     }
+
     /**
      * Set content4 value
      * @param string $content4
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setContent4(?string $content4 = null): self
     {
@@ -456,9 +471,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($content4, true), gettype($content4)), __LINE__);
         }
         $this->content4 = $content4;
-        
+
         return $this;
     }
+
     /**
      * Get content5 value
      * @return string|null
@@ -467,10 +483,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->content5;
     }
+
     /**
      * Set content5 value
      * @param string $content5
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setContent5(?string $content5 = null): self
     {
@@ -479,9 +496,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($content5, true), gettype($content5)), __LINE__);
         }
         $this->content5 = $content5;
-        
+
         return $this;
     }
+
     /**
      * Get customsCurrency value
      * @return string|null
@@ -490,10 +508,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->customsCurrency;
     }
+
     /**
      * Set customsCurrency value
      * @param string $customsCurrency
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setCustomsCurrency(?string $customsCurrency = null): self
     {
@@ -502,9 +521,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customsCurrency, true), gettype($customsCurrency)), __LINE__);
         }
         $this->customsCurrency = $customsCurrency;
-        
+
         return $this;
     }
+
     /**
      * Get customsValue value
      * @return float|null
@@ -513,10 +533,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->customsValue;
     }
+
     /**
      * Set customsValue value
      * @param float $customsValue
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setCustomsValue(?float $customsValue = null): self
     {
@@ -525,9 +546,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($customsValue, true), gettype($customsValue)), __LINE__);
         }
         $this->customsValue = $customsValue;
-        
+
         return $this;
     }
+
     /**
      * Get evtCode value
      * @return string|null
@@ -536,10 +558,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->evtCode;
     }
+
     /**
      * Set evtCode value
      * @param string $evtCode
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setEvtCode(?string $evtCode = null): self
     {
@@ -548,9 +571,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($evtCode, true), gettype($evtCode)), __LINE__);
         }
         $this->evtCode = $evtCode;
-        
+
         return $this;
     }
+
     /**
      * Get insuredCurrency value
      * @return string|null
@@ -559,10 +583,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->insuredCurrency;
     }
+
     /**
      * Set insuredCurrency value
      * @param string $insuredCurrency
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setInsuredCurrency(?string $insuredCurrency = null): self
     {
@@ -571,9 +596,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($insuredCurrency, true), gettype($insuredCurrency)), __LINE__);
         }
         $this->insuredCurrency = $insuredCurrency;
-        
+
         return $this;
     }
+
     /**
      * Get insuredValue value
      * @return float|null
@@ -582,10 +608,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->insuredValue;
     }
+
     /**
      * Set insuredValue value
      * @param float $insuredValue
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setInsuredValue(?float $insuredValue = null): self
     {
@@ -594,9 +621,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($insuredValue, true), gettype($insuredValue)), __LINE__);
         }
         $this->insuredValue = $insuredValue;
-        
+
         return $this;
     }
+
     /**
      * Get latitude value
      * @return string|null
@@ -605,10 +633,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->latitude;
     }
+
     /**
      * Set latitude value
      * @param string $latitude
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setLatitude(?string $latitude = null): self
     {
@@ -617,9 +646,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($latitude, true), gettype($latitude)), __LINE__);
         }
         $this->latitude = $latitude;
-        
+
         return $this;
     }
+
     /**
      * Get longitude value
      * @return string|null
@@ -628,10 +658,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->longitude;
     }
+
     /**
      * Set longitude value
      * @param string $longitude
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setLongitude(?string $longitude = null): self
     {
@@ -640,9 +671,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($longitude, true), gettype($longitude)), __LINE__);
         }
         $this->longitude = $longitude;
-        
+
         return $this;
     }
+
     /**
      * Get masterSkybillNumber value
      * @return string|null
@@ -651,10 +683,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->masterSkybillNumber;
     }
+
     /**
      * Set masterSkybillNumber value
      * @param string $masterSkybillNumber
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setMasterSkybillNumber(?string $masterSkybillNumber = null): self
     {
@@ -663,9 +696,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($masterSkybillNumber, true), gettype($masterSkybillNumber)), __LINE__);
         }
         $this->masterSkybillNumber = $masterSkybillNumber;
-        
+
         return $this;
     }
+
     /**
      * Get objectType value
      * @return string|null
@@ -674,10 +708,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->objectType;
     }
+
     /**
      * Set objectType value
      * @param string $objectType
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setObjectType(?string $objectType = null): self
     {
@@ -686,9 +721,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($objectType, true), gettype($objectType)), __LINE__);
         }
         $this->objectType = $objectType;
-        
+
         return $this;
     }
+
     /**
      * Get portCurrency value
      * @return string|null
@@ -697,10 +733,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->portCurrency;
     }
+
     /**
      * Set portCurrency value
      * @param string $portCurrency
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setPortCurrency(?string $portCurrency = null): self
     {
@@ -709,9 +746,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($portCurrency, true), gettype($portCurrency)), __LINE__);
         }
         $this->portCurrency = $portCurrency;
-        
+
         return $this;
     }
+
     /**
      * Get portValue value
      * @return float|null
@@ -720,10 +758,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->portValue;
     }
+
     /**
      * Set portValue value
      * @param float $portValue
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setPortValue(?float $portValue = null): self
     {
@@ -732,9 +771,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($portValue, true), gettype($portValue)), __LINE__);
         }
         $this->portValue = $portValue;
-        
+
         return $this;
     }
+
     /**
      * Get productCode value
      * @return string|null
@@ -743,10 +783,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->productCode;
     }
+
     /**
      * Set productCode value
      * @param string $productCode
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setProductCode(?string $productCode = null): self
     {
@@ -755,9 +796,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($productCode, true), gettype($productCode)), __LINE__);
         }
         $this->productCode = $productCode;
-        
+
         return $this;
     }
+
     /**
      * Get qualite value
      * @return string|null
@@ -766,10 +808,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->qualite;
     }
+
     /**
      * Set qualite value
      * @param string $qualite
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setQualite(?string $qualite = null): self
     {
@@ -778,9 +821,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($qualite, true), gettype($qualite)), __LINE__);
         }
         $this->qualite = $qualite;
-        
+
         return $this;
     }
+
     /**
      * Get service value
      * @return string|null
@@ -789,10 +833,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->service;
     }
+
     /**
      * Set service value
      * @param string $service
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setService(?string $service = null): self
     {
@@ -801,9 +846,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($service, true), gettype($service)), __LINE__);
         }
         $this->service = $service;
-        
+
         return $this;
     }
+
     /**
      * Get shipDate value
      * @return string|null
@@ -812,10 +858,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->shipDate;
     }
+
     /**
      * Set shipDate value
      * @param string $shipDate
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setShipDate(?string $shipDate = null): self
     {
@@ -824,9 +871,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipDate, true), gettype($shipDate)), __LINE__);
         }
         $this->shipDate = $shipDate;
-        
+
         return $this;
     }
+
     /**
      * Get shipHour value
      * @return int|null
@@ -835,10 +883,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->shipHour;
     }
+
     /**
      * Set shipHour value
      * @param int $shipHour
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setShipHour(?int $shipHour = null): self
     {
@@ -847,9 +896,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($shipHour, true), gettype($shipHour)), __LINE__);
         }
         $this->shipHour = $shipHour;
-        
+
         return $this;
     }
+
     /**
      * Get skybillRank value
      * @return string|null
@@ -858,10 +908,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->skybillRank;
     }
+
     /**
      * Set skybillRank value
      * @param string $skybillRank
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setSkybillRank(?string $skybillRank = null): self
     {
@@ -870,9 +921,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($skybillRank, true), gettype($skybillRank)), __LINE__);
         }
         $this->skybillRank = $skybillRank;
-        
+
         return $this;
     }
+
     /**
      * Get source value
      * @return string|null
@@ -881,10 +933,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->source;
     }
+
     /**
      * Set source value
      * @param string $source
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setSource(?string $source = null): self
     {
@@ -893,9 +946,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($source, true), gettype($source)), __LINE__);
         }
         $this->source = $source;
-        
+
         return $this;
     }
+
     /**
      * Get weight value
      * @return float|null
@@ -904,10 +958,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->weight;
     }
+
     /**
      * Set weight value
      * @param float $weight
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setWeight(?float $weight = null): self
     {
@@ -916,9 +971,10 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($weight, true), gettype($weight)), __LINE__);
         }
         $this->weight = $weight;
-        
+
         return $this;
     }
+
     /**
      * Get weightUnit value
      * @return string|null
@@ -927,10 +983,11 @@ class SkybillValue extends AbstractStructBase
     {
         return $this->weightUnit;
     }
+
     /**
      * Set weightUnit value
      * @param string $weightUnit
-     * @return \StructType\SkybillValue
+     * @return SkybillValue
      */
     public function setWeightUnit(?string $weightUnit = null): self
     {
@@ -939,7 +996,7 @@ class SkybillValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($weightUnit, true), gettype($weightUnit)), __LINE__);
         }
         $this->weightUnit = $weightUnit;
-        
+
         return $this;
     }
 }

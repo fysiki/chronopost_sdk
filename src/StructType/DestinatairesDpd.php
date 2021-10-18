@@ -19,30 +19,33 @@ class DestinatairesDpd extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\DestinataireDpd[]
+     * @var DestinataireDpd[]
      */
     protected ?array $destinataireDpd = null;
+
     /**
      * Constructor method for destinatairesDpd
+     * @param DestinataireDpd[] $destinataireDpd
      * @uses DestinatairesDpd::setDestinataireDpd()
-     * @param \StructType\DestinataireDpd[] $destinataireDpd
      */
     public function __construct(?array $destinataireDpd = null)
     {
         $this
             ->setDestinataireDpd($destinataireDpd);
     }
+
     /**
      * Get destinataireDpd value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\DestinataireDpd[]
+     * @return DestinataireDpd[]
      */
     public function getDestinataireDpd(): ?array
     {
         return isset($this->destinataireDpd) ? $this->destinataireDpd : null;
     }
+
     /**
      * This method is responsible for validating the values passed to the setDestinataireDpd method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDestinataireDpd method
@@ -58,7 +61,7 @@ class DestinatairesDpd extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $destinatairesDpdDestinataireDpdItem) {
             // validation for constraint: itemType
-            if (!$destinatairesDpdDestinataireDpdItem instanceof \StructType\DestinataireDpd) {
+            if (!$destinatairesDpdDestinataireDpdItem instanceof DestinataireDpd) {
                 $invalidValues[] = is_object($destinatairesDpdDestinataireDpdItem) ? get_class($destinatairesDpdDestinataireDpdItem) : sprintf('%s(%s)', gettype($destinatairesDpdDestinataireDpdItem), var_export($destinatairesDpdDestinataireDpdItem, true));
             }
         }
@@ -66,16 +69,17 @@ class DestinatairesDpd extends AbstractStructBase
             $message = sprintf('The destinataireDpd property can only contain items of type \StructType\DestinataireDpd, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
+
     /**
      * Set destinataireDpd value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
+     * @param DestinataireDpd[] $destinataireDpd
+     * @return DestinatairesDpd
      * @throws InvalidArgumentException
-     * @param \StructType\DestinataireDpd[] $destinataireDpd
-     * @return \StructType\DestinatairesDpd
      */
     public function setDestinataireDpd(?array $destinataireDpd = null): self
     {
@@ -88,23 +92,24 @@ class DestinatairesDpd extends AbstractStructBase
         } else {
             $this->destinataireDpd = $destinataireDpd;
         }
-        
+
         return $this;
     }
+
     /**
      * Add item to destinataireDpd value
+     * @param DestinataireDpd $item
+     * @return DestinatairesDpd
      * @throws InvalidArgumentException
-     * @param \StructType\DestinataireDpd $item
-     * @return \StructType\DestinatairesDpd
      */
-    public function addToDestinataireDpd(\StructType\DestinataireDpd $item): self
+    public function addToDestinataireDpd(DestinataireDpd $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DestinataireDpd) {
+        if (!$item instanceof DestinataireDpd) {
             throw new InvalidArgumentException(sprintf('The destinataireDpd property can only contain items of type \StructType\DestinataireDpd, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->destinataireDpd[] = $item;
-        
+
         return $this;
     }
 }

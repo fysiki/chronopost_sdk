@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class ShippingV2Response extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ResultExpeditionValue|null
+     * @var ResultExpeditionValue|null
      */
-    protected ?\StructType\ResultExpeditionValue $return = null;
+    protected ?ResultExpeditionValue $return = null;
+
     /**
      * Constructor method for shippingV2Response
+     * @param ResultExpeditionValue $return
      * @uses ShippingV2Response::setReturn()
-     * @param \StructType\ResultExpeditionValue $return
      */
-    public function __construct(?\StructType\ResultExpeditionValue $return = null)
+    public function __construct(?ResultExpeditionValue $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\ResultExpeditionValue|null
+     * @return ResultExpeditionValue|null
      */
-    public function getReturn(): ?\StructType\ResultExpeditionValue
+    public function getReturn(): ?ResultExpeditionValue
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\ResultExpeditionValue $return
-     * @return \StructType\ShippingV2Response
+     * @param ResultExpeditionValue $return
+     * @return ShippingV2Response
      */
-    public function setReturn(?\StructType\ResultExpeditionValue $return = null): self
+    public function setReturn(?ResultExpeditionValue $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

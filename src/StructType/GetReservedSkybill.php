@@ -22,16 +22,18 @@ class GetReservedSkybill extends AbstractStructBase
      * @var string|null
      */
     protected ?string $reservationNumber = null;
+
     /**
      * Constructor method for getReservedSkybill
-     * @uses GetReservedSkybill::setReservationNumber()
      * @param string $reservationNumber
+     * @uses GetReservedSkybill::setReservationNumber()
      */
     public function __construct(?string $reservationNumber = null)
     {
         $this
             ->setReservationNumber($reservationNumber);
     }
+
     /**
      * Get reservationNumber value
      * @return string|null
@@ -40,10 +42,11 @@ class GetReservedSkybill extends AbstractStructBase
     {
         return $this->reservationNumber;
     }
+
     /**
      * Set reservationNumber value
      * @param string $reservationNumber
-     * @return \StructType\GetReservedSkybill
+     * @return GetReservedSkybill
      */
     public function setReservationNumber(?string $reservationNumber = null): self
     {
@@ -52,7 +55,7 @@ class GetReservedSkybill extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reservationNumber, true), gettype($reservationNumber)), __LINE__);
         }
         $this->reservationNumber = $reservationNumber;
-        
+
         return $this;
     }
 }

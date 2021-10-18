@@ -109,22 +109,9 @@ class ShipperValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $shipperZipCode = null;
+
     /**
      * Constructor method for shipperValue
-     * @uses ShipperValue::setShipperAdress1()
-     * @uses ShipperValue::setShipperAdress2()
-     * @uses ShipperValue::setShipperCity()
-     * @uses ShipperValue::setShipperCivility()
-     * @uses ShipperValue::setShipperContactName()
-     * @uses ShipperValue::setShipperCountry()
-     * @uses ShipperValue::setShipperCountryName()
-     * @uses ShipperValue::setShipperEmail()
-     * @uses ShipperValue::setShipperMobilePhone()
-     * @uses ShipperValue::setShipperName()
-     * @uses ShipperValue::setShipperName2()
-     * @uses ShipperValue::setShipperPhone()
-     * @uses ShipperValue::setShipperPreAlert()
-     * @uses ShipperValue::setShipperZipCode()
      * @param string $shipperAdress1
      * @param string $shipperAdress2
      * @param string $shipperCity
@@ -139,6 +126,20 @@ class ShipperValue extends AbstractStructBase
      * @param string $shipperPhone
      * @param int $shipperPreAlert
      * @param string $shipperZipCode
+     * @uses ShipperValue::setShipperAdress1()
+     * @uses ShipperValue::setShipperAdress2()
+     * @uses ShipperValue::setShipperCity()
+     * @uses ShipperValue::setShipperCivility()
+     * @uses ShipperValue::setShipperContactName()
+     * @uses ShipperValue::setShipperCountry()
+     * @uses ShipperValue::setShipperCountryName()
+     * @uses ShipperValue::setShipperEmail()
+     * @uses ShipperValue::setShipperMobilePhone()
+     * @uses ShipperValue::setShipperName()
+     * @uses ShipperValue::setShipperName2()
+     * @uses ShipperValue::setShipperPhone()
+     * @uses ShipperValue::setShipperPreAlert()
+     * @uses ShipperValue::setShipperZipCode()
      */
     public function __construct(?string $shipperAdress1 = null, ?string $shipperAdress2 = null, ?string $shipperCity = null, ?string $shipperCivility = null, ?string $shipperContactName = null, ?string $shipperCountry = null, ?string $shipperCountryName = null, ?string $shipperEmail = null, ?string $shipperMobilePhone = null, ?string $shipperName = null, ?string $shipperName2 = null, ?string $shipperPhone = null, ?int $shipperPreAlert = null, ?string $shipperZipCode = null)
     {
@@ -158,6 +159,7 @@ class ShipperValue extends AbstractStructBase
             ->setShipperPreAlert($shipperPreAlert)
             ->setShipperZipCode($shipperZipCode);
     }
+
     /**
      * Get shipperAdress1 value
      * @return string|null
@@ -166,10 +168,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperAdress1;
     }
+
     /**
      * Set shipperAdress1 value
      * @param string $shipperAdress1
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperAdress1(?string $shipperAdress1 = null): self
     {
@@ -178,9 +181,10 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperAdress1, true), gettype($shipperAdress1)), __LINE__);
         }
         $this->shipperAdress1 = $shipperAdress1;
-        
+
         return $this;
     }
+
     /**
      * Get shipperAdress2 value
      * @return string|null
@@ -189,10 +193,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperAdress2;
     }
+
     /**
      * Set shipperAdress2 value
      * @param string $shipperAdress2
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperAdress2(?string $shipperAdress2 = null): self
     {
@@ -201,9 +206,10 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperAdress2, true), gettype($shipperAdress2)), __LINE__);
         }
         $this->shipperAdress2 = $shipperAdress2;
-        
+
         return $this;
     }
+
     /**
      * Get shipperCity value
      * @return string|null
@@ -212,10 +218,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperCity;
     }
+
     /**
      * Set shipperCity value
      * @param string $shipperCity
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperCity(?string $shipperCity = null): self
     {
@@ -224,9 +231,10 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperCity, true), gettype($shipperCity)), __LINE__);
         }
         $this->shipperCity = $shipperCity;
-        
+
         return $this;
     }
+
     /**
      * Get shipperCivility value
      * @return string|null
@@ -235,10 +243,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperCivility;
     }
+
     /**
      * Set shipperCivility value
      * @param string $shipperCivility
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperCivility(?string $shipperCivility = null): self
     {
@@ -247,9 +256,10 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperCivility, true), gettype($shipperCivility)), __LINE__);
         }
         $this->shipperCivility = $shipperCivility;
-        
+
         return $this;
     }
+
     /**
      * Get shipperContactName value
      * @return string|null
@@ -258,10 +268,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperContactName;
     }
+
     /**
      * Set shipperContactName value
      * @param string $shipperContactName
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperContactName(?string $shipperContactName = null): self
     {
@@ -270,9 +281,10 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperContactName, true), gettype($shipperContactName)), __LINE__);
         }
         $this->shipperContactName = $shipperContactName;
-        
+
         return $this;
     }
+
     /**
      * Get shipperCountry value
      * @return string|null
@@ -281,10 +293,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperCountry;
     }
+
     /**
      * Set shipperCountry value
      * @param string $shipperCountry
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperCountry(?string $shipperCountry = null): self
     {
@@ -293,9 +306,10 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperCountry, true), gettype($shipperCountry)), __LINE__);
         }
         $this->shipperCountry = $shipperCountry;
-        
+
         return $this;
     }
+
     /**
      * Get shipperCountryName value
      * @return string|null
@@ -304,10 +318,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperCountryName;
     }
+
     /**
      * Set shipperCountryName value
      * @param string $shipperCountryName
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperCountryName(?string $shipperCountryName = null): self
     {
@@ -316,9 +331,10 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperCountryName, true), gettype($shipperCountryName)), __LINE__);
         }
         $this->shipperCountryName = $shipperCountryName;
-        
+
         return $this;
     }
+
     /**
      * Get shipperEmail value
      * @return string|null
@@ -327,10 +343,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperEmail;
     }
+
     /**
      * Set shipperEmail value
      * @param string $shipperEmail
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperEmail(?string $shipperEmail = null): self
     {
@@ -339,9 +356,10 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperEmail, true), gettype($shipperEmail)), __LINE__);
         }
         $this->shipperEmail = $shipperEmail;
-        
+
         return $this;
     }
+
     /**
      * Get shipperMobilePhone value
      * @return string|null
@@ -350,10 +368,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperMobilePhone;
     }
+
     /**
      * Set shipperMobilePhone value
      * @param string $shipperMobilePhone
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperMobilePhone(?string $shipperMobilePhone = null): self
     {
@@ -362,9 +381,10 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperMobilePhone, true), gettype($shipperMobilePhone)), __LINE__);
         }
         $this->shipperMobilePhone = $shipperMobilePhone;
-        
+
         return $this;
     }
+
     /**
      * Get shipperName value
      * @return string|null
@@ -373,10 +393,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperName;
     }
+
     /**
      * Set shipperName value
      * @param string $shipperName
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperName(?string $shipperName = null): self
     {
@@ -385,9 +406,10 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperName, true), gettype($shipperName)), __LINE__);
         }
         $this->shipperName = $shipperName;
-        
+
         return $this;
     }
+
     /**
      * Get shipperName2 value
      * @return string|null
@@ -396,10 +418,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperName2;
     }
+
     /**
      * Set shipperName2 value
      * @param string $shipperName2
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperName2(?string $shipperName2 = null): self
     {
@@ -408,9 +431,10 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperName2, true), gettype($shipperName2)), __LINE__);
         }
         $this->shipperName2 = $shipperName2;
-        
+
         return $this;
     }
+
     /**
      * Get shipperPhone value
      * @return string|null
@@ -419,10 +443,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperPhone;
     }
+
     /**
      * Set shipperPhone value
      * @param string $shipperPhone
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperPhone(?string $shipperPhone = null): self
     {
@@ -431,9 +456,10 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperPhone, true), gettype($shipperPhone)), __LINE__);
         }
         $this->shipperPhone = $shipperPhone;
-        
+
         return $this;
     }
+
     /**
      * Get shipperPreAlert value
      * @return int|null
@@ -442,10 +468,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperPreAlert;
     }
+
     /**
      * Set shipperPreAlert value
      * @param int $shipperPreAlert
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperPreAlert(?int $shipperPreAlert = null): self
     {
@@ -454,9 +481,10 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($shipperPreAlert, true), gettype($shipperPreAlert)), __LINE__);
         }
         $this->shipperPreAlert = $shipperPreAlert;
-        
+
         return $this;
     }
+
     /**
      * Get shipperZipCode value
      * @return string|null
@@ -465,10 +493,11 @@ class ShipperValue extends AbstractStructBase
     {
         return $this->shipperZipCode;
     }
+
     /**
      * Set shipperZipCode value
      * @param string $shipperZipCode
-     * @return \StructType\ShipperValue
+     * @return ShipperValue
      */
     public function setShipperZipCode(?string $shipperZipCode = null): self
     {
@@ -477,7 +506,7 @@ class ShipperValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperZipCode, true), gettype($shipperZipCode)), __LINE__);
         }
         $this->shipperZipCode = $shipperZipCode;
-        
+
         return $this;
     }
 }

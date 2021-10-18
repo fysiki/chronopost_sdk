@@ -32,14 +32,15 @@ class InfoDouanieres extends AbstractStructBase
      * @var string|null
      */
     protected ?string $type = null;
+
     /**
      * Constructor method for infoDouanieres
-     * @uses InfoDouanieres::setDevise()
-     * @uses InfoDouanieres::setMontant()
-     * @uses InfoDouanieres::setType()
      * @param string $devise
      * @param float $montant
      * @param string $type
+     * @uses InfoDouanieres::setDevise()
+     * @uses InfoDouanieres::setMontant()
+     * @uses InfoDouanieres::setType()
      */
     public function __construct(?string $devise = null, ?float $montant = null, ?string $type = null)
     {
@@ -48,6 +49,7 @@ class InfoDouanieres extends AbstractStructBase
             ->setMontant($montant)
             ->setType($type);
     }
+
     /**
      * Get devise value
      * @return string|null
@@ -56,10 +58,11 @@ class InfoDouanieres extends AbstractStructBase
     {
         return $this->devise;
     }
+
     /**
      * Set devise value
      * @param string $devise
-     * @return \StructType\InfoDouanieres
+     * @return InfoDouanieres
      */
     public function setDevise(?string $devise = null): self
     {
@@ -68,9 +71,10 @@ class InfoDouanieres extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($devise, true), gettype($devise)), __LINE__);
         }
         $this->devise = $devise;
-        
+
         return $this;
     }
+
     /**
      * Get montant value
      * @return float|null
@@ -79,10 +83,11 @@ class InfoDouanieres extends AbstractStructBase
     {
         return $this->montant;
     }
+
     /**
      * Set montant value
      * @param float $montant
-     * @return \StructType\InfoDouanieres
+     * @return InfoDouanieres
      */
     public function setMontant(?float $montant = null): self
     {
@@ -91,9 +96,10 @@ class InfoDouanieres extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($montant, true), gettype($montant)), __LINE__);
         }
         $this->montant = $montant;
-        
+
         return $this;
     }
+
     /**
      * Get type value
      * @return string|null
@@ -102,10 +108,11 @@ class InfoDouanieres extends AbstractStructBase
     {
         return $this->type;
     }
+
     /**
      * Set type value
      * @param string $type
-     * @return \StructType\InfoDouanieres
+     * @return InfoDouanieres
      */
     public function setType(?string $type = null): self
     {
@@ -114,7 +121,7 @@ class InfoDouanieres extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
-        
+
         return $this;
     }
 }

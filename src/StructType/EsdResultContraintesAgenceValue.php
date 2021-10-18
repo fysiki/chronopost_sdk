@@ -24,7 +24,7 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\EsdContraintesAgence[]
+     * @var EsdContraintesAgence[]
      */
     protected ?array $esdContraintesAgence = null;
     /**
@@ -34,14 +34,15 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $libelleErreur = null;
+
     /**
      * Constructor method for esdResultContraintesAgenceValue
+     * @param int $codeErreur
+     * @param EsdContraintesAgence[] $esdContraintesAgence
+     * @param string $libelleErreur
      * @uses EsdResultContraintesAgenceValue::setCodeErreur()
      * @uses EsdResultContraintesAgenceValue::setEsdContraintesAgence()
      * @uses EsdResultContraintesAgenceValue::setLibelleErreur()
-     * @param int $codeErreur
-     * @param \StructType\EsdContraintesAgence[] $esdContraintesAgence
-     * @param string $libelleErreur
      */
     public function __construct(?int $codeErreur = null, ?array $esdContraintesAgence = null, ?string $libelleErreur = null)
     {
@@ -50,6 +51,7 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
             ->setEsdContraintesAgence($esdContraintesAgence)
             ->setLibelleErreur($libelleErreur);
     }
+
     /**
      * Get codeErreur value
      * @return int|null
@@ -58,10 +60,11 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
     {
         return $this->codeErreur;
     }
+
     /**
      * Set codeErreur value
      * @param int $codeErreur
-     * @return \StructType\EsdResultContraintesAgenceValue
+     * @return EsdResultContraintesAgenceValue
      */
     public function setCodeErreur(?int $codeErreur = null): self
     {
@@ -70,20 +73,22 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($codeErreur, true), gettype($codeErreur)), __LINE__);
         }
         $this->codeErreur = $codeErreur;
-        
+
         return $this;
     }
+
     /**
      * Get esdContraintesAgence value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\EsdContraintesAgence[]
+     * @return EsdContraintesAgence[]
      */
     public function getEsdContraintesAgence(): ?array
     {
         return isset($this->esdContraintesAgence) ? $this->esdContraintesAgence : null;
     }
+
     /**
      * This method is responsible for validating the values passed to the setEsdContraintesAgence method
      * This method is willingly generated in order to preserve the one-line inline validation within the setEsdContraintesAgence method
@@ -99,7 +104,7 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $esdResultContraintesAgenceValueEsdContraintesAgenceItem) {
             // validation for constraint: itemType
-            if (!$esdResultContraintesAgenceValueEsdContraintesAgenceItem instanceof \StructType\EsdContraintesAgence) {
+            if (!$esdResultContraintesAgenceValueEsdContraintesAgenceItem instanceof EsdContraintesAgence) {
                 $invalidValues[] = is_object($esdResultContraintesAgenceValueEsdContraintesAgenceItem) ? get_class($esdResultContraintesAgenceValueEsdContraintesAgenceItem) : sprintf('%s(%s)', gettype($esdResultContraintesAgenceValueEsdContraintesAgenceItem), var_export($esdResultContraintesAgenceValueEsdContraintesAgenceItem, true));
             }
         }
@@ -107,16 +112,17 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
             $message = sprintf('The esdContraintesAgence property can only contain items of type \StructType\EsdContraintesAgence, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
+
     /**
      * Set esdContraintesAgence value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
+     * @param EsdContraintesAgence[] $esdContraintesAgence
+     * @return EsdResultContraintesAgenceValue
      * @throws InvalidArgumentException
-     * @param \StructType\EsdContraintesAgence[] $esdContraintesAgence
-     * @return \StructType\EsdResultContraintesAgenceValue
      */
     public function setEsdContraintesAgence(?array $esdContraintesAgence = null): self
     {
@@ -129,25 +135,27 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
         } else {
             $this->esdContraintesAgence = $esdContraintesAgence;
         }
-        
+
         return $this;
     }
+
     /**
      * Add item to esdContraintesAgence value
+     * @param EsdContraintesAgence $item
+     * @return EsdResultContraintesAgenceValue
      * @throws InvalidArgumentException
-     * @param \StructType\EsdContraintesAgence $item
-     * @return \StructType\EsdResultContraintesAgenceValue
      */
-    public function addToEsdContraintesAgence(\StructType\EsdContraintesAgence $item): self
+    public function addToEsdContraintesAgence(EsdContraintesAgence $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\EsdContraintesAgence) {
+        if (!$item instanceof EsdContraintesAgence) {
             throw new InvalidArgumentException(sprintf('The esdContraintesAgence property can only contain items of type \StructType\EsdContraintesAgence, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->esdContraintesAgence[] = $item;
-        
+
         return $this;
     }
+
     /**
      * Get libelleErreur value
      * @return string|null
@@ -156,10 +164,11 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
     {
         return $this->libelleErreur;
     }
+
     /**
      * Set libelleErreur value
      * @param string $libelleErreur
-     * @return \StructType\EsdResultContraintesAgenceValue
+     * @return EsdResultContraintesAgenceValue
      */
     public function setLibelleErreur(?string $libelleErreur = null): self
     {
@@ -168,7 +177,7 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($libelleErreur, true), gettype($libelleErreur)), __LINE__);
         }
         $this->libelleErreur = $libelleErreur;
-        
+
         return $this;
     }
 }

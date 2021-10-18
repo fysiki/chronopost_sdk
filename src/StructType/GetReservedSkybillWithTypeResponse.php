@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class GetReservedSkybillWithTypeResponse extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ResultGetReservedSkybillWithTypeValue|null
+     * @var ResultGetReservedSkybillWithTypeValue|null
      */
-    protected ?\StructType\ResultGetReservedSkybillWithTypeValue $return = null;
+    protected ?ResultGetReservedSkybillWithTypeValue $return = null;
+
     /**
      * Constructor method for getReservedSkybillWithTypeResponse
+     * @param ResultGetReservedSkybillWithTypeValue $return
      * @uses GetReservedSkybillWithTypeResponse::setReturn()
-     * @param \StructType\ResultGetReservedSkybillWithTypeValue $return
      */
-    public function __construct(?\StructType\ResultGetReservedSkybillWithTypeValue $return = null)
+    public function __construct(?ResultGetReservedSkybillWithTypeValue $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\ResultGetReservedSkybillWithTypeValue|null
+     * @return ResultGetReservedSkybillWithTypeValue|null
      */
-    public function getReturn(): ?\StructType\ResultGetReservedSkybillWithTypeValue
+    public function getReturn(): ?ResultGetReservedSkybillWithTypeValue
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\ResultGetReservedSkybillWithTypeValue $return
-     * @return \StructType\GetReservedSkybillWithTypeResponse
+     * @param ResultGetReservedSkybillWithTypeValue $return
+     * @return GetReservedSkybillWithTypeResponse
      */
-    public function setReturn(?\StructType\ResultGetReservedSkybillWithTypeValue $return = null): self
+    public function setReturn(?ResultGetReservedSkybillWithTypeValue $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

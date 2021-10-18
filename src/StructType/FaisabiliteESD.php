@@ -19,9 +19,9 @@ class FaisabiliteESD extends AbstractStructBase
      * The shipperValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ShipperValue|null
+     * @var ShipperValue|null
      */
-    protected ?\StructType\ShipperValue $shipperValue = null;
+    protected ?ShipperValue $shipperValue = null;
     /**
      * The retrievalDateTime
      * Meta information extracted from the WSDL
@@ -36,41 +36,45 @@ class FaisabiliteESD extends AbstractStructBase
      * @var string|null
      */
     protected ?string $closingDateTime = null;
+
     /**
      * Constructor method for faisabiliteESD
+     * @param ShipperValue $shipperValue
+     * @param string $retrievalDateTime
+     * @param string $closingDateTime
      * @uses FaisabiliteESD::setShipperValue()
      * @uses FaisabiliteESD::setRetrievalDateTime()
      * @uses FaisabiliteESD::setClosingDateTime()
-     * @param \StructType\ShipperValue $shipperValue
-     * @param string $retrievalDateTime
-     * @param string $closingDateTime
      */
-    public function __construct(?\StructType\ShipperValue $shipperValue = null, ?string $retrievalDateTime = null, ?string $closingDateTime = null)
+    public function __construct(?ShipperValue $shipperValue = null, ?string $retrievalDateTime = null, ?string $closingDateTime = null)
     {
         $this
             ->setShipperValue($shipperValue)
             ->setRetrievalDateTime($retrievalDateTime)
             ->setClosingDateTime($closingDateTime);
     }
+
     /**
      * Get shipperValue value
-     * @return \StructType\ShipperValue|null
+     * @return ShipperValue|null
      */
-    public function getShipperValue(): ?\StructType\ShipperValue
+    public function getShipperValue(): ?ShipperValue
     {
         return $this->shipperValue;
     }
+
     /**
      * Set shipperValue value
-     * @param \StructType\ShipperValue $shipperValue
-     * @return \StructType\FaisabiliteESD
+     * @param ShipperValue $shipperValue
+     * @return FaisabiliteESD
      */
-    public function setShipperValue(?\StructType\ShipperValue $shipperValue = null): self
+    public function setShipperValue(?ShipperValue $shipperValue = null): self
     {
         $this->shipperValue = $shipperValue;
-        
+
         return $this;
     }
+
     /**
      * Get retrievalDateTime value
      * @return string|null
@@ -79,10 +83,11 @@ class FaisabiliteESD extends AbstractStructBase
     {
         return $this->retrievalDateTime;
     }
+
     /**
      * Set retrievalDateTime value
      * @param string $retrievalDateTime
-     * @return \StructType\FaisabiliteESD
+     * @return FaisabiliteESD
      */
     public function setRetrievalDateTime(?string $retrievalDateTime = null): self
     {
@@ -91,9 +96,10 @@ class FaisabiliteESD extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($retrievalDateTime, true), gettype($retrievalDateTime)), __LINE__);
         }
         $this->retrievalDateTime = $retrievalDateTime;
-        
+
         return $this;
     }
+
     /**
      * Get closingDateTime value
      * @return string|null
@@ -102,10 +108,11 @@ class FaisabiliteESD extends AbstractStructBase
     {
         return $this->closingDateTime;
     }
+
     /**
      * Set closingDateTime value
      * @param string $closingDateTime
-     * @return \StructType\FaisabiliteESD
+     * @return FaisabiliteESD
      */
     public function setClosingDateTime(?string $closingDateTime = null): self
     {
@@ -114,7 +121,7 @@ class FaisabiliteESD extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($closingDateTime, true), gettype($closingDateTime)), __LINE__);
         }
         $this->closingDateTime = $closingDateTime;
-        
+
         return $this;
     }
 }

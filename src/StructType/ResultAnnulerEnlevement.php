@@ -27,25 +27,27 @@ class ResultAnnulerEnlevement extends AbstractStructBase
     protected ?string $errorMessage = null;
     /**
      * The statut
-     * @var \StructType\Statut|null
+     * @var Statut|null
      */
-    protected ?\StructType\Statut $statut = null;
+    protected ?Statut $statut = null;
+
     /**
      * Constructor method for resultAnnulerEnlevement
+     * @param int $codeErreur
+     * @param string $errorMessage
+     * @param Statut $statut
      * @uses ResultAnnulerEnlevement::setCodeErreur()
      * @uses ResultAnnulerEnlevement::setErrorMessage()
      * @uses ResultAnnulerEnlevement::setStatut()
-     * @param int $codeErreur
-     * @param string $errorMessage
-     * @param \StructType\Statut $statut
      */
-    public function __construct(?int $codeErreur = null, ?string $errorMessage = null, ?\StructType\Statut $statut = null)
+    public function __construct(?int $codeErreur = null, ?string $errorMessage = null, ?Statut $statut = null)
     {
         $this
             ->setCodeErreur($codeErreur)
             ->setErrorMessage($errorMessage)
             ->setStatut($statut);
     }
+
     /**
      * Get codeErreur value
      * @return int|null
@@ -54,10 +56,11 @@ class ResultAnnulerEnlevement extends AbstractStructBase
     {
         return $this->codeErreur;
     }
+
     /**
      * Set codeErreur value
      * @param int $codeErreur
-     * @return \StructType\ResultAnnulerEnlevement
+     * @return ResultAnnulerEnlevement
      */
     public function setCodeErreur(?int $codeErreur = null): self
     {
@@ -66,9 +69,10 @@ class ResultAnnulerEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($codeErreur, true), gettype($codeErreur)), __LINE__);
         }
         $this->codeErreur = $codeErreur;
-        
+
         return $this;
     }
+
     /**
      * Get errorMessage value
      * @return string|null
@@ -77,10 +81,11 @@ class ResultAnnulerEnlevement extends AbstractStructBase
     {
         return $this->errorMessage;
     }
+
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \StructType\ResultAnnulerEnlevement
+     * @return ResultAnnulerEnlevement
      */
     public function setErrorMessage(?string $errorMessage = null): self
     {
@@ -89,26 +94,28 @@ class ResultAnnulerEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($errorMessage, true), gettype($errorMessage)), __LINE__);
         }
         $this->errorMessage = $errorMessage;
-        
+
         return $this;
     }
+
     /**
      * Get statut value
-     * @return \StructType\Statut|null
+     * @return Statut|null
      */
-    public function getStatut(): ?\StructType\Statut
+    public function getStatut(): ?Statut
     {
         return $this->statut;
     }
+
     /**
      * Set statut value
-     * @param \StructType\Statut $statut
-     * @return \StructType\ResultAnnulerEnlevement
+     * @param Statut $statut
+     * @return ResultAnnulerEnlevement
      */
-    public function setStatut(?\StructType\Statut $statut = null): self
+    public function setStatut(?Statut $statut = null): self
     {
         $this->statut = $statut;
-        
+
         return $this;
     }
 }

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for esdWithRefClientValueV2 StructType
@@ -27,12 +26,13 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
      * @var string[]
      */
     protected ?array $parcelsNumber = null;
+
     /**
      * Constructor method for esdWithRefClientValueV2
-     * @uses EsdWithRefClientValueV2::setNumberOfParcel()
-     * @uses EsdWithRefClientValueV2::setParcelsNumber()
      * @param int $numberOfParcel
      * @param string[] $parcelsNumber
+     * @uses EsdWithRefClientValueV2::setNumberOfParcel()
+     * @uses EsdWithRefClientValueV2::setParcelsNumber()
      */
     public function __construct(?int $numberOfParcel = null, ?array $parcelsNumber = null)
     {
@@ -40,6 +40,7 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
             ->setNumberOfParcel($numberOfParcel)
             ->setParcelsNumber($parcelsNumber);
     }
+
     /**
      * Get numberOfParcel value
      * @return int|null
@@ -48,10 +49,11 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
     {
         return $this->numberOfParcel;
     }
+
     /**
      * Set numberOfParcel value
      * @param int $numberOfParcel
-     * @return \StructType\EsdWithRefClientValueV2
+     * @return EsdWithRefClientValueV2
      */
     public function setNumberOfParcel(?int $numberOfParcel = null): self
     {
@@ -60,9 +62,10 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($numberOfParcel, true), gettype($numberOfParcel)), __LINE__);
         }
         $this->numberOfParcel = $numberOfParcel;
-        
+
         return $this;
     }
+
     /**
      * Get parcelsNumber value
      * An additional test has been added (isset) before returning the property value as
@@ -74,6 +77,7 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
     {
         return isset($this->parcelsNumber) ? $this->parcelsNumber : null;
     }
+
     /**
      * This method is responsible for validating the values passed to the setParcelsNumber method
      * This method is willingly generated in order to preserve the one-line inline validation within the setParcelsNumber method
@@ -97,16 +101,17 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
             $message = sprintf('The parcelsNumber property can only contain items of type string, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
+
     /**
      * Set parcelsNumber value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @throws InvalidArgumentException
      * @param string[] $parcelsNumber
-     * @return \StructType\EsdWithRefClientValueV2
+     * @return EsdWithRefClientValueV2
+     * @throws InvalidArgumentException
      */
     public function setParcelsNumber(?array $parcelsNumber = null): self
     {
@@ -119,14 +124,15 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
         } else {
             $this->parcelsNumber = $parcelsNumber;
         }
-        
+
         return $this;
     }
+
     /**
      * Add item to parcelsNumber value
-     * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\EsdWithRefClientValueV2
+     * @return EsdWithRefClientValueV2
+     * @throws InvalidArgumentException
      */
     public function addToParcelsNumber(string $item): self
     {
@@ -135,7 +141,7 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
             throw new InvalidArgumentException(sprintf('The parcelsNumber property can only contain items of type string, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->parcelsNumber[] = $item;
-        
+
         return $this;
     }
 }

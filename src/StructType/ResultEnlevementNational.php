@@ -22,9 +22,9 @@ class ResultEnlevementNational extends AbstractStructBase
      * The infoEnlevement
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\InfoEnlevement|null
+     * @var InfoEnlevement|null
      */
-    protected ?\StructType\InfoEnlevement $infoEnlevement = null;
+    protected ?InfoEnlevement $infoEnlevement = null;
     /**
      * The libelleErreur
      * Meta information extracted from the WSDL
@@ -32,22 +32,24 @@ class ResultEnlevementNational extends AbstractStructBase
      * @var string|null
      */
     protected ?string $libelleErreur = null;
+
     /**
      * Constructor method for resultEnlevementNational
+     * @param int $codeErreur
+     * @param InfoEnlevement $infoEnlevement
+     * @param string $libelleErreur
      * @uses ResultEnlevementNational::setCodeErreur()
      * @uses ResultEnlevementNational::setInfoEnlevement()
      * @uses ResultEnlevementNational::setLibelleErreur()
-     * @param int $codeErreur
-     * @param \StructType\InfoEnlevement $infoEnlevement
-     * @param string $libelleErreur
      */
-    public function __construct(?int $codeErreur = null, ?\StructType\InfoEnlevement $infoEnlevement = null, ?string $libelleErreur = null)
+    public function __construct(?int $codeErreur = null, ?InfoEnlevement $infoEnlevement = null, ?string $libelleErreur = null)
     {
         $this
             ->setCodeErreur($codeErreur)
             ->setInfoEnlevement($infoEnlevement)
             ->setLibelleErreur($libelleErreur);
     }
+
     /**
      * Get codeErreur value
      * @return int|null
@@ -56,10 +58,11 @@ class ResultEnlevementNational extends AbstractStructBase
     {
         return $this->codeErreur;
     }
+
     /**
      * Set codeErreur value
      * @param int $codeErreur
-     * @return \StructType\ResultEnlevementNational
+     * @return ResultEnlevementNational
      */
     public function setCodeErreur(?int $codeErreur = null): self
     {
@@ -68,28 +71,31 @@ class ResultEnlevementNational extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($codeErreur, true), gettype($codeErreur)), __LINE__);
         }
         $this->codeErreur = $codeErreur;
-        
+
         return $this;
     }
+
     /**
      * Get infoEnlevement value
-     * @return \StructType\InfoEnlevement|null
+     * @return InfoEnlevement|null
      */
-    public function getInfoEnlevement(): ?\StructType\InfoEnlevement
+    public function getInfoEnlevement(): ?InfoEnlevement
     {
         return $this->infoEnlevement;
     }
+
     /**
      * Set infoEnlevement value
-     * @param \StructType\InfoEnlevement $infoEnlevement
-     * @return \StructType\ResultEnlevementNational
+     * @param InfoEnlevement $infoEnlevement
+     * @return ResultEnlevementNational
      */
-    public function setInfoEnlevement(?\StructType\InfoEnlevement $infoEnlevement = null): self
+    public function setInfoEnlevement(?InfoEnlevement $infoEnlevement = null): self
     {
         $this->infoEnlevement = $infoEnlevement;
-        
+
         return $this;
     }
+
     /**
      * Get libelleErreur value
      * @return string|null
@@ -98,10 +104,11 @@ class ResultEnlevementNational extends AbstractStructBase
     {
         return $this->libelleErreur;
     }
+
     /**
      * Set libelleErreur value
      * @param string $libelleErreur
-     * @return \StructType\ResultEnlevementNational
+     * @return ResultEnlevementNational
      */
     public function setLibelleErreur(?string $libelleErreur = null): self
     {
@@ -110,7 +117,7 @@ class ResultEnlevementNational extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($libelleErreur, true), gettype($libelleErreur)), __LINE__);
         }
         $this->libelleErreur = $libelleErreur;
-        
+
         return $this;
     }
 }

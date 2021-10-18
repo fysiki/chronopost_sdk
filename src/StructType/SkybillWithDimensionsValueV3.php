@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for skybillWithDimensionsValueV3 StructType
@@ -27,12 +26,13 @@ class SkybillWithDimensionsValueV3 extends SkybillWithDimensionsValueV2
      * @var string|null
      */
     protected ?string $toTheOrderOf = null;
+
     /**
      * Constructor method for skybillWithDimensionsValueV3
-     * @uses SkybillWithDimensionsValueV3::setSubAccount()
-     * @uses SkybillWithDimensionsValueV3::setToTheOrderOf()
      * @param string $subAccount
      * @param string $toTheOrderOf
+     * @uses SkybillWithDimensionsValueV3::setSubAccount()
+     * @uses SkybillWithDimensionsValueV3::setToTheOrderOf()
      */
     public function __construct(?string $subAccount = null, ?string $toTheOrderOf = null)
     {
@@ -40,6 +40,7 @@ class SkybillWithDimensionsValueV3 extends SkybillWithDimensionsValueV2
             ->setSubAccount($subAccount)
             ->setToTheOrderOf($toTheOrderOf);
     }
+
     /**
      * Get subAccount value
      * @return string|null
@@ -48,10 +49,11 @@ class SkybillWithDimensionsValueV3 extends SkybillWithDimensionsValueV2
     {
         return $this->subAccount;
     }
+
     /**
      * Set subAccount value
      * @param string $subAccount
-     * @return \StructType\SkybillWithDimensionsValueV3
+     * @return SkybillWithDimensionsValueV3
      */
     public function setSubAccount(?string $subAccount = null): self
     {
@@ -60,9 +62,10 @@ class SkybillWithDimensionsValueV3 extends SkybillWithDimensionsValueV2
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($subAccount, true), gettype($subAccount)), __LINE__);
         }
         $this->subAccount = $subAccount;
-        
+
         return $this;
     }
+
     /**
      * Get toTheOrderOf value
      * @return string|null
@@ -71,10 +74,11 @@ class SkybillWithDimensionsValueV3 extends SkybillWithDimensionsValueV2
     {
         return $this->toTheOrderOf;
     }
+
     /**
      * Set toTheOrderOf value
      * @param string $toTheOrderOf
-     * @return \StructType\SkybillWithDimensionsValueV3
+     * @return SkybillWithDimensionsValueV3
      */
     public function setToTheOrderOf(?string $toTheOrderOf = null): self
     {
@@ -83,7 +87,7 @@ class SkybillWithDimensionsValueV3 extends SkybillWithDimensionsValueV2
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($toTheOrderOf, true), gettype($toTheOrderOf)), __LINE__);
         }
         $this->toTheOrderOf = $toTheOrderOf;
-        
+
         return $this;
     }
 }

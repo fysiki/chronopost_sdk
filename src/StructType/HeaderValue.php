@@ -37,16 +37,17 @@ class HeaderValue extends AbstractStructBase
      * @var int|null
      */
     protected ?int $subAccount = null;
+
     /**
      * Constructor method for headerValue
-     * @uses HeaderValue::setAccountNumber()
-     * @uses HeaderValue::setIdEmit()
-     * @uses HeaderValue::setIdentWebPro()
-     * @uses HeaderValue::setSubAccount()
      * @param int $accountNumber
      * @param string $idEmit
      * @param string $identWebPro
      * @param int $subAccount
+     * @uses HeaderValue::setAccountNumber()
+     * @uses HeaderValue::setIdEmit()
+     * @uses HeaderValue::setIdentWebPro()
+     * @uses HeaderValue::setSubAccount()
      */
     public function __construct(?int $accountNumber = null, ?string $idEmit = null, ?string $identWebPro = null, ?int $subAccount = null)
     {
@@ -56,6 +57,7 @@ class HeaderValue extends AbstractStructBase
             ->setIdentWebPro($identWebPro)
             ->setSubAccount($subAccount);
     }
+
     /**
      * Get accountNumber value
      * @return int|null
@@ -64,10 +66,11 @@ class HeaderValue extends AbstractStructBase
     {
         return $this->accountNumber;
     }
+
     /**
      * Set accountNumber value
      * @param int $accountNumber
-     * @return \StructType\HeaderValue
+     * @return HeaderValue
      */
     public function setAccountNumber(?int $accountNumber = null): self
     {
@@ -76,9 +79,10 @@ class HeaderValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($accountNumber, true), gettype($accountNumber)), __LINE__);
         }
         $this->accountNumber = $accountNumber;
-        
+
         return $this;
     }
+
     /**
      * Get idEmit value
      * @return string|null
@@ -87,10 +91,11 @@ class HeaderValue extends AbstractStructBase
     {
         return $this->idEmit;
     }
+
     /**
      * Set idEmit value
      * @param string $idEmit
-     * @return \StructType\HeaderValue
+     * @return HeaderValue
      */
     public function setIdEmit(?string $idEmit = null): self
     {
@@ -99,9 +104,10 @@ class HeaderValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($idEmit, true), gettype($idEmit)), __LINE__);
         }
         $this->idEmit = $idEmit;
-        
+
         return $this;
     }
+
     /**
      * Get identWebPro value
      * @return string|null
@@ -110,10 +116,11 @@ class HeaderValue extends AbstractStructBase
     {
         return $this->identWebPro;
     }
+
     /**
      * Set identWebPro value
      * @param string $identWebPro
-     * @return \StructType\HeaderValue
+     * @return HeaderValue
      */
     public function setIdentWebPro(?string $identWebPro = null): self
     {
@@ -122,9 +129,10 @@ class HeaderValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($identWebPro, true), gettype($identWebPro)), __LINE__);
         }
         $this->identWebPro = $identWebPro;
-        
+
         return $this;
     }
+
     /**
      * Get subAccount value
      * @return int|null
@@ -133,10 +141,11 @@ class HeaderValue extends AbstractStructBase
     {
         return $this->subAccount;
     }
+
     /**
      * Set subAccount value
      * @param int $subAccount
-     * @return \StructType\HeaderValue
+     * @return HeaderValue
      */
     public function setSubAccount(?int $subAccount = null): self
     {
@@ -145,7 +154,7 @@ class HeaderValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($subAccount, true), gettype($subAccount)), __LINE__);
         }
         $this->subAccount = $subAccount;
-        
+
         return $this;
     }
 }

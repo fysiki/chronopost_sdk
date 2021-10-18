@@ -659,100 +659,9 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
      * @var string|null
      */
     protected ?string $sellByDate = null;
+
     /**
      * Constructor method for shippingWithReservationAndESDWithRefClientPC
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRefEsdClient()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRetrievalDateTime()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setClosingDateTime()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setSpecificInstructions()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setHeight()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setWidth()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setLength()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperCarriesCode()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperBuildingFloor()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperServiceDirection()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setNombreDePassageMaximum()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setLtAImprimerParChronopost()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setHeader_idEmit()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setAccountNumber()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setSubAccount()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setHeader_identWebPro()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperCivility()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperName()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperName2()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperAdress1()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperAdress2()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperZipCode()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperCity()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperCountry()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperCountryName()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperContactName()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperEmail()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperPhone()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperMobilePhone()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerCivility()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerName()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerName2()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerAdress1()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerAdress2()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerZipCode()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerCity()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerCountry()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerCountryName()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerContactName()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerEmail()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerPhone()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerMobilePhone()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerPreAlert()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientCivility()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientName()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientName2()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientAdress1()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientAdress2()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientZipCode()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientCity()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientCountry()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientCountryName()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientContactName()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientEmail()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientPhone()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientMobilePhone()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientPreAlert()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperRef()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientRef()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerSkybillNumber()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setEvtCode()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setProductCode()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipDate()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipHour()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setWeight()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setWeightUnit()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setInsuredValue()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setInsuredCurrency()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCodValue()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCodCurrency()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomsValue()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomsCurrency()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setService()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setAs()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setObjectType()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setContent1()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setContent2()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setContent3()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setContent4()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setContent5()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setPortValue()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setPortCurrency()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setSkybillRank()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setBulkNumber()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setMode()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setPassword()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setModeRetour()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setTimeSlotStartDate()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setTimeSlotEndDate()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setTimeSlotTariffLevel()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setExpirationDate()
-     * @uses ShippingWithReservationAndESDWithRefClientPC::setSellByDate()
      * @param string $refEsdClient
      * @param string $retrievalDateTime
      * @param string $closingDateTime
@@ -845,6 +754,98 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
      * @param string $timeSlotTariffLevel
      * @param string $expirationDate
      * @param string $sellByDate
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRefEsdClient()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRetrievalDateTime()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setClosingDateTime()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setSpecificInstructions()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setHeight()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setWidth()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setLength()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperCarriesCode()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperBuildingFloor()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperServiceDirection()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setNombreDePassageMaximum()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setLtAImprimerParChronopost()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setHeader_idEmit()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setAccountNumber()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setSubAccount()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setHeader_identWebPro()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperCivility()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperName()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperName2()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperAdress1()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperAdress2()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperZipCode()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperCity()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperCountry()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperCountryName()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperContactName()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperEmail()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperPhone()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperMobilePhone()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerCivility()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerName()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerName2()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerAdress1()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerAdress2()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerZipCode()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerCity()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerCountry()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerCountryName()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerContactName()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerEmail()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerPhone()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerMobilePhone()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerPreAlert()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientCivility()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientName()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientName2()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientAdress1()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientAdress2()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientZipCode()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientCity()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientCountry()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientCountryName()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientContactName()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientEmail()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientPhone()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientMobilePhone()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientPreAlert()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipperRef()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setRecipientRef()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomerSkybillNumber()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setEvtCode()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setProductCode()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipDate()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setShipHour()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setWeight()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setWeightUnit()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setInsuredValue()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setInsuredCurrency()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCodValue()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCodCurrency()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomsValue()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setCustomsCurrency()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setService()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setAs()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setObjectType()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setContent1()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setContent2()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setContent3()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setContent4()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setContent5()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setPortValue()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setPortCurrency()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setSkybillRank()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setBulkNumber()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setMode()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setPassword()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setModeRetour()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setTimeSlotStartDate()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setTimeSlotEndDate()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setTimeSlotTariffLevel()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setExpirationDate()
+     * @uses ShippingWithReservationAndESDWithRefClientPC::setSellByDate()
      */
     public function __construct(?string $refEsdClient = null, ?string $retrievalDateTime = null, ?string $closingDateTime = null, ?string $specificInstructions = null, ?string $height = null, ?string $width = null, ?string $length = null, ?string $shipperCarriesCode = null, ?string $shipperBuildingFloor = null, ?string $shipperServiceDirection = null, ?string $nombreDePassageMaximum = null, ?string $ltAImprimerParChronopost = null, ?string $header_idEmit = null, ?string $accountNumber = null, ?string $subAccount = null, ?string $header_identWebPro = null, ?string $shipperCivility = null, ?string $shipperName = null, ?string $shipperName2 = null, ?string $shipperAdress1 = null, ?string $shipperAdress2 = null, ?string $shipperZipCode = null, ?string $shipperCity = null, ?string $shipperCountry = null, ?string $shipperCountryName = null, ?string $shipperContactName = null, ?string $shipperEmail = null, ?string $shipperPhone = null, ?string $shipperMobilePhone = null, ?string $customerCivility = null, ?string $customerName = null, ?string $customerName2 = null, ?string $customerAdress1 = null, ?string $customerAdress2 = null, ?string $customerZipCode = null, ?string $customerCity = null, ?string $customerCountry = null, ?string $customerCountryName = null, ?string $customerContactName = null, ?string $customerEmail = null, ?string $customerPhone = null, ?string $customerMobilePhone = null, ?string $customerPreAlert = null, ?string $recipientCivility = null, ?string $recipientName = null, ?string $recipientName2 = null, ?string $recipientAdress1 = null, ?string $recipientAdress2 = null, ?string $recipientZipCode = null, ?string $recipientCity = null, ?string $recipientCountry = null, ?string $recipientCountryName = null, ?string $recipientContactName = null, ?string $recipientEmail = null, ?string $recipientPhone = null, ?string $recipientMobilePhone = null, ?string $recipientPreAlert = null, ?string $shipperRef = null, ?string $recipientRef = null, ?string $customerSkybillNumber = null, ?string $evtCode = null, ?string $productCode = null, ?string $shipDate = null, ?string $shipHour = null, ?string $weight = null, ?string $weightUnit = null, ?string $insuredValue = null, ?string $insuredCurrency = null, ?string $codValue = null, ?string $codCurrency = null, ?string $customsValue = null, ?string $customsCurrency = null, ?string $service = null, ?string $as = null, ?string $objectType = null, ?string $content1 = null, ?string $content2 = null, ?string $content3 = null, ?string $content4 = null, ?string $content5 = null, ?string $portValue = null, ?string $portCurrency = null, ?string $skybillRank = null, ?string $bulkNumber = null, ?string $mode = null, ?string $password = null, ?string $modeRetour = null, ?string $timeSlotStartDate = null, ?string $timeSlotEndDate = null, ?string $timeSlotTariffLevel = null, ?string $expirationDate = null, ?string $sellByDate = null)
     {
@@ -942,6 +943,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             ->setExpirationDate($expirationDate)
             ->setSellByDate($sellByDate);
     }
+
     /**
      * Get refEsdClient value
      * @return string|null
@@ -950,10 +952,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->refEsdClient;
     }
+
     /**
      * Set refEsdClient value
      * @param string $refEsdClient
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRefEsdClient(?string $refEsdClient = null): self
     {
@@ -962,9 +965,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($refEsdClient, true), gettype($refEsdClient)), __LINE__);
         }
         $this->refEsdClient = $refEsdClient;
-        
+
         return $this;
     }
+
     /**
      * Get retrievalDateTime value
      * @return string|null
@@ -973,10 +977,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->retrievalDateTime;
     }
+
     /**
      * Set retrievalDateTime value
      * @param string $retrievalDateTime
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRetrievalDateTime(?string $retrievalDateTime = null): self
     {
@@ -985,9 +990,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($retrievalDateTime, true), gettype($retrievalDateTime)), __LINE__);
         }
         $this->retrievalDateTime = $retrievalDateTime;
-        
+
         return $this;
     }
+
     /**
      * Get closingDateTime value
      * @return string|null
@@ -996,10 +1002,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->closingDateTime;
     }
+
     /**
      * Set closingDateTime value
      * @param string $closingDateTime
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setClosingDateTime(?string $closingDateTime = null): self
     {
@@ -1008,9 +1015,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($closingDateTime, true), gettype($closingDateTime)), __LINE__);
         }
         $this->closingDateTime = $closingDateTime;
-        
+
         return $this;
     }
+
     /**
      * Get specificInstructions value
      * @return string|null
@@ -1019,10 +1027,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->specificInstructions;
     }
+
     /**
      * Set specificInstructions value
      * @param string $specificInstructions
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setSpecificInstructions(?string $specificInstructions = null): self
     {
@@ -1031,9 +1040,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($specificInstructions, true), gettype($specificInstructions)), __LINE__);
         }
         $this->specificInstructions = $specificInstructions;
-        
+
         return $this;
     }
+
     /**
      * Get height value
      * @return string|null
@@ -1042,10 +1052,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->height;
     }
+
     /**
      * Set height value
      * @param string $height
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setHeight(?string $height = null): self
     {
@@ -1054,9 +1065,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($height, true), gettype($height)), __LINE__);
         }
         $this->height = $height;
-        
+
         return $this;
     }
+
     /**
      * Get width value
      * @return string|null
@@ -1065,10 +1077,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->width;
     }
+
     /**
      * Set width value
      * @param string $width
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setWidth(?string $width = null): self
     {
@@ -1077,9 +1090,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($width, true), gettype($width)), __LINE__);
         }
         $this->width = $width;
-        
+
         return $this;
     }
+
     /**
      * Get length value
      * @return string|null
@@ -1088,10 +1102,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->length;
     }
+
     /**
      * Set length value
      * @param string $length
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setLength(?string $length = null): self
     {
@@ -1100,9 +1115,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($length, true), gettype($length)), __LINE__);
         }
         $this->length = $length;
-        
+
         return $this;
     }
+
     /**
      * Get shipperCarriesCode value
      * @return string|null
@@ -1111,10 +1127,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperCarriesCode;
     }
+
     /**
      * Set shipperCarriesCode value
      * @param string $shipperCarriesCode
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperCarriesCode(?string $shipperCarriesCode = null): self
     {
@@ -1123,9 +1140,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperCarriesCode, true), gettype($shipperCarriesCode)), __LINE__);
         }
         $this->shipperCarriesCode = $shipperCarriesCode;
-        
+
         return $this;
     }
+
     /**
      * Get shipperBuildingFloor value
      * @return string|null
@@ -1134,10 +1152,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperBuildingFloor;
     }
+
     /**
      * Set shipperBuildingFloor value
      * @param string $shipperBuildingFloor
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperBuildingFloor(?string $shipperBuildingFloor = null): self
     {
@@ -1146,9 +1165,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperBuildingFloor, true), gettype($shipperBuildingFloor)), __LINE__);
         }
         $this->shipperBuildingFloor = $shipperBuildingFloor;
-        
+
         return $this;
     }
+
     /**
      * Get shipperServiceDirection value
      * @return string|null
@@ -1157,10 +1177,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperServiceDirection;
     }
+
     /**
      * Set shipperServiceDirection value
      * @param string $shipperServiceDirection
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperServiceDirection(?string $shipperServiceDirection = null): self
     {
@@ -1169,9 +1190,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperServiceDirection, true), gettype($shipperServiceDirection)), __LINE__);
         }
         $this->shipperServiceDirection = $shipperServiceDirection;
-        
+
         return $this;
     }
+
     /**
      * Get nombreDePassageMaximum value
      * @return string|null
@@ -1180,10 +1202,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->nombreDePassageMaximum;
     }
+
     /**
      * Set nombreDePassageMaximum value
      * @param string $nombreDePassageMaximum
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setNombreDePassageMaximum(?string $nombreDePassageMaximum = null): self
     {
@@ -1192,9 +1215,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nombreDePassageMaximum, true), gettype($nombreDePassageMaximum)), __LINE__);
         }
         $this->nombreDePassageMaximum = $nombreDePassageMaximum;
-        
+
         return $this;
     }
+
     /**
      * Get ltAImprimerParChronopost value
      * @return string|null
@@ -1203,10 +1227,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->ltAImprimerParChronopost;
     }
+
     /**
      * Set ltAImprimerParChronopost value
      * @param string $ltAImprimerParChronopost
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setLtAImprimerParChronopost(?string $ltAImprimerParChronopost = null): self
     {
@@ -1215,9 +1240,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ltAImprimerParChronopost, true), gettype($ltAImprimerParChronopost)), __LINE__);
         }
         $this->ltAImprimerParChronopost = $ltAImprimerParChronopost;
-        
+
         return $this;
     }
+
     /**
      * Get header_idEmit value
      * @return string|null
@@ -1226,10 +1252,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->header_idEmit;
     }
+
     /**
      * Set header_idEmit value
      * @param string $header_idEmit
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setHeader_idEmit(?string $header_idEmit = null): self
     {
@@ -1238,9 +1265,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($header_idEmit, true), gettype($header_idEmit)), __LINE__);
         }
         $this->header_idEmit = $header_idEmit;
-        
+
         return $this;
     }
+
     /**
      * Get accountNumber value
      * @return string|null
@@ -1249,10 +1277,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->accountNumber;
     }
+
     /**
      * Set accountNumber value
      * @param string $accountNumber
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setAccountNumber(?string $accountNumber = null): self
     {
@@ -1261,9 +1290,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($accountNumber, true), gettype($accountNumber)), __LINE__);
         }
         $this->accountNumber = $accountNumber;
-        
+
         return $this;
     }
+
     /**
      * Get subAccount value
      * @return string|null
@@ -1272,10 +1302,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->subAccount;
     }
+
     /**
      * Set subAccount value
      * @param string $subAccount
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setSubAccount(?string $subAccount = null): self
     {
@@ -1284,9 +1315,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($subAccount, true), gettype($subAccount)), __LINE__);
         }
         $this->subAccount = $subAccount;
-        
+
         return $this;
     }
+
     /**
      * Get header_identWebPro value
      * @return string|null
@@ -1295,10 +1327,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->header_identWebPro;
     }
+
     /**
      * Set header_identWebPro value
      * @param string $header_identWebPro
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setHeader_identWebPro(?string $header_identWebPro = null): self
     {
@@ -1307,9 +1340,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($header_identWebPro, true), gettype($header_identWebPro)), __LINE__);
         }
         $this->header_identWebPro = $header_identWebPro;
-        
+
         return $this;
     }
+
     /**
      * Get shipperCivility value
      * @return string|null
@@ -1318,10 +1352,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperCivility;
     }
+
     /**
      * Set shipperCivility value
      * @param string $shipperCivility
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperCivility(?string $shipperCivility = null): self
     {
@@ -1330,9 +1365,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperCivility, true), gettype($shipperCivility)), __LINE__);
         }
         $this->shipperCivility = $shipperCivility;
-        
+
         return $this;
     }
+
     /**
      * Get shipperName value
      * @return string|null
@@ -1341,10 +1377,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperName;
     }
+
     /**
      * Set shipperName value
      * @param string $shipperName
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperName(?string $shipperName = null): self
     {
@@ -1353,9 +1390,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperName, true), gettype($shipperName)), __LINE__);
         }
         $this->shipperName = $shipperName;
-        
+
         return $this;
     }
+
     /**
      * Get shipperName2 value
      * @return string|null
@@ -1364,10 +1402,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperName2;
     }
+
     /**
      * Set shipperName2 value
      * @param string $shipperName2
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperName2(?string $shipperName2 = null): self
     {
@@ -1376,9 +1415,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperName2, true), gettype($shipperName2)), __LINE__);
         }
         $this->shipperName2 = $shipperName2;
-        
+
         return $this;
     }
+
     /**
      * Get shipperAdress1 value
      * @return string|null
@@ -1387,10 +1427,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperAdress1;
     }
+
     /**
      * Set shipperAdress1 value
      * @param string $shipperAdress1
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperAdress1(?string $shipperAdress1 = null): self
     {
@@ -1399,9 +1440,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperAdress1, true), gettype($shipperAdress1)), __LINE__);
         }
         $this->shipperAdress1 = $shipperAdress1;
-        
+
         return $this;
     }
+
     /**
      * Get shipperAdress2 value
      * @return string|null
@@ -1410,10 +1452,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperAdress2;
     }
+
     /**
      * Set shipperAdress2 value
      * @param string $shipperAdress2
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperAdress2(?string $shipperAdress2 = null): self
     {
@@ -1422,9 +1465,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperAdress2, true), gettype($shipperAdress2)), __LINE__);
         }
         $this->shipperAdress2 = $shipperAdress2;
-        
+
         return $this;
     }
+
     /**
      * Get shipperZipCode value
      * @return string|null
@@ -1433,10 +1477,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperZipCode;
     }
+
     /**
      * Set shipperZipCode value
      * @param string $shipperZipCode
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperZipCode(?string $shipperZipCode = null): self
     {
@@ -1445,9 +1490,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperZipCode, true), gettype($shipperZipCode)), __LINE__);
         }
         $this->shipperZipCode = $shipperZipCode;
-        
+
         return $this;
     }
+
     /**
      * Get shipperCity value
      * @return string|null
@@ -1456,10 +1502,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperCity;
     }
+
     /**
      * Set shipperCity value
      * @param string $shipperCity
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperCity(?string $shipperCity = null): self
     {
@@ -1468,9 +1515,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperCity, true), gettype($shipperCity)), __LINE__);
         }
         $this->shipperCity = $shipperCity;
-        
+
         return $this;
     }
+
     /**
      * Get shipperCountry value
      * @return string|null
@@ -1479,10 +1527,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperCountry;
     }
+
     /**
      * Set shipperCountry value
      * @param string $shipperCountry
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperCountry(?string $shipperCountry = null): self
     {
@@ -1491,9 +1540,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperCountry, true), gettype($shipperCountry)), __LINE__);
         }
         $this->shipperCountry = $shipperCountry;
-        
+
         return $this;
     }
+
     /**
      * Get shipperCountryName value
      * @return string|null
@@ -1502,10 +1552,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperCountryName;
     }
+
     /**
      * Set shipperCountryName value
      * @param string $shipperCountryName
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperCountryName(?string $shipperCountryName = null): self
     {
@@ -1514,9 +1565,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperCountryName, true), gettype($shipperCountryName)), __LINE__);
         }
         $this->shipperCountryName = $shipperCountryName;
-        
+
         return $this;
     }
+
     /**
      * Get shipperContactName value
      * @return string|null
@@ -1525,10 +1577,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperContactName;
     }
+
     /**
      * Set shipperContactName value
      * @param string $shipperContactName
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperContactName(?string $shipperContactName = null): self
     {
@@ -1537,9 +1590,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperContactName, true), gettype($shipperContactName)), __LINE__);
         }
         $this->shipperContactName = $shipperContactName;
-        
+
         return $this;
     }
+
     /**
      * Get shipperEmail value
      * @return string|null
@@ -1548,10 +1602,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperEmail;
     }
+
     /**
      * Set shipperEmail value
      * @param string $shipperEmail
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperEmail(?string $shipperEmail = null): self
     {
@@ -1560,9 +1615,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperEmail, true), gettype($shipperEmail)), __LINE__);
         }
         $this->shipperEmail = $shipperEmail;
-        
+
         return $this;
     }
+
     /**
      * Get shipperPhone value
      * @return string|null
@@ -1571,10 +1627,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperPhone;
     }
+
     /**
      * Set shipperPhone value
      * @param string $shipperPhone
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperPhone(?string $shipperPhone = null): self
     {
@@ -1583,9 +1640,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperPhone, true), gettype($shipperPhone)), __LINE__);
         }
         $this->shipperPhone = $shipperPhone;
-        
+
         return $this;
     }
+
     /**
      * Get shipperMobilePhone value
      * @return string|null
@@ -1594,10 +1652,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperMobilePhone;
     }
+
     /**
      * Set shipperMobilePhone value
      * @param string $shipperMobilePhone
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperMobilePhone(?string $shipperMobilePhone = null): self
     {
@@ -1606,9 +1665,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperMobilePhone, true), gettype($shipperMobilePhone)), __LINE__);
         }
         $this->shipperMobilePhone = $shipperMobilePhone;
-        
+
         return $this;
     }
+
     /**
      * Get customerCivility value
      * @return string|null
@@ -1617,10 +1677,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerCivility;
     }
+
     /**
      * Set customerCivility value
      * @param string $customerCivility
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerCivility(?string $customerCivility = null): self
     {
@@ -1629,9 +1690,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerCivility, true), gettype($customerCivility)), __LINE__);
         }
         $this->customerCivility = $customerCivility;
-        
+
         return $this;
     }
+
     /**
      * Get customerName value
      * @return string|null
@@ -1640,10 +1702,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerName;
     }
+
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -1652,9 +1715,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerName, true), gettype($customerName)), __LINE__);
         }
         $this->customerName = $customerName;
-        
+
         return $this;
     }
+
     /**
      * Get customerName2 value
      * @return string|null
@@ -1663,10 +1727,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerName2;
     }
+
     /**
      * Set customerName2 value
      * @param string $customerName2
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerName2(?string $customerName2 = null): self
     {
@@ -1675,9 +1740,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerName2, true), gettype($customerName2)), __LINE__);
         }
         $this->customerName2 = $customerName2;
-        
+
         return $this;
     }
+
     /**
      * Get customerAdress1 value
      * @return string|null
@@ -1686,10 +1752,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerAdress1;
     }
+
     /**
      * Set customerAdress1 value
      * @param string $customerAdress1
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerAdress1(?string $customerAdress1 = null): self
     {
@@ -1698,9 +1765,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerAdress1, true), gettype($customerAdress1)), __LINE__);
         }
         $this->customerAdress1 = $customerAdress1;
-        
+
         return $this;
     }
+
     /**
      * Get customerAdress2 value
      * @return string|null
@@ -1709,10 +1777,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerAdress2;
     }
+
     /**
      * Set customerAdress2 value
      * @param string $customerAdress2
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerAdress2(?string $customerAdress2 = null): self
     {
@@ -1721,9 +1790,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerAdress2, true), gettype($customerAdress2)), __LINE__);
         }
         $this->customerAdress2 = $customerAdress2;
-        
+
         return $this;
     }
+
     /**
      * Get customerZipCode value
      * @return string|null
@@ -1732,10 +1802,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerZipCode;
     }
+
     /**
      * Set customerZipCode value
      * @param string $customerZipCode
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerZipCode(?string $customerZipCode = null): self
     {
@@ -1744,9 +1815,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerZipCode, true), gettype($customerZipCode)), __LINE__);
         }
         $this->customerZipCode = $customerZipCode;
-        
+
         return $this;
     }
+
     /**
      * Get customerCity value
      * @return string|null
@@ -1755,10 +1827,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerCity;
     }
+
     /**
      * Set customerCity value
      * @param string $customerCity
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerCity(?string $customerCity = null): self
     {
@@ -1767,9 +1840,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerCity, true), gettype($customerCity)), __LINE__);
         }
         $this->customerCity = $customerCity;
-        
+
         return $this;
     }
+
     /**
      * Get customerCountry value
      * @return string|null
@@ -1778,10 +1852,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerCountry;
     }
+
     /**
      * Set customerCountry value
      * @param string $customerCountry
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerCountry(?string $customerCountry = null): self
     {
@@ -1790,9 +1865,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerCountry, true), gettype($customerCountry)), __LINE__);
         }
         $this->customerCountry = $customerCountry;
-        
+
         return $this;
     }
+
     /**
      * Get customerCountryName value
      * @return string|null
@@ -1801,10 +1877,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerCountryName;
     }
+
     /**
      * Set customerCountryName value
      * @param string $customerCountryName
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerCountryName(?string $customerCountryName = null): self
     {
@@ -1813,9 +1890,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerCountryName, true), gettype($customerCountryName)), __LINE__);
         }
         $this->customerCountryName = $customerCountryName;
-        
+
         return $this;
     }
+
     /**
      * Get customerContactName value
      * @return string|null
@@ -1824,10 +1902,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerContactName;
     }
+
     /**
      * Set customerContactName value
      * @param string $customerContactName
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerContactName(?string $customerContactName = null): self
     {
@@ -1836,9 +1915,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerContactName, true), gettype($customerContactName)), __LINE__);
         }
         $this->customerContactName = $customerContactName;
-        
+
         return $this;
     }
+
     /**
      * Get customerEmail value
      * @return string|null
@@ -1847,10 +1927,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerEmail;
     }
+
     /**
      * Set customerEmail value
      * @param string $customerEmail
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerEmail(?string $customerEmail = null): self
     {
@@ -1859,9 +1940,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerEmail, true), gettype($customerEmail)), __LINE__);
         }
         $this->customerEmail = $customerEmail;
-        
+
         return $this;
     }
+
     /**
      * Get customerPhone value
      * @return string|null
@@ -1870,10 +1952,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerPhone;
     }
+
     /**
      * Set customerPhone value
      * @param string $customerPhone
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerPhone(?string $customerPhone = null): self
     {
@@ -1882,9 +1965,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerPhone, true), gettype($customerPhone)), __LINE__);
         }
         $this->customerPhone = $customerPhone;
-        
+
         return $this;
     }
+
     /**
      * Get customerMobilePhone value
      * @return string|null
@@ -1893,10 +1977,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerMobilePhone;
     }
+
     /**
      * Set customerMobilePhone value
      * @param string $customerMobilePhone
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerMobilePhone(?string $customerMobilePhone = null): self
     {
@@ -1905,9 +1990,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerMobilePhone, true), gettype($customerMobilePhone)), __LINE__);
         }
         $this->customerMobilePhone = $customerMobilePhone;
-        
+
         return $this;
     }
+
     /**
      * Get customerPreAlert value
      * @return string|null
@@ -1916,10 +2002,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerPreAlert;
     }
+
     /**
      * Set customerPreAlert value
      * @param string $customerPreAlert
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerPreAlert(?string $customerPreAlert = null): self
     {
@@ -1928,9 +2015,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerPreAlert, true), gettype($customerPreAlert)), __LINE__);
         }
         $this->customerPreAlert = $customerPreAlert;
-        
+
         return $this;
     }
+
     /**
      * Get recipientCivility value
      * @return string|null
@@ -1939,10 +2027,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientCivility;
     }
+
     /**
      * Set recipientCivility value
      * @param string $recipientCivility
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientCivility(?string $recipientCivility = null): self
     {
@@ -1951,9 +2040,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientCivility, true), gettype($recipientCivility)), __LINE__);
         }
         $this->recipientCivility = $recipientCivility;
-        
+
         return $this;
     }
+
     /**
      * Get recipientName value
      * @return string|null
@@ -1962,10 +2052,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientName;
     }
+
     /**
      * Set recipientName value
      * @param string $recipientName
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientName(?string $recipientName = null): self
     {
@@ -1974,9 +2065,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientName, true), gettype($recipientName)), __LINE__);
         }
         $this->recipientName = $recipientName;
-        
+
         return $this;
     }
+
     /**
      * Get recipientName2 value
      * @return string|null
@@ -1985,10 +2077,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientName2;
     }
+
     /**
      * Set recipientName2 value
      * @param string $recipientName2
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientName2(?string $recipientName2 = null): self
     {
@@ -1997,9 +2090,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientName2, true), gettype($recipientName2)), __LINE__);
         }
         $this->recipientName2 = $recipientName2;
-        
+
         return $this;
     }
+
     /**
      * Get recipientAdress1 value
      * @return string|null
@@ -2008,10 +2102,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientAdress1;
     }
+
     /**
      * Set recipientAdress1 value
      * @param string $recipientAdress1
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientAdress1(?string $recipientAdress1 = null): self
     {
@@ -2020,9 +2115,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientAdress1, true), gettype($recipientAdress1)), __LINE__);
         }
         $this->recipientAdress1 = $recipientAdress1;
-        
+
         return $this;
     }
+
     /**
      * Get recipientAdress2 value
      * @return string|null
@@ -2031,10 +2127,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientAdress2;
     }
+
     /**
      * Set recipientAdress2 value
      * @param string $recipientAdress2
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientAdress2(?string $recipientAdress2 = null): self
     {
@@ -2043,9 +2140,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientAdress2, true), gettype($recipientAdress2)), __LINE__);
         }
         $this->recipientAdress2 = $recipientAdress2;
-        
+
         return $this;
     }
+
     /**
      * Get recipientZipCode value
      * @return string|null
@@ -2054,10 +2152,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientZipCode;
     }
+
     /**
      * Set recipientZipCode value
      * @param string $recipientZipCode
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientZipCode(?string $recipientZipCode = null): self
     {
@@ -2066,9 +2165,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientZipCode, true), gettype($recipientZipCode)), __LINE__);
         }
         $this->recipientZipCode = $recipientZipCode;
-        
+
         return $this;
     }
+
     /**
      * Get recipientCity value
      * @return string|null
@@ -2077,10 +2177,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientCity;
     }
+
     /**
      * Set recipientCity value
      * @param string $recipientCity
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientCity(?string $recipientCity = null): self
     {
@@ -2089,9 +2190,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientCity, true), gettype($recipientCity)), __LINE__);
         }
         $this->recipientCity = $recipientCity;
-        
+
         return $this;
     }
+
     /**
      * Get recipientCountry value
      * @return string|null
@@ -2100,10 +2202,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientCountry;
     }
+
     /**
      * Set recipientCountry value
      * @param string $recipientCountry
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientCountry(?string $recipientCountry = null): self
     {
@@ -2112,9 +2215,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientCountry, true), gettype($recipientCountry)), __LINE__);
         }
         $this->recipientCountry = $recipientCountry;
-        
+
         return $this;
     }
+
     /**
      * Get recipientCountryName value
      * @return string|null
@@ -2123,10 +2227,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientCountryName;
     }
+
     /**
      * Set recipientCountryName value
      * @param string $recipientCountryName
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientCountryName(?string $recipientCountryName = null): self
     {
@@ -2135,9 +2240,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientCountryName, true), gettype($recipientCountryName)), __LINE__);
         }
         $this->recipientCountryName = $recipientCountryName;
-        
+
         return $this;
     }
+
     /**
      * Get recipientContactName value
      * @return string|null
@@ -2146,10 +2252,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientContactName;
     }
+
     /**
      * Set recipientContactName value
      * @param string $recipientContactName
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientContactName(?string $recipientContactName = null): self
     {
@@ -2158,9 +2265,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientContactName, true), gettype($recipientContactName)), __LINE__);
         }
         $this->recipientContactName = $recipientContactName;
-        
+
         return $this;
     }
+
     /**
      * Get recipientEmail value
      * @return string|null
@@ -2169,10 +2277,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientEmail;
     }
+
     /**
      * Set recipientEmail value
      * @param string $recipientEmail
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientEmail(?string $recipientEmail = null): self
     {
@@ -2181,9 +2290,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientEmail, true), gettype($recipientEmail)), __LINE__);
         }
         $this->recipientEmail = $recipientEmail;
-        
+
         return $this;
     }
+
     /**
      * Get recipientPhone value
      * @return string|null
@@ -2192,10 +2302,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientPhone;
     }
+
     /**
      * Set recipientPhone value
      * @param string $recipientPhone
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientPhone(?string $recipientPhone = null): self
     {
@@ -2204,9 +2315,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientPhone, true), gettype($recipientPhone)), __LINE__);
         }
         $this->recipientPhone = $recipientPhone;
-        
+
         return $this;
     }
+
     /**
      * Get recipientMobilePhone value
      * @return string|null
@@ -2215,10 +2327,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientMobilePhone;
     }
+
     /**
      * Set recipientMobilePhone value
      * @param string $recipientMobilePhone
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientMobilePhone(?string $recipientMobilePhone = null): self
     {
@@ -2227,9 +2340,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientMobilePhone, true), gettype($recipientMobilePhone)), __LINE__);
         }
         $this->recipientMobilePhone = $recipientMobilePhone;
-        
+
         return $this;
     }
+
     /**
      * Get recipientPreAlert value
      * @return string|null
@@ -2238,10 +2352,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientPreAlert;
     }
+
     /**
      * Set recipientPreAlert value
      * @param string $recipientPreAlert
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientPreAlert(?string $recipientPreAlert = null): self
     {
@@ -2250,9 +2365,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientPreAlert, true), gettype($recipientPreAlert)), __LINE__);
         }
         $this->recipientPreAlert = $recipientPreAlert;
-        
+
         return $this;
     }
+
     /**
      * Get shipperRef value
      * @return string|null
@@ -2261,10 +2377,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipperRef;
     }
+
     /**
      * Set shipperRef value
      * @param string $shipperRef
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperRef(?string $shipperRef = null): self
     {
@@ -2273,9 +2390,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperRef, true), gettype($shipperRef)), __LINE__);
         }
         $this->shipperRef = $shipperRef;
-        
+
         return $this;
     }
+
     /**
      * Get recipientRef value
      * @return string|null
@@ -2284,10 +2402,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->recipientRef;
     }
+
     /**
      * Set recipientRef value
      * @param string $recipientRef
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientRef(?string $recipientRef = null): self
     {
@@ -2296,9 +2415,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientRef, true), gettype($recipientRef)), __LINE__);
         }
         $this->recipientRef = $recipientRef;
-        
+
         return $this;
     }
+
     /**
      * Get customerSkybillNumber value
      * @return string|null
@@ -2307,10 +2427,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customerSkybillNumber;
     }
+
     /**
      * Set customerSkybillNumber value
      * @param string $customerSkybillNumber
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerSkybillNumber(?string $customerSkybillNumber = null): self
     {
@@ -2319,9 +2440,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerSkybillNumber, true), gettype($customerSkybillNumber)), __LINE__);
         }
         $this->customerSkybillNumber = $customerSkybillNumber;
-        
+
         return $this;
     }
+
     /**
      * Get evtCode value
      * @return string|null
@@ -2330,10 +2452,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->evtCode;
     }
+
     /**
      * Set evtCode value
      * @param string $evtCode
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setEvtCode(?string $evtCode = null): self
     {
@@ -2342,9 +2465,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($evtCode, true), gettype($evtCode)), __LINE__);
         }
         $this->evtCode = $evtCode;
-        
+
         return $this;
     }
+
     /**
      * Get productCode value
      * @return string|null
@@ -2353,10 +2477,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->productCode;
     }
+
     /**
      * Set productCode value
      * @param string $productCode
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setProductCode(?string $productCode = null): self
     {
@@ -2365,9 +2490,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($productCode, true), gettype($productCode)), __LINE__);
         }
         $this->productCode = $productCode;
-        
+
         return $this;
     }
+
     /**
      * Get shipDate value
      * @return string|null
@@ -2376,10 +2502,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipDate;
     }
+
     /**
      * Set shipDate value
      * @param string $shipDate
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipDate(?string $shipDate = null): self
     {
@@ -2388,9 +2515,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipDate, true), gettype($shipDate)), __LINE__);
         }
         $this->shipDate = $shipDate;
-        
+
         return $this;
     }
+
     /**
      * Get shipHour value
      * @return string|null
@@ -2399,10 +2527,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->shipHour;
     }
+
     /**
      * Set shipHour value
      * @param string $shipHour
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipHour(?string $shipHour = null): self
     {
@@ -2411,9 +2540,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipHour, true), gettype($shipHour)), __LINE__);
         }
         $this->shipHour = $shipHour;
-        
+
         return $this;
     }
+
     /**
      * Get weight value
      * @return string|null
@@ -2422,10 +2552,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->weight;
     }
+
     /**
      * Set weight value
      * @param string $weight
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setWeight(?string $weight = null): self
     {
@@ -2434,9 +2565,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($weight, true), gettype($weight)), __LINE__);
         }
         $this->weight = $weight;
-        
+
         return $this;
     }
+
     /**
      * Get weightUnit value
      * @return string|null
@@ -2445,10 +2577,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->weightUnit;
     }
+
     /**
      * Set weightUnit value
      * @param string $weightUnit
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setWeightUnit(?string $weightUnit = null): self
     {
@@ -2457,9 +2590,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($weightUnit, true), gettype($weightUnit)), __LINE__);
         }
         $this->weightUnit = $weightUnit;
-        
+
         return $this;
     }
+
     /**
      * Get insuredValue value
      * @return string|null
@@ -2468,10 +2602,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->insuredValue;
     }
+
     /**
      * Set insuredValue value
      * @param string $insuredValue
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setInsuredValue(?string $insuredValue = null): self
     {
@@ -2480,9 +2615,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($insuredValue, true), gettype($insuredValue)), __LINE__);
         }
         $this->insuredValue = $insuredValue;
-        
+
         return $this;
     }
+
     /**
      * Get insuredCurrency value
      * @return string|null
@@ -2491,10 +2627,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->insuredCurrency;
     }
+
     /**
      * Set insuredCurrency value
      * @param string $insuredCurrency
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setInsuredCurrency(?string $insuredCurrency = null): self
     {
@@ -2503,9 +2640,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($insuredCurrency, true), gettype($insuredCurrency)), __LINE__);
         }
         $this->insuredCurrency = $insuredCurrency;
-        
+
         return $this;
     }
+
     /**
      * Get codValue value
      * @return string|null
@@ -2514,10 +2652,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->codValue;
     }
+
     /**
      * Set codValue value
      * @param string $codValue
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCodValue(?string $codValue = null): self
     {
@@ -2526,9 +2665,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codValue, true), gettype($codValue)), __LINE__);
         }
         $this->codValue = $codValue;
-        
+
         return $this;
     }
+
     /**
      * Get codCurrency value
      * @return string|null
@@ -2537,10 +2677,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->codCurrency;
     }
+
     /**
      * Set codCurrency value
      * @param string $codCurrency
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCodCurrency(?string $codCurrency = null): self
     {
@@ -2549,9 +2690,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codCurrency, true), gettype($codCurrency)), __LINE__);
         }
         $this->codCurrency = $codCurrency;
-        
+
         return $this;
     }
+
     /**
      * Get customsValue value
      * @return string|null
@@ -2560,10 +2702,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customsValue;
     }
+
     /**
      * Set customsValue value
      * @param string $customsValue
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomsValue(?string $customsValue = null): self
     {
@@ -2572,9 +2715,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customsValue, true), gettype($customsValue)), __LINE__);
         }
         $this->customsValue = $customsValue;
-        
+
         return $this;
     }
+
     /**
      * Get customsCurrency value
      * @return string|null
@@ -2583,10 +2727,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->customsCurrency;
     }
+
     /**
      * Set customsCurrency value
      * @param string $customsCurrency
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomsCurrency(?string $customsCurrency = null): self
     {
@@ -2595,9 +2740,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customsCurrency, true), gettype($customsCurrency)), __LINE__);
         }
         $this->customsCurrency = $customsCurrency;
-        
+
         return $this;
     }
+
     /**
      * Get service value
      * @return string|null
@@ -2606,10 +2752,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->service;
     }
+
     /**
      * Set service value
      * @param string $service
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setService(?string $service = null): self
     {
@@ -2618,9 +2765,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($service, true), gettype($service)), __LINE__);
         }
         $this->service = $service;
-        
+
         return $this;
     }
+
     /**
      * Get as value
      * @return string|null
@@ -2629,10 +2777,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->as;
     }
+
     /**
      * Set as value
      * @param string $as
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setAs(?string $as = null): self
     {
@@ -2641,9 +2790,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($as, true), gettype($as)), __LINE__);
         }
         $this->as = $as;
-        
+
         return $this;
     }
+
     /**
      * Get objectType value
      * @return string|null
@@ -2652,10 +2802,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->objectType;
     }
+
     /**
      * Set objectType value
      * @param string $objectType
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setObjectType(?string $objectType = null): self
     {
@@ -2664,9 +2815,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($objectType, true), gettype($objectType)), __LINE__);
         }
         $this->objectType = $objectType;
-        
+
         return $this;
     }
+
     /**
      * Get content1 value
      * @return string|null
@@ -2675,10 +2827,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->content1;
     }
+
     /**
      * Set content1 value
      * @param string $content1
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setContent1(?string $content1 = null): self
     {
@@ -2687,9 +2840,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($content1, true), gettype($content1)), __LINE__);
         }
         $this->content1 = $content1;
-        
+
         return $this;
     }
+
     /**
      * Get content2 value
      * @return string|null
@@ -2698,10 +2852,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->content2;
     }
+
     /**
      * Set content2 value
      * @param string $content2
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setContent2(?string $content2 = null): self
     {
@@ -2710,9 +2865,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($content2, true), gettype($content2)), __LINE__);
         }
         $this->content2 = $content2;
-        
+
         return $this;
     }
+
     /**
      * Get content3 value
      * @return string|null
@@ -2721,10 +2877,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->content3;
     }
+
     /**
      * Set content3 value
      * @param string $content3
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setContent3(?string $content3 = null): self
     {
@@ -2733,9 +2890,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($content3, true), gettype($content3)), __LINE__);
         }
         $this->content3 = $content3;
-        
+
         return $this;
     }
+
     /**
      * Get content4 value
      * @return string|null
@@ -2744,10 +2902,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->content4;
     }
+
     /**
      * Set content4 value
      * @param string $content4
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setContent4(?string $content4 = null): self
     {
@@ -2756,9 +2915,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($content4, true), gettype($content4)), __LINE__);
         }
         $this->content4 = $content4;
-        
+
         return $this;
     }
+
     /**
      * Get content5 value
      * @return string|null
@@ -2767,10 +2927,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->content5;
     }
+
     /**
      * Set content5 value
      * @param string $content5
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setContent5(?string $content5 = null): self
     {
@@ -2779,9 +2940,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($content5, true), gettype($content5)), __LINE__);
         }
         $this->content5 = $content5;
-        
+
         return $this;
     }
+
     /**
      * Get portValue value
      * @return string|null
@@ -2790,10 +2952,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->portValue;
     }
+
     /**
      * Set portValue value
      * @param string $portValue
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setPortValue(?string $portValue = null): self
     {
@@ -2802,9 +2965,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($portValue, true), gettype($portValue)), __LINE__);
         }
         $this->portValue = $portValue;
-        
+
         return $this;
     }
+
     /**
      * Get portCurrency value
      * @return string|null
@@ -2813,10 +2977,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->portCurrency;
     }
+
     /**
      * Set portCurrency value
      * @param string $portCurrency
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setPortCurrency(?string $portCurrency = null): self
     {
@@ -2825,9 +2990,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($portCurrency, true), gettype($portCurrency)), __LINE__);
         }
         $this->portCurrency = $portCurrency;
-        
+
         return $this;
     }
+
     /**
      * Get skybillRank value
      * @return string|null
@@ -2836,10 +3002,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->skybillRank;
     }
+
     /**
      * Set skybillRank value
      * @param string $skybillRank
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setSkybillRank(?string $skybillRank = null): self
     {
@@ -2848,9 +3015,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($skybillRank, true), gettype($skybillRank)), __LINE__);
         }
         $this->skybillRank = $skybillRank;
-        
+
         return $this;
     }
+
     /**
      * Get bulkNumber value
      * @return string|null
@@ -2859,10 +3027,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->bulkNumber;
     }
+
     /**
      * Set bulkNumber value
      * @param string $bulkNumber
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setBulkNumber(?string $bulkNumber = null): self
     {
@@ -2871,9 +3040,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($bulkNumber, true), gettype($bulkNumber)), __LINE__);
         }
         $this->bulkNumber = $bulkNumber;
-        
+
         return $this;
     }
+
     /**
      * Get mode value
      * @return string|null
@@ -2882,10 +3052,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->mode;
     }
+
     /**
      * Set mode value
      * @param string $mode
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setMode(?string $mode = null): self
     {
@@ -2894,9 +3065,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mode, true), gettype($mode)), __LINE__);
         }
         $this->mode = $mode;
-        
+
         return $this;
     }
+
     /**
      * Get password value
      * @return string|null
@@ -2905,10 +3077,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->password;
     }
+
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setPassword(?string $password = null): self
     {
@@ -2917,9 +3090,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($password, true), gettype($password)), __LINE__);
         }
         $this->password = $password;
-        
+
         return $this;
     }
+
     /**
      * Get modeRetour value
      * @return string|null
@@ -2928,10 +3102,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->modeRetour;
     }
+
     /**
      * Set modeRetour value
      * @param string $modeRetour
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setModeRetour(?string $modeRetour = null): self
     {
@@ -2940,9 +3115,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($modeRetour, true), gettype($modeRetour)), __LINE__);
         }
         $this->modeRetour = $modeRetour;
-        
+
         return $this;
     }
+
     /**
      * Get timeSlotStartDate value
      * @return string|null
@@ -2951,10 +3127,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->timeSlotStartDate;
     }
+
     /**
      * Set timeSlotStartDate value
      * @param string $timeSlotStartDate
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setTimeSlotStartDate(?string $timeSlotStartDate = null): self
     {
@@ -2963,9 +3140,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($timeSlotStartDate, true), gettype($timeSlotStartDate)), __LINE__);
         }
         $this->timeSlotStartDate = $timeSlotStartDate;
-        
+
         return $this;
     }
+
     /**
      * Get timeSlotEndDate value
      * @return string|null
@@ -2974,10 +3152,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->timeSlotEndDate;
     }
+
     /**
      * Set timeSlotEndDate value
      * @param string $timeSlotEndDate
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setTimeSlotEndDate(?string $timeSlotEndDate = null): self
     {
@@ -2986,9 +3165,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($timeSlotEndDate, true), gettype($timeSlotEndDate)), __LINE__);
         }
         $this->timeSlotEndDate = $timeSlotEndDate;
-        
+
         return $this;
     }
+
     /**
      * Get timeSlotTariffLevel value
      * @return string|null
@@ -2997,10 +3177,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->timeSlotTariffLevel;
     }
+
     /**
      * Set timeSlotTariffLevel value
      * @param string $timeSlotTariffLevel
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setTimeSlotTariffLevel(?string $timeSlotTariffLevel = null): self
     {
@@ -3009,9 +3190,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($timeSlotTariffLevel, true), gettype($timeSlotTariffLevel)), __LINE__);
         }
         $this->timeSlotTariffLevel = $timeSlotTariffLevel;
-        
+
         return $this;
     }
+
     /**
      * Get expirationDate value
      * @return string|null
@@ -3020,10 +3202,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->expirationDate;
     }
+
     /**
      * Set expirationDate value
      * @param string $expirationDate
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setExpirationDate(?string $expirationDate = null): self
     {
@@ -3032,9 +3215,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($expirationDate, true), gettype($expirationDate)), __LINE__);
         }
         $this->expirationDate = $expirationDate;
-        
+
         return $this;
     }
+
     /**
      * Get sellByDate value
      * @return string|null
@@ -3043,10 +3227,11 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     {
         return $this->sellByDate;
     }
+
     /**
      * Set sellByDate value
      * @param string $sellByDate
-     * @return \StructType\ShippingWithReservationAndESDWithRefClientPC
+     * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setSellByDate(?string $sellByDate = null): self
     {
@@ -3055,7 +3240,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sellByDate, true), gettype($sellByDate)), __LINE__);
         }
         $this->sellByDate = $sellByDate;
-        
+
         return $this;
     }
 }

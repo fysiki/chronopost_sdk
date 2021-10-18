@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for adresseEnlevementV3 StructType
@@ -20,16 +19,18 @@ class AdresseEnlevementV3 extends AdresseEnlevementV2
      * @var string|null
      */
     protected ?string $refExpediteur = null;
+
     /**
      * Constructor method for adresseEnlevementV3
-     * @uses AdresseEnlevementV3::setRefExpediteur()
      * @param string $refExpediteur
+     * @uses AdresseEnlevementV3::setRefExpediteur()
      */
     public function __construct(?string $refExpediteur = null)
     {
         $this
             ->setRefExpediteur($refExpediteur);
     }
+
     /**
      * Get refExpediteur value
      * @return string|null
@@ -38,10 +39,11 @@ class AdresseEnlevementV3 extends AdresseEnlevementV2
     {
         return $this->refExpediteur;
     }
+
     /**
      * Set refExpediteur value
      * @param string $refExpediteur
-     * @return \StructType\AdresseEnlevementV3
+     * @return AdresseEnlevementV3
      */
     public function setRefExpediteur(?string $refExpediteur = null): self
     {
@@ -50,7 +52,7 @@ class AdresseEnlevementV3 extends AdresseEnlevementV2
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($refExpediteur, true), gettype($refExpediteur)), __LINE__);
         }
         $this->refExpediteur = $refExpediteur;
-        
+
         return $this;
     }
 }

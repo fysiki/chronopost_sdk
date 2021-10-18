@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class ShippingV7Response extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ResultMonoParcelExpeditionValue|null
+     * @var ResultMonoParcelExpeditionValue|null
      */
-    protected ?\StructType\ResultMonoParcelExpeditionValue $return = null;
+    protected ?ResultMonoParcelExpeditionValue $return = null;
+
     /**
      * Constructor method for shippingV7Response
+     * @param ResultMonoParcelExpeditionValue $return
      * @uses ShippingV7Response::setReturn()
-     * @param \StructType\ResultMonoParcelExpeditionValue $return
      */
-    public function __construct(?\StructType\ResultMonoParcelExpeditionValue $return = null)
+    public function __construct(?ResultMonoParcelExpeditionValue $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\ResultMonoParcelExpeditionValue|null
+     * @return ResultMonoParcelExpeditionValue|null
      */
-    public function getReturn(): ?\StructType\ResultMonoParcelExpeditionValue
+    public function getReturn(): ?ResultMonoParcelExpeditionValue
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\ResultMonoParcelExpeditionValue $return
-     * @return \StructType\ShippingV7Response
+     * @param ResultMonoParcelExpeditionValue $return
+     * @return ShippingV7Response
      */
-    public function setReturn(?\StructType\ResultMonoParcelExpeditionValue $return = null): self
+    public function setReturn(?ResultMonoParcelExpeditionValue $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

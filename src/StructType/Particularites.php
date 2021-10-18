@@ -45,20 +45,21 @@ class Particularites extends AbstractStructBase
      * @var float|null
      */
     protected ?float $poids = null;
+
     /**
      * Constructor method for particularites
-     * @uses Particularites::setHauteur()
-     * @uses Particularites::setInstructionsParticulieres()
-     * @uses Particularites::setLargeur()
-     * @uses Particularites::setLongueur()
-     * @uses Particularites::setNombreEnvois()
-     * @uses Particularites::setPoids()
      * @param float $hauteur
      * @param string $instructionsParticulieres
      * @param float $largeur
      * @param float $longueur
      * @param int $nombreEnvois
      * @param float $poids
+     * @uses Particularites::setHauteur()
+     * @uses Particularites::setInstructionsParticulieres()
+     * @uses Particularites::setLargeur()
+     * @uses Particularites::setLongueur()
+     * @uses Particularites::setNombreEnvois()
+     * @uses Particularites::setPoids()
      */
     public function __construct(?float $hauteur = null, ?string $instructionsParticulieres = null, ?float $largeur = null, ?float $longueur = null, ?int $nombreEnvois = null, ?float $poids = null)
     {
@@ -70,6 +71,7 @@ class Particularites extends AbstractStructBase
             ->setNombreEnvois($nombreEnvois)
             ->setPoids($poids);
     }
+
     /**
      * Get hauteur value
      * @return float|null
@@ -78,10 +80,11 @@ class Particularites extends AbstractStructBase
     {
         return $this->hauteur;
     }
+
     /**
      * Set hauteur value
      * @param float $hauteur
-     * @return \StructType\Particularites
+     * @return Particularites
      */
     public function setHauteur(?float $hauteur = null): self
     {
@@ -90,9 +93,10 @@ class Particularites extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($hauteur, true), gettype($hauteur)), __LINE__);
         }
         $this->hauteur = $hauteur;
-        
+
         return $this;
     }
+
     /**
      * Get instructionsParticulieres value
      * @return string|null
@@ -101,10 +105,11 @@ class Particularites extends AbstractStructBase
     {
         return $this->instructionsParticulieres;
     }
+
     /**
      * Set instructionsParticulieres value
      * @param string $instructionsParticulieres
-     * @return \StructType\Particularites
+     * @return Particularites
      */
     public function setInstructionsParticulieres(?string $instructionsParticulieres = null): self
     {
@@ -113,9 +118,10 @@ class Particularites extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($instructionsParticulieres, true), gettype($instructionsParticulieres)), __LINE__);
         }
         $this->instructionsParticulieres = $instructionsParticulieres;
-        
+
         return $this;
     }
+
     /**
      * Get largeur value
      * @return float|null
@@ -124,10 +130,11 @@ class Particularites extends AbstractStructBase
     {
         return $this->largeur;
     }
+
     /**
      * Set largeur value
      * @param float $largeur
-     * @return \StructType\Particularites
+     * @return Particularites
      */
     public function setLargeur(?float $largeur = null): self
     {
@@ -136,9 +143,10 @@ class Particularites extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($largeur, true), gettype($largeur)), __LINE__);
         }
         $this->largeur = $largeur;
-        
+
         return $this;
     }
+
     /**
      * Get longueur value
      * @return float|null
@@ -147,10 +155,11 @@ class Particularites extends AbstractStructBase
     {
         return $this->longueur;
     }
+
     /**
      * Set longueur value
      * @param float $longueur
-     * @return \StructType\Particularites
+     * @return Particularites
      */
     public function setLongueur(?float $longueur = null): self
     {
@@ -159,9 +168,10 @@ class Particularites extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($longueur, true), gettype($longueur)), __LINE__);
         }
         $this->longueur = $longueur;
-        
+
         return $this;
     }
+
     /**
      * Get nombreEnvois value
      * @return int|null
@@ -170,10 +180,11 @@ class Particularites extends AbstractStructBase
     {
         return $this->nombreEnvois;
     }
+
     /**
      * Set nombreEnvois value
      * @param int $nombreEnvois
-     * @return \StructType\Particularites
+     * @return Particularites
      */
     public function setNombreEnvois(?int $nombreEnvois = null): self
     {
@@ -182,9 +193,10 @@ class Particularites extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($nombreEnvois, true), gettype($nombreEnvois)), __LINE__);
         }
         $this->nombreEnvois = $nombreEnvois;
-        
+
         return $this;
     }
+
     /**
      * Get poids value
      * @return float|null
@@ -193,10 +205,11 @@ class Particularites extends AbstractStructBase
     {
         return $this->poids;
     }
+
     /**
      * Set poids value
      * @param float $poids
-     * @return \StructType\Particularites
+     * @return Particularites
      */
     public function setPoids(?float $poids = null): self
     {
@@ -205,7 +218,7 @@ class Particularites extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($poids, true), gettype($poids)), __LINE__);
         }
         $this->poids = $poids;
-        
+
         return $this;
     }
 }

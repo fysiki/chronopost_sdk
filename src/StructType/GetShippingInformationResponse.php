@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class GetShippingInformationResponse extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ResultShippingInfo|null
+     * @var ResultShippingInfo|null
      */
-    protected ?\StructType\ResultShippingInfo $return = null;
+    protected ?ResultShippingInfo $return = null;
+
     /**
      * Constructor method for getShippingInformationResponse
+     * @param ResultShippingInfo $return
      * @uses GetShippingInformationResponse::setReturn()
-     * @param \StructType\ResultShippingInfo $return
      */
-    public function __construct(?\StructType\ResultShippingInfo $return = null)
+    public function __construct(?ResultShippingInfo $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\ResultShippingInfo|null
+     * @return ResultShippingInfo|null
      */
-    public function getReturn(): ?\StructType\ResultShippingInfo
+    public function getReturn(): ?ResultShippingInfo
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\ResultShippingInfo $return
-     * @return \StructType\GetShippingInformationResponse
+     * @param ResultShippingInfo $return
+     * @return GetShippingInformationResponse
      */
-    public function setReturn(?\StructType\ResultShippingInfo $return = null): self
+    public function setReturn(?ResultShippingInfo $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class AnnulerEnlevementsResponse extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ResultAnnulerEnlevement|null
+     * @var ResultAnnulerEnlevement|null
      */
-    protected ?\StructType\ResultAnnulerEnlevement $return = null;
+    protected ?ResultAnnulerEnlevement $return = null;
+
     /**
      * Constructor method for annulerEnlevementsResponse
+     * @param ResultAnnulerEnlevement $return
      * @uses AnnulerEnlevementsResponse::setReturn()
-     * @param \StructType\ResultAnnulerEnlevement $return
      */
-    public function __construct(?\StructType\ResultAnnulerEnlevement $return = null)
+    public function __construct(?ResultAnnulerEnlevement $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\ResultAnnulerEnlevement|null
+     * @return ResultAnnulerEnlevement|null
      */
-    public function getReturn(): ?\StructType\ResultAnnulerEnlevement
+    public function getReturn(): ?ResultAnnulerEnlevement
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\ResultAnnulerEnlevement $return
-     * @return \StructType\AnnulerEnlevementsResponse
+     * @param ResultAnnulerEnlevement $return
+     * @return AnnulerEnlevementsResponse
      */
-    public function setReturn(?\StructType\ResultAnnulerEnlevement $return = null): self
+    public function setReturn(?ResultAnnulerEnlevement $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

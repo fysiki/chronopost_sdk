@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for skybillParamsValueV2 StructType
@@ -18,16 +17,18 @@ class SkybillParamsValueV2 extends SkybillParamsValue
      * @var int|null
      */
     protected ?int $withReservation = null;
+
     /**
      * Constructor method for skybillParamsValueV2
-     * @uses SkybillParamsValueV2::setWithReservation()
      * @param int $withReservation
+     * @uses SkybillParamsValueV2::setWithReservation()
      */
     public function __construct(?int $withReservation = null)
     {
         $this
             ->setWithReservation($withReservation);
     }
+
     /**
      * Get withReservation value
      * @return int|null
@@ -36,10 +37,11 @@ class SkybillParamsValueV2 extends SkybillParamsValue
     {
         return $this->withReservation;
     }
+
     /**
      * Set withReservation value
      * @param int $withReservation
-     * @return \StructType\SkybillParamsValueV2
+     * @return SkybillParamsValueV2
      */
     public function setWithReservation(?int $withReservation = null): self
     {
@@ -48,7 +50,7 @@ class SkybillParamsValueV2 extends SkybillParamsValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($withReservation, true), gettype($withReservation)), __LINE__);
         }
         $this->withReservation = $withReservation;
-        
+
         return $this;
     }
 }

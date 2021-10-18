@@ -36,14 +36,15 @@ class RechercherContraintesEnlevement extends AbstractStructBase
      * @var string|null
      */
     protected ?string $city = null;
+
     /**
      * Constructor method for rechercherContraintesEnlevement
-     * @uses RechercherContraintesEnlevement::setCountry()
-     * @uses RechercherContraintesEnlevement::setZipCode()
-     * @uses RechercherContraintesEnlevement::setCity()
      * @param string $country
      * @param string $zipCode
      * @param string $city
+     * @uses RechercherContraintesEnlevement::setCountry()
+     * @uses RechercherContraintesEnlevement::setZipCode()
+     * @uses RechercherContraintesEnlevement::setCity()
      */
     public function __construct(?string $country = null, ?string $zipCode = null, ?string $city = null)
     {
@@ -52,6 +53,7 @@ class RechercherContraintesEnlevement extends AbstractStructBase
             ->setZipCode($zipCode)
             ->setCity($city);
     }
+
     /**
      * Get country value
      * @return string|null
@@ -60,10 +62,11 @@ class RechercherContraintesEnlevement extends AbstractStructBase
     {
         return $this->country;
     }
+
     /**
      * Set country value
      * @param string $country
-     * @return \StructType\RechercherContraintesEnlevement
+     * @return RechercherContraintesEnlevement
      */
     public function setCountry(?string $country = null): self
     {
@@ -72,9 +75,10 @@ class RechercherContraintesEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($country, true), gettype($country)), __LINE__);
         }
         $this->country = $country;
-        
+
         return $this;
     }
+
     /**
      * Get zipCode value
      * @return string|null
@@ -83,10 +87,11 @@ class RechercherContraintesEnlevement extends AbstractStructBase
     {
         return $this->zipCode;
     }
+
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \StructType\RechercherContraintesEnlevement
+     * @return RechercherContraintesEnlevement
      */
     public function setZipCode(?string $zipCode = null): self
     {
@@ -95,9 +100,10 @@ class RechercherContraintesEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($zipCode, true), gettype($zipCode)), __LINE__);
         }
         $this->zipCode = $zipCode;
-        
+
         return $this;
     }
+
     /**
      * Get city value
      * @return string|null
@@ -106,10 +112,11 @@ class RechercherContraintesEnlevement extends AbstractStructBase
     {
         return $this->city;
     }
+
     /**
      * Set city value
      * @param string $city
-     * @return \StructType\RechercherContraintesEnlevement
+     * @return RechercherContraintesEnlevement
      */
     public function setCity(?string $city = null): self
     {
@@ -118,7 +125,7 @@ class RechercherContraintesEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($city, true), gettype($city)), __LINE__);
         }
         $this->city = $city;
-        
+
         return $this;
     }
 }

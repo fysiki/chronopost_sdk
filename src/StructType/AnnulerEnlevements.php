@@ -44,16 +44,17 @@ class AnnulerEnlevements extends AbstractStructBase
      * @var string[]
      */
     protected ?array $esdNumber = null;
+
     /**
      * Constructor method for annulerEnlevements
-     * @uses AnnulerEnlevements::setAccountNumber()
-     * @uses AnnulerEnlevements::setPassword()
-     * @uses AnnulerEnlevements::setLocale()
-     * @uses AnnulerEnlevements::setEsdNumber()
      * @param string $accountNumber
      * @param string $password
      * @param string $locale
      * @param string[] $esdNumber
+     * @uses AnnulerEnlevements::setAccountNumber()
+     * @uses AnnulerEnlevements::setPassword()
+     * @uses AnnulerEnlevements::setLocale()
+     * @uses AnnulerEnlevements::setEsdNumber()
      */
     public function __construct(?string $accountNumber = null, ?string $password = null, ?string $locale = null, ?array $esdNumber = null)
     {
@@ -63,6 +64,7 @@ class AnnulerEnlevements extends AbstractStructBase
             ->setLocale($locale)
             ->setEsdNumber($esdNumber);
     }
+
     /**
      * Get accountNumber value
      * @return string|null
@@ -71,10 +73,11 @@ class AnnulerEnlevements extends AbstractStructBase
     {
         return $this->accountNumber;
     }
+
     /**
      * Set accountNumber value
      * @param string $accountNumber
-     * @return \StructType\AnnulerEnlevements
+     * @return AnnulerEnlevements
      */
     public function setAccountNumber(?string $accountNumber = null): self
     {
@@ -83,9 +86,10 @@ class AnnulerEnlevements extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($accountNumber, true), gettype($accountNumber)), __LINE__);
         }
         $this->accountNumber = $accountNumber;
-        
+
         return $this;
     }
+
     /**
      * Get password value
      * @return string|null
@@ -94,10 +98,11 @@ class AnnulerEnlevements extends AbstractStructBase
     {
         return $this->password;
     }
+
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\AnnulerEnlevements
+     * @return AnnulerEnlevements
      */
     public function setPassword(?string $password = null): self
     {
@@ -106,9 +111,10 @@ class AnnulerEnlevements extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($password, true), gettype($password)), __LINE__);
         }
         $this->password = $password;
-        
+
         return $this;
     }
+
     /**
      * Get locale value
      * @return string|null
@@ -117,10 +123,11 @@ class AnnulerEnlevements extends AbstractStructBase
     {
         return $this->locale;
     }
+
     /**
      * Set locale value
      * @param string $locale
-     * @return \StructType\AnnulerEnlevements
+     * @return AnnulerEnlevements
      */
     public function setLocale(?string $locale = null): self
     {
@@ -129,9 +136,10 @@ class AnnulerEnlevements extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($locale, true), gettype($locale)), __LINE__);
         }
         $this->locale = $locale;
-        
+
         return $this;
     }
+
     /**
      * Get esdNumber value
      * @return string[]
@@ -140,6 +148,7 @@ class AnnulerEnlevements extends AbstractStructBase
     {
         return $this->esdNumber;
     }
+
     /**
      * This method is responsible for validating the values passed to the setEsdNumber method
      * This method is willingly generated in order to preserve the one-line inline validation within the setEsdNumber method
@@ -163,14 +172,15 @@ class AnnulerEnlevements extends AbstractStructBase
             $message = sprintf('The esdNumber property can only contain items of type string, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
+
     /**
      * Set esdNumber value
-     * @throws InvalidArgumentException
      * @param string[] $esdNumber
-     * @return \StructType\AnnulerEnlevements
+     * @return AnnulerEnlevements
+     * @throws InvalidArgumentException
      */
     public function setEsdNumber(?array $esdNumber = null): self
     {
@@ -179,14 +189,15 @@ class AnnulerEnlevements extends AbstractStructBase
             throw new InvalidArgumentException($esdNumberArrayErrorMessage, __LINE__);
         }
         $this->esdNumber = $esdNumber;
-        
+
         return $this;
     }
+
     /**
      * Add item to esdNumber value
-     * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\AnnulerEnlevements
+     * @return AnnulerEnlevements
+     * @throws InvalidArgumentException
      */
     public function addToEsdNumber(string $item): self
     {
@@ -195,7 +206,7 @@ class AnnulerEnlevements extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('The esdNumber property can only contain items of type string, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->esdNumber[] = $item;
-        
+
         return $this;
     }
 }

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class ShippingMultiParcelV2Response extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ResultMultiParcelExpeditionValue|null
+     * @var ResultMultiParcelExpeditionValue|null
      */
-    protected ?\StructType\ResultMultiParcelExpeditionValue $return = null;
+    protected ?ResultMultiParcelExpeditionValue $return = null;
+
     /**
      * Constructor method for shippingMultiParcelV2Response
+     * @param ResultMultiParcelExpeditionValue $return
      * @uses ShippingMultiParcelV2Response::setReturn()
-     * @param \StructType\ResultMultiParcelExpeditionValue $return
      */
-    public function __construct(?\StructType\ResultMultiParcelExpeditionValue $return = null)
+    public function __construct(?ResultMultiParcelExpeditionValue $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\ResultMultiParcelExpeditionValue|null
+     * @return ResultMultiParcelExpeditionValue|null
      */
-    public function getReturn(): ?\StructType\ResultMultiParcelExpeditionValue
+    public function getReturn(): ?ResultMultiParcelExpeditionValue
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\ResultMultiParcelExpeditionValue $return
-     * @return \StructType\ShippingMultiParcelV2Response
+     * @param ResultMultiParcelExpeditionValue $return
+     * @return ShippingMultiParcelV2Response
      */
-    public function setReturn(?\StructType\ResultMultiParcelExpeditionValue $return = null): self
+    public function setReturn(?ResultMultiParcelExpeditionValue $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

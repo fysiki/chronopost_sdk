@@ -39,16 +39,17 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $type = null;
+
     /**
      * Constructor method for resultGetReservedSkybillWithTypeValue
-     * @uses ResultGetReservedSkybillWithTypeValue::setErrorCode()
-     * @uses ResultGetReservedSkybillWithTypeValue::setErrorMessage()
-     * @uses ResultGetReservedSkybillWithTypeValue::setSkybill()
-     * @uses ResultGetReservedSkybillWithTypeValue::setType()
      * @param int $errorCode
      * @param string $errorMessage
      * @param string $skybill
      * @param string $type
+     * @uses ResultGetReservedSkybillWithTypeValue::setErrorCode()
+     * @uses ResultGetReservedSkybillWithTypeValue::setErrorMessage()
+     * @uses ResultGetReservedSkybillWithTypeValue::setSkybill()
+     * @uses ResultGetReservedSkybillWithTypeValue::setType()
      */
     public function __construct(?int $errorCode = null, ?string $errorMessage = null, ?string $skybill = null, ?string $type = null)
     {
@@ -58,6 +59,7 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
             ->setSkybill($skybill)
             ->setType($type);
     }
+
     /**
      * Get errorCode value
      * @return int|null
@@ -66,10 +68,11 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
     {
         return $this->errorCode;
     }
+
     /**
      * Set errorCode value
      * @param int $errorCode
-     * @return \StructType\ResultGetReservedSkybillWithTypeValue
+     * @return ResultGetReservedSkybillWithTypeValue
      */
     public function setErrorCode(?int $errorCode = null): self
     {
@@ -78,9 +81,10 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($errorCode, true), gettype($errorCode)), __LINE__);
         }
         $this->errorCode = $errorCode;
-        
+
         return $this;
     }
+
     /**
      * Get errorMessage value
      * @return string|null
@@ -89,10 +93,11 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
     {
         return $this->errorMessage;
     }
+
     /**
      * Set errorMessage value
      * @param string $errorMessage
-     * @return \StructType\ResultGetReservedSkybillWithTypeValue
+     * @return ResultGetReservedSkybillWithTypeValue
      */
     public function setErrorMessage(?string $errorMessage = null): self
     {
@@ -101,9 +106,10 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($errorMessage, true), gettype($errorMessage)), __LINE__);
         }
         $this->errorMessage = $errorMessage;
-        
+
         return $this;
     }
+
     /**
      * Get skybill value
      * @return string|null
@@ -112,10 +118,11 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
     {
         return $this->skybill;
     }
+
     /**
      * Set skybill value
      * @param string $skybill
-     * @return \StructType\ResultGetReservedSkybillWithTypeValue
+     * @return ResultGetReservedSkybillWithTypeValue
      */
     public function setSkybill(?string $skybill = null): self
     {
@@ -124,9 +131,10 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($skybill, true), gettype($skybill)), __LINE__);
         }
         $this->skybill = $skybill;
-        
+
         return $this;
     }
+
     /**
      * Get type value
      * @return string|null
@@ -135,10 +143,11 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
     {
         return $this->type;
     }
+
     /**
      * Set type value
      * @param string $type
-     * @return \StructType\ResultGetReservedSkybillWithTypeValue
+     * @return ResultGetReservedSkybillWithTypeValue
      */
     public function setType(?string $type = null): self
     {
@@ -147,7 +156,7 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($type, true), gettype($type)), __LINE__);
         }
         $this->type = $type;
-        
+
         return $this;
     }
 }

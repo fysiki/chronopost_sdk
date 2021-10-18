@@ -125,24 +125,9 @@ class DonneurDOrdre extends AbstractStructBase
      * @var string|null
      */
     protected ?string $voie = null;
+
     /**
      * Constructor method for donneurDOrdre
-     * @uses DonneurDOrdre::setAutreTelephone()
-     * @uses DonneurDOrdre::setBatiment()
-     * @uses DonneurDOrdre::setCodeCivilite()
-     * @uses DonneurDOrdre::setCodeNaf()
-     * @uses DonneurDOrdre::setCodePays()
-     * @uses DonneurDOrdre::setCodePostal()
-     * @uses DonneurDOrdre::setEMail()
-     * @uses DonneurDOrdre::setFax()
-     * @uses DonneurDOrdre::setLieuDit()
-     * @uses DonneurDOrdre::setNom()
-     * @uses DonneurDOrdre::setPrenom()
-     * @uses DonneurDOrdre::setRaisonSociale()
-     * @uses DonneurDOrdre::setService()
-     * @uses DonneurDOrdre::setTelephone()
-     * @uses DonneurDOrdre::setVille()
-     * @uses DonneurDOrdre::setVoie()
      * @param string $autreTelephone
      * @param string $batiment
      * @param string $codeCivilite
@@ -159,6 +144,22 @@ class DonneurDOrdre extends AbstractStructBase
      * @param string $telephone
      * @param string $ville
      * @param string $voie
+     * @uses DonneurDOrdre::setAutreTelephone()
+     * @uses DonneurDOrdre::setBatiment()
+     * @uses DonneurDOrdre::setCodeCivilite()
+     * @uses DonneurDOrdre::setCodeNaf()
+     * @uses DonneurDOrdre::setCodePays()
+     * @uses DonneurDOrdre::setCodePostal()
+     * @uses DonneurDOrdre::setEMail()
+     * @uses DonneurDOrdre::setFax()
+     * @uses DonneurDOrdre::setLieuDit()
+     * @uses DonneurDOrdre::setNom()
+     * @uses DonneurDOrdre::setPrenom()
+     * @uses DonneurDOrdre::setRaisonSociale()
+     * @uses DonneurDOrdre::setService()
+     * @uses DonneurDOrdre::setTelephone()
+     * @uses DonneurDOrdre::setVille()
+     * @uses DonneurDOrdre::setVoie()
      */
     public function __construct(?string $autreTelephone = null, ?string $batiment = null, ?string $codeCivilite = null, ?string $codeNaf = null, ?string $codePays = null, ?string $codePostal = null, ?string $eMail = null, ?string $fax = null, ?string $lieuDit = null, ?string $nom = null, ?string $prenom = null, ?string $raisonSociale = null, ?string $service = null, ?string $telephone = null, ?string $ville = null, ?string $voie = null)
     {
@@ -180,6 +181,7 @@ class DonneurDOrdre extends AbstractStructBase
             ->setVille($ville)
             ->setVoie($voie);
     }
+
     /**
      * Get autreTelephone value
      * @return string|null
@@ -188,10 +190,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->autreTelephone;
     }
+
     /**
      * Set autreTelephone value
      * @param string $autreTelephone
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setAutreTelephone(?string $autreTelephone = null): self
     {
@@ -200,9 +203,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($autreTelephone, true), gettype($autreTelephone)), __LINE__);
         }
         $this->autreTelephone = $autreTelephone;
-        
+
         return $this;
     }
+
     /**
      * Get batiment value
      * @return string|null
@@ -211,10 +215,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->batiment;
     }
+
     /**
      * Set batiment value
      * @param string $batiment
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setBatiment(?string $batiment = null): self
     {
@@ -223,9 +228,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($batiment, true), gettype($batiment)), __LINE__);
         }
         $this->batiment = $batiment;
-        
+
         return $this;
     }
+
     /**
      * Get codeCivilite value
      * @return string|null
@@ -234,10 +240,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->codeCivilite;
     }
+
     /**
      * Set codeCivilite value
      * @param string $codeCivilite
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setCodeCivilite(?string $codeCivilite = null): self
     {
@@ -246,9 +253,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codeCivilite, true), gettype($codeCivilite)), __LINE__);
         }
         $this->codeCivilite = $codeCivilite;
-        
+
         return $this;
     }
+
     /**
      * Get codeNaf value
      * @return string|null
@@ -257,10 +265,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->codeNaf;
     }
+
     /**
      * Set codeNaf value
      * @param string $codeNaf
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setCodeNaf(?string $codeNaf = null): self
     {
@@ -269,9 +278,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codeNaf, true), gettype($codeNaf)), __LINE__);
         }
         $this->codeNaf = $codeNaf;
-        
+
         return $this;
     }
+
     /**
      * Get codePays value
      * @return string|null
@@ -280,10 +290,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->codePays;
     }
+
     /**
      * Set codePays value
      * @param string $codePays
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setCodePays(?string $codePays = null): self
     {
@@ -292,9 +303,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codePays, true), gettype($codePays)), __LINE__);
         }
         $this->codePays = $codePays;
-        
+
         return $this;
     }
+
     /**
      * Get codePostal value
      * @return string|null
@@ -303,10 +315,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->codePostal;
     }
+
     /**
      * Set codePostal value
      * @param string $codePostal
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setCodePostal(?string $codePostal = null): self
     {
@@ -315,9 +328,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codePostal, true), gettype($codePostal)), __LINE__);
         }
         $this->codePostal = $codePostal;
-        
+
         return $this;
     }
+
     /**
      * Get EMail value
      * @return string|null
@@ -326,10 +340,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->EMail;
     }
+
     /**
      * Set EMail value
      * @param string $eMail
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setEMail(?string $eMail = null): self
     {
@@ -338,9 +353,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($eMail, true), gettype($eMail)), __LINE__);
         }
         $this->EMail = $eMail;
-        
+
         return $this;
     }
+
     /**
      * Get fax value
      * @return string|null
@@ -349,10 +365,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->fax;
     }
+
     /**
      * Set fax value
      * @param string $fax
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setFax(?string $fax = null): self
     {
@@ -361,9 +378,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fax, true), gettype($fax)), __LINE__);
         }
         $this->fax = $fax;
-        
+
         return $this;
     }
+
     /**
      * Get lieuDit value
      * @return string|null
@@ -372,10 +390,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->lieuDit;
     }
+
     /**
      * Set lieuDit value
      * @param string $lieuDit
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setLieuDit(?string $lieuDit = null): self
     {
@@ -384,9 +403,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lieuDit, true), gettype($lieuDit)), __LINE__);
         }
         $this->lieuDit = $lieuDit;
-        
+
         return $this;
     }
+
     /**
      * Get nom value
      * @return string|null
@@ -395,10 +415,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->nom;
     }
+
     /**
      * Set nom value
      * @param string $nom
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setNom(?string $nom = null): self
     {
@@ -407,9 +428,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($nom, true), gettype($nom)), __LINE__);
         }
         $this->nom = $nom;
-        
+
         return $this;
     }
+
     /**
      * Get prenom value
      * @return string|null
@@ -418,10 +440,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->prenom;
     }
+
     /**
      * Set prenom value
      * @param string $prenom
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setPrenom(?string $prenom = null): self
     {
@@ -430,9 +453,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($prenom, true), gettype($prenom)), __LINE__);
         }
         $this->prenom = $prenom;
-        
+
         return $this;
     }
+
     /**
      * Get raisonSociale value
      * @return string|null
@@ -441,10 +465,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->raisonSociale;
     }
+
     /**
      * Set raisonSociale value
      * @param string $raisonSociale
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setRaisonSociale(?string $raisonSociale = null): self
     {
@@ -453,9 +478,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($raisonSociale, true), gettype($raisonSociale)), __LINE__);
         }
         $this->raisonSociale = $raisonSociale;
-        
+
         return $this;
     }
+
     /**
      * Get service value
      * @return string|null
@@ -464,10 +490,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->service;
     }
+
     /**
      * Set service value
      * @param string $service
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setService(?string $service = null): self
     {
@@ -476,9 +503,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($service, true), gettype($service)), __LINE__);
         }
         $this->service = $service;
-        
+
         return $this;
     }
+
     /**
      * Get telephone value
      * @return string|null
@@ -487,10 +515,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->telephone;
     }
+
     /**
      * Set telephone value
      * @param string $telephone
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setTelephone(?string $telephone = null): self
     {
@@ -499,9 +528,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($telephone, true), gettype($telephone)), __LINE__);
         }
         $this->telephone = $telephone;
-        
+
         return $this;
     }
+
     /**
      * Get ville value
      * @return string|null
@@ -510,10 +540,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->ville;
     }
+
     /**
      * Set ville value
      * @param string $ville
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setVille(?string $ville = null): self
     {
@@ -522,9 +553,10 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ville, true), gettype($ville)), __LINE__);
         }
         $this->ville = $ville;
-        
+
         return $this;
     }
+
     /**
      * Get voie value
      * @return string|null
@@ -533,10 +565,11 @@ class DonneurDOrdre extends AbstractStructBase
     {
         return $this->voie;
     }
+
     /**
      * Set voie value
      * @param string $voie
-     * @return \StructType\DonneurDOrdre
+     * @return DonneurDOrdre
      */
     public function setVoie(?string $voie = null): self
     {
@@ -545,7 +578,7 @@ class DonneurDOrdre extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($voie, true), gettype($voie)), __LINE__);
         }
         $this->voie = $voie;
-        
+
         return $this;
     }
 }

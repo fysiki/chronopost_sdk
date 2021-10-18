@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for recipientValueV2 StructType
@@ -20,16 +19,18 @@ class RecipientValueV2 extends RecipientValue
      * @var string|null
      */
     protected ?string $recipientType = null;
+
     /**
      * Constructor method for recipientValueV2
-     * @uses RecipientValueV2::setRecipientType()
      * @param string $recipientType
+     * @uses RecipientValueV2::setRecipientType()
      */
     public function __construct(?string $recipientType = null)
     {
         $this
             ->setRecipientType($recipientType);
     }
+
     /**
      * Get recipientType value
      * @return string|null
@@ -38,10 +39,11 @@ class RecipientValueV2 extends RecipientValue
     {
         return $this->recipientType;
     }
+
     /**
      * Set recipientType value
      * @param string $recipientType
-     * @return \StructType\RecipientValueV2
+     * @return RecipientValueV2
      */
     public function setRecipientType(?string $recipientType = null): self
     {
@@ -50,7 +52,7 @@ class RecipientValueV2 extends RecipientValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientType, true), gettype($recipientType)), __LINE__);
         }
         $this->recipientType = $recipientType;
-        
+
         return $this;
     }
 }

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for skybillWithDimensionsValueV4 StructType
@@ -20,16 +19,18 @@ class SkybillWithDimensionsValueV4 extends SkybillWithDimensionsValueV3
      * @var string|null
      */
     protected ?string $skybillNumber = null;
+
     /**
      * Constructor method for skybillWithDimensionsValueV4
-     * @uses SkybillWithDimensionsValueV4::setSkybillNumber()
      * @param string $skybillNumber
+     * @uses SkybillWithDimensionsValueV4::setSkybillNumber()
      */
     public function __construct(?string $skybillNumber = null)
     {
         $this
             ->setSkybillNumber($skybillNumber);
     }
+
     /**
      * Get skybillNumber value
      * @return string|null
@@ -38,10 +39,11 @@ class SkybillWithDimensionsValueV4 extends SkybillWithDimensionsValueV3
     {
         return $this->skybillNumber;
     }
+
     /**
      * Set skybillNumber value
      * @param string $skybillNumber
-     * @return \StructType\SkybillWithDimensionsValueV4
+     * @return SkybillWithDimensionsValueV4
      */
     public function setSkybillNumber(?string $skybillNumber = null): self
     {
@@ -50,7 +52,7 @@ class SkybillWithDimensionsValueV4 extends SkybillWithDimensionsValueV3
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($skybillNumber, true), gettype($skybillNumber)), __LINE__);
         }
         $this->skybillNumber = $skybillNumber;
-        
+
         return $this;
     }
 }

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for esdWithRefClientValue StructType
@@ -30,14 +29,15 @@ class EsdWithRefClientValue extends EsdValue
      * @var string|null
      */
     protected ?string $refEsdClient = null;
+
     /**
      * Constructor method for esdWithRefClientValue
-     * @uses EsdWithRefClientValue::setLtAImprimerParChronopost()
-     * @uses EsdWithRefClientValue::setNombreDePassageMaximum()
-     * @uses EsdWithRefClientValue::setRefEsdClient()
      * @param bool $ltAImprimerParChronopost
      * @param int $nombreDePassageMaximum
      * @param string $refEsdClient
+     * @uses EsdWithRefClientValue::setLtAImprimerParChronopost()
+     * @uses EsdWithRefClientValue::setNombreDePassageMaximum()
+     * @uses EsdWithRefClientValue::setRefEsdClient()
      */
     public function __construct(?bool $ltAImprimerParChronopost = null, ?int $nombreDePassageMaximum = null, ?string $refEsdClient = null)
     {
@@ -46,6 +46,7 @@ class EsdWithRefClientValue extends EsdValue
             ->setNombreDePassageMaximum($nombreDePassageMaximum)
             ->setRefEsdClient($refEsdClient);
     }
+
     /**
      * Get ltAImprimerParChronopost value
      * @return bool|null
@@ -54,10 +55,11 @@ class EsdWithRefClientValue extends EsdValue
     {
         return $this->ltAImprimerParChronopost;
     }
+
     /**
      * Set ltAImprimerParChronopost value
      * @param bool $ltAImprimerParChronopost
-     * @return \StructType\EsdWithRefClientValue
+     * @return EsdWithRefClientValue
      */
     public function setLtAImprimerParChronopost(?bool $ltAImprimerParChronopost = null): self
     {
@@ -66,9 +68,10 @@ class EsdWithRefClientValue extends EsdValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($ltAImprimerParChronopost, true), gettype($ltAImprimerParChronopost)), __LINE__);
         }
         $this->ltAImprimerParChronopost = $ltAImprimerParChronopost;
-        
+
         return $this;
     }
+
     /**
      * Get nombreDePassageMaximum value
      * @return int|null
@@ -77,10 +80,11 @@ class EsdWithRefClientValue extends EsdValue
     {
         return $this->nombreDePassageMaximum;
     }
+
     /**
      * Set nombreDePassageMaximum value
      * @param int $nombreDePassageMaximum
-     * @return \StructType\EsdWithRefClientValue
+     * @return EsdWithRefClientValue
      */
     public function setNombreDePassageMaximum(?int $nombreDePassageMaximum = null): self
     {
@@ -89,9 +93,10 @@ class EsdWithRefClientValue extends EsdValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($nombreDePassageMaximum, true), gettype($nombreDePassageMaximum)), __LINE__);
         }
         $this->nombreDePassageMaximum = $nombreDePassageMaximum;
-        
+
         return $this;
     }
+
     /**
      * Get refEsdClient value
      * @return string|null
@@ -100,10 +105,11 @@ class EsdWithRefClientValue extends EsdValue
     {
         return $this->refEsdClient;
     }
+
     /**
      * Set refEsdClient value
      * @param string $refEsdClient
-     * @return \StructType\EsdWithRefClientValue
+     * @return EsdWithRefClientValue
      */
     public function setRefEsdClient(?string $refEsdClient = null): self
     {
@@ -112,7 +118,7 @@ class EsdWithRefClientValue extends EsdValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($refEsdClient, true), gettype($refEsdClient)), __LINE__);
         }
         $this->refEsdClient = $refEsdClient;
-        
+
         return $this;
     }
 }

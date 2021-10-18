@@ -88,19 +88,9 @@ class InfoEnlevement extends AbstractStructBase
      * @var string|null
      */
     protected ?string $ville = null;
+
     /**
      * Constructor method for infoEnlevement
-     * @uses InfoEnlevement::setAncienNumeroESD()
-     * @uses InfoEnlevement::setCodeBu()
-     * @uses InfoEnlevement::setCodeDepot()
-     * @uses InfoEnlevement::setCodePostal()
-     * @uses InfoEnlevement::setDateCreation()
-     * @uses InfoEnlevement::setDatePassage()
-     * @uses InfoEnlevement::setIdEnlevement()
-     * @uses InfoEnlevement::setNumeroUniqueESD()
-     * @uses InfoEnlevement::setRefDestinataire()
-     * @uses InfoEnlevement::setRefEsdClient()
-     * @uses InfoEnlevement::setVille()
      * @param string $ancienNumeroESD
      * @param string $codeBu
      * @param string $codeDepot
@@ -112,6 +102,17 @@ class InfoEnlevement extends AbstractStructBase
      * @param string $refDestinataire
      * @param string $refEsdClient
      * @param string $ville
+     * @uses InfoEnlevement::setAncienNumeroESD()
+     * @uses InfoEnlevement::setCodeBu()
+     * @uses InfoEnlevement::setCodeDepot()
+     * @uses InfoEnlevement::setCodePostal()
+     * @uses InfoEnlevement::setDateCreation()
+     * @uses InfoEnlevement::setDatePassage()
+     * @uses InfoEnlevement::setIdEnlevement()
+     * @uses InfoEnlevement::setNumeroUniqueESD()
+     * @uses InfoEnlevement::setRefDestinataire()
+     * @uses InfoEnlevement::setRefEsdClient()
+     * @uses InfoEnlevement::setVille()
      */
     public function __construct(?string $ancienNumeroESD = null, ?string $codeBu = null, ?string $codeDepot = null, ?string $codePostal = null, ?string $dateCreation = null, ?string $datePassage = null, ?int $idEnlevement = null, ?string $numeroUniqueESD = null, ?string $refDestinataire = null, ?string $refEsdClient = null, ?string $ville = null)
     {
@@ -128,6 +129,7 @@ class InfoEnlevement extends AbstractStructBase
             ->setRefEsdClient($refEsdClient)
             ->setVille($ville);
     }
+
     /**
      * Get ancienNumeroESD value
      * @return string|null
@@ -136,10 +138,11 @@ class InfoEnlevement extends AbstractStructBase
     {
         return $this->ancienNumeroESD;
     }
+
     /**
      * Set ancienNumeroESD value
      * @param string $ancienNumeroESD
-     * @return \StructType\InfoEnlevement
+     * @return InfoEnlevement
      */
     public function setAncienNumeroESD(?string $ancienNumeroESD = null): self
     {
@@ -148,9 +151,10 @@ class InfoEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ancienNumeroESD, true), gettype($ancienNumeroESD)), __LINE__);
         }
         $this->ancienNumeroESD = $ancienNumeroESD;
-        
+
         return $this;
     }
+
     /**
      * Get codeBu value
      * @return string|null
@@ -159,10 +163,11 @@ class InfoEnlevement extends AbstractStructBase
     {
         return $this->codeBu;
     }
+
     /**
      * Set codeBu value
      * @param string $codeBu
-     * @return \StructType\InfoEnlevement
+     * @return InfoEnlevement
      */
     public function setCodeBu(?string $codeBu = null): self
     {
@@ -171,9 +176,10 @@ class InfoEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codeBu, true), gettype($codeBu)), __LINE__);
         }
         $this->codeBu = $codeBu;
-        
+
         return $this;
     }
+
     /**
      * Get codeDepot value
      * @return string|null
@@ -182,10 +188,11 @@ class InfoEnlevement extends AbstractStructBase
     {
         return $this->codeDepot;
     }
+
     /**
      * Set codeDepot value
      * @param string $codeDepot
-     * @return \StructType\InfoEnlevement
+     * @return InfoEnlevement
      */
     public function setCodeDepot(?string $codeDepot = null): self
     {
@@ -194,9 +201,10 @@ class InfoEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codeDepot, true), gettype($codeDepot)), __LINE__);
         }
         $this->codeDepot = $codeDepot;
-        
+
         return $this;
     }
+
     /**
      * Get codePostal value
      * @return string|null
@@ -205,10 +213,11 @@ class InfoEnlevement extends AbstractStructBase
     {
         return $this->codePostal;
     }
+
     /**
      * Set codePostal value
      * @param string $codePostal
-     * @return \StructType\InfoEnlevement
+     * @return InfoEnlevement
      */
     public function setCodePostal(?string $codePostal = null): self
     {
@@ -217,9 +226,10 @@ class InfoEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codePostal, true), gettype($codePostal)), __LINE__);
         }
         $this->codePostal = $codePostal;
-        
+
         return $this;
     }
+
     /**
      * Get dateCreation value
      * @return string|null
@@ -228,10 +238,11 @@ class InfoEnlevement extends AbstractStructBase
     {
         return $this->dateCreation;
     }
+
     /**
      * Set dateCreation value
      * @param string $dateCreation
-     * @return \StructType\InfoEnlevement
+     * @return InfoEnlevement
      */
     public function setDateCreation(?string $dateCreation = null): self
     {
@@ -240,9 +251,10 @@ class InfoEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dateCreation, true), gettype($dateCreation)), __LINE__);
         }
         $this->dateCreation = $dateCreation;
-        
+
         return $this;
     }
+
     /**
      * Get datePassage value
      * @return string|null
@@ -251,10 +263,11 @@ class InfoEnlevement extends AbstractStructBase
     {
         return $this->datePassage;
     }
+
     /**
      * Set datePassage value
      * @param string $datePassage
-     * @return \StructType\InfoEnlevement
+     * @return InfoEnlevement
      */
     public function setDatePassage(?string $datePassage = null): self
     {
@@ -263,9 +276,10 @@ class InfoEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($datePassage, true), gettype($datePassage)), __LINE__);
         }
         $this->datePassage = $datePassage;
-        
+
         return $this;
     }
+
     /**
      * Get idEnlevement value
      * @return int|null
@@ -274,10 +288,11 @@ class InfoEnlevement extends AbstractStructBase
     {
         return $this->idEnlevement;
     }
+
     /**
      * Set idEnlevement value
      * @param int $idEnlevement
-     * @return \StructType\InfoEnlevement
+     * @return InfoEnlevement
      */
     public function setIdEnlevement(?int $idEnlevement = null): self
     {
@@ -286,9 +301,10 @@ class InfoEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($idEnlevement, true), gettype($idEnlevement)), __LINE__);
         }
         $this->idEnlevement = $idEnlevement;
-        
+
         return $this;
     }
+
     /**
      * Get numeroUniqueESD value
      * @return string|null
@@ -297,10 +313,11 @@ class InfoEnlevement extends AbstractStructBase
     {
         return $this->numeroUniqueESD;
     }
+
     /**
      * Set numeroUniqueESD value
      * @param string $numeroUniqueESD
-     * @return \StructType\InfoEnlevement
+     * @return InfoEnlevement
      */
     public function setNumeroUniqueESD(?string $numeroUniqueESD = null): self
     {
@@ -309,9 +326,10 @@ class InfoEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($numeroUniqueESD, true), gettype($numeroUniqueESD)), __LINE__);
         }
         $this->numeroUniqueESD = $numeroUniqueESD;
-        
+
         return $this;
     }
+
     /**
      * Get refDestinataire value
      * @return string|null
@@ -320,10 +338,11 @@ class InfoEnlevement extends AbstractStructBase
     {
         return $this->refDestinataire;
     }
+
     /**
      * Set refDestinataire value
      * @param string $refDestinataire
-     * @return \StructType\InfoEnlevement
+     * @return InfoEnlevement
      */
     public function setRefDestinataire(?string $refDestinataire = null): self
     {
@@ -332,9 +351,10 @@ class InfoEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($refDestinataire, true), gettype($refDestinataire)), __LINE__);
         }
         $this->refDestinataire = $refDestinataire;
-        
+
         return $this;
     }
+
     /**
      * Get refEsdClient value
      * @return string|null
@@ -343,10 +363,11 @@ class InfoEnlevement extends AbstractStructBase
     {
         return $this->refEsdClient;
     }
+
     /**
      * Set refEsdClient value
      * @param string $refEsdClient
-     * @return \StructType\InfoEnlevement
+     * @return InfoEnlevement
      */
     public function setRefEsdClient(?string $refEsdClient = null): self
     {
@@ -355,9 +376,10 @@ class InfoEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($refEsdClient, true), gettype($refEsdClient)), __LINE__);
         }
         $this->refEsdClient = $refEsdClient;
-        
+
         return $this;
     }
+
     /**
      * Get ville value
      * @return string|null
@@ -366,10 +388,11 @@ class InfoEnlevement extends AbstractStructBase
     {
         return $this->ville;
     }
+
     /**
      * Set ville value
      * @param string $ville
-     * @return \StructType\InfoEnlevement
+     * @return InfoEnlevement
      */
     public function setVille(?string $ville = null): self
     {
@@ -378,7 +401,7 @@ class InfoEnlevement extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ville, true), gettype($ville)), __LINE__);
         }
         $this->ville = $ville;
-        
+
         return $this;
     }
 }

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for resultReservationExpeditionValueV2 StructType
@@ -20,16 +19,18 @@ class ResultReservationExpeditionValueV2 extends ResultReservationExpeditionValu
      * @var string|null
      */
     protected ?string $asCode = null;
+
     /**
      * Constructor method for resultReservationExpeditionValueV2
-     * @uses ResultReservationExpeditionValueV2::setAsCode()
      * @param string $asCode
+     * @uses ResultReservationExpeditionValueV2::setAsCode()
      */
     public function __construct(?string $asCode = null)
     {
         $this
             ->setAsCode($asCode);
     }
+
     /**
      * Get asCode value
      * @return string|null
@@ -38,10 +39,11 @@ class ResultReservationExpeditionValueV2 extends ResultReservationExpeditionValu
     {
         return $this->asCode;
     }
+
     /**
      * Set asCode value
      * @param string $asCode
-     * @return \StructType\ResultReservationExpeditionValueV2
+     * @return ResultReservationExpeditionValueV2
      */
     public function setAsCode(?string $asCode = null): self
     {
@@ -50,7 +52,7 @@ class ResultReservationExpeditionValueV2 extends ResultReservationExpeditionValu
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($asCode, true), gettype($asCode)), __LINE__);
         }
         $this->asCode = $asCode;
-        
+
         return $this;
     }
 }

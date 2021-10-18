@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for refValueV2 StructType
@@ -20,16 +19,18 @@ class RefValueV2 extends RefValue
      * @var string|null
      */
     protected ?string $idRelais = null;
+
     /**
      * Constructor method for refValueV2
-     * @uses RefValueV2::setIdRelais()
      * @param string $idRelais
+     * @uses RefValueV2::setIdRelais()
      */
     public function __construct(?string $idRelais = null)
     {
         $this
             ->setIdRelais($idRelais);
     }
+
     /**
      * Get idRelais value
      * @return string|null
@@ -38,10 +39,11 @@ class RefValueV2 extends RefValue
     {
         return $this->idRelais;
     }
+
     /**
      * Set idRelais value
      * @param string $idRelais
-     * @return \StructType\RefValueV2
+     * @return RefValueV2
      */
     public function setIdRelais(?string $idRelais = null): self
     {
@@ -50,7 +52,7 @@ class RefValueV2 extends RefValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($idRelais, true), gettype($idRelais)), __LINE__);
         }
         $this->idRelais = $idRelais;
-        
+
         return $this;
     }
 }

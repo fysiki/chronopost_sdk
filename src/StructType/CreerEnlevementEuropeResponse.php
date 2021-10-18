@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace StructType;
 
-use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
@@ -19,36 +18,39 @@ class CreerEnlevementEuropeResponse extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ResultPickupOrCollectionRequest|null
+     * @var ResultPickupOrCollectionRequest|null
      */
-    protected ?\StructType\ResultPickupOrCollectionRequest $return = null;
+    protected ?ResultPickupOrCollectionRequest $return = null;
+
     /**
      * Constructor method for creerEnlevementEuropeResponse
+     * @param ResultPickupOrCollectionRequest $return
      * @uses CreerEnlevementEuropeResponse::setReturn()
-     * @param \StructType\ResultPickupOrCollectionRequest $return
      */
-    public function __construct(?\StructType\ResultPickupOrCollectionRequest $return = null)
+    public function __construct(?ResultPickupOrCollectionRequest $return = null)
     {
         $this
             ->setReturn($return);
     }
+
     /**
      * Get return value
-     * @return \StructType\ResultPickupOrCollectionRequest|null
+     * @return ResultPickupOrCollectionRequest|null
      */
-    public function getReturn(): ?\StructType\ResultPickupOrCollectionRequest
+    public function getReturn(): ?ResultPickupOrCollectionRequest
     {
         return $this->return;
     }
+
     /**
      * Set return value
-     * @param \StructType\ResultPickupOrCollectionRequest $return
-     * @return \StructType\CreerEnlevementEuropeResponse
+     * @param ResultPickupOrCollectionRequest $return
+     * @return CreerEnlevementEuropeResponse
      */
-    public function setReturn(?\StructType\ResultPickupOrCollectionRequest $return = null): self
+    public function setReturn(?ResultPickupOrCollectionRequest $return = null): self
     {
         $this->return = $return;
-        
+
         return $this;
     }
 }

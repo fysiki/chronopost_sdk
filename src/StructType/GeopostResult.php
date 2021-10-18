@@ -139,26 +139,9 @@ class GeopostResult extends AbstractStructBase
      * @var string|null
      */
     protected ?string $version = null;
+
     /**
      * Constructor method for geopostResult
-     * @uses GeopostResult::setBarcodeId()
-     * @uses GeopostResult::setBarcodePostcode()
-     * @uses GeopostResult::setBuAlphaString()
-     * @uses GeopostResult::setBuCode()
-     * @uses GeopostResult::setCSort()
-     * @uses GeopostResult::setDCountry()
-     * @uses GeopostResult::setDDepot()
-     * @uses GeopostResult::setDDepotCountry()
-     * @uses GeopostResult::setDDepotStr()
-     * @uses GeopostResult::setDSort()
-     * @uses GeopostResult::setGroupingPriority()
-     * @uses GeopostResult::setNetworkCode()
-     * @uses GeopostResult::setOSort()
-     * @uses GeopostResult::setPartnerCode()
-     * @uses GeopostResult::setSSort()
-     * @uses GeopostResult::setServiceMark()
-     * @uses GeopostResult::setServiceText()
-     * @uses GeopostResult::setVersion()
      * @param string $barcodeId
      * @param string $barcodePostcode
      * @param string $buAlphaString
@@ -177,6 +160,24 @@ class GeopostResult extends AbstractStructBase
      * @param string $serviceMark
      * @param string $serviceText
      * @param string $version
+     * @uses GeopostResult::setBarcodeId()
+     * @uses GeopostResult::setBarcodePostcode()
+     * @uses GeopostResult::setBuAlphaString()
+     * @uses GeopostResult::setBuCode()
+     * @uses GeopostResult::setCSort()
+     * @uses GeopostResult::setDCountry()
+     * @uses GeopostResult::setDDepot()
+     * @uses GeopostResult::setDDepotCountry()
+     * @uses GeopostResult::setDDepotStr()
+     * @uses GeopostResult::setDSort()
+     * @uses GeopostResult::setGroupingPriority()
+     * @uses GeopostResult::setNetworkCode()
+     * @uses GeopostResult::setOSort()
+     * @uses GeopostResult::setPartnerCode()
+     * @uses GeopostResult::setSSort()
+     * @uses GeopostResult::setServiceMark()
+     * @uses GeopostResult::setServiceText()
+     * @uses GeopostResult::setVersion()
      */
     public function __construct(?string $barcodeId = null, ?string $barcodePostcode = null, ?string $buAlphaString = null, ?string $buCode = null, ?string $cSort = null, ?string $dCountry = null, ?string $dDepot = null, ?string $dDepotCountry = null, ?string $dDepotStr = null, ?string $dSort = null, ?string $groupingPriority = null, ?string $networkCode = null, ?string $oSort = null, ?string $partnerCode = null, ?string $sSort = null, ?string $serviceMark = null, ?string $serviceText = null, ?string $version = null)
     {
@@ -200,6 +201,7 @@ class GeopostResult extends AbstractStructBase
             ->setServiceText($serviceText)
             ->setVersion($version);
     }
+
     /**
      * Get barcodeId value
      * @return string|null
@@ -208,10 +210,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->barcodeId;
     }
+
     /**
      * Set barcodeId value
      * @param string $barcodeId
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setBarcodeId(?string $barcodeId = null): self
     {
@@ -220,9 +223,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($barcodeId, true), gettype($barcodeId)), __LINE__);
         }
         $this->barcodeId = $barcodeId;
-        
+
         return $this;
     }
+
     /**
      * Get barcodePostcode value
      * @return string|null
@@ -231,10 +235,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->barcodePostcode;
     }
+
     /**
      * Set barcodePostcode value
      * @param string $barcodePostcode
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setBarcodePostcode(?string $barcodePostcode = null): self
     {
@@ -243,9 +248,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($barcodePostcode, true), gettype($barcodePostcode)), __LINE__);
         }
         $this->barcodePostcode = $barcodePostcode;
-        
+
         return $this;
     }
+
     /**
      * Get buAlphaString value
      * @return string|null
@@ -254,10 +260,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->buAlphaString;
     }
+
     /**
      * Set buAlphaString value
      * @param string $buAlphaString
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setBuAlphaString(?string $buAlphaString = null): self
     {
@@ -266,9 +273,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($buAlphaString, true), gettype($buAlphaString)), __LINE__);
         }
         $this->buAlphaString = $buAlphaString;
-        
+
         return $this;
     }
+
     /**
      * Get buCode value
      * @return string|null
@@ -277,10 +285,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->buCode;
     }
+
     /**
      * Set buCode value
      * @param string $buCode
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setBuCode(?string $buCode = null): self
     {
@@ -289,9 +298,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($buCode, true), gettype($buCode)), __LINE__);
         }
         $this->buCode = $buCode;
-        
+
         return $this;
     }
+
     /**
      * Get CSort value
      * @return string|null
@@ -300,10 +310,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->CSort;
     }
+
     /**
      * Set CSort value
      * @param string $cSort
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setCSort(?string $cSort = null): self
     {
@@ -312,9 +323,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cSort, true), gettype($cSort)), __LINE__);
         }
         $this->CSort = $cSort;
-        
+
         return $this;
     }
+
     /**
      * Get DCountry value
      * @return string|null
@@ -323,10 +335,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->DCountry;
     }
+
     /**
      * Set DCountry value
      * @param string $dCountry
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setDCountry(?string $dCountry = null): self
     {
@@ -335,9 +348,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dCountry, true), gettype($dCountry)), __LINE__);
         }
         $this->DCountry = $dCountry;
-        
+
         return $this;
     }
+
     /**
      * Get DDepot value
      * @return string|null
@@ -346,10 +360,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->DDepot;
     }
+
     /**
      * Set DDepot value
      * @param string $dDepot
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setDDepot(?string $dDepot = null): self
     {
@@ -358,9 +373,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dDepot, true), gettype($dDepot)), __LINE__);
         }
         $this->DDepot = $dDepot;
-        
+
         return $this;
     }
+
     /**
      * Get DDepotCountry value
      * @return string|null
@@ -369,10 +385,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->DDepotCountry;
     }
+
     /**
      * Set DDepotCountry value
      * @param string $dDepotCountry
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setDDepotCountry(?string $dDepotCountry = null): self
     {
@@ -381,9 +398,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dDepotCountry, true), gettype($dDepotCountry)), __LINE__);
         }
         $this->DDepotCountry = $dDepotCountry;
-        
+
         return $this;
     }
+
     /**
      * Get DDepotStr value
      * @return string|null
@@ -392,10 +410,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->DDepotStr;
     }
+
     /**
      * Set DDepotStr value
      * @param string $dDepotStr
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setDDepotStr(?string $dDepotStr = null): self
     {
@@ -404,9 +423,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dDepotStr, true), gettype($dDepotStr)), __LINE__);
         }
         $this->DDepotStr = $dDepotStr;
-        
+
         return $this;
     }
+
     /**
      * Get DSort value
      * @return string|null
@@ -415,10 +435,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->DSort;
     }
+
     /**
      * Set DSort value
      * @param string $dSort
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setDSort(?string $dSort = null): self
     {
@@ -427,9 +448,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dSort, true), gettype($dSort)), __LINE__);
         }
         $this->DSort = $dSort;
-        
+
         return $this;
     }
+
     /**
      * Get groupingPriority value
      * @return string|null
@@ -438,10 +460,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->groupingPriority;
     }
+
     /**
      * Set groupingPriority value
      * @param string $groupingPriority
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setGroupingPriority(?string $groupingPriority = null): self
     {
@@ -450,9 +473,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($groupingPriority, true), gettype($groupingPriority)), __LINE__);
         }
         $this->groupingPriority = $groupingPriority;
-        
+
         return $this;
     }
+
     /**
      * Get networkCode value
      * @return string|null
@@ -461,10 +485,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->networkCode;
     }
+
     /**
      * Set networkCode value
      * @param string $networkCode
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setNetworkCode(?string $networkCode = null): self
     {
@@ -473,9 +498,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($networkCode, true), gettype($networkCode)), __LINE__);
         }
         $this->networkCode = $networkCode;
-        
+
         return $this;
     }
+
     /**
      * Get OSort value
      * @return string|null
@@ -484,10 +510,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->OSort;
     }
+
     /**
      * Set OSort value
      * @param string $oSort
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setOSort(?string $oSort = null): self
     {
@@ -496,9 +523,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($oSort, true), gettype($oSort)), __LINE__);
         }
         $this->OSort = $oSort;
-        
+
         return $this;
     }
+
     /**
      * Get partnerCode value
      * @return string|null
@@ -507,10 +535,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->partnerCode;
     }
+
     /**
      * Set partnerCode value
      * @param string $partnerCode
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setPartnerCode(?string $partnerCode = null): self
     {
@@ -519,9 +548,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($partnerCode, true), gettype($partnerCode)), __LINE__);
         }
         $this->partnerCode = $partnerCode;
-        
+
         return $this;
     }
+
     /**
      * Get SSort value
      * @return string|null
@@ -530,10 +560,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->SSort;
     }
+
     /**
      * Set SSort value
      * @param string $sSort
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setSSort(?string $sSort = null): self
     {
@@ -542,9 +573,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sSort, true), gettype($sSort)), __LINE__);
         }
         $this->SSort = $sSort;
-        
+
         return $this;
     }
+
     /**
      * Get serviceMark value
      * @return string|null
@@ -553,10 +585,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->serviceMark;
     }
+
     /**
      * Set serviceMark value
      * @param string $serviceMark
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setServiceMark(?string $serviceMark = null): self
     {
@@ -565,9 +598,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($serviceMark, true), gettype($serviceMark)), __LINE__);
         }
         $this->serviceMark = $serviceMark;
-        
+
         return $this;
     }
+
     /**
      * Get serviceText value
      * @return string|null
@@ -576,10 +610,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->serviceText;
     }
+
     /**
      * Set serviceText value
      * @param string $serviceText
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setServiceText(?string $serviceText = null): self
     {
@@ -588,9 +623,10 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($serviceText, true), gettype($serviceText)), __LINE__);
         }
         $this->serviceText = $serviceText;
-        
+
         return $this;
     }
+
     /**
      * Get version value
      * @return string|null
@@ -599,10 +635,11 @@ class GeopostResult extends AbstractStructBase
     {
         return $this->version;
     }
+
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\GeopostResult
+     * @return GeopostResult
      */
     public function setVersion(?string $version = null): self
     {
@@ -611,7 +648,7 @@ class GeopostResult extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($version, true), gettype($version)), __LINE__);
         }
         $this->version = $version;
-        
+
         return $this;
     }
 }

@@ -64,15 +64,9 @@ class GetRouting extends AbstractStructBase
      * @var string|null
      */
     protected ?string $ascode = null;
+
     /**
      * Constructor method for getRouting
-     * @uses GetRouting::setAccountNumber()
-     * @uses GetRouting::setPassword()
-     * @uses GetRouting::setShipperDepot()
-     * @uses GetRouting::setCountryCode()
-     * @uses GetRouting::setZipCode()
-     * @uses GetRouting::setSocode()
-     * @uses GetRouting::setAscode()
      * @param string $accountNumber
      * @param string $password
      * @param string $shipperDepot
@@ -80,6 +74,13 @@ class GetRouting extends AbstractStructBase
      * @param string $zipCode
      * @param string $socode
      * @param string $ascode
+     * @uses GetRouting::setAccountNumber()
+     * @uses GetRouting::setPassword()
+     * @uses GetRouting::setShipperDepot()
+     * @uses GetRouting::setCountryCode()
+     * @uses GetRouting::setZipCode()
+     * @uses GetRouting::setSocode()
+     * @uses GetRouting::setAscode()
      */
     public function __construct(?string $accountNumber = null, ?string $password = null, ?string $shipperDepot = null, ?string $countryCode = null, ?string $zipCode = null, ?string $socode = null, ?string $ascode = null)
     {
@@ -92,6 +93,7 @@ class GetRouting extends AbstractStructBase
             ->setSocode($socode)
             ->setAscode($ascode);
     }
+
     /**
      * Get accountNumber value
      * @return string|null
@@ -100,10 +102,11 @@ class GetRouting extends AbstractStructBase
     {
         return $this->accountNumber;
     }
+
     /**
      * Set accountNumber value
      * @param string $accountNumber
-     * @return \StructType\GetRouting
+     * @return GetRouting
      */
     public function setAccountNumber(?string $accountNumber = null): self
     {
@@ -112,9 +115,10 @@ class GetRouting extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($accountNumber, true), gettype($accountNumber)), __LINE__);
         }
         $this->accountNumber = $accountNumber;
-        
+
         return $this;
     }
+
     /**
      * Get password value
      * @return string|null
@@ -123,10 +127,11 @@ class GetRouting extends AbstractStructBase
     {
         return $this->password;
     }
+
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\GetRouting
+     * @return GetRouting
      */
     public function setPassword(?string $password = null): self
     {
@@ -135,9 +140,10 @@ class GetRouting extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($password, true), gettype($password)), __LINE__);
         }
         $this->password = $password;
-        
+
         return $this;
     }
+
     /**
      * Get shipperDepot value
      * @return string|null
@@ -146,10 +152,11 @@ class GetRouting extends AbstractStructBase
     {
         return $this->shipperDepot;
     }
+
     /**
      * Set shipperDepot value
      * @param string $shipperDepot
-     * @return \StructType\GetRouting
+     * @return GetRouting
      */
     public function setShipperDepot(?string $shipperDepot = null): self
     {
@@ -158,9 +165,10 @@ class GetRouting extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperDepot, true), gettype($shipperDepot)), __LINE__);
         }
         $this->shipperDepot = $shipperDepot;
-        
+
         return $this;
     }
+
     /**
      * Get countryCode value
      * @return string|null
@@ -169,10 +177,11 @@ class GetRouting extends AbstractStructBase
     {
         return $this->countryCode;
     }
+
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \StructType\GetRouting
+     * @return GetRouting
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -181,9 +190,10 @@ class GetRouting extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($countryCode, true), gettype($countryCode)), __LINE__);
         }
         $this->countryCode = $countryCode;
-        
+
         return $this;
     }
+
     /**
      * Get zipCode value
      * @return string|null
@@ -192,10 +202,11 @@ class GetRouting extends AbstractStructBase
     {
         return $this->zipCode;
     }
+
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \StructType\GetRouting
+     * @return GetRouting
      */
     public function setZipCode(?string $zipCode = null): self
     {
@@ -204,9 +215,10 @@ class GetRouting extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($zipCode, true), gettype($zipCode)), __LINE__);
         }
         $this->zipCode = $zipCode;
-        
+
         return $this;
     }
+
     /**
      * Get socode value
      * @return string|null
@@ -215,10 +227,11 @@ class GetRouting extends AbstractStructBase
     {
         return $this->socode;
     }
+
     /**
      * Set socode value
      * @param string $socode
-     * @return \StructType\GetRouting
+     * @return GetRouting
      */
     public function setSocode(?string $socode = null): self
     {
@@ -227,9 +240,10 @@ class GetRouting extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($socode, true), gettype($socode)), __LINE__);
         }
         $this->socode = $socode;
-        
+
         return $this;
     }
+
     /**
      * Get ascode value
      * @return string|null
@@ -238,10 +252,11 @@ class GetRouting extends AbstractStructBase
     {
         return $this->ascode;
     }
+
     /**
      * Set ascode value
      * @param string $ascode
-     * @return \StructType\GetRouting
+     * @return GetRouting
      */
     public function setAscode(?string $ascode = null): self
     {
@@ -250,7 +265,7 @@ class GetRouting extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ascode, true), gettype($ascode)), __LINE__);
         }
         $this->ascode = $ascode;
-        
+
         return $this;
     }
 }

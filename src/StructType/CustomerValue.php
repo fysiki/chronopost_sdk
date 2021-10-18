@@ -116,23 +116,9 @@ class CustomerValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $printAsSender = null;
+
     /**
      * Constructor method for customerValue
-     * @uses CustomerValue::setCustomerAdress1()
-     * @uses CustomerValue::setCustomerAdress2()
-     * @uses CustomerValue::setCustomerCity()
-     * @uses CustomerValue::setCustomerCivility()
-     * @uses CustomerValue::setCustomerContactName()
-     * @uses CustomerValue::setCustomerCountry()
-     * @uses CustomerValue::setCustomerCountryName()
-     * @uses CustomerValue::setCustomerEmail()
-     * @uses CustomerValue::setCustomerMobilePhone()
-     * @uses CustomerValue::setCustomerName()
-     * @uses CustomerValue::setCustomerName2()
-     * @uses CustomerValue::setCustomerPhone()
-     * @uses CustomerValue::setCustomerPreAlert()
-     * @uses CustomerValue::setCustomerZipCode()
-     * @uses CustomerValue::setPrintAsSender()
      * @param string $customerAdress1
      * @param string $customerAdress2
      * @param string $customerCity
@@ -148,6 +134,21 @@ class CustomerValue extends AbstractStructBase
      * @param int $customerPreAlert
      * @param string $customerZipCode
      * @param string $printAsSender
+     * @uses CustomerValue::setCustomerAdress1()
+     * @uses CustomerValue::setCustomerAdress2()
+     * @uses CustomerValue::setCustomerCity()
+     * @uses CustomerValue::setCustomerCivility()
+     * @uses CustomerValue::setCustomerContactName()
+     * @uses CustomerValue::setCustomerCountry()
+     * @uses CustomerValue::setCustomerCountryName()
+     * @uses CustomerValue::setCustomerEmail()
+     * @uses CustomerValue::setCustomerMobilePhone()
+     * @uses CustomerValue::setCustomerName()
+     * @uses CustomerValue::setCustomerName2()
+     * @uses CustomerValue::setCustomerPhone()
+     * @uses CustomerValue::setCustomerPreAlert()
+     * @uses CustomerValue::setCustomerZipCode()
+     * @uses CustomerValue::setPrintAsSender()
      */
     public function __construct(?string $customerAdress1 = null, ?string $customerAdress2 = null, ?string $customerCity = null, ?string $customerCivility = null, ?string $customerContactName = null, ?string $customerCountry = null, ?string $customerCountryName = null, ?string $customerEmail = null, ?string $customerMobilePhone = null, ?string $customerName = null, ?string $customerName2 = null, ?string $customerPhone = null, ?int $customerPreAlert = null, ?string $customerZipCode = null, ?string $printAsSender = null)
     {
@@ -168,6 +169,7 @@ class CustomerValue extends AbstractStructBase
             ->setCustomerZipCode($customerZipCode)
             ->setPrintAsSender($printAsSender);
     }
+
     /**
      * Get customerAdress1 value
      * @return string|null
@@ -176,10 +178,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerAdress1;
     }
+
     /**
      * Set customerAdress1 value
      * @param string $customerAdress1
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerAdress1(?string $customerAdress1 = null): self
     {
@@ -188,9 +191,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerAdress1, true), gettype($customerAdress1)), __LINE__);
         }
         $this->customerAdress1 = $customerAdress1;
-        
+
         return $this;
     }
+
     /**
      * Get customerAdress2 value
      * @return string|null
@@ -199,10 +203,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerAdress2;
     }
+
     /**
      * Set customerAdress2 value
      * @param string $customerAdress2
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerAdress2(?string $customerAdress2 = null): self
     {
@@ -211,9 +216,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerAdress2, true), gettype($customerAdress2)), __LINE__);
         }
         $this->customerAdress2 = $customerAdress2;
-        
+
         return $this;
     }
+
     /**
      * Get customerCity value
      * @return string|null
@@ -222,10 +228,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerCity;
     }
+
     /**
      * Set customerCity value
      * @param string $customerCity
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerCity(?string $customerCity = null): self
     {
@@ -234,9 +241,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerCity, true), gettype($customerCity)), __LINE__);
         }
         $this->customerCity = $customerCity;
-        
+
         return $this;
     }
+
     /**
      * Get customerCivility value
      * @return string|null
@@ -245,10 +253,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerCivility;
     }
+
     /**
      * Set customerCivility value
      * @param string $customerCivility
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerCivility(?string $customerCivility = null): self
     {
@@ -257,9 +266,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerCivility, true), gettype($customerCivility)), __LINE__);
         }
         $this->customerCivility = $customerCivility;
-        
+
         return $this;
     }
+
     /**
      * Get customerContactName value
      * @return string|null
@@ -268,10 +278,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerContactName;
     }
+
     /**
      * Set customerContactName value
      * @param string $customerContactName
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerContactName(?string $customerContactName = null): self
     {
@@ -280,9 +291,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerContactName, true), gettype($customerContactName)), __LINE__);
         }
         $this->customerContactName = $customerContactName;
-        
+
         return $this;
     }
+
     /**
      * Get customerCountry value
      * @return string|null
@@ -291,10 +303,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerCountry;
     }
+
     /**
      * Set customerCountry value
      * @param string $customerCountry
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerCountry(?string $customerCountry = null): self
     {
@@ -303,9 +316,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerCountry, true), gettype($customerCountry)), __LINE__);
         }
         $this->customerCountry = $customerCountry;
-        
+
         return $this;
     }
+
     /**
      * Get customerCountryName value
      * @return string|null
@@ -314,10 +328,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerCountryName;
     }
+
     /**
      * Set customerCountryName value
      * @param string $customerCountryName
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerCountryName(?string $customerCountryName = null): self
     {
@@ -326,9 +341,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerCountryName, true), gettype($customerCountryName)), __LINE__);
         }
         $this->customerCountryName = $customerCountryName;
-        
+
         return $this;
     }
+
     /**
      * Get customerEmail value
      * @return string|null
@@ -337,10 +353,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerEmail;
     }
+
     /**
      * Set customerEmail value
      * @param string $customerEmail
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerEmail(?string $customerEmail = null): self
     {
@@ -349,9 +366,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerEmail, true), gettype($customerEmail)), __LINE__);
         }
         $this->customerEmail = $customerEmail;
-        
+
         return $this;
     }
+
     /**
      * Get customerMobilePhone value
      * @return string|null
@@ -360,10 +378,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerMobilePhone;
     }
+
     /**
      * Set customerMobilePhone value
      * @param string $customerMobilePhone
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerMobilePhone(?string $customerMobilePhone = null): self
     {
@@ -372,9 +391,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerMobilePhone, true), gettype($customerMobilePhone)), __LINE__);
         }
         $this->customerMobilePhone = $customerMobilePhone;
-        
+
         return $this;
     }
+
     /**
      * Get customerName value
      * @return string|null
@@ -383,10 +403,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerName;
     }
+
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -395,9 +416,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerName, true), gettype($customerName)), __LINE__);
         }
         $this->customerName = $customerName;
-        
+
         return $this;
     }
+
     /**
      * Get customerName2 value
      * @return string|null
@@ -406,10 +428,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerName2;
     }
+
     /**
      * Set customerName2 value
      * @param string $customerName2
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerName2(?string $customerName2 = null): self
     {
@@ -418,9 +441,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerName2, true), gettype($customerName2)), __LINE__);
         }
         $this->customerName2 = $customerName2;
-        
+
         return $this;
     }
+
     /**
      * Get customerPhone value
      * @return string|null
@@ -429,10 +453,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerPhone;
     }
+
     /**
      * Set customerPhone value
      * @param string $customerPhone
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerPhone(?string $customerPhone = null): self
     {
@@ -441,9 +466,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerPhone, true), gettype($customerPhone)), __LINE__);
         }
         $this->customerPhone = $customerPhone;
-        
+
         return $this;
     }
+
     /**
      * Get customerPreAlert value
      * @return int|null
@@ -452,10 +478,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerPreAlert;
     }
+
     /**
      * Set customerPreAlert value
      * @param int $customerPreAlert
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerPreAlert(?int $customerPreAlert = null): self
     {
@@ -464,9 +491,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($customerPreAlert, true), gettype($customerPreAlert)), __LINE__);
         }
         $this->customerPreAlert = $customerPreAlert;
-        
+
         return $this;
     }
+
     /**
      * Get customerZipCode value
      * @return string|null
@@ -475,10 +503,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->customerZipCode;
     }
+
     /**
      * Set customerZipCode value
      * @param string $customerZipCode
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setCustomerZipCode(?string $customerZipCode = null): self
     {
@@ -487,9 +516,10 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerZipCode, true), gettype($customerZipCode)), __LINE__);
         }
         $this->customerZipCode = $customerZipCode;
-        
+
         return $this;
     }
+
     /**
      * Get printAsSender value
      * @return string|null
@@ -498,10 +528,11 @@ class CustomerValue extends AbstractStructBase
     {
         return $this->printAsSender;
     }
+
     /**
      * Set printAsSender value
      * @param string $printAsSender
-     * @return \StructType\CustomerValue
+     * @return CustomerValue
      */
     public function setPrintAsSender(?string $printAsSender = null): self
     {
@@ -510,7 +541,7 @@ class CustomerValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($printAsSender, true), gettype($printAsSender)), __LINE__);
         }
         $this->printAsSender = $printAsSender;
-        
+
         return $this;
     }
 }

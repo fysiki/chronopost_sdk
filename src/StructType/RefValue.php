@@ -41,16 +41,17 @@ class RefValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $shipperRef = null;
+
     /**
      * Constructor method for refValue
-     * @uses RefValue::setCustomerSkybillNumber()
-     * @uses RefValue::setPCardTransactionNumber()
-     * @uses RefValue::setRecipientRef()
-     * @uses RefValue::setShipperRef()
      * @param string $customerSkybillNumber
      * @param string $pCardTransactionNumber
      * @param string $recipientRef
      * @param string $shipperRef
+     * @uses RefValue::setCustomerSkybillNumber()
+     * @uses RefValue::setPCardTransactionNumber()
+     * @uses RefValue::setRecipientRef()
+     * @uses RefValue::setShipperRef()
      */
     public function __construct(?string $customerSkybillNumber = null, ?string $pCardTransactionNumber = null, ?string $recipientRef = null, ?string $shipperRef = null)
     {
@@ -60,6 +61,7 @@ class RefValue extends AbstractStructBase
             ->setRecipientRef($recipientRef)
             ->setShipperRef($shipperRef);
     }
+
     /**
      * Get customerSkybillNumber value
      * @return string|null
@@ -68,10 +70,11 @@ class RefValue extends AbstractStructBase
     {
         return $this->customerSkybillNumber;
     }
+
     /**
      * Set customerSkybillNumber value
      * @param string $customerSkybillNumber
-     * @return \StructType\RefValue
+     * @return RefValue
      */
     public function setCustomerSkybillNumber(?string $customerSkybillNumber = null): self
     {
@@ -80,9 +83,10 @@ class RefValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($customerSkybillNumber, true), gettype($customerSkybillNumber)), __LINE__);
         }
         $this->customerSkybillNumber = $customerSkybillNumber;
-        
+
         return $this;
     }
+
     /**
      * Get PCardTransactionNumber value
      * @return string|null
@@ -91,10 +95,11 @@ class RefValue extends AbstractStructBase
     {
         return $this->PCardTransactionNumber;
     }
+
     /**
      * Set PCardTransactionNumber value
      * @param string $pCardTransactionNumber
-     * @return \StructType\RefValue
+     * @return RefValue
      */
     public function setPCardTransactionNumber(?string $pCardTransactionNumber = null): self
     {
@@ -103,9 +108,10 @@ class RefValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($pCardTransactionNumber, true), gettype($pCardTransactionNumber)), __LINE__);
         }
         $this->PCardTransactionNumber = $pCardTransactionNumber;
-        
+
         return $this;
     }
+
     /**
      * Get recipientRef value
      * @return string|null
@@ -114,10 +120,11 @@ class RefValue extends AbstractStructBase
     {
         return $this->recipientRef;
     }
+
     /**
      * Set recipientRef value
      * @param string $recipientRef
-     * @return \StructType\RefValue
+     * @return RefValue
      */
     public function setRecipientRef(?string $recipientRef = null): self
     {
@@ -126,9 +133,10 @@ class RefValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientRef, true), gettype($recipientRef)), __LINE__);
         }
         $this->recipientRef = $recipientRef;
-        
+
         return $this;
     }
+
     /**
      * Get shipperRef value
      * @return string|null
@@ -137,10 +145,11 @@ class RefValue extends AbstractStructBase
     {
         return $this->shipperRef;
     }
+
     /**
      * Set shipperRef value
      * @param string $shipperRef
-     * @return \StructType\RefValue
+     * @return RefValue
      */
     public function setShipperRef(?string $shipperRef = null): self
     {
@@ -149,7 +158,7 @@ class RefValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($shipperRef, true), gettype($shipperRef)), __LINE__);
         }
         $this->shipperRef = $shipperRef;
-        
+
         return $this;
     }
 }

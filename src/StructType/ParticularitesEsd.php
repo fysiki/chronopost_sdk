@@ -69,18 +69,9 @@ class ParticularitesEsd extends AbstractStructBase
      * @var string|null
      */
     protected ?string $volume = null;
+
     /**
      * Constructor method for particularitesEsd
-     * @uses ParticularitesEsd::setEtudeDeFaisabilite()
-     * @uses ParticularitesEsd::setGrosVolume()
-     * @uses ParticularitesEsd::setHauteur()
-     * @uses ParticularitesEsd::setInstructionsParticulieres()
-     * @uses ParticularitesEsd::setLargeur()
-     * @uses ParticularitesEsd::setListeColisAnnonces()
-     * @uses ParticularitesEsd::setLongueur()
-     * @uses ParticularitesEsd::setNombreEnvois()
-     * @uses ParticularitesEsd::setPoids()
-     * @uses ParticularitesEsd::setVolume()
      * @param bool $etudeDeFaisabilite
      * @param bool $grosVolume
      * @param int $hauteur
@@ -91,6 +82,16 @@ class ParticularitesEsd extends AbstractStructBase
      * @param int $nombreEnvois
      * @param float $poids
      * @param string $volume
+     * @uses ParticularitesEsd::setEtudeDeFaisabilite()
+     * @uses ParticularitesEsd::setGrosVolume()
+     * @uses ParticularitesEsd::setHauteur()
+     * @uses ParticularitesEsd::setInstructionsParticulieres()
+     * @uses ParticularitesEsd::setLargeur()
+     * @uses ParticularitesEsd::setListeColisAnnonces()
+     * @uses ParticularitesEsd::setLongueur()
+     * @uses ParticularitesEsd::setNombreEnvois()
+     * @uses ParticularitesEsd::setPoids()
+     * @uses ParticularitesEsd::setVolume()
      */
     public function __construct(?bool $etudeDeFaisabilite = null, ?bool $grosVolume = null, ?int $hauteur = null, ?string $instructionsParticulieres = null, ?int $largeur = null, ?string $listeColisAnnonces = null, ?int $longueur = null, ?int $nombreEnvois = null, ?float $poids = null, ?string $volume = null)
     {
@@ -106,6 +107,7 @@ class ParticularitesEsd extends AbstractStructBase
             ->setPoids($poids)
             ->setVolume($volume);
     }
+
     /**
      * Get etudeDeFaisabilite value
      * @return bool|null
@@ -114,10 +116,11 @@ class ParticularitesEsd extends AbstractStructBase
     {
         return $this->etudeDeFaisabilite;
     }
+
     /**
      * Set etudeDeFaisabilite value
      * @param bool $etudeDeFaisabilite
-     * @return \StructType\ParticularitesEsd
+     * @return ParticularitesEsd
      */
     public function setEtudeDeFaisabilite(?bool $etudeDeFaisabilite = null): self
     {
@@ -126,9 +129,10 @@ class ParticularitesEsd extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($etudeDeFaisabilite, true), gettype($etudeDeFaisabilite)), __LINE__);
         }
         $this->etudeDeFaisabilite = $etudeDeFaisabilite;
-        
+
         return $this;
     }
+
     /**
      * Get grosVolume value
      * @return bool|null
@@ -137,10 +141,11 @@ class ParticularitesEsd extends AbstractStructBase
     {
         return $this->grosVolume;
     }
+
     /**
      * Set grosVolume value
      * @param bool $grosVolume
-     * @return \StructType\ParticularitesEsd
+     * @return ParticularitesEsd
      */
     public function setGrosVolume(?bool $grosVolume = null): self
     {
@@ -149,9 +154,10 @@ class ParticularitesEsd extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($grosVolume, true), gettype($grosVolume)), __LINE__);
         }
         $this->grosVolume = $grosVolume;
-        
+
         return $this;
     }
+
     /**
      * Get hauteur value
      * @return int|null
@@ -160,10 +166,11 @@ class ParticularitesEsd extends AbstractStructBase
     {
         return $this->hauteur;
     }
+
     /**
      * Set hauteur value
      * @param int $hauteur
-     * @return \StructType\ParticularitesEsd
+     * @return ParticularitesEsd
      */
     public function setHauteur(?int $hauteur = null): self
     {
@@ -172,9 +179,10 @@ class ParticularitesEsd extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($hauteur, true), gettype($hauteur)), __LINE__);
         }
         $this->hauteur = $hauteur;
-        
+
         return $this;
     }
+
     /**
      * Get instructionsParticulieres value
      * @return string|null
@@ -183,10 +191,11 @@ class ParticularitesEsd extends AbstractStructBase
     {
         return $this->instructionsParticulieres;
     }
+
     /**
      * Set instructionsParticulieres value
      * @param string $instructionsParticulieres
-     * @return \StructType\ParticularitesEsd
+     * @return ParticularitesEsd
      */
     public function setInstructionsParticulieres(?string $instructionsParticulieres = null): self
     {
@@ -195,9 +204,10 @@ class ParticularitesEsd extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($instructionsParticulieres, true), gettype($instructionsParticulieres)), __LINE__);
         }
         $this->instructionsParticulieres = $instructionsParticulieres;
-        
+
         return $this;
     }
+
     /**
      * Get largeur value
      * @return int|null
@@ -206,10 +216,11 @@ class ParticularitesEsd extends AbstractStructBase
     {
         return $this->largeur;
     }
+
     /**
      * Set largeur value
      * @param int $largeur
-     * @return \StructType\ParticularitesEsd
+     * @return ParticularitesEsd
      */
     public function setLargeur(?int $largeur = null): self
     {
@@ -218,9 +229,10 @@ class ParticularitesEsd extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($largeur, true), gettype($largeur)), __LINE__);
         }
         $this->largeur = $largeur;
-        
+
         return $this;
     }
+
     /**
      * Get listeColisAnnonces value
      * @return string|null
@@ -229,10 +241,11 @@ class ParticularitesEsd extends AbstractStructBase
     {
         return $this->listeColisAnnonces;
     }
+
     /**
      * Set listeColisAnnonces value
      * @param string $listeColisAnnonces
-     * @return \StructType\ParticularitesEsd
+     * @return ParticularitesEsd
      */
     public function setListeColisAnnonces(?string $listeColisAnnonces = null): self
     {
@@ -241,9 +254,10 @@ class ParticularitesEsd extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($listeColisAnnonces, true), gettype($listeColisAnnonces)), __LINE__);
         }
         $this->listeColisAnnonces = $listeColisAnnonces;
-        
+
         return $this;
     }
+
     /**
      * Get longueur value
      * @return int|null
@@ -252,10 +266,11 @@ class ParticularitesEsd extends AbstractStructBase
     {
         return $this->longueur;
     }
+
     /**
      * Set longueur value
      * @param int $longueur
-     * @return \StructType\ParticularitesEsd
+     * @return ParticularitesEsd
      */
     public function setLongueur(?int $longueur = null): self
     {
@@ -264,9 +279,10 @@ class ParticularitesEsd extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($longueur, true), gettype($longueur)), __LINE__);
         }
         $this->longueur = $longueur;
-        
+
         return $this;
     }
+
     /**
      * Get nombreEnvois value
      * @return int|null
@@ -275,10 +291,11 @@ class ParticularitesEsd extends AbstractStructBase
     {
         return $this->nombreEnvois;
     }
+
     /**
      * Set nombreEnvois value
      * @param int $nombreEnvois
-     * @return \StructType\ParticularitesEsd
+     * @return ParticularitesEsd
      */
     public function setNombreEnvois(?int $nombreEnvois = null): self
     {
@@ -287,9 +304,10 @@ class ParticularitesEsd extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($nombreEnvois, true), gettype($nombreEnvois)), __LINE__);
         }
         $this->nombreEnvois = $nombreEnvois;
-        
+
         return $this;
     }
+
     /**
      * Get poids value
      * @return float|null
@@ -298,10 +316,11 @@ class ParticularitesEsd extends AbstractStructBase
     {
         return $this->poids;
     }
+
     /**
      * Set poids value
      * @param float $poids
-     * @return \StructType\ParticularitesEsd
+     * @return ParticularitesEsd
      */
     public function setPoids(?float $poids = null): self
     {
@@ -310,9 +329,10 @@ class ParticularitesEsd extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($poids, true), gettype($poids)), __LINE__);
         }
         $this->poids = $poids;
-        
+
         return $this;
     }
+
     /**
      * Get volume value
      * @return string|null
@@ -321,10 +341,11 @@ class ParticularitesEsd extends AbstractStructBase
     {
         return $this->volume;
     }
+
     /**
      * Set volume value
      * @param string $volume
-     * @return \StructType\ParticularitesEsd
+     * @return ParticularitesEsd
      */
     public function setVolume(?string $volume = null): self
     {
@@ -333,7 +354,7 @@ class ParticularitesEsd extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($volume, true), gettype($volume)), __LINE__);
         }
         $this->volume = $volume;
-        
+
         return $this;
     }
 }

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace StructType;
 
 use InvalidArgumentException;
-use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for recipientLocalValueV2 StructType
@@ -27,12 +26,13 @@ class RecipientLocalValueV2 extends RecipientLocalValue
      * @var string|null
      */
     protected ?string $thirdParty = null;
+
     /**
      * Constructor method for recipientLocalValueV2
-     * @uses RecipientLocalValueV2::setRecipientType()
-     * @uses RecipientLocalValueV2::setThirdParty()
      * @param string $recipientType
      * @param string $thirdParty
+     * @uses RecipientLocalValueV2::setRecipientType()
+     * @uses RecipientLocalValueV2::setThirdParty()
      */
     public function __construct(?string $recipientType = null, ?string $thirdParty = null)
     {
@@ -40,6 +40,7 @@ class RecipientLocalValueV2 extends RecipientLocalValue
             ->setRecipientType($recipientType)
             ->setThirdParty($thirdParty);
     }
+
     /**
      * Get recipientType value
      * @return string|null
@@ -48,10 +49,11 @@ class RecipientLocalValueV2 extends RecipientLocalValue
     {
         return $this->recipientType;
     }
+
     /**
      * Set recipientType value
      * @param string $recipientType
-     * @return \StructType\RecipientLocalValueV2
+     * @return RecipientLocalValueV2
      */
     public function setRecipientType(?string $recipientType = null): self
     {
@@ -60,9 +62,10 @@ class RecipientLocalValueV2 extends RecipientLocalValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($recipientType, true), gettype($recipientType)), __LINE__);
         }
         $this->recipientType = $recipientType;
-        
+
         return $this;
     }
+
     /**
      * Get thirdParty value
      * @return string|null
@@ -71,10 +74,11 @@ class RecipientLocalValueV2 extends RecipientLocalValue
     {
         return $this->thirdParty;
     }
+
     /**
      * Set thirdParty value
      * @param string $thirdParty
-     * @return \StructType\RecipientLocalValueV2
+     * @return RecipientLocalValueV2
      */
     public function setThirdParty(?string $thirdParty = null): self
     {
@@ -83,7 +87,7 @@ class RecipientLocalValueV2 extends RecipientLocalValue
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($thirdParty, true), gettype($thirdParty)), __LINE__);
         }
         $this->thirdParty = $thirdParty;
-        
+
         return $this;
     }
 }

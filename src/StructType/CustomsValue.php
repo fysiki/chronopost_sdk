@@ -19,7 +19,7 @@ class CustomsValue extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\ArticleValue[]
+     * @var ArticleValue[]
      */
     protected ?array $articlesValue = null;
     /**
@@ -99,8 +99,21 @@ class CustomsValue extends AbstractStructBase
      * @var string|null
      */
     protected ?string $vatNumber = null;
+
     /**
      * Constructor method for customsValue
+     * @param ArticleValue[] $articlesValue
+     * @param string $bagNumber
+     * @param string $clearanceCleared
+     * @param string $currency
+     * @param string $description
+     * @param string $descriptionInLanguage
+     * @param string $eori
+     * @param string $incoterm
+     * @param string $language
+     * @param int $numberOfItems
+     * @param float $value
+     * @param string $vatNumber
      * @uses CustomsValue::setArticlesValue()
      * @uses CustomsValue::setBagNumber()
      * @uses CustomsValue::setClearanceCleared()
@@ -113,18 +126,6 @@ class CustomsValue extends AbstractStructBase
      * @uses CustomsValue::setNumberOfItems()
      * @uses CustomsValue::setValue()
      * @uses CustomsValue::setVatNumber()
-     * @param \StructType\ArticleValue[] $articlesValue
-     * @param string $bagNumber
-     * @param string $clearanceCleared
-     * @param string $currency
-     * @param string $description
-     * @param string $descriptionInLanguage
-     * @param string $eori
-     * @param string $incoterm
-     * @param string $language
-     * @param int $numberOfItems
-     * @param float $value
-     * @param string $vatNumber
      */
     public function __construct(?array $articlesValue = null, ?string $bagNumber = null, ?string $clearanceCleared = null, ?string $currency = null, ?string $description = null, ?string $descriptionInLanguage = null, ?string $eori = null, ?string $incoterm = null, ?string $language = null, ?int $numberOfItems = null, ?float $value = null, ?string $vatNumber = null)
     {
@@ -142,17 +143,19 @@ class CustomsValue extends AbstractStructBase
             ->setValue($value)
             ->setVatNumber($vatNumber);
     }
+
     /**
      * Get articlesValue value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\ArticleValue[]
+     * @return ArticleValue[]
      */
     public function getArticlesValue(): ?array
     {
         return isset($this->articlesValue) ? $this->articlesValue : null;
     }
+
     /**
      * This method is responsible for validating the values passed to the setArticlesValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setArticlesValue method
@@ -168,7 +171,7 @@ class CustomsValue extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $customsValueArticlesValueItem) {
             // validation for constraint: itemType
-            if (!$customsValueArticlesValueItem instanceof \StructType\ArticleValue) {
+            if (!$customsValueArticlesValueItem instanceof ArticleValue) {
                 $invalidValues[] = is_object($customsValueArticlesValueItem) ? get_class($customsValueArticlesValueItem) : sprintf('%s(%s)', gettype($customsValueArticlesValueItem), var_export($customsValueArticlesValueItem, true));
             }
         }
@@ -176,16 +179,17 @@ class CustomsValue extends AbstractStructBase
             $message = sprintf('The articlesValue property can only contain items of type \StructType\ArticleValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
+
     /**
      * Set articlesValue value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
+     * @param ArticleValue[] $articlesValue
+     * @return CustomsValue
      * @throws InvalidArgumentException
-     * @param \StructType\ArticleValue[] $articlesValue
-     * @return \StructType\CustomsValue
      */
     public function setArticlesValue(?array $articlesValue = null): self
     {
@@ -198,25 +202,27 @@ class CustomsValue extends AbstractStructBase
         } else {
             $this->articlesValue = $articlesValue;
         }
-        
+
         return $this;
     }
+
     /**
      * Add item to articlesValue value
+     * @param ArticleValue $item
+     * @return CustomsValue
      * @throws InvalidArgumentException
-     * @param \StructType\ArticleValue $item
-     * @return \StructType\CustomsValue
      */
-    public function addToArticlesValue(\StructType\ArticleValue $item): self
+    public function addToArticlesValue(ArticleValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ArticleValue) {
+        if (!$item instanceof ArticleValue) {
             throw new InvalidArgumentException(sprintf('The articlesValue property can only contain items of type \StructType\ArticleValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->articlesValue[] = $item;
-        
+
         return $this;
     }
+
     /**
      * Get bagNumber value
      * @return string|null
@@ -225,10 +231,11 @@ class CustomsValue extends AbstractStructBase
     {
         return $this->bagNumber;
     }
+
     /**
      * Set bagNumber value
      * @param string $bagNumber
-     * @return \StructType\CustomsValue
+     * @return CustomsValue
      */
     public function setBagNumber(?string $bagNumber = null): self
     {
@@ -237,9 +244,10 @@ class CustomsValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($bagNumber, true), gettype($bagNumber)), __LINE__);
         }
         $this->bagNumber = $bagNumber;
-        
+
         return $this;
     }
+
     /**
      * Get clearanceCleared value
      * @return string|null
@@ -248,10 +256,11 @@ class CustomsValue extends AbstractStructBase
     {
         return $this->clearanceCleared;
     }
+
     /**
      * Set clearanceCleared value
      * @param string $clearanceCleared
-     * @return \StructType\CustomsValue
+     * @return CustomsValue
      */
     public function setClearanceCleared(?string $clearanceCleared = null): self
     {
@@ -260,9 +269,10 @@ class CustomsValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($clearanceCleared, true), gettype($clearanceCleared)), __LINE__);
         }
         $this->clearanceCleared = $clearanceCleared;
-        
+
         return $this;
     }
+
     /**
      * Get currency value
      * @return string|null
@@ -271,10 +281,11 @@ class CustomsValue extends AbstractStructBase
     {
         return $this->currency;
     }
+
     /**
      * Set currency value
      * @param string $currency
-     * @return \StructType\CustomsValue
+     * @return CustomsValue
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -283,9 +294,10 @@ class CustomsValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($currency, true), gettype($currency)), __LINE__);
         }
         $this->currency = $currency;
-        
+
         return $this;
     }
+
     /**
      * Get description value
      * @return string|null
@@ -294,10 +306,11 @@ class CustomsValue extends AbstractStructBase
     {
         return $this->description;
     }
+
     /**
      * Set description value
      * @param string $description
-     * @return \StructType\CustomsValue
+     * @return CustomsValue
      */
     public function setDescription(?string $description = null): self
     {
@@ -306,9 +319,10 @@ class CustomsValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($description, true), gettype($description)), __LINE__);
         }
         $this->description = $description;
-        
+
         return $this;
     }
+
     /**
      * Get descriptionInLanguage value
      * @return string|null
@@ -317,10 +331,11 @@ class CustomsValue extends AbstractStructBase
     {
         return $this->descriptionInLanguage;
     }
+
     /**
      * Set descriptionInLanguage value
      * @param string $descriptionInLanguage
-     * @return \StructType\CustomsValue
+     * @return CustomsValue
      */
     public function setDescriptionInLanguage(?string $descriptionInLanguage = null): self
     {
@@ -329,9 +344,10 @@ class CustomsValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($descriptionInLanguage, true), gettype($descriptionInLanguage)), __LINE__);
         }
         $this->descriptionInLanguage = $descriptionInLanguage;
-        
+
         return $this;
     }
+
     /**
      * Get eori value
      * @return string|null
@@ -340,10 +356,11 @@ class CustomsValue extends AbstractStructBase
     {
         return $this->eori;
     }
+
     /**
      * Set eori value
      * @param string $eori
-     * @return \StructType\CustomsValue
+     * @return CustomsValue
      */
     public function setEori(?string $eori = null): self
     {
@@ -352,9 +369,10 @@ class CustomsValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($eori, true), gettype($eori)), __LINE__);
         }
         $this->eori = $eori;
-        
+
         return $this;
     }
+
     /**
      * Get incoterm value
      * @return string|null
@@ -363,10 +381,11 @@ class CustomsValue extends AbstractStructBase
     {
         return $this->incoterm;
     }
+
     /**
      * Set incoterm value
      * @param string $incoterm
-     * @return \StructType\CustomsValue
+     * @return CustomsValue
      */
     public function setIncoterm(?string $incoterm = null): self
     {
@@ -375,9 +394,10 @@ class CustomsValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($incoterm, true), gettype($incoterm)), __LINE__);
         }
         $this->incoterm = $incoterm;
-        
+
         return $this;
     }
+
     /**
      * Get language value
      * @return string|null
@@ -386,10 +406,11 @@ class CustomsValue extends AbstractStructBase
     {
         return $this->language;
     }
+
     /**
      * Set language value
      * @param string $language
-     * @return \StructType\CustomsValue
+     * @return CustomsValue
      */
     public function setLanguage(?string $language = null): self
     {
@@ -398,9 +419,10 @@ class CustomsValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($language, true), gettype($language)), __LINE__);
         }
         $this->language = $language;
-        
+
         return $this;
     }
+
     /**
      * Get numberOfItems value
      * @return int|null
@@ -409,10 +431,11 @@ class CustomsValue extends AbstractStructBase
     {
         return $this->numberOfItems;
     }
+
     /**
      * Set numberOfItems value
      * @param int $numberOfItems
-     * @return \StructType\CustomsValue
+     * @return CustomsValue
      */
     public function setNumberOfItems(?int $numberOfItems = null): self
     {
@@ -421,9 +444,10 @@ class CustomsValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($numberOfItems, true), gettype($numberOfItems)), __LINE__);
         }
         $this->numberOfItems = $numberOfItems;
-        
+
         return $this;
     }
+
     /**
      * Get value value
      * @return float|null
@@ -432,10 +456,11 @@ class CustomsValue extends AbstractStructBase
     {
         return $this->value;
     }
+
     /**
      * Set value value
      * @param float $value
-     * @return \StructType\CustomsValue
+     * @return CustomsValue
      */
     public function setValue(?float $value = null): self
     {
@@ -444,9 +469,10 @@ class CustomsValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($value, true), gettype($value)), __LINE__);
         }
         $this->value = $value;
-        
+
         return $this;
     }
+
     /**
      * Get vatNumber value
      * @return string|null
@@ -455,10 +481,11 @@ class CustomsValue extends AbstractStructBase
     {
         return $this->vatNumber;
     }
+
     /**
      * Set vatNumber value
      * @param string $vatNumber
-     * @return \StructType\CustomsValue
+     * @return CustomsValue
      */
     public function setVatNumber(?string $vatNumber = null): self
     {
@@ -467,7 +494,7 @@ class CustomsValue extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($vatNumber, true), gettype($vatNumber)), __LINE__);
         }
         $this->vatNumber = $vatNumber;
-        
+
         return $this;
     }
 }

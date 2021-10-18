@@ -29,7 +29,7 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\InfoEnlevement[]
+     * @var InfoEnlevement[]
      */
     protected ?array $infoEnlevements = null;
     /**
@@ -39,16 +39,17 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
      * @var string|null
      */
     protected ?string $libelleErreur = null;
+
     /**
      * Constructor method for resultPickupOrCollectionRequest
+     * @param int $codeErreur
+     * @param bool $collectionRequest
+     * @param InfoEnlevement[] $infoEnlevements
+     * @param string $libelleErreur
      * @uses ResultPickupOrCollectionRequest::setCodeErreur()
      * @uses ResultPickupOrCollectionRequest::setCollectionRequest()
      * @uses ResultPickupOrCollectionRequest::setInfoEnlevements()
      * @uses ResultPickupOrCollectionRequest::setLibelleErreur()
-     * @param int $codeErreur
-     * @param bool $collectionRequest
-     * @param \StructType\InfoEnlevement[] $infoEnlevements
-     * @param string $libelleErreur
      */
     public function __construct(?int $codeErreur = null, ?bool $collectionRequest = null, ?array $infoEnlevements = null, ?string $libelleErreur = null)
     {
@@ -58,6 +59,7 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
             ->setInfoEnlevements($infoEnlevements)
             ->setLibelleErreur($libelleErreur);
     }
+
     /**
      * Get codeErreur value
      * @return int|null
@@ -66,10 +68,11 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
     {
         return $this->codeErreur;
     }
+
     /**
      * Set codeErreur value
      * @param int $codeErreur
-     * @return \StructType\ResultPickupOrCollectionRequest
+     * @return ResultPickupOrCollectionRequest
      */
     public function setCodeErreur(?int $codeErreur = null): self
     {
@@ -78,9 +81,10 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($codeErreur, true), gettype($codeErreur)), __LINE__);
         }
         $this->codeErreur = $codeErreur;
-        
+
         return $this;
     }
+
     /**
      * Get collectionRequest value
      * @return bool|null
@@ -89,10 +93,11 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
     {
         return $this->collectionRequest;
     }
+
     /**
      * Set collectionRequest value
      * @param bool $collectionRequest
-     * @return \StructType\ResultPickupOrCollectionRequest
+     * @return ResultPickupOrCollectionRequest
      */
     public function setCollectionRequest(?bool $collectionRequest = null): self
     {
@@ -101,20 +106,22 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($collectionRequest, true), gettype($collectionRequest)), __LINE__);
         }
         $this->collectionRequest = $collectionRequest;
-        
+
         return $this;
     }
+
     /**
      * Get infoEnlevements value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\InfoEnlevement[]
+     * @return InfoEnlevement[]
      */
     public function getInfoEnlevements(): ?array
     {
         return isset($this->infoEnlevements) ? $this->infoEnlevements : null;
     }
+
     /**
      * This method is responsible for validating the values passed to the setInfoEnlevements method
      * This method is willingly generated in order to preserve the one-line inline validation within the setInfoEnlevements method
@@ -130,7 +137,7 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $resultPickupOrCollectionRequestInfoEnlevementsItem) {
             // validation for constraint: itemType
-            if (!$resultPickupOrCollectionRequestInfoEnlevementsItem instanceof \StructType\InfoEnlevement) {
+            if (!$resultPickupOrCollectionRequestInfoEnlevementsItem instanceof InfoEnlevement) {
                 $invalidValues[] = is_object($resultPickupOrCollectionRequestInfoEnlevementsItem) ? get_class($resultPickupOrCollectionRequestInfoEnlevementsItem) : sprintf('%s(%s)', gettype($resultPickupOrCollectionRequestInfoEnlevementsItem), var_export($resultPickupOrCollectionRequestInfoEnlevementsItem, true));
             }
         }
@@ -138,16 +145,17 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
             $message = sprintf('The infoEnlevements property can only contain items of type \StructType\InfoEnlevement, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
+
     /**
      * Set infoEnlevements value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
+     * @param InfoEnlevement[] $infoEnlevements
+     * @return ResultPickupOrCollectionRequest
      * @throws InvalidArgumentException
-     * @param \StructType\InfoEnlevement[] $infoEnlevements
-     * @return \StructType\ResultPickupOrCollectionRequest
      */
     public function setInfoEnlevements(?array $infoEnlevements = null): self
     {
@@ -160,25 +168,27 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
         } else {
             $this->infoEnlevements = $infoEnlevements;
         }
-        
+
         return $this;
     }
+
     /**
      * Add item to infoEnlevements value
+     * @param InfoEnlevement $item
+     * @return ResultPickupOrCollectionRequest
      * @throws InvalidArgumentException
-     * @param \StructType\InfoEnlevement $item
-     * @return \StructType\ResultPickupOrCollectionRequest
      */
-    public function addToInfoEnlevements(\StructType\InfoEnlevement $item): self
+    public function addToInfoEnlevements(InfoEnlevement $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\InfoEnlevement) {
+        if (!$item instanceof InfoEnlevement) {
             throw new InvalidArgumentException(sprintf('The infoEnlevements property can only contain items of type \StructType\InfoEnlevement, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->infoEnlevements[] = $item;
-        
+
         return $this;
     }
+
     /**
      * Get libelleErreur value
      * @return string|null
@@ -187,10 +197,11 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
     {
         return $this->libelleErreur;
     }
+
     /**
      * Set libelleErreur value
      * @param string $libelleErreur
-     * @return \StructType\ResultPickupOrCollectionRequest
+     * @return ResultPickupOrCollectionRequest
      */
     public function setLibelleErreur(?string $libelleErreur = null): self
     {
@@ -199,7 +210,7 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($libelleErreur, true), gettype($libelleErreur)), __LINE__);
         }
         $this->libelleErreur = $libelleErreur;
-        
+
         return $this;
     }
 }

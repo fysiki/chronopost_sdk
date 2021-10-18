@@ -19,30 +19,30 @@ class GetShippingInformation extends AbstractStructBase
      * The headerValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HeaderValue|null
+     * @var HeaderValue|null
      */
-    protected ?\StructType\HeaderValue $headerValue = null;
+    protected ?HeaderValue $headerValue = null;
     /**
      * The shipperValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ShipperValue|null
+     * @var ShipperValue|null
      */
-    protected ?\StructType\ShipperValue $shipperValue = null;
+    protected ?ShipperValue $shipperValue = null;
     /**
      * The recipientValue
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RecipientValue|null
+     * @var RecipientValue|null
      */
-    protected ?\StructType\RecipientValue $recipientValue = null;
+    protected ?RecipientValue $recipientValue = null;
     /**
      * The skybillValueBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SkybillValueBase|null
+     * @var SkybillValueBase|null
      */
-    protected ?\StructType\SkybillValueBase $skybillValueBase = null;
+    protected ?SkybillValueBase $skybillValueBase = null;
     /**
      * The password
      * Meta information extracted from the WSDL
@@ -50,20 +50,21 @@ class GetShippingInformation extends AbstractStructBase
      * @var string|null
      */
     protected ?string $password = null;
+
     /**
      * Constructor method for getShippingInformation
+     * @param HeaderValue $headerValue
+     * @param ShipperValue $shipperValue
+     * @param RecipientValue $recipientValue
+     * @param SkybillValueBase $skybillValueBase
+     * @param string $password
      * @uses GetShippingInformation::setHeaderValue()
      * @uses GetShippingInformation::setShipperValue()
      * @uses GetShippingInformation::setRecipientValue()
      * @uses GetShippingInformation::setSkybillValueBase()
      * @uses GetShippingInformation::setPassword()
-     * @param \StructType\HeaderValue $headerValue
-     * @param \StructType\ShipperValue $shipperValue
-     * @param \StructType\RecipientValue $recipientValue
-     * @param \StructType\SkybillValueBase $skybillValueBase
-     * @param string $password
      */
-    public function __construct(?\StructType\HeaderValue $headerValue = null, ?\StructType\ShipperValue $shipperValue = null, ?\StructType\RecipientValue $recipientValue = null, ?\StructType\SkybillValueBase $skybillValueBase = null, ?string $password = null)
+    public function __construct(?HeaderValue $headerValue = null, ?ShipperValue $shipperValue = null, ?RecipientValue $recipientValue = null, ?SkybillValueBase $skybillValueBase = null, ?string $password = null)
     {
         $this
             ->setHeaderValue($headerValue)
@@ -72,82 +73,91 @@ class GetShippingInformation extends AbstractStructBase
             ->setSkybillValueBase($skybillValueBase)
             ->setPassword($password);
     }
+
     /**
      * Get headerValue value
-     * @return \StructType\HeaderValue|null
+     * @return HeaderValue|null
      */
-    public function getHeaderValue(): ?\StructType\HeaderValue
+    public function getHeaderValue(): ?HeaderValue
     {
         return $this->headerValue;
     }
+
     /**
      * Set headerValue value
-     * @param \StructType\HeaderValue $headerValue
-     * @return \StructType\GetShippingInformation
+     * @param HeaderValue $headerValue
+     * @return GetShippingInformation
      */
-    public function setHeaderValue(?\StructType\HeaderValue $headerValue = null): self
+    public function setHeaderValue(?HeaderValue $headerValue = null): self
     {
         $this->headerValue = $headerValue;
-        
+
         return $this;
     }
+
     /**
      * Get shipperValue value
-     * @return \StructType\ShipperValue|null
+     * @return ShipperValue|null
      */
-    public function getShipperValue(): ?\StructType\ShipperValue
+    public function getShipperValue(): ?ShipperValue
     {
         return $this->shipperValue;
     }
+
     /**
      * Set shipperValue value
-     * @param \StructType\ShipperValue $shipperValue
-     * @return \StructType\GetShippingInformation
+     * @param ShipperValue $shipperValue
+     * @return GetShippingInformation
      */
-    public function setShipperValue(?\StructType\ShipperValue $shipperValue = null): self
+    public function setShipperValue(?ShipperValue $shipperValue = null): self
     {
         $this->shipperValue = $shipperValue;
-        
+
         return $this;
     }
+
     /**
      * Get recipientValue value
-     * @return \StructType\RecipientValue|null
+     * @return RecipientValue|null
      */
-    public function getRecipientValue(): ?\StructType\RecipientValue
+    public function getRecipientValue(): ?RecipientValue
     {
         return $this->recipientValue;
     }
+
     /**
      * Set recipientValue value
-     * @param \StructType\RecipientValue $recipientValue
-     * @return \StructType\GetShippingInformation
+     * @param RecipientValue $recipientValue
+     * @return GetShippingInformation
      */
-    public function setRecipientValue(?\StructType\RecipientValue $recipientValue = null): self
+    public function setRecipientValue(?RecipientValue $recipientValue = null): self
     {
         $this->recipientValue = $recipientValue;
-        
+
         return $this;
     }
+
     /**
      * Get skybillValueBase value
-     * @return \StructType\SkybillValueBase|null
+     * @return SkybillValueBase|null
      */
-    public function getSkybillValueBase(): ?\StructType\SkybillValueBase
+    public function getSkybillValueBase(): ?SkybillValueBase
     {
         return $this->skybillValueBase;
     }
+
     /**
      * Set skybillValueBase value
-     * @param \StructType\SkybillValueBase $skybillValueBase
-     * @return \StructType\GetShippingInformation
+     * @param SkybillValueBase $skybillValueBase
+     * @return GetShippingInformation
      */
-    public function setSkybillValueBase(?\StructType\SkybillValueBase $skybillValueBase = null): self
+    public function setSkybillValueBase(?SkybillValueBase $skybillValueBase = null): self
     {
         $this->skybillValueBase = $skybillValueBase;
-        
+
         return $this;
     }
+
     /**
      * Get password value
      * @return string|null
@@ -156,10 +166,11 @@ class GetShippingInformation extends AbstractStructBase
     {
         return $this->password;
     }
+
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\GetShippingInformation
+     * @return GetShippingInformation
      */
     public function setPassword(?string $password = null): self
     {
@@ -168,7 +179,7 @@ class GetShippingInformation extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($password, true), gettype($password)), __LINE__);
         }
         $this->password = $password;
-        
+
         return $this;
     }
 }
