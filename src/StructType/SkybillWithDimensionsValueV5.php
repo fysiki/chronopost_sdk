@@ -7,30 +7,29 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for skybillWithDimensionsValueV5 StructType
- * @subpackage Structs
+ * This class stands for skybillWithDimensionsValueV5 StructType.
  */
 class SkybillWithDimensionsValueV5 extends SkybillWithDimensionsValueV4
 {
     /**
      * The carrier
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $carrier = null;
     /**
      * The skybillBackNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $skybillBackNumber = null;
 
     /**
-     * Constructor method for skybillWithDimensionsValueV5
+     * Constructor method for skybillWithDimensionsValueV5.
+     *
      * @param string $carrier
      * @param string $skybillBackNumber
+     *
      * @uses SkybillWithDimensionsValueV5::setCarrier()
      * @uses SkybillWithDimensionsValueV5::setSkybillBackNumber()
      */
@@ -38,12 +37,12 @@ class SkybillWithDimensionsValueV5 extends SkybillWithDimensionsValueV4
     {
         $this
             ->setCarrier($carrier)
-            ->setSkybillBackNumber($skybillBackNumber);
+            ->setSkybillBackNumber($skybillBackNumber)
+        ;
     }
 
     /**
-     * Get carrier value
-     * @return string|null
+     * Get carrier value.
      */
     public function getCarrier(): ?string
     {
@@ -51,8 +50,10 @@ class SkybillWithDimensionsValueV5 extends SkybillWithDimensionsValueV4
     }
 
     /**
-     * Set carrier value
+     * Set carrier value.
+     *
      * @param string $carrier
+     *
      * @return SkybillWithDimensionsValueV5
      */
     public function setCarrier(?string $carrier = null): self
@@ -67,8 +68,7 @@ class SkybillWithDimensionsValueV5 extends SkybillWithDimensionsValueV4
     }
 
     /**
-     * Get skybillBackNumber value
-     * @return string|null
+     * Get skybillBackNumber value.
      */
     public function getSkybillBackNumber(): ?string
     {
@@ -76,8 +76,10 @@ class SkybillWithDimensionsValueV5 extends SkybillWithDimensionsValueV4
     }
 
     /**
-     * Set skybillBackNumber value
+     * Set skybillBackNumber value.
+     *
      * @param string $skybillBackNumber
+     *
      * @return SkybillWithDimensionsValueV5
      */
     public function setSkybillBackNumber(?string $skybillBackNumber = null): self

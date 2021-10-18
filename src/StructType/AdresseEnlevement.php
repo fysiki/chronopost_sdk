@@ -8,117 +8,102 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for adresseEnlevement StructType
- * @subpackage Structs
+ * This class stands for adresseEnlevement StructType.
  */
 class AdresseEnlevement extends AbstractStructBase
 {
     /**
      * The codeCivilite
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeCivilite = null;
     /**
      * The codePays
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codePays = null;
     /**
      * The codePorte
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codePorte = null;
     /**
      * The codePostal
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codePostal = null;
     /**
      * The lieuDit
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $lieuDit = null;
     /**
      * The nom
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $nom = null;
     /**
      * The nomPersonneARencontrer
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $nomPersonneARencontrer = null;
     /**
      * The numeroVoie
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $numeroVoie = null;
     /**
-     * The porteAPorte
-     * @var bool|null
+     * The porteAPorte.
      */
     protected ?bool $porteAPorte = null;
     /**
      * The prenom
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $prenom = null;
     /**
      * The raisonSociale
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $raisonSociale = null;
     /**
      * The residenceBatimentEtage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $residenceBatimentEtage = null;
     /**
      * The serviceDirection
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $serviceDirection = null;
     /**
      * The telephone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $telephone = null;
     /**
      * The ville
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ville = null;
 
     /**
-     * Constructor method for adresseEnlevement
+     * Constructor method for adresseEnlevement.
+     *
      * @param string $codeCivilite
      * @param string $codePays
      * @param string $codePorte
@@ -127,13 +112,14 @@ class AdresseEnlevement extends AbstractStructBase
      * @param string $nom
      * @param string $nomPersonneARencontrer
      * @param string $numeroVoie
-     * @param bool $porteAPorte
+     * @param bool   $porteAPorte
      * @param string $prenom
      * @param string $raisonSociale
      * @param string $residenceBatimentEtage
      * @param string $serviceDirection
      * @param string $telephone
      * @param string $ville
+     *
      * @uses AdresseEnlevement::setCodeCivilite()
      * @uses AdresseEnlevement::setCodePays()
      * @uses AdresseEnlevement::setCodePorte()
@@ -167,12 +153,12 @@ class AdresseEnlevement extends AbstractStructBase
             ->setResidenceBatimentEtage($residenceBatimentEtage)
             ->setServiceDirection($serviceDirection)
             ->setTelephone($telephone)
-            ->setVille($ville);
+            ->setVille($ville)
+        ;
     }
 
     /**
-     * Get codeCivilite value
-     * @return string|null
+     * Get codeCivilite value.
      */
     public function getCodeCivilite(): ?string
     {
@@ -180,8 +166,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set codeCivilite value
+     * Set codeCivilite value.
+     *
      * @param string $codeCivilite
+     *
      * @return AdresseEnlevement
      */
     public function setCodeCivilite(?string $codeCivilite = null): self
@@ -196,8 +184,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get codePays value
-     * @return string|null
+     * Get codePays value.
      */
     public function getCodePays(): ?string
     {
@@ -205,8 +192,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set codePays value
+     * Set codePays value.
+     *
      * @param string $codePays
+     *
      * @return AdresseEnlevement
      */
     public function setCodePays(?string $codePays = null): self
@@ -221,8 +210,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get codePorte value
-     * @return string|null
+     * Get codePorte value.
      */
     public function getCodePorte(): ?string
     {
@@ -230,8 +218,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set codePorte value
+     * Set codePorte value.
+     *
      * @param string $codePorte
+     *
      * @return AdresseEnlevement
      */
     public function setCodePorte(?string $codePorte = null): self
@@ -246,8 +236,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get codePostal value
-     * @return string|null
+     * Get codePostal value.
      */
     public function getCodePostal(): ?string
     {
@@ -255,8 +244,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set codePostal value
+     * Set codePostal value.
+     *
      * @param string $codePostal
+     *
      * @return AdresseEnlevement
      */
     public function setCodePostal(?string $codePostal = null): self
@@ -271,8 +262,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get lieuDit value
-     * @return string|null
+     * Get lieuDit value.
      */
     public function getLieuDit(): ?string
     {
@@ -280,8 +270,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set lieuDit value
+     * Set lieuDit value.
+     *
      * @param string $lieuDit
+     *
      * @return AdresseEnlevement
      */
     public function setLieuDit(?string $lieuDit = null): self
@@ -296,8 +288,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get nom value
-     * @return string|null
+     * Get nom value.
      */
     public function getNom(): ?string
     {
@@ -305,8 +296,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set nom value
+     * Set nom value.
+     *
      * @param string $nom
+     *
      * @return AdresseEnlevement
      */
     public function setNom(?string $nom = null): self
@@ -321,8 +314,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get nomPersonneARencontrer value
-     * @return string|null
+     * Get nomPersonneARencontrer value.
      */
     public function getNomPersonneARencontrer(): ?string
     {
@@ -330,8 +322,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set nomPersonneARencontrer value
+     * Set nomPersonneARencontrer value.
+     *
      * @param string $nomPersonneARencontrer
+     *
      * @return AdresseEnlevement
      */
     public function setNomPersonneARencontrer(?string $nomPersonneARencontrer = null): self
@@ -346,8 +340,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get numeroVoie value
-     * @return string|null
+     * Get numeroVoie value.
      */
     public function getNumeroVoie(): ?string
     {
@@ -355,8 +348,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set numeroVoie value
+     * Set numeroVoie value.
+     *
      * @param string $numeroVoie
+     *
      * @return AdresseEnlevement
      */
     public function setNumeroVoie(?string $numeroVoie = null): self
@@ -371,8 +366,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get porteAPorte value
-     * @return bool|null
+     * Get porteAPorte value.
      */
     public function getPorteAPorte(): ?bool
     {
@@ -380,8 +374,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set porteAPorte value
+     * Set porteAPorte value.
+     *
      * @param bool $porteAPorte
+     *
      * @return AdresseEnlevement
      */
     public function setPorteAPorte(?bool $porteAPorte = null): self
@@ -396,8 +392,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get prenom value
-     * @return string|null
+     * Get prenom value.
      */
     public function getPrenom(): ?string
     {
@@ -405,8 +400,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set prenom value
+     * Set prenom value.
+     *
      * @param string $prenom
+     *
      * @return AdresseEnlevement
      */
     public function setPrenom(?string $prenom = null): self
@@ -421,8 +418,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get raisonSociale value
-     * @return string|null
+     * Get raisonSociale value.
      */
     public function getRaisonSociale(): ?string
     {
@@ -430,8 +426,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set raisonSociale value
+     * Set raisonSociale value.
+     *
      * @param string $raisonSociale
+     *
      * @return AdresseEnlevement
      */
     public function setRaisonSociale(?string $raisonSociale = null): self
@@ -446,8 +444,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get residenceBatimentEtage value
-     * @return string|null
+     * Get residenceBatimentEtage value.
      */
     public function getResidenceBatimentEtage(): ?string
     {
@@ -455,8 +452,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set residenceBatimentEtage value
+     * Set residenceBatimentEtage value.
+     *
      * @param string $residenceBatimentEtage
+     *
      * @return AdresseEnlevement
      */
     public function setResidenceBatimentEtage(?string $residenceBatimentEtage = null): self
@@ -471,8 +470,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get serviceDirection value
-     * @return string|null
+     * Get serviceDirection value.
      */
     public function getServiceDirection(): ?string
     {
@@ -480,8 +478,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set serviceDirection value
+     * Set serviceDirection value.
+     *
      * @param string $serviceDirection
+     *
      * @return AdresseEnlevement
      */
     public function setServiceDirection(?string $serviceDirection = null): self
@@ -496,8 +496,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get telephone value
-     * @return string|null
+     * Get telephone value.
      */
     public function getTelephone(): ?string
     {
@@ -505,8 +504,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set telephone value
+     * Set telephone value.
+     *
      * @param string $telephone
+     *
      * @return AdresseEnlevement
      */
     public function setTelephone(?string $telephone = null): self
@@ -521,8 +522,7 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get ville value
-     * @return string|null
+     * Get ville value.
      */
     public function getVille(): ?string
     {
@@ -530,8 +530,10 @@ class AdresseEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set ville value
+     * Set ville value.
+     *
      * @param string $ville
+     *
      * @return AdresseEnlevement
      */
     public function setVille(?string $ville = null): self

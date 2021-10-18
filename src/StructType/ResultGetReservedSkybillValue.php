@@ -8,36 +8,34 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for resultGetReservedSkybillValue StructType
- * @subpackage Structs
+ * This class stands for resultGetReservedSkybillValue StructType.
  */
 class ResultGetReservedSkybillValue extends AbstractStructBase
 {
     /**
-     * The errorCode
-     * @var int|null
+     * The errorCode.
      */
     protected ?int $errorCode = null;
     /**
      * The errorMessage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $errorMessage = null;
     /**
      * The skybill
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $skybill = null;
 
     /**
-     * Constructor method for resultGetReservedSkybillValue
-     * @param int $errorCode
+     * Constructor method for resultGetReservedSkybillValue.
+     *
+     * @param int    $errorCode
      * @param string $errorMessage
      * @param string $skybill
+     *
      * @uses ResultGetReservedSkybillValue::setErrorCode()
      * @uses ResultGetReservedSkybillValue::setErrorMessage()
      * @uses ResultGetReservedSkybillValue::setSkybill()
@@ -47,12 +45,12 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
         $this
             ->setErrorCode($errorCode)
             ->setErrorMessage($errorMessage)
-            ->setSkybill($skybill);
+            ->setSkybill($skybill)
+        ;
     }
 
     /**
-     * Get errorCode value
-     * @return int|null
+     * Get errorCode value.
      */
     public function getErrorCode(): ?int
     {
@@ -60,8 +58,10 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set errorCode value
+     * Set errorCode value.
+     *
      * @param int $errorCode
+     *
      * @return ResultGetReservedSkybillValue
      */
     public function setErrorCode(?int $errorCode = null): self
@@ -76,8 +76,7 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get errorMessage value
-     * @return string|null
+     * Get errorMessage value.
      */
     public function getErrorMessage(): ?string
     {
@@ -85,8 +84,10 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set errorMessage value
+     * Set errorMessage value.
+     *
      * @param string $errorMessage
+     *
      * @return ResultGetReservedSkybillValue
      */
     public function setErrorMessage(?string $errorMessage = null): self
@@ -101,8 +102,7 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get skybill value
-     * @return string|null
+     * Get skybill value.
      */
     public function getSkybill(): ?string
     {
@@ -110,8 +110,10 @@ class ResultGetReservedSkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set skybill value
+     * Set skybill value.
+     *
      * @param string $skybill
+     *
      * @return ResultGetReservedSkybillValue
      */
     public function setSkybill(?string $skybill = null): self

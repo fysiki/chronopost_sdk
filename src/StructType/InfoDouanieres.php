@@ -8,36 +8,34 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for infoDouanieres StructType
- * @subpackage Structs
+ * This class stands for infoDouanieres StructType.
  */
 class InfoDouanieres extends AbstractStructBase
 {
     /**
      * The devise
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $devise = null;
     /**
-     * The montant
-     * @var float|null
+     * The montant.
      */
     protected ?float $montant = null;
     /**
      * The type
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $type = null;
 
     /**
-     * Constructor method for infoDouanieres
+     * Constructor method for infoDouanieres.
+     *
      * @param string $devise
-     * @param float $montant
+     * @param float  $montant
      * @param string $type
+     *
      * @uses InfoDouanieres::setDevise()
      * @uses InfoDouanieres::setMontant()
      * @uses InfoDouanieres::setType()
@@ -47,12 +45,12 @@ class InfoDouanieres extends AbstractStructBase
         $this
             ->setDevise($devise)
             ->setMontant($montant)
-            ->setType($type);
+            ->setType($type)
+        ;
     }
 
     /**
-     * Get devise value
-     * @return string|null
+     * Get devise value.
      */
     public function getDevise(): ?string
     {
@@ -60,8 +58,10 @@ class InfoDouanieres extends AbstractStructBase
     }
 
     /**
-     * Set devise value
+     * Set devise value.
+     *
      * @param string $devise
+     *
      * @return InfoDouanieres
      */
     public function setDevise(?string $devise = null): self
@@ -76,8 +76,7 @@ class InfoDouanieres extends AbstractStructBase
     }
 
     /**
-     * Get montant value
-     * @return float|null
+     * Get montant value.
      */
     public function getMontant(): ?float
     {
@@ -85,8 +84,10 @@ class InfoDouanieres extends AbstractStructBase
     }
 
     /**
-     * Set montant value
+     * Set montant value.
+     *
      * @param float $montant
+     *
      * @return InfoDouanieres
      */
     public function setMontant(?float $montant = null): self
@@ -101,8 +102,7 @@ class InfoDouanieres extends AbstractStructBase
     }
 
     /**
-     * Get type value
-     * @return string|null
+     * Get type value.
      */
     public function getType(): ?string
     {
@@ -110,8 +110,10 @@ class InfoDouanieres extends AbstractStructBase
     }
 
     /**
-     * Set type value
+     * Set type value.
+     *
      * @param string $type
+     *
      * @return InfoDouanieres
      */
     public function setType(?string $type = null): self

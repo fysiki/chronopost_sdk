@@ -8,80 +8,72 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for esdValue StructType
- * @subpackage Structs
+ * This class stands for esdValue StructType.
  */
 class EsdValue extends AbstractStructBase
 {
     /**
      * The closingDateTime
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $closingDateTime = null;
     /**
-     * The height
-     * @var float|null
+     * The height.
      */
     protected ?float $height = null;
     /**
-     * The length
-     * @var float|null
+     * The length.
      */
     protected ?float $length = null;
     /**
      * The retrievalDateTime
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $retrievalDateTime = null;
     /**
      * The shipperBuildingFloor
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperBuildingFloor = null;
     /**
      * The shipperCarriesCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperCarriesCode = null;
     /**
      * The shipperServiceDirection
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperServiceDirection = null;
     /**
      * The specificInstructions
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $specificInstructions = null;
     /**
-     * The width
-     * @var float|null
+     * The width.
      */
     protected ?float $width = null;
 
     /**
-     * Constructor method for esdValue
+     * Constructor method for esdValue.
+     *
      * @param string $closingDateTime
-     * @param float $height
-     * @param float $length
+     * @param float  $height
+     * @param float  $length
      * @param string $retrievalDateTime
      * @param string $shipperBuildingFloor
      * @param string $shipperCarriesCode
      * @param string $shipperServiceDirection
      * @param string $specificInstructions
-     * @param float $width
+     * @param float  $width
+     *
      * @uses EsdValue::setClosingDateTime()
      * @uses EsdValue::setHeight()
      * @uses EsdValue::setLength()
@@ -103,12 +95,12 @@ class EsdValue extends AbstractStructBase
             ->setShipperCarriesCode($shipperCarriesCode)
             ->setShipperServiceDirection($shipperServiceDirection)
             ->setSpecificInstructions($specificInstructions)
-            ->setWidth($width);
+            ->setWidth($width)
+        ;
     }
 
     /**
-     * Get closingDateTime value
-     * @return string|null
+     * Get closingDateTime value.
      */
     public function getClosingDateTime(): ?string
     {
@@ -116,8 +108,10 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Set closingDateTime value
+     * Set closingDateTime value.
+     *
      * @param string $closingDateTime
+     *
      * @return EsdValue
      */
     public function setClosingDateTime(?string $closingDateTime = null): self
@@ -132,8 +126,7 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Get height value
-     * @return float|null
+     * Get height value.
      */
     public function getHeight(): ?float
     {
@@ -141,8 +134,10 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Set height value
+     * Set height value.
+     *
      * @param float $height
+     *
      * @return EsdValue
      */
     public function setHeight(?float $height = null): self
@@ -157,8 +152,7 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Get length value
-     * @return float|null
+     * Get length value.
      */
     public function getLength(): ?float
     {
@@ -166,8 +160,10 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Set length value
+     * Set length value.
+     *
      * @param float $length
+     *
      * @return EsdValue
      */
     public function setLength(?float $length = null): self
@@ -182,8 +178,7 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Get retrievalDateTime value
-     * @return string|null
+     * Get retrievalDateTime value.
      */
     public function getRetrievalDateTime(): ?string
     {
@@ -191,8 +186,10 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Set retrievalDateTime value
+     * Set retrievalDateTime value.
+     *
      * @param string $retrievalDateTime
+     *
      * @return EsdValue
      */
     public function setRetrievalDateTime(?string $retrievalDateTime = null): self
@@ -207,8 +204,7 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperBuildingFloor value
-     * @return string|null
+     * Get shipperBuildingFloor value.
      */
     public function getShipperBuildingFloor(): ?string
     {
@@ -216,8 +212,10 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperBuildingFloor value
+     * Set shipperBuildingFloor value.
+     *
      * @param string $shipperBuildingFloor
+     *
      * @return EsdValue
      */
     public function setShipperBuildingFloor(?string $shipperBuildingFloor = null): self
@@ -232,8 +230,7 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperCarriesCode value
-     * @return string|null
+     * Get shipperCarriesCode value.
      */
     public function getShipperCarriesCode(): ?string
     {
@@ -241,8 +238,10 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperCarriesCode value
+     * Set shipperCarriesCode value.
+     *
      * @param string $shipperCarriesCode
+     *
      * @return EsdValue
      */
     public function setShipperCarriesCode(?string $shipperCarriesCode = null): self
@@ -257,8 +256,7 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperServiceDirection value
-     * @return string|null
+     * Get shipperServiceDirection value.
      */
     public function getShipperServiceDirection(): ?string
     {
@@ -266,8 +264,10 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperServiceDirection value
+     * Set shipperServiceDirection value.
+     *
      * @param string $shipperServiceDirection
+     *
      * @return EsdValue
      */
     public function setShipperServiceDirection(?string $shipperServiceDirection = null): self
@@ -282,8 +282,7 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Get specificInstructions value
-     * @return string|null
+     * Get specificInstructions value.
      */
     public function getSpecificInstructions(): ?string
     {
@@ -291,8 +290,10 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Set specificInstructions value
+     * Set specificInstructions value.
+     *
      * @param string $specificInstructions
+     *
      * @return EsdValue
      */
     public function setSpecificInstructions(?string $specificInstructions = null): self
@@ -307,8 +308,7 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Get width value
-     * @return float|null
+     * Get width value.
      */
     public function getWidth(): ?float
     {
@@ -316,8 +316,10 @@ class EsdValue extends AbstractStructBase
     }
 
     /**
-     * Set width value
+     * Set width value.
+     *
      * @param float $width
+     *
      * @return EsdValue
      */
     public function setWidth(?float $width = null): self

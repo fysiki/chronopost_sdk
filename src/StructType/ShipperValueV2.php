@@ -7,33 +7,33 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for shipperValueV2 StructType
- * @subpackage Structs
+ * This class stands for shipperValueV2 StructType.
  */
 class ShipperValueV2 extends ShipperValue
 {
     /**
      * The shipperType
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperType = null;
 
     /**
-     * Constructor method for shipperValueV2
+     * Constructor method for shipperValueV2.
+     *
      * @param string $shipperType
+     *
      * @uses ShipperValueV2::setShipperType()
      */
     public function __construct(?string $shipperType = null)
     {
         $this
-            ->setShipperType($shipperType);
+            ->setShipperType($shipperType)
+        ;
     }
 
     /**
-     * Get shipperType value
-     * @return string|null
+     * Get shipperType value.
      */
     public function getShipperType(): ?string
     {
@@ -41,8 +41,10 @@ class ShipperValueV2 extends ShipperValue
     }
 
     /**
-     * Set shipperType value
+     * Set shipperType value.
+     *
      * @param string $shipperType
+     *
      * @return ShipperValueV2
      */
     public function setShipperType(?string $shipperType = null): self

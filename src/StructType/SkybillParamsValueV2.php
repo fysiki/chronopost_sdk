@@ -7,31 +7,31 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for skybillParamsValueV2 StructType
- * @subpackage Structs
+ * This class stands for skybillParamsValueV2 StructType.
  */
 class SkybillParamsValueV2 extends SkybillParamsValue
 {
     /**
-     * The withReservation
-     * @var int|null
+     * The withReservation.
      */
     protected ?int $withReservation = null;
 
     /**
-     * Constructor method for skybillParamsValueV2
+     * Constructor method for skybillParamsValueV2.
+     *
      * @param int $withReservation
+     *
      * @uses SkybillParamsValueV2::setWithReservation()
      */
     public function __construct(?int $withReservation = null)
     {
         $this
-            ->setWithReservation($withReservation);
+            ->setWithReservation($withReservation)
+        ;
     }
 
     /**
-     * Get withReservation value
-     * @return int|null
+     * Get withReservation value.
      */
     public function getWithReservation(): ?int
     {
@@ -39,8 +39,10 @@ class SkybillParamsValueV2 extends SkybillParamsValue
     }
 
     /**
-     * Set withReservation value
+     * Set withReservation value.
+     *
      * @param int $withReservation
+     *
      * @return SkybillParamsValueV2
      */
     public function setWithReservation(?int $withReservation = null): self

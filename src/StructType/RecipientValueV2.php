@@ -7,33 +7,33 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for recipientValueV2 StructType
- * @subpackage Structs
+ * This class stands for recipientValueV2 StructType.
  */
 class RecipientValueV2 extends RecipientValue
 {
     /**
      * The recipientType
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientType = null;
 
     /**
-     * Constructor method for recipientValueV2
+     * Constructor method for recipientValueV2.
+     *
      * @param string $recipientType
+     *
      * @uses RecipientValueV2::setRecipientType()
      */
     public function __construct(?string $recipientType = null)
     {
         $this
-            ->setRecipientType($recipientType);
+            ->setRecipientType($recipientType)
+        ;
     }
 
     /**
-     * Get recipientType value
-     * @return string|null
+     * Get recipientType value.
      */
     public function getRecipientType(): ?string
     {
@@ -41,8 +41,10 @@ class RecipientValueV2 extends RecipientValue
     }
 
     /**
-     * Set recipientType value
+     * Set recipientType value.
+     *
      * @param string $recipientType
+     *
      * @return RecipientValueV2
      */
     public function setRecipientType(?string $recipientType = null): self

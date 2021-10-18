@@ -7,91 +7,80 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for resultExpeditionValueV3 StructType
- * @subpackage Structs
+ * This class stands for resultExpeditionValueV3 StructType.
  */
 class ResultExpeditionValueV3 extends ResultExpeditionValue
 {
     /**
      * The codeDepot
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeDepot = null;
     /**
      * The codeService
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeService = null;
     /**
      * The destinationDepot
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $destinationDepot = null;
     /**
      * The geoPostCodeBarre
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $geoPostCodeBarre = null;
     /**
      * The geoPostNumeroColis
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $geoPostNumeroColis = null;
     /**
      * The groupingPriorityLabel
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $groupingPriorityLabel = null;
     /**
      * The serviceMark
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $serviceMark = null;
     /**
      * The serviceName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $serviceName = null;
     /**
      * The signaletiqueProduit
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $signaletiqueProduit = null;
     /**
      * The dSort
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $dSort = null;
     /**
      * The oSort
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $oSort = null;
 
     /**
-     * Constructor method for resultExpeditionValueV3
+     * Constructor method for resultExpeditionValueV3.
+     *
      * @param string $codeDepot
      * @param string $codeService
      * @param string $destinationDepot
@@ -103,6 +92,7 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
      * @param string $signaletiqueProduit
      * @param string $dSort
      * @param string $oSort
+     *
      * @uses ResultExpeditionValueV3::setCodeDepot()
      * @uses ResultExpeditionValueV3::setCodeService()
      * @uses ResultExpeditionValueV3::setDestinationDepot()
@@ -128,12 +118,12 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
             ->setServiceName($serviceName)
             ->setSignaletiqueProduit($signaletiqueProduit)
             ->setDSort($dSort)
-            ->setOSort($oSort);
+            ->setOSort($oSort)
+        ;
     }
 
     /**
-     * Get codeDepot value
-     * @return string|null
+     * Get codeDepot value.
      */
     public function getCodeDepot(): ?string
     {
@@ -141,8 +131,10 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Set codeDepot value
+     * Set codeDepot value.
+     *
      * @param string $codeDepot
+     *
      * @return ResultExpeditionValueV3
      */
     public function setCodeDepot(?string $codeDepot = null): self
@@ -157,8 +149,7 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Get codeService value
-     * @return string|null
+     * Get codeService value.
      */
     public function getCodeService(): ?string
     {
@@ -166,8 +157,10 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Set codeService value
+     * Set codeService value.
+     *
      * @param string $codeService
+     *
      * @return ResultExpeditionValueV3
      */
     public function setCodeService(?string $codeService = null): self
@@ -182,8 +175,7 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Get destinationDepot value
-     * @return string|null
+     * Get destinationDepot value.
      */
     public function getDestinationDepot(): ?string
     {
@@ -191,8 +183,10 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Set destinationDepot value
+     * Set destinationDepot value.
+     *
      * @param string $destinationDepot
+     *
      * @return ResultExpeditionValueV3
      */
     public function setDestinationDepot(?string $destinationDepot = null): self
@@ -207,8 +201,7 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Get geoPostCodeBarre value
-     * @return string|null
+     * Get geoPostCodeBarre value.
      */
     public function getGeoPostCodeBarre(): ?string
     {
@@ -216,8 +209,10 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Set geoPostCodeBarre value
+     * Set geoPostCodeBarre value.
+     *
      * @param string $geoPostCodeBarre
+     *
      * @return ResultExpeditionValueV3
      */
     public function setGeoPostCodeBarre(?string $geoPostCodeBarre = null): self
@@ -232,8 +227,7 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Get geoPostNumeroColis value
-     * @return string|null
+     * Get geoPostNumeroColis value.
      */
     public function getGeoPostNumeroColis(): ?string
     {
@@ -241,8 +235,10 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Set geoPostNumeroColis value
+     * Set geoPostNumeroColis value.
+     *
      * @param string $geoPostNumeroColis
+     *
      * @return ResultExpeditionValueV3
      */
     public function setGeoPostNumeroColis(?string $geoPostNumeroColis = null): self
@@ -257,8 +253,7 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Get groupingPriorityLabel value
-     * @return string|null
+     * Get groupingPriorityLabel value.
      */
     public function getGroupingPriorityLabel(): ?string
     {
@@ -266,8 +261,10 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Set groupingPriorityLabel value
+     * Set groupingPriorityLabel value.
+     *
      * @param string $groupingPriorityLabel
+     *
      * @return ResultExpeditionValueV3
      */
     public function setGroupingPriorityLabel(?string $groupingPriorityLabel = null): self
@@ -282,8 +279,7 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Get serviceMark value
-     * @return string|null
+     * Get serviceMark value.
      */
     public function getServiceMark(): ?string
     {
@@ -291,8 +287,10 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Set serviceMark value
+     * Set serviceMark value.
+     *
      * @param string $serviceMark
+     *
      * @return ResultExpeditionValueV3
      */
     public function setServiceMark(?string $serviceMark = null): self
@@ -307,8 +305,7 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Get serviceName value
-     * @return string|null
+     * Get serviceName value.
      */
     public function getServiceName(): ?string
     {
@@ -316,8 +313,10 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Set serviceName value
+     * Set serviceName value.
+     *
      * @param string $serviceName
+     *
      * @return ResultExpeditionValueV3
      */
     public function setServiceName(?string $serviceName = null): self
@@ -332,8 +331,7 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Get signaletiqueProduit value
-     * @return string|null
+     * Get signaletiqueProduit value.
      */
     public function getSignaletiqueProduit(): ?string
     {
@@ -341,8 +339,10 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Set signaletiqueProduit value
+     * Set signaletiqueProduit value.
+     *
      * @param string $signaletiqueProduit
+     *
      * @return ResultExpeditionValueV3
      */
     public function setSignaletiqueProduit(?string $signaletiqueProduit = null): self
@@ -357,8 +357,7 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Get dSort value
-     * @return string|null
+     * Get dSort value.
      */
     public function getDSort(): ?string
     {
@@ -366,8 +365,10 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Set dSort value
+     * Set dSort value.
+     *
      * @param string $dSort
+     *
      * @return ResultExpeditionValueV3
      */
     public function setDSort(?string $dSort = null): self
@@ -382,8 +383,7 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Get oSort value
-     * @return string|null
+     * Get oSort value.
      */
     public function getOSort(): ?string
     {
@@ -391,8 +391,10 @@ class ResultExpeditionValueV3 extends ResultExpeditionValue
     }
 
     /**
-     * Set oSort value
+     * Set oSort value.
+     *
      * @param string $oSort
+     *
      * @return ResultExpeditionValueV3
      */
     public function setOSort(?string $oSort = null): self

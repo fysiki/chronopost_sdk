@@ -10,33 +10,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for getReservedSkybill StructType
  * Meta information extracted from the WSDL
- * - type: tns:getReservedSkybill
- * @subpackage Structs
+ * - type: tns:getReservedSkybill.
  */
 class GetReservedSkybill extends AbstractStructBase
 {
     /**
      * The reservationNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $reservationNumber = null;
 
     /**
-     * Constructor method for getReservedSkybill
+     * Constructor method for getReservedSkybill.
+     *
      * @param string $reservationNumber
+     *
      * @uses GetReservedSkybill::setReservationNumber()
      */
     public function __construct(?string $reservationNumber = null)
     {
         $this
-            ->setReservationNumber($reservationNumber);
+            ->setReservationNumber($reservationNumber)
+        ;
     }
 
     /**
-     * Get reservationNumber value
-     * @return string|null
+     * Get reservationNumber value.
      */
     public function getReservationNumber(): ?string
     {
@@ -44,8 +44,10 @@ class GetReservedSkybill extends AbstractStructBase
     }
 
     /**
-     * Set reservationNumber value
+     * Set reservationNumber value.
+     *
      * @param string $reservationNumber
+     *
      * @return GetReservedSkybill
      */
     public function setReservationNumber(?string $reservationNumber = null): self

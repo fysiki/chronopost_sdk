@@ -10,47 +10,46 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for annulerEnlevements StructType
  * Meta information extracted from the WSDL
- * - type: tns:annulerEnlevements
- * @subpackage Structs
+ * - type: tns:annulerEnlevements.
  */
 class AnnulerEnlevements extends AbstractStructBase
 {
     /**
      * The accountNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $accountNumber = null;
     /**
      * The password
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $password = null;
     /**
      * The locale
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $locale = null;
     /**
      * The esdNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * - minOccurs: 0
+     * - minOccurs: 0.
+     *
      * @var string[]
      */
     protected ?array $esdNumber = null;
 
     /**
-     * Constructor method for annulerEnlevements
-     * @param string $accountNumber
-     * @param string $password
-     * @param string $locale
+     * Constructor method for annulerEnlevements.
+     *
+     * @param string   $accountNumber
+     * @param string   $password
+     * @param string   $locale
      * @param string[] $esdNumber
+     *
      * @uses AnnulerEnlevements::setAccountNumber()
      * @uses AnnulerEnlevements::setPassword()
      * @uses AnnulerEnlevements::setLocale()
@@ -62,12 +61,12 @@ class AnnulerEnlevements extends AbstractStructBase
             ->setAccountNumber($accountNumber)
             ->setPassword($password)
             ->setLocale($locale)
-            ->setEsdNumber($esdNumber);
+            ->setEsdNumber($esdNumber)
+        ;
     }
 
     /**
-     * Get accountNumber value
-     * @return string|null
+     * Get accountNumber value.
      */
     public function getAccountNumber(): ?string
     {
@@ -75,8 +74,10 @@ class AnnulerEnlevements extends AbstractStructBase
     }
 
     /**
-     * Set accountNumber value
+     * Set accountNumber value.
+     *
      * @param string $accountNumber
+     *
      * @return AnnulerEnlevements
      */
     public function setAccountNumber(?string $accountNumber = null): self
@@ -91,8 +92,7 @@ class AnnulerEnlevements extends AbstractStructBase
     }
 
     /**
-     * Get password value
-     * @return string|null
+     * Get password value.
      */
     public function getPassword(): ?string
     {
@@ -100,8 +100,10 @@ class AnnulerEnlevements extends AbstractStructBase
     }
 
     /**
-     * Set password value
+     * Set password value.
+     *
      * @param string $password
+     *
      * @return AnnulerEnlevements
      */
     public function setPassword(?string $password = null): self
@@ -116,8 +118,7 @@ class AnnulerEnlevements extends AbstractStructBase
     }
 
     /**
-     * Get locale value
-     * @return string|null
+     * Get locale value.
      */
     public function getLocale(): ?string
     {
@@ -125,8 +126,10 @@ class AnnulerEnlevements extends AbstractStructBase
     }
 
     /**
-     * Set locale value
+     * Set locale value.
+     *
      * @param string $locale
+     *
      * @return AnnulerEnlevements
      */
     public function setLocale(?string $locale = null): self
@@ -141,7 +144,8 @@ class AnnulerEnlevements extends AbstractStructBase
     }
 
     /**
-     * Get esdNumber value
+     * Get esdNumber value.
+     *
      * @return string[]
      */
     public function getEsdNumber(): ?array
@@ -151,8 +155,10 @@ class AnnulerEnlevements extends AbstractStructBase
 
     /**
      * This method is responsible for validating the values passed to the setEsdNumber method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setEsdNumber method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setEsdNumber method.
+     *
      * @param array $values
+     *
      * @return string A non-empty message if the values does not match the validation rules
      */
     public static function validateEsdNumberForArrayConstraintsFromSetEsdNumber(?array $values = []): string
@@ -177,10 +183,13 @@ class AnnulerEnlevements extends AbstractStructBase
     }
 
     /**
-     * Set esdNumber value
+     * Set esdNumber value.
+     *
      * @param string[] $esdNumber
-     * @return AnnulerEnlevements
+     *
      * @throws InvalidArgumentException
+     *
+     * @return AnnulerEnlevements
      */
     public function setEsdNumber(?array $esdNumber = null): self
     {
@@ -194,10 +203,11 @@ class AnnulerEnlevements extends AbstractStructBase
     }
 
     /**
-     * Add item to esdNumber value
-     * @param string $item
-     * @return AnnulerEnlevements
+     * Add item to esdNumber value.
+     *
      * @throws InvalidArgumentException
+     *
+     * @return AnnulerEnlevements
      */
     public function addToEsdNumber(string $item): self
     {

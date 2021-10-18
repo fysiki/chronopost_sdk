@@ -22,15 +22,15 @@ use StructType\GetShippingInformationResponse;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
 /**
- * This class stands for Get ServiceType
- * @subpackage Services
+ * This class stands for Get ServiceType.
  */
 class Get extends AbstractSoapClientBase
 {
     /**
-     * Method to call the operation originally named getReservedSkybillWithType
-     * @param GetReservedSkybillWithType $parameters
-     * @return GetReservedSkybillWithTypeResponse|bool
+     * Method to call the operation originally named getReservedSkybillWithType.
+     *
+     * @return bool|GetReservedSkybillWithTypeResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -52,9 +52,10 @@ class Get extends AbstractSoapClientBase
 
     /**
      * Method to call the operation originally named
-     * getReservedSkybillWithTypeAndModeAuth
-     * @param GetReservedSkybillWithTypeAndModeAuth $parameters
-     * @return GetReservedSkybillWithTypeAndModeAuthResponse|bool
+     * getReservedSkybillWithTypeAndModeAuth.
+     *
+     * @return bool|GetReservedSkybillWithTypeAndModeAuthResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -76,9 +77,10 @@ class Get extends AbstractSoapClientBase
 
     /**
      * Method to call the operation originally named
-     * getReservedSkybillWithTypeAndModeByReservation
-     * @param GetReservedSkybillWithTypeAndModeByReservation $parameters
-     * @return GetReservedSkybillWithTypeAndModeByReservationResponse|bool
+     * getReservedSkybillWithTypeAndModeByReservation.
+     *
+     * @return bool|GetReservedSkybillWithTypeAndModeByReservationResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -99,9 +101,10 @@ class Get extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named getReservedSkybill
-     * @param GetReservedSkybill $parameters
-     * @return GetReservedSkybillResponse|bool
+     * Method to call the operation originally named getReservedSkybill.
+     *
+     * @return bool|GetReservedSkybillResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -122,9 +125,10 @@ class Get extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named getReservedSkybillWithTypeAndMode
-     * @param GetReservedSkybillWithTypeAndMode $parameters
-     * @return GetReservedSkybillWithTypeAndModeResponse|bool
+     * Method to call the operation originally named getReservedSkybillWithTypeAndMode.
+     *
+     * @return bool|GetReservedSkybillWithTypeAndModeResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -145,9 +149,10 @@ class Get extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named getShippingInformation
-     * @param GetShippingInformation $parameters
-     * @return GetShippingInformationResponse|bool
+     * Method to call the operation originally named getShippingInformation.
+     *
+     * @return bool|GetShippingInformationResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -168,9 +173,10 @@ class Get extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named getRouting
-     * @param GetRouting $parameters
-     * @return GetRoutingResponse|bool
+     * Method to call the operation originally named getRouting.
+     *
+     * @return bool|GetRoutingResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -191,8 +197,10 @@ class Get extends AbstractSoapClientBase
     }
 
     /**
-     * Returns the result
+     * Returns the result.
+     *
      * @return GetReservedSkybillResponse|GetReservedSkybillWithTypeAndModeAuthResponse|GetReservedSkybillWithTypeAndModeByReservationResponse|GetReservedSkybillWithTypeAndModeResponse|GetReservedSkybillWithTypeResponse|GetRoutingResponse|GetShippingInformationResponse
+     *
      * @see AbstractSoapClientBase::getResult()
      */
     public function getResult()

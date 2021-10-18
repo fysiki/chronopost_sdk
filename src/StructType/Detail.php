@@ -8,36 +8,34 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for detail StructType
- * @subpackage Structs
+ * This class stands for detail StructType.
  */
 class Detail extends AbstractStructBase
 {
     /**
-     * The errorCode
-     * @var int|null
+     * The errorCode.
      */
     protected ?int $errorCode = null;
     /**
      * The errorMessage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $errorMessage = null;
     /**
      * The mode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $mode = null;
 
     /**
-     * Constructor method for detail
-     * @param int $errorCode
+     * Constructor method for detail.
+     *
+     * @param int    $errorCode
      * @param string $errorMessage
      * @param string $mode
+     *
      * @uses Detail::setErrorCode()
      * @uses Detail::setErrorMessage()
      * @uses Detail::setMode()
@@ -47,12 +45,12 @@ class Detail extends AbstractStructBase
         $this
             ->setErrorCode($errorCode)
             ->setErrorMessage($errorMessage)
-            ->setMode($mode);
+            ->setMode($mode)
+        ;
     }
 
     /**
-     * Get errorCode value
-     * @return int|null
+     * Get errorCode value.
      */
     public function getErrorCode(): ?int
     {
@@ -60,8 +58,10 @@ class Detail extends AbstractStructBase
     }
 
     /**
-     * Set errorCode value
+     * Set errorCode value.
+     *
      * @param int $errorCode
+     *
      * @return Detail
      */
     public function setErrorCode(?int $errorCode = null): self
@@ -76,8 +76,7 @@ class Detail extends AbstractStructBase
     }
 
     /**
-     * Get errorMessage value
-     * @return string|null
+     * Get errorMessage value.
      */
     public function getErrorMessage(): ?string
     {
@@ -85,8 +84,10 @@ class Detail extends AbstractStructBase
     }
 
     /**
-     * Set errorMessage value
+     * Set errorMessage value.
+     *
      * @param string $errorMessage
+     *
      * @return Detail
      */
     public function setErrorMessage(?string $errorMessage = null): self
@@ -101,8 +102,7 @@ class Detail extends AbstractStructBase
     }
 
     /**
-     * Get mode value
-     * @return string|null
+     * Get mode value.
      */
     public function getMode(): ?string
     {
@@ -110,8 +110,10 @@ class Detail extends AbstractStructBase
     }
 
     /**
-     * Set mode value
+     * Set mode value.
+     *
      * @param string $mode
+     *
      * @return Detail
      */
     public function setMode(?string $mode = null): self

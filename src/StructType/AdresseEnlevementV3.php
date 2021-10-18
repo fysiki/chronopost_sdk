@@ -7,33 +7,33 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for adresseEnlevementV3 StructType
- * @subpackage Structs
+ * This class stands for adresseEnlevementV3 StructType.
  */
 class AdresseEnlevementV3 extends AdresseEnlevementV2
 {
     /**
      * The refExpediteur
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $refExpediteur = null;
 
     /**
-     * Constructor method for adresseEnlevementV3
+     * Constructor method for adresseEnlevementV3.
+     *
      * @param string $refExpediteur
+     *
      * @uses AdresseEnlevementV3::setRefExpediteur()
      */
     public function __construct(?string $refExpediteur = null)
     {
         $this
-            ->setRefExpediteur($refExpediteur);
+            ->setRefExpediteur($refExpediteur)
+        ;
     }
 
     /**
-     * Get refExpediteur value
-     * @return string|null
+     * Get refExpediteur value.
      */
     public function getRefExpediteur(): ?string
     {
@@ -41,8 +41,10 @@ class AdresseEnlevementV3 extends AdresseEnlevementV2
     }
 
     /**
-     * Set refExpediteur value
+     * Set refExpediteur value.
+     *
      * @param string $refExpediteur
+     *
      * @return AdresseEnlevementV3
      */
     public function setRefExpediteur(?string $refExpediteur = null): self

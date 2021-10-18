@@ -8,36 +8,34 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for error StructType
- * @subpackage Structs
+ * This class stands for error StructType.
  */
 class Error extends AbstractStructBase
 {
     /**
      * The detail
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var Detail|null
+     * - minOccurs: 0.
      */
     protected ?Detail $detail = null;
     /**
-     * The errorCode
-     * @var int|null
+     * The errorCode.
      */
     protected ?int $errorCode = null;
     /**
      * The errorMessage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $errorMessage = null;
 
     /**
-     * Constructor method for error
+     * Constructor method for error.
+     *
      * @param Detail $detail
-     * @param int $errorCode
+     * @param int    $errorCode
      * @param string $errorMessage
+     *
      * @uses Error::setDetail()
      * @uses Error::setErrorCode()
      * @uses Error::setErrorMessage()
@@ -47,12 +45,12 @@ class Error extends AbstractStructBase
         $this
             ->setDetail($detail)
             ->setErrorCode($errorCode)
-            ->setErrorMessage($errorMessage);
+            ->setErrorMessage($errorMessage)
+        ;
     }
 
     /**
-     * Get detail value
-     * @return Detail|null
+     * Get detail value.
      */
     public function getDetail(): ?Detail
     {
@@ -60,8 +58,10 @@ class Error extends AbstractStructBase
     }
 
     /**
-     * Set detail value
+     * Set detail value.
+     *
      * @param Detail $detail
+     *
      * @return Error
      */
     public function setDetail(?Detail $detail = null): self
@@ -72,8 +72,7 @@ class Error extends AbstractStructBase
     }
 
     /**
-     * Get errorCode value
-     * @return int|null
+     * Get errorCode value.
      */
     public function getErrorCode(): ?int
     {
@@ -81,8 +80,10 @@ class Error extends AbstractStructBase
     }
 
     /**
-     * Set errorCode value
+     * Set errorCode value.
+     *
      * @param int $errorCode
+     *
      * @return Error
      */
     public function setErrorCode(?int $errorCode = null): self
@@ -97,8 +98,7 @@ class Error extends AbstractStructBase
     }
 
     /**
-     * Get errorMessage value
-     * @return string|null
+     * Get errorMessage value.
      */
     public function getErrorMessage(): ?string
     {
@@ -106,8 +106,10 @@ class Error extends AbstractStructBase
     }
 
     /**
-     * Set errorMessage value
+     * Set errorMessage value.
+     *
      * @param string $errorMessage
+     *
      * @return Error
      */
     public function setErrorMessage(?string $errorMessage = null): self

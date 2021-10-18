@@ -8,54 +8,50 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for infoClient StructType
- * @subpackage Structs
+ * This class stands for infoClient StructType.
  */
 class InfoClient extends AbstractStructBase
 {
     /**
      * The contenu
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $contenu = null;
     /**
      * The devise
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $devise = null;
     /**
      * The montant
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var float|null
+     * - minOccurs: 0.
      */
     protected ?float $montant = null;
     /**
      * The refEsdClient
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $refEsdClient = null;
     /**
      * The service
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $service = null;
 
     /**
-     * Constructor method for infoClient
+     * Constructor method for infoClient.
+     *
      * @param string $contenu
      * @param string $devise
-     * @param float $montant
+     * @param float  $montant
      * @param string $refEsdClient
      * @param string $service
+     *
      * @uses InfoClient::setContenu()
      * @uses InfoClient::setDevise()
      * @uses InfoClient::setMontant()
@@ -69,12 +65,12 @@ class InfoClient extends AbstractStructBase
             ->setDevise($devise)
             ->setMontant($montant)
             ->setRefEsdClient($refEsdClient)
-            ->setService($service);
+            ->setService($service)
+        ;
     }
 
     /**
-     * Get contenu value
-     * @return string|null
+     * Get contenu value.
      */
     public function getContenu(): ?string
     {
@@ -82,8 +78,10 @@ class InfoClient extends AbstractStructBase
     }
 
     /**
-     * Set contenu value
+     * Set contenu value.
+     *
      * @param string $contenu
+     *
      * @return InfoClient
      */
     public function setContenu(?string $contenu = null): self
@@ -98,8 +96,7 @@ class InfoClient extends AbstractStructBase
     }
 
     /**
-     * Get devise value
-     * @return string|null
+     * Get devise value.
      */
     public function getDevise(): ?string
     {
@@ -107,8 +104,10 @@ class InfoClient extends AbstractStructBase
     }
 
     /**
-     * Set devise value
+     * Set devise value.
+     *
      * @param string $devise
+     *
      * @return InfoClient
      */
     public function setDevise(?string $devise = null): self
@@ -123,8 +122,7 @@ class InfoClient extends AbstractStructBase
     }
 
     /**
-     * Get montant value
-     * @return float|null
+     * Get montant value.
      */
     public function getMontant(): ?float
     {
@@ -132,8 +130,10 @@ class InfoClient extends AbstractStructBase
     }
 
     /**
-     * Set montant value
+     * Set montant value.
+     *
      * @param float $montant
+     *
      * @return InfoClient
      */
     public function setMontant(?float $montant = null): self
@@ -148,8 +148,7 @@ class InfoClient extends AbstractStructBase
     }
 
     /**
-     * Get refEsdClient value
-     * @return string|null
+     * Get refEsdClient value.
      */
     public function getRefEsdClient(): ?string
     {
@@ -157,8 +156,10 @@ class InfoClient extends AbstractStructBase
     }
 
     /**
-     * Set refEsdClient value
+     * Set refEsdClient value.
+     *
      * @param string $refEsdClient
+     *
      * @return InfoClient
      */
     public function setRefEsdClient(?string $refEsdClient = null): self
@@ -173,8 +174,7 @@ class InfoClient extends AbstractStructBase
     }
 
     /**
-     * Get service value
-     * @return string|null
+     * Get service value.
      */
     public function getService(): ?string
     {
@@ -182,8 +182,10 @@ class InfoClient extends AbstractStructBase
     }
 
     /**
-     * Set service value
+     * Set service value.
+     *
      * @param string $service
+     *
      * @return InfoClient
      */
     public function setService(?string $service = null): self

@@ -10,102 +10,92 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for creerEnlevementNational StructType
  * Meta information extracted from the WSDL
- * - type: tns:creerEnlevementNational
- * @subpackage Structs
+ * - type: tns:creerEnlevementNational.
  */
 class CreerEnlevementNational extends AbstractStructBase
 {
     /**
      * The headerValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var HeaderValue|null
+     * - minOccurs: 0.
      */
     protected ?HeaderValue $headerValue = null;
     /**
      * The password
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $password = null;
     /**
      * The datePassage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $datePassage = null;
     /**
      * The datePassageFermeture
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $datePassageFermeture = null;
     /**
      * The donneurDOrdre
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var DonneurDOrdre|null
+     * - minOccurs: 0.
      */
     protected ?DonneurDOrdre $donneurDOrdre = null;
     /**
      * The adresseEnlevement
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var AdresseEnlevementV3|null
+     * - minOccurs: 0.
      */
     protected ?AdresseEnlevementV3 $adresseEnlevement = null;
     /**
      * The particulartiesEsd
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ParticularitesEsd|null
+     * - minOccurs: 0.
      */
     protected ?ParticularitesEsd $particulartiesEsd = null;
     /**
      * The referenceEsdClient
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $referenceEsdClient = null;
     /**
      * The contenu
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $contenu = null;
     /**
      * The options
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var Options|null
+     * - minOccurs: 0.
      */
     protected ?Options $options = null;
     /**
      * The locale
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $locale = null;
 
     /**
-     * Constructor method for creerEnlevementNational
-     * @param HeaderValue $headerValue
-     * @param string $password
-     * @param string $datePassage
-     * @param string $datePassageFermeture
-     * @param DonneurDOrdre $donneurDOrdre
+     * Constructor method for creerEnlevementNational.
+     *
+     * @param HeaderValue         $headerValue
+     * @param string              $password
+     * @param string              $datePassage
+     * @param string              $datePassageFermeture
+     * @param DonneurDOrdre       $donneurDOrdre
      * @param AdresseEnlevementV3 $adresseEnlevement
-     * @param ParticularitesEsd $particulartiesEsd
-     * @param string $referenceEsdClient
-     * @param string $contenu
-     * @param Options $options
-     * @param string $locale
+     * @param ParticularitesEsd   $particulartiesEsd
+     * @param string              $referenceEsdClient
+     * @param string              $contenu
+     * @param Options             $options
+     * @param string              $locale
+     *
      * @uses CreerEnlevementNational::setHeaderValue()
      * @uses CreerEnlevementNational::setPassword()
      * @uses CreerEnlevementNational::setDatePassage()
@@ -131,12 +121,12 @@ class CreerEnlevementNational extends AbstractStructBase
             ->setReferenceEsdClient($referenceEsdClient)
             ->setContenu($contenu)
             ->setOptions($options)
-            ->setLocale($locale);
+            ->setLocale($locale)
+        ;
     }
 
     /**
-     * Get headerValue value
-     * @return HeaderValue|null
+     * Get headerValue value.
      */
     public function getHeaderValue(): ?HeaderValue
     {
@@ -144,8 +134,10 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set headerValue value
+     * Set headerValue value.
+     *
      * @param HeaderValue $headerValue
+     *
      * @return CreerEnlevementNational
      */
     public function setHeaderValue(?HeaderValue $headerValue = null): self
@@ -156,8 +148,7 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Get password value
-     * @return string|null
+     * Get password value.
      */
     public function getPassword(): ?string
     {
@@ -165,8 +156,10 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set password value
+     * Set password value.
+     *
      * @param string $password
+     *
      * @return CreerEnlevementNational
      */
     public function setPassword(?string $password = null): self
@@ -181,8 +174,7 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Get datePassage value
-     * @return string|null
+     * Get datePassage value.
      */
     public function getDatePassage(): ?string
     {
@@ -190,8 +182,10 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set datePassage value
+     * Set datePassage value.
+     *
      * @param string $datePassage
+     *
      * @return CreerEnlevementNational
      */
     public function setDatePassage(?string $datePassage = null): self
@@ -206,8 +200,7 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Get datePassageFermeture value
-     * @return string|null
+     * Get datePassageFermeture value.
      */
     public function getDatePassageFermeture(): ?string
     {
@@ -215,8 +208,10 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set datePassageFermeture value
+     * Set datePassageFermeture value.
+     *
      * @param string $datePassageFermeture
+     *
      * @return CreerEnlevementNational
      */
     public function setDatePassageFermeture(?string $datePassageFermeture = null): self
@@ -231,8 +226,7 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Get donneurDOrdre value
-     * @return DonneurDOrdre|null
+     * Get donneurDOrdre value.
      */
     public function getDonneurDOrdre(): ?DonneurDOrdre
     {
@@ -240,8 +234,10 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set donneurDOrdre value
+     * Set donneurDOrdre value.
+     *
      * @param DonneurDOrdre $donneurDOrdre
+     *
      * @return CreerEnlevementNational
      */
     public function setDonneurDOrdre(?DonneurDOrdre $donneurDOrdre = null): self
@@ -252,8 +248,7 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Get adresseEnlevement value
-     * @return AdresseEnlevementV3|null
+     * Get adresseEnlevement value.
      */
     public function getAdresseEnlevement(): ?AdresseEnlevementV3
     {
@@ -261,8 +256,10 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set adresseEnlevement value
+     * Set adresseEnlevement value.
+     *
      * @param AdresseEnlevementV3 $adresseEnlevement
+     *
      * @return CreerEnlevementNational
      */
     public function setAdresseEnlevement(?AdresseEnlevementV3 $adresseEnlevement = null): self
@@ -273,8 +270,7 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Get particulartiesEsd value
-     * @return ParticularitesEsd|null
+     * Get particulartiesEsd value.
      */
     public function getParticulartiesEsd(): ?ParticularitesEsd
     {
@@ -282,8 +278,10 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set particulartiesEsd value
+     * Set particulartiesEsd value.
+     *
      * @param ParticularitesEsd $particulartiesEsd
+     *
      * @return CreerEnlevementNational
      */
     public function setParticulartiesEsd(?ParticularitesEsd $particulartiesEsd = null): self
@@ -294,8 +292,7 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Get referenceEsdClient value
-     * @return string|null
+     * Get referenceEsdClient value.
      */
     public function getReferenceEsdClient(): ?string
     {
@@ -303,8 +300,10 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set referenceEsdClient value
+     * Set referenceEsdClient value.
+     *
      * @param string $referenceEsdClient
+     *
      * @return CreerEnlevementNational
      */
     public function setReferenceEsdClient(?string $referenceEsdClient = null): self
@@ -319,8 +318,7 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Get contenu value
-     * @return string|null
+     * Get contenu value.
      */
     public function getContenu(): ?string
     {
@@ -328,8 +326,10 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set contenu value
+     * Set contenu value.
+     *
      * @param string $contenu
+     *
      * @return CreerEnlevementNational
      */
     public function setContenu(?string $contenu = null): self
@@ -344,8 +344,7 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Get options value
-     * @return Options|null
+     * Get options value.
      */
     public function getOptions(): ?Options
     {
@@ -353,8 +352,10 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set options value
+     * Set options value.
+     *
      * @param Options $options
+     *
      * @return CreerEnlevementNational
      */
     public function setOptions(?Options $options = null): self
@@ -365,8 +366,7 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Get locale value
-     * @return string|null
+     * Get locale value.
      */
     public function getLocale(): ?string
     {
@@ -374,8 +374,10 @@ class CreerEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set locale value
+     * Set locale value.
+     *
      * @param string $locale
+     *
      * @return CreerEnlevementNational
      */
     public function setLocale(?string $locale = null): self

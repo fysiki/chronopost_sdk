@@ -7,34 +7,32 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for esdWithRefClientValue StructType
- * @subpackage Structs
+ * This class stands for esdWithRefClientValue StructType.
  */
 class EsdWithRefClientValue extends EsdValue
 {
     /**
-     * The ltAImprimerParChronopost
-     * @var bool|null
+     * The ltAImprimerParChronopost.
      */
     protected ?bool $ltAImprimerParChronopost = null;
     /**
-     * The nombreDePassageMaximum
-     * @var int|null
+     * The nombreDePassageMaximum.
      */
     protected ?int $nombreDePassageMaximum = null;
     /**
      * The refEsdClient
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $refEsdClient = null;
 
     /**
-     * Constructor method for esdWithRefClientValue
-     * @param bool $ltAImprimerParChronopost
-     * @param int $nombreDePassageMaximum
+     * Constructor method for esdWithRefClientValue.
+     *
+     * @param bool   $ltAImprimerParChronopost
+     * @param int    $nombreDePassageMaximum
      * @param string $refEsdClient
+     *
      * @uses EsdWithRefClientValue::setLtAImprimerParChronopost()
      * @uses EsdWithRefClientValue::setNombreDePassageMaximum()
      * @uses EsdWithRefClientValue::setRefEsdClient()
@@ -44,12 +42,12 @@ class EsdWithRefClientValue extends EsdValue
         $this
             ->setLtAImprimerParChronopost($ltAImprimerParChronopost)
             ->setNombreDePassageMaximum($nombreDePassageMaximum)
-            ->setRefEsdClient($refEsdClient);
+            ->setRefEsdClient($refEsdClient)
+        ;
     }
 
     /**
-     * Get ltAImprimerParChronopost value
-     * @return bool|null
+     * Get ltAImprimerParChronopost value.
      */
     public function getLtAImprimerParChronopost(): ?bool
     {
@@ -57,8 +55,10 @@ class EsdWithRefClientValue extends EsdValue
     }
 
     /**
-     * Set ltAImprimerParChronopost value
+     * Set ltAImprimerParChronopost value.
+     *
      * @param bool $ltAImprimerParChronopost
+     *
      * @return EsdWithRefClientValue
      */
     public function setLtAImprimerParChronopost(?bool $ltAImprimerParChronopost = null): self
@@ -73,8 +73,7 @@ class EsdWithRefClientValue extends EsdValue
     }
 
     /**
-     * Get nombreDePassageMaximum value
-     * @return int|null
+     * Get nombreDePassageMaximum value.
      */
     public function getNombreDePassageMaximum(): ?int
     {
@@ -82,8 +81,10 @@ class EsdWithRefClientValue extends EsdValue
     }
 
     /**
-     * Set nombreDePassageMaximum value
+     * Set nombreDePassageMaximum value.
+     *
      * @param int $nombreDePassageMaximum
+     *
      * @return EsdWithRefClientValue
      */
     public function setNombreDePassageMaximum(?int $nombreDePassageMaximum = null): self
@@ -98,8 +99,7 @@ class EsdWithRefClientValue extends EsdValue
     }
 
     /**
-     * Get refEsdClient value
-     * @return string|null
+     * Get refEsdClient value.
      */
     public function getRefEsdClient(): ?string
     {
@@ -107,8 +107,10 @@ class EsdWithRefClientValue extends EsdValue
     }
 
     /**
-     * Set refEsdClient value
+     * Set refEsdClient value.
+     *
      * @param string $refEsdClient
+     *
      * @return EsdWithRefClientValue
      */
     public function setRefEsdClient(?string $refEsdClient = null): self

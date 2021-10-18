@@ -8,34 +8,32 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for resultAnnulerEnlevement StructType
- * @subpackage Structs
+ * This class stands for resultAnnulerEnlevement StructType.
  */
 class ResultAnnulerEnlevement extends AbstractStructBase
 {
     /**
-     * The codeErreur
-     * @var int|null
+     * The codeErreur.
      */
     protected ?int $codeErreur = null;
     /**
      * The errorMessage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $errorMessage = null;
     /**
-     * The statut
-     * @var Statut|null
+     * The statut.
      */
     protected ?Statut $statut = null;
 
     /**
-     * Constructor method for resultAnnulerEnlevement
-     * @param int $codeErreur
+     * Constructor method for resultAnnulerEnlevement.
+     *
+     * @param int    $codeErreur
      * @param string $errorMessage
      * @param Statut $statut
+     *
      * @uses ResultAnnulerEnlevement::setCodeErreur()
      * @uses ResultAnnulerEnlevement::setErrorMessage()
      * @uses ResultAnnulerEnlevement::setStatut()
@@ -45,12 +43,12 @@ class ResultAnnulerEnlevement extends AbstractStructBase
         $this
             ->setCodeErreur($codeErreur)
             ->setErrorMessage($errorMessage)
-            ->setStatut($statut);
+            ->setStatut($statut)
+        ;
     }
 
     /**
-     * Get codeErreur value
-     * @return int|null
+     * Get codeErreur value.
      */
     public function getCodeErreur(): ?int
     {
@@ -58,8 +56,10 @@ class ResultAnnulerEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set codeErreur value
+     * Set codeErreur value.
+     *
      * @param int $codeErreur
+     *
      * @return ResultAnnulerEnlevement
      */
     public function setCodeErreur(?int $codeErreur = null): self
@@ -74,8 +74,7 @@ class ResultAnnulerEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get errorMessage value
-     * @return string|null
+     * Get errorMessage value.
      */
     public function getErrorMessage(): ?string
     {
@@ -83,8 +82,10 @@ class ResultAnnulerEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set errorMessage value
+     * Set errorMessage value.
+     *
      * @param string $errorMessage
+     *
      * @return ResultAnnulerEnlevement
      */
     public function setErrorMessage(?string $errorMessage = null): self
@@ -99,8 +100,7 @@ class ResultAnnulerEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get statut value
-     * @return Statut|null
+     * Get statut value.
      */
     public function getStatut(): ?Statut
     {
@@ -108,8 +108,10 @@ class ResultAnnulerEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set statut value
+     * Set statut value.
+     *
      * @param Statut $statut
+     *
      * @return ResultAnnulerEnlevement
      */
     public function setStatut(?Statut $statut = null): self

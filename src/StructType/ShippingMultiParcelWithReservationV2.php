@@ -10,44 +10,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for shippingMultiParcelWithReservationV2 StructType
  * Meta information extracted from the WSDL
- * - type: tns:shippingMultiParcelWithReservationV2
- * @subpackage Structs
+ * - type: tns:shippingMultiParcelWithReservationV2.
  */
 class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
 {
     /**
      * The esdValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var EsdWithRefClientValue|null
+     * - minOccurs: 0.
      */
     protected ?EsdWithRefClientValue $esdValue = null;
     /**
      * The headerValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var HeaderValue|null
+     * - minOccurs: 0.
      */
     protected ?HeaderValue $headerValue = null;
     /**
      * The shipperValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ShipperValue|null
+     * - minOccurs: 0.
      */
     protected ?ShipperValue $shipperValue = null;
     /**
      * The customerValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var CustomerValue|null
+     * - minOccurs: 0.
      */
     protected ?CustomerValue $customerValue = null;
     /**
      * The recipientValue
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * - minOccurs: 0
+     * - minOccurs: 0.
+     *
      * @var RecipientValue[]
      */
     protected ?array $recipientValue = null;
@@ -55,7 +51,8 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
      * The refValue
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * - minOccurs: 0
+     * - minOccurs: 0.
+     *
      * @var RefValue[]
      */
     protected ?array $refValue = null;
@@ -63,74 +60,70 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
      * The skybillValue
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * - minOccurs: 0
+     * - minOccurs: 0.
+     *
      * @var SkybillWithDimensionsValueV2[]
      */
     protected ?array $skybillValue = null;
     /**
      * The skybillParamsValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var SkybillParamsValue|null
+     * - minOccurs: 0.
      */
     protected ?SkybillParamsValue $skybillParamsValue = null;
     /**
      * The password
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $password = null;
     /**
      * The modeRetour
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $modeRetour = null;
     /**
-     * The numberOfParcel
-     * @var int|null
+     * The numberOfParcel.
      */
     protected ?int $numberOfParcel = null;
     /**
      * The version
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $version = null;
     /**
      * The multiParcel
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $multiParcel = null;
     /**
      * The scheduledValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ScheduledValue|null
+     * - minOccurs: 0.
      */
     protected ?ScheduledValue $scheduledValue = null;
 
     /**
-     * Constructor method for shippingMultiParcelWithReservationV2
-     * @param EsdWithRefClientValue $esdValue
-     * @param HeaderValue $headerValue
-     * @param ShipperValue $shipperValue
-     * @param CustomerValue $customerValue
-     * @param RecipientValue[] $recipientValue
-     * @param RefValue[] $refValue
+     * Constructor method for shippingMultiParcelWithReservationV2.
+     *
+     * @param EsdWithRefClientValue          $esdValue
+     * @param HeaderValue                    $headerValue
+     * @param ShipperValue                   $shipperValue
+     * @param CustomerValue                  $customerValue
+     * @param RecipientValue[]               $recipientValue
+     * @param RefValue[]                     $refValue
      * @param SkybillWithDimensionsValueV2[] $skybillValue
-     * @param SkybillParamsValue $skybillParamsValue
-     * @param string $password
-     * @param string $modeRetour
-     * @param int $numberOfParcel
-     * @param string $version
-     * @param string $multiParcel
-     * @param ScheduledValue $scheduledValue
+     * @param SkybillParamsValue             $skybillParamsValue
+     * @param string                         $password
+     * @param string                         $modeRetour
+     * @param int                            $numberOfParcel
+     * @param string                         $version
+     * @param string                         $multiParcel
+     * @param ScheduledValue                 $scheduledValue
+     *
      * @uses ShippingMultiParcelWithReservationV2::setEsdValue()
      * @uses ShippingMultiParcelWithReservationV2::setHeaderValue()
      * @uses ShippingMultiParcelWithReservationV2::setShipperValue()
@@ -162,12 +155,12 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
             ->setNumberOfParcel($numberOfParcel)
             ->setVersion($version)
             ->setMultiParcel($multiParcel)
-            ->setScheduledValue($scheduledValue);
+            ->setScheduledValue($scheduledValue)
+        ;
     }
 
     /**
-     * Get esdValue value
-     * @return EsdWithRefClientValue|null
+     * Get esdValue value.
      */
     public function getEsdValue(): ?EsdWithRefClientValue
     {
@@ -175,8 +168,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set esdValue value
+     * Set esdValue value.
+     *
      * @param EsdWithRefClientValue $esdValue
+     *
      * @return ShippingMultiParcelWithReservationV2
      */
     public function setEsdValue(?EsdWithRefClientValue $esdValue = null): self
@@ -187,8 +182,7 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Get headerValue value
-     * @return HeaderValue|null
+     * Get headerValue value.
      */
     public function getHeaderValue(): ?HeaderValue
     {
@@ -196,8 +190,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set headerValue value
+     * Set headerValue value.
+     *
      * @param HeaderValue $headerValue
+     *
      * @return ShippingMultiParcelWithReservationV2
      */
     public function setHeaderValue(?HeaderValue $headerValue = null): self
@@ -208,8 +204,7 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Get shipperValue value
-     * @return ShipperValue|null
+     * Get shipperValue value.
      */
     public function getShipperValue(): ?ShipperValue
     {
@@ -217,8 +212,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set shipperValue value
+     * Set shipperValue value.
+     *
      * @param ShipperValue $shipperValue
+     *
      * @return ShippingMultiParcelWithReservationV2
      */
     public function setShipperValue(?ShipperValue $shipperValue = null): self
@@ -229,8 +226,7 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Get customerValue value
-     * @return CustomerValue|null
+     * Get customerValue value.
      */
     public function getCustomerValue(): ?CustomerValue
     {
@@ -238,8 +234,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set customerValue value
+     * Set customerValue value.
+     *
      * @param CustomerValue $customerValue
+     *
      * @return ShippingMultiParcelWithReservationV2
      */
     public function setCustomerValue(?CustomerValue $customerValue = null): self
@@ -250,7 +248,8 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Get recipientValue value
+     * Get recipientValue value.
+     *
      * @return RecipientValue[]
      */
     public function getRecipientValue(): ?array
@@ -260,8 +259,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
 
     /**
      * This method is responsible for validating the values passed to the setRecipientValue method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setRecipientValue method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setRecipientValue method.
+     *
      * @param array $values
+     *
      * @return string A non-empty message if the values does not match the validation rules
      */
     public static function validateRecipientValueForArrayConstraintsFromSetRecipientValue(?array $values = []): string
@@ -286,10 +287,13 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set recipientValue value
+     * Set recipientValue value.
+     *
      * @param RecipientValue[] $recipientValue
-     * @return ShippingMultiParcelWithReservationV2
+     *
      * @throws InvalidArgumentException
+     *
+     * @return ShippingMultiParcelWithReservationV2
      */
     public function setRecipientValue(?array $recipientValue = null): self
     {
@@ -303,10 +307,11 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Add item to recipientValue value
-     * @param RecipientValue $item
-     * @return ShippingMultiParcelWithReservationV2
+     * Add item to recipientValue value.
+     *
      * @throws InvalidArgumentException
+     *
+     * @return ShippingMultiParcelWithReservationV2
      */
     public function addToRecipientValue(RecipientValue $item): self
     {
@@ -320,7 +325,8 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Get refValue value
+     * Get refValue value.
+     *
      * @return RefValue[]
      */
     public function getRefValue(): ?array
@@ -330,8 +336,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
 
     /**
      * This method is responsible for validating the values passed to the setRefValue method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setRefValue method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setRefValue method.
+     *
      * @param array $values
+     *
      * @return string A non-empty message if the values does not match the validation rules
      */
     public static function validateRefValueForArrayConstraintsFromSetRefValue(?array $values = []): string
@@ -356,10 +364,13 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set refValue value
+     * Set refValue value.
+     *
      * @param RefValue[] $refValue
-     * @return ShippingMultiParcelWithReservationV2
+     *
      * @throws InvalidArgumentException
+     *
+     * @return ShippingMultiParcelWithReservationV2
      */
     public function setRefValue(?array $refValue = null): self
     {
@@ -373,10 +384,11 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Add item to refValue value
-     * @param RefValue $item
-     * @return ShippingMultiParcelWithReservationV2
+     * Add item to refValue value.
+     *
      * @throws InvalidArgumentException
+     *
+     * @return ShippingMultiParcelWithReservationV2
      */
     public function addToRefValue(RefValue $item): self
     {
@@ -390,7 +402,8 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Get skybillValue value
+     * Get skybillValue value.
+     *
      * @return SkybillWithDimensionsValueV2[]
      */
     public function getSkybillValue(): ?array
@@ -400,8 +413,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
 
     /**
      * This method is responsible for validating the values passed to the setSkybillValue method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setSkybillValue method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setSkybillValue method.
+     *
      * @param array $values
+     *
      * @return string A non-empty message if the values does not match the validation rules
      */
     public static function validateSkybillValueForArrayConstraintsFromSetSkybillValue(?array $values = []): string
@@ -426,10 +441,13 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set skybillValue value
+     * Set skybillValue value.
+     *
      * @param SkybillWithDimensionsValueV2[] $skybillValue
-     * @return ShippingMultiParcelWithReservationV2
+     *
      * @throws InvalidArgumentException
+     *
+     * @return ShippingMultiParcelWithReservationV2
      */
     public function setSkybillValue(?array $skybillValue = null): self
     {
@@ -443,10 +461,11 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Add item to skybillValue value
-     * @param SkybillWithDimensionsValueV2 $item
-     * @return ShippingMultiParcelWithReservationV2
+     * Add item to skybillValue value.
+     *
      * @throws InvalidArgumentException
+     *
+     * @return ShippingMultiParcelWithReservationV2
      */
     public function addToSkybillValue(SkybillWithDimensionsValueV2 $item): self
     {
@@ -460,8 +479,7 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Get skybillParamsValue value
-     * @return SkybillParamsValue|null
+     * Get skybillParamsValue value.
      */
     public function getSkybillParamsValue(): ?SkybillParamsValue
     {
@@ -469,8 +487,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set skybillParamsValue value
+     * Set skybillParamsValue value.
+     *
      * @param SkybillParamsValue $skybillParamsValue
+     *
      * @return ShippingMultiParcelWithReservationV2
      */
     public function setSkybillParamsValue(?SkybillParamsValue $skybillParamsValue = null): self
@@ -481,8 +501,7 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Get password value
-     * @return string|null
+     * Get password value.
      */
     public function getPassword(): ?string
     {
@@ -490,8 +509,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set password value
+     * Set password value.
+     *
      * @param string $password
+     *
      * @return ShippingMultiParcelWithReservationV2
      */
     public function setPassword(?string $password = null): self
@@ -506,8 +527,7 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Get modeRetour value
-     * @return string|null
+     * Get modeRetour value.
      */
     public function getModeRetour(): ?string
     {
@@ -515,8 +535,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set modeRetour value
+     * Set modeRetour value.
+     *
      * @param string $modeRetour
+     *
      * @return ShippingMultiParcelWithReservationV2
      */
     public function setModeRetour(?string $modeRetour = null): self
@@ -531,8 +553,7 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Get numberOfParcel value
-     * @return int|null
+     * Get numberOfParcel value.
      */
     public function getNumberOfParcel(): ?int
     {
@@ -540,8 +561,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set numberOfParcel value
+     * Set numberOfParcel value.
+     *
      * @param int $numberOfParcel
+     *
      * @return ShippingMultiParcelWithReservationV2
      */
     public function setNumberOfParcel(?int $numberOfParcel = null): self
@@ -556,8 +579,7 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Get version value
-     * @return string|null
+     * Get version value.
      */
     public function getVersion(): ?string
     {
@@ -565,8 +587,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set version value
+     * Set version value.
+     *
      * @param string $version
+     *
      * @return ShippingMultiParcelWithReservationV2
      */
     public function setVersion(?string $version = null): self
@@ -581,8 +605,7 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Get multiParcel value
-     * @return string|null
+     * Get multiParcel value.
      */
     public function getMultiParcel(): ?string
     {
@@ -590,8 +613,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set multiParcel value
+     * Set multiParcel value.
+     *
      * @param string $multiParcel
+     *
      * @return ShippingMultiParcelWithReservationV2
      */
     public function setMultiParcel(?string $multiParcel = null): self
@@ -606,8 +631,7 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Get scheduledValue value
-     * @return ScheduledValue|null
+     * Get scheduledValue value.
      */
     public function getScheduledValue(): ?ScheduledValue
     {
@@ -615,8 +639,10 @@ class ShippingMultiParcelWithReservationV2 extends AbstractStructBase
     }
 
     /**
-     * Set scheduledValue value
+     * Set scheduledValue value.
+     *
      * @param ScheduledValue $scheduledValue
+     *
      * @return ShippingMultiParcelWithReservationV2
      */
     public function setScheduledValue(?ScheduledValue $scheduledValue = null): self

@@ -8,110 +8,96 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for shipperValue StructType
- * @subpackage Structs
+ * This class stands for shipperValue StructType.
  */
 class ShipperValue extends AbstractStructBase
 {
     /**
      * The shipperAdress1
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperAdress1 = null;
     /**
      * The shipperAdress2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperAdress2 = null;
     /**
      * The shipperCity
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperCity = null;
     /**
      * The shipperCivility
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperCivility = null;
     /**
      * The shipperContactName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperContactName = null;
     /**
      * The shipperCountry
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperCountry = null;
     /**
      * The shipperCountryName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperCountryName = null;
     /**
      * The shipperEmail
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperEmail = null;
     /**
      * The shipperMobilePhone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperMobilePhone = null;
     /**
      * The shipperName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperName = null;
     /**
      * The shipperName2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperName2 = null;
     /**
      * The shipperPhone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperPhone = null;
     /**
-     * The shipperPreAlert
-     * @var int|null
+     * The shipperPreAlert.
      */
     protected ?int $shipperPreAlert = null;
     /**
      * The shipperZipCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperZipCode = null;
 
     /**
-     * Constructor method for shipperValue
+     * Constructor method for shipperValue.
+     *
      * @param string $shipperAdress1
      * @param string $shipperAdress2
      * @param string $shipperCity
@@ -124,8 +110,9 @@ class ShipperValue extends AbstractStructBase
      * @param string $shipperName
      * @param string $shipperName2
      * @param string $shipperPhone
-     * @param int $shipperPreAlert
+     * @param int    $shipperPreAlert
      * @param string $shipperZipCode
+     *
      * @uses ShipperValue::setShipperAdress1()
      * @uses ShipperValue::setShipperAdress2()
      * @uses ShipperValue::setShipperCity()
@@ -157,12 +144,12 @@ class ShipperValue extends AbstractStructBase
             ->setShipperName2($shipperName2)
             ->setShipperPhone($shipperPhone)
             ->setShipperPreAlert($shipperPreAlert)
-            ->setShipperZipCode($shipperZipCode);
+            ->setShipperZipCode($shipperZipCode)
+        ;
     }
 
     /**
-     * Get shipperAdress1 value
-     * @return string|null
+     * Get shipperAdress1 value.
      */
     public function getShipperAdress1(): ?string
     {
@@ -170,8 +157,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperAdress1 value
+     * Set shipperAdress1 value.
+     *
      * @param string $shipperAdress1
+     *
      * @return ShipperValue
      */
     public function setShipperAdress1(?string $shipperAdress1 = null): self
@@ -186,8 +175,7 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperAdress2 value
-     * @return string|null
+     * Get shipperAdress2 value.
      */
     public function getShipperAdress2(): ?string
     {
@@ -195,8 +183,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperAdress2 value
+     * Set shipperAdress2 value.
+     *
      * @param string $shipperAdress2
+     *
      * @return ShipperValue
      */
     public function setShipperAdress2(?string $shipperAdress2 = null): self
@@ -211,8 +201,7 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperCity value
-     * @return string|null
+     * Get shipperCity value.
      */
     public function getShipperCity(): ?string
     {
@@ -220,8 +209,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperCity value
+     * Set shipperCity value.
+     *
      * @param string $shipperCity
+     *
      * @return ShipperValue
      */
     public function setShipperCity(?string $shipperCity = null): self
@@ -236,8 +227,7 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperCivility value
-     * @return string|null
+     * Get shipperCivility value.
      */
     public function getShipperCivility(): ?string
     {
@@ -245,8 +235,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperCivility value
+     * Set shipperCivility value.
+     *
      * @param string $shipperCivility
+     *
      * @return ShipperValue
      */
     public function setShipperCivility(?string $shipperCivility = null): self
@@ -261,8 +253,7 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperContactName value
-     * @return string|null
+     * Get shipperContactName value.
      */
     public function getShipperContactName(): ?string
     {
@@ -270,8 +261,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperContactName value
+     * Set shipperContactName value.
+     *
      * @param string $shipperContactName
+     *
      * @return ShipperValue
      */
     public function setShipperContactName(?string $shipperContactName = null): self
@@ -286,8 +279,7 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperCountry value
-     * @return string|null
+     * Get shipperCountry value.
      */
     public function getShipperCountry(): ?string
     {
@@ -295,8 +287,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperCountry value
+     * Set shipperCountry value.
+     *
      * @param string $shipperCountry
+     *
      * @return ShipperValue
      */
     public function setShipperCountry(?string $shipperCountry = null): self
@@ -311,8 +305,7 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperCountryName value
-     * @return string|null
+     * Get shipperCountryName value.
      */
     public function getShipperCountryName(): ?string
     {
@@ -320,8 +313,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperCountryName value
+     * Set shipperCountryName value.
+     *
      * @param string $shipperCountryName
+     *
      * @return ShipperValue
      */
     public function setShipperCountryName(?string $shipperCountryName = null): self
@@ -336,8 +331,7 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperEmail value
-     * @return string|null
+     * Get shipperEmail value.
      */
     public function getShipperEmail(): ?string
     {
@@ -345,8 +339,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperEmail value
+     * Set shipperEmail value.
+     *
      * @param string $shipperEmail
+     *
      * @return ShipperValue
      */
     public function setShipperEmail(?string $shipperEmail = null): self
@@ -361,8 +357,7 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperMobilePhone value
-     * @return string|null
+     * Get shipperMobilePhone value.
      */
     public function getShipperMobilePhone(): ?string
     {
@@ -370,8 +365,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperMobilePhone value
+     * Set shipperMobilePhone value.
+     *
      * @param string $shipperMobilePhone
+     *
      * @return ShipperValue
      */
     public function setShipperMobilePhone(?string $shipperMobilePhone = null): self
@@ -386,8 +383,7 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperName value
-     * @return string|null
+     * Get shipperName value.
      */
     public function getShipperName(): ?string
     {
@@ -395,8 +391,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperName value
+     * Set shipperName value.
+     *
      * @param string $shipperName
+     *
      * @return ShipperValue
      */
     public function setShipperName(?string $shipperName = null): self
@@ -411,8 +409,7 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperName2 value
-     * @return string|null
+     * Get shipperName2 value.
      */
     public function getShipperName2(): ?string
     {
@@ -420,8 +417,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperName2 value
+     * Set shipperName2 value.
+     *
      * @param string $shipperName2
+     *
      * @return ShipperValue
      */
     public function setShipperName2(?string $shipperName2 = null): self
@@ -436,8 +435,7 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperPhone value
-     * @return string|null
+     * Get shipperPhone value.
      */
     public function getShipperPhone(): ?string
     {
@@ -445,8 +443,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperPhone value
+     * Set shipperPhone value.
+     *
      * @param string $shipperPhone
+     *
      * @return ShipperValue
      */
     public function setShipperPhone(?string $shipperPhone = null): self
@@ -461,8 +461,7 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperPreAlert value
-     * @return int|null
+     * Get shipperPreAlert value.
      */
     public function getShipperPreAlert(): ?int
     {
@@ -470,8 +469,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperPreAlert value
+     * Set shipperPreAlert value.
+     *
      * @param int $shipperPreAlert
+     *
      * @return ShipperValue
      */
     public function setShipperPreAlert(?int $shipperPreAlert = null): self
@@ -486,8 +487,7 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperZipCode value
-     * @return string|null
+     * Get shipperZipCode value.
      */
     public function getShipperZipCode(): ?string
     {
@@ -495,8 +495,10 @@ class ShipperValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperZipCode value
+     * Set shipperZipCode value.
+     *
      * @param string $shipperZipCode
+     *
      * @return ShipperValue
      */
     public function setShipperZipCode(?string $shipperZipCode = null): self

@@ -8,8 +8,7 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for statut StructType
- * @subpackage Structs
+ * This class stands for statut StructType.
  */
 class Statut extends AbstractStructBase
 {
@@ -17,24 +16,29 @@ class Statut extends AbstractStructBase
      * The entry
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * - minOccurs: 0
+     * - minOccurs: 0.
+     *
      * @var Entry[]
      */
     protected ?array $entry = null;
 
     /**
-     * Constructor method for statut
+     * Constructor method for statut.
+     *
      * @param Entry[] $entry
+     *
      * @uses Statut::setEntry()
      */
     public function __construct(?array $entry = null)
     {
         $this
-            ->setEntry($entry);
+            ->setEntry($entry)
+        ;
     }
 
     /**
-     * Get entry value
+     * Get entry value.
+     *
      * @return Entry[]
      */
     public function getEntry(): ?array
@@ -44,8 +48,10 @@ class Statut extends AbstractStructBase
 
     /**
      * This method is responsible for validating the values passed to the setEntry method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setEntry method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setEntry method.
+     *
      * @param array $values
+     *
      * @return string A non-empty message if the values does not match the validation rules
      */
     public static function validateEntryForArrayConstraintsFromSetEntry(?array $values = []): string
@@ -70,10 +76,13 @@ class Statut extends AbstractStructBase
     }
 
     /**
-     * Set entry value
+     * Set entry value.
+     *
      * @param Entry[] $entry
-     * @return Statut
+     *
      * @throws InvalidArgumentException
+     *
+     * @return Statut
      */
     public function setEntry(?array $entry = null): self
     {
@@ -87,10 +96,11 @@ class Statut extends AbstractStructBase
     }
 
     /**
-     * Add item to entry value
-     * @param Entry $item
-     * @return Statut
+     * Add item to entry value.
+     *
      * @throws InvalidArgumentException
+     *
+     * @return Statut
      */
     public function addToEntry(Entry $item): self
     {

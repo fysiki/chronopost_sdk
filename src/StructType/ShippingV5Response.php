@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for shippingV5Response StructType
  * Meta information extracted from the WSDL
- * - type: tns:shippingV5Response
- * @subpackage Structs
+ * - type: tns:shippingV5Response.
  */
 class ShippingV5Response extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultExpeditionValue|null
+     * - minOccurs: 0.
      */
     protected ?ResultExpeditionValue $return = null;
 
     /**
-     * Constructor method for shippingV5Response
+     * Constructor method for shippingV5Response.
+     *
      * @param ResultExpeditionValue $return
+     *
      * @uses ShippingV5Response::setReturn()
      */
     public function __construct(?ResultExpeditionValue $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultExpeditionValue|null
+     * Get return value.
      */
     public function getReturn(): ?ResultExpeditionValue
     {
@@ -43,8 +43,10 @@ class ShippingV5Response extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultExpeditionValue $return
+     *
      * @return ShippingV5Response
      */
     public function setReturn(?ResultExpeditionValue $return = null): self

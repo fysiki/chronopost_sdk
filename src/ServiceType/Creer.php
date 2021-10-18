@@ -12,15 +12,15 @@ use StructType\CreerEnlevementNationalResponse;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
 /**
- * This class stands for Creer ServiceType
- * @subpackage Services
+ * This class stands for Creer ServiceType.
  */
 class Creer extends AbstractSoapClientBase
 {
     /**
-     * Method to call the operation originally named creerEnlevementNational
-     * @param CreerEnlevementNational $parameters
-     * @return CreerEnlevementNationalResponse|bool
+     * Method to call the operation originally named creerEnlevementNational.
+     *
+     * @return bool|CreerEnlevementNationalResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -41,9 +41,10 @@ class Creer extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named creerEnlevementEurope
-     * @param CreerEnlevementEurope $parameters
-     * @return CreerEnlevementEuropeResponse|bool
+     * Method to call the operation originally named creerEnlevementEurope.
+     *
+     * @return bool|CreerEnlevementEuropeResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -64,8 +65,10 @@ class Creer extends AbstractSoapClientBase
     }
 
     /**
-     * Returns the result
+     * Returns the result.
+     *
      * @return CreerEnlevementEuropeResponse|CreerEnlevementNationalResponse
+     *
      * @see AbstractSoapClientBase::getResult()
      */
     public function getResult()

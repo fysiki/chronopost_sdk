@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for shippingWithESDOnlyV2Response StructType
  * Meta information extracted from the WSDL
- * - type: tns:shippingWithESDOnlyV2Response
- * @subpackage Structs
+ * - type: tns:shippingWithESDOnlyV2Response.
  */
 class ShippingWithESDOnlyV2Response extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultReservationExpeditionValue|null
+     * - minOccurs: 0.
      */
     protected ?ResultReservationExpeditionValue $return = null;
 
     /**
-     * Constructor method for shippingWithESDOnlyV2Response
+     * Constructor method for shippingWithESDOnlyV2Response.
+     *
      * @param ResultReservationExpeditionValue $return
+     *
      * @uses ShippingWithESDOnlyV2Response::setReturn()
      */
     public function __construct(?ResultReservationExpeditionValue $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultReservationExpeditionValue|null
+     * Get return value.
      */
     public function getReturn(): ?ResultReservationExpeditionValue
     {
@@ -43,8 +43,10 @@ class ShippingWithESDOnlyV2Response extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultReservationExpeditionValue $return
+     *
      * @return ShippingWithESDOnlyV2Response
      */
     public function setReturn(?ResultReservationExpeditionValue $return = null): self

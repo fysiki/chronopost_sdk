@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for getRoutingResponse StructType
  * Meta information extracted from the WSDL
- * - type: tns:getRoutingResponse
- * @subpackage Structs
+ * - type: tns:getRoutingResponse.
  */
 class GetRoutingResponse extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultGetRouting|null
+     * - minOccurs: 0.
      */
     protected ?ResultGetRouting $return = null;
 
     /**
-     * Constructor method for getRoutingResponse
+     * Constructor method for getRoutingResponse.
+     *
      * @param ResultGetRouting $return
+     *
      * @uses GetRoutingResponse::setReturn()
      */
     public function __construct(?ResultGetRouting $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultGetRouting|null
+     * Get return value.
      */
     public function getReturn(): ?ResultGetRouting
     {
@@ -43,8 +43,10 @@ class GetRoutingResponse extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultGetRouting $return
+     *
      * @return GetRoutingResponse
      */
     public function setReturn(?ResultGetRouting $return = null): self

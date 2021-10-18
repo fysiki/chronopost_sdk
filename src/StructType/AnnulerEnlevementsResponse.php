@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for annulerEnlevementsResponse StructType
  * Meta information extracted from the WSDL
- * - type: tns:annulerEnlevementsResponse
- * @subpackage Structs
+ * - type: tns:annulerEnlevementsResponse.
  */
 class AnnulerEnlevementsResponse extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultAnnulerEnlevement|null
+     * - minOccurs: 0.
      */
     protected ?ResultAnnulerEnlevement $return = null;
 
     /**
-     * Constructor method for annulerEnlevementsResponse
+     * Constructor method for annulerEnlevementsResponse.
+     *
      * @param ResultAnnulerEnlevement $return
+     *
      * @uses AnnulerEnlevementsResponse::setReturn()
      */
     public function __construct(?ResultAnnulerEnlevement $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultAnnulerEnlevement|null
+     * Get return value.
      */
     public function getReturn(): ?ResultAnnulerEnlevement
     {
@@ -43,8 +43,10 @@ class AnnulerEnlevementsResponse extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultAnnulerEnlevement $return
+     *
      * @return AnnulerEnlevementsResponse
      */
     public function setReturn(?ResultAnnulerEnlevement $return = null): self

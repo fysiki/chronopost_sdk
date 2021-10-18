@@ -8,28 +8,27 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for particularitesColisDpd StructType
- * @subpackage Structs
+ * This class stands for particularitesColisDpd StructType.
  */
 class ParticularitesColisDpd extends AbstractStructBase
 {
     /**
      * The infoDouanieres
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var InfoDouanieres|null
+     * - minOccurs: 0.
      */
     protected ?InfoDouanieres $infoDouanieres = null;
     /**
-     * The valeurAssuree
-     * @var float|null
+     * The valeurAssuree.
      */
     protected ?float $valeurAssuree = null;
 
     /**
-     * Constructor method for particularitesColisDpd
+     * Constructor method for particularitesColisDpd.
+     *
      * @param InfoDouanieres $infoDouanieres
-     * @param float $valeurAssuree
+     * @param float          $valeurAssuree
+     *
      * @uses ParticularitesColisDpd::setInfoDouanieres()
      * @uses ParticularitesColisDpd::setValeurAssuree()
      */
@@ -37,12 +36,12 @@ class ParticularitesColisDpd extends AbstractStructBase
     {
         $this
             ->setInfoDouanieres($infoDouanieres)
-            ->setValeurAssuree($valeurAssuree);
+            ->setValeurAssuree($valeurAssuree)
+        ;
     }
 
     /**
-     * Get infoDouanieres value
-     * @return InfoDouanieres|null
+     * Get infoDouanieres value.
      */
     public function getInfoDouanieres(): ?InfoDouanieres
     {
@@ -50,8 +49,10 @@ class ParticularitesColisDpd extends AbstractStructBase
     }
 
     /**
-     * Set infoDouanieres value
+     * Set infoDouanieres value.
+     *
      * @param InfoDouanieres $infoDouanieres
+     *
      * @return ParticularitesColisDpd
      */
     public function setInfoDouanieres(?InfoDouanieres $infoDouanieres = null): self
@@ -62,8 +63,7 @@ class ParticularitesColisDpd extends AbstractStructBase
     }
 
     /**
-     * Get valeurAssuree value
-     * @return float|null
+     * Get valeurAssuree value.
      */
     public function getValeurAssuree(): ?float
     {
@@ -71,8 +71,10 @@ class ParticularitesColisDpd extends AbstractStructBase
     }
 
     /**
-     * Set valeurAssuree value
+     * Set valeurAssuree value.
+     *
      * @param float $valeurAssuree
+     *
      * @return ParticularitesColisDpd
      */
     public function setValeurAssuree(?float $valeurAssuree = null): self

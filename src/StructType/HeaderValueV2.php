@@ -7,33 +7,33 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for headerValueV2 StructType
- * @subpackage Structs
+ * This class stands for headerValueV2 StructType.
  */
 class HeaderValueV2 extends HeaderValue
 {
     /**
      * The iv4OrderId
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $iv4OrderId = null;
 
     /**
-     * Constructor method for headerValueV2
+     * Constructor method for headerValueV2.
+     *
      * @param string $iv4OrderId
+     *
      * @uses HeaderValueV2::setIv4OrderId()
      */
     public function __construct(?string $iv4OrderId = null)
     {
         $this
-            ->setIv4OrderId($iv4OrderId);
+            ->setIv4OrderId($iv4OrderId)
+        ;
     }
 
     /**
-     * Get iv4OrderId value
-     * @return string|null
+     * Get iv4OrderId value.
      */
     public function getIv4OrderId(): ?string
     {
@@ -41,8 +41,10 @@ class HeaderValueV2 extends HeaderValue
     }
 
     /**
-     * Set iv4OrderId value
+     * Set iv4OrderId value.
+     *
      * @param string $iv4OrderId
+     *
      * @return HeaderValueV2
      */
     public function setIv4OrderId(?string $iv4OrderId = null): self

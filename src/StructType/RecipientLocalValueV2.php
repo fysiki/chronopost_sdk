@@ -7,30 +7,29 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for recipientLocalValueV2 StructType
- * @subpackage Structs
+ * This class stands for recipientLocalValueV2 StructType.
  */
 class RecipientLocalValueV2 extends RecipientLocalValue
 {
     /**
      * The recipientType
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientType = null;
     /**
      * The thirdParty
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $thirdParty = null;
 
     /**
-     * Constructor method for recipientLocalValueV2
+     * Constructor method for recipientLocalValueV2.
+     *
      * @param string $recipientType
      * @param string $thirdParty
+     *
      * @uses RecipientLocalValueV2::setRecipientType()
      * @uses RecipientLocalValueV2::setThirdParty()
      */
@@ -38,12 +37,12 @@ class RecipientLocalValueV2 extends RecipientLocalValue
     {
         $this
             ->setRecipientType($recipientType)
-            ->setThirdParty($thirdParty);
+            ->setThirdParty($thirdParty)
+        ;
     }
 
     /**
-     * Get recipientType value
-     * @return string|null
+     * Get recipientType value.
      */
     public function getRecipientType(): ?string
     {
@@ -51,8 +50,10 @@ class RecipientLocalValueV2 extends RecipientLocalValue
     }
 
     /**
-     * Set recipientType value
+     * Set recipientType value.
+     *
      * @param string $recipientType
+     *
      * @return RecipientLocalValueV2
      */
     public function setRecipientType(?string $recipientType = null): self
@@ -67,8 +68,7 @@ class RecipientLocalValueV2 extends RecipientLocalValue
     }
 
     /**
-     * Get thirdParty value
-     * @return string|null
+     * Get thirdParty value.
      */
     public function getThirdParty(): ?string
     {
@@ -76,8 +76,10 @@ class RecipientLocalValueV2 extends RecipientLocalValue
     }
 
     /**
-     * Set thirdParty value
+     * Set thirdParty value.
+     *
      * @param string $thirdParty
+     *
      * @return RecipientLocalValueV2
      */
     public function setThirdParty(?string $thirdParty = null): self

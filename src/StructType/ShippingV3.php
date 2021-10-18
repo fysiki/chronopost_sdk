@@ -10,102 +10,92 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for shippingV3 StructType
  * Meta information extracted from the WSDL
- * - type: tns:shippingV3
- * @subpackage Structs
+ * - type: tns:shippingV3.
  */
 class ShippingV3 extends AbstractStructBase
 {
     /**
      * The esdValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var EsdValue|null
+     * - minOccurs: 0.
      */
     protected ?EsdValue $esdValue = null;
     /**
      * The headerValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var HeaderValue|null
+     * - minOccurs: 0.
      */
     protected ?HeaderValue $headerValue = null;
     /**
      * The shipperValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ShipperValue|null
+     * - minOccurs: 0.
      */
     protected ?ShipperValue $shipperValue = null;
     /**
      * The customerValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var CustomerValue|null
+     * - minOccurs: 0.
      */
     protected ?CustomerValue $customerValue = null;
     /**
      * The recipientValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var RecipientValue|null
+     * - minOccurs: 0.
      */
     protected ?RecipientValue $recipientValue = null;
     /**
      * The refValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var RefValue|null
+     * - minOccurs: 0.
      */
     protected ?RefValue $refValue = null;
     /**
      * The skybillValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var SkybillValue|null
+     * - minOccurs: 0.
      */
     protected ?SkybillValue $skybillValue = null;
     /**
      * The skybillParamsValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var SkybillParamsValue|null
+     * - minOccurs: 0.
      */
     protected ?SkybillParamsValue $skybillParamsValue = null;
     /**
      * The password
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $password = null;
     /**
      * The version
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $version = null;
     /**
      * The scheduledValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ScheduledValue|null
+     * - minOccurs: 0.
      */
     protected ?ScheduledValue $scheduledValue = null;
 
     /**
-     * Constructor method for shippingV3
-     * @param EsdValue $esdValue
-     * @param HeaderValue $headerValue
-     * @param ShipperValue $shipperValue
-     * @param CustomerValue $customerValue
-     * @param RecipientValue $recipientValue
-     * @param RefValue $refValue
-     * @param SkybillValue $skybillValue
+     * Constructor method for shippingV3.
+     *
+     * @param EsdValue           $esdValue
+     * @param HeaderValue        $headerValue
+     * @param ShipperValue       $shipperValue
+     * @param CustomerValue      $customerValue
+     * @param RecipientValue     $recipientValue
+     * @param RefValue           $refValue
+     * @param SkybillValue       $skybillValue
      * @param SkybillParamsValue $skybillParamsValue
-     * @param string $password
-     * @param string $version
-     * @param ScheduledValue $scheduledValue
+     * @param string             $password
+     * @param string             $version
+     * @param ScheduledValue     $scheduledValue
+     *
      * @uses ShippingV3::setEsdValue()
      * @uses ShippingV3::setHeaderValue()
      * @uses ShippingV3::setShipperValue()
@@ -131,12 +121,12 @@ class ShippingV3 extends AbstractStructBase
             ->setSkybillParamsValue($skybillParamsValue)
             ->setPassword($password)
             ->setVersion($version)
-            ->setScheduledValue($scheduledValue);
+            ->setScheduledValue($scheduledValue)
+        ;
     }
 
     /**
-     * Get esdValue value
-     * @return EsdValue|null
+     * Get esdValue value.
      */
     public function getEsdValue(): ?EsdValue
     {
@@ -144,8 +134,10 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Set esdValue value
+     * Set esdValue value.
+     *
      * @param EsdValue $esdValue
+     *
      * @return ShippingV3
      */
     public function setEsdValue(?EsdValue $esdValue = null): self
@@ -156,8 +148,7 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Get headerValue value
-     * @return HeaderValue|null
+     * Get headerValue value.
      */
     public function getHeaderValue(): ?HeaderValue
     {
@@ -165,8 +156,10 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Set headerValue value
+     * Set headerValue value.
+     *
      * @param HeaderValue $headerValue
+     *
      * @return ShippingV3
      */
     public function setHeaderValue(?HeaderValue $headerValue = null): self
@@ -177,8 +170,7 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Get shipperValue value
-     * @return ShipperValue|null
+     * Get shipperValue value.
      */
     public function getShipperValue(): ?ShipperValue
     {
@@ -186,8 +178,10 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Set shipperValue value
+     * Set shipperValue value.
+     *
      * @param ShipperValue $shipperValue
+     *
      * @return ShippingV3
      */
     public function setShipperValue(?ShipperValue $shipperValue = null): self
@@ -198,8 +192,7 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Get customerValue value
-     * @return CustomerValue|null
+     * Get customerValue value.
      */
     public function getCustomerValue(): ?CustomerValue
     {
@@ -207,8 +200,10 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Set customerValue value
+     * Set customerValue value.
+     *
      * @param CustomerValue $customerValue
+     *
      * @return ShippingV3
      */
     public function setCustomerValue(?CustomerValue $customerValue = null): self
@@ -219,8 +214,7 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Get recipientValue value
-     * @return RecipientValue|null
+     * Get recipientValue value.
      */
     public function getRecipientValue(): ?RecipientValue
     {
@@ -228,8 +222,10 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Set recipientValue value
+     * Set recipientValue value.
+     *
      * @param RecipientValue $recipientValue
+     *
      * @return ShippingV3
      */
     public function setRecipientValue(?RecipientValue $recipientValue = null): self
@@ -240,8 +236,7 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Get refValue value
-     * @return RefValue|null
+     * Get refValue value.
      */
     public function getRefValue(): ?RefValue
     {
@@ -249,8 +244,10 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Set refValue value
+     * Set refValue value.
+     *
      * @param RefValue $refValue
+     *
      * @return ShippingV3
      */
     public function setRefValue(?RefValue $refValue = null): self
@@ -261,8 +258,7 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Get skybillValue value
-     * @return SkybillValue|null
+     * Get skybillValue value.
      */
     public function getSkybillValue(): ?SkybillValue
     {
@@ -270,8 +266,10 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Set skybillValue value
+     * Set skybillValue value.
+     *
      * @param SkybillValue $skybillValue
+     *
      * @return ShippingV3
      */
     public function setSkybillValue(?SkybillValue $skybillValue = null): self
@@ -282,8 +280,7 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Get skybillParamsValue value
-     * @return SkybillParamsValue|null
+     * Get skybillParamsValue value.
      */
     public function getSkybillParamsValue(): ?SkybillParamsValue
     {
@@ -291,8 +288,10 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Set skybillParamsValue value
+     * Set skybillParamsValue value.
+     *
      * @param SkybillParamsValue $skybillParamsValue
+     *
      * @return ShippingV3
      */
     public function setSkybillParamsValue(?SkybillParamsValue $skybillParamsValue = null): self
@@ -303,8 +302,7 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Get password value
-     * @return string|null
+     * Get password value.
      */
     public function getPassword(): ?string
     {
@@ -312,8 +310,10 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Set password value
+     * Set password value.
+     *
      * @param string $password
+     *
      * @return ShippingV3
      */
     public function setPassword(?string $password = null): self
@@ -328,8 +328,7 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Get version value
-     * @return string|null
+     * Get version value.
      */
     public function getVersion(): ?string
     {
@@ -337,8 +336,10 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Set version value
+     * Set version value.
+     *
      * @param string $version
+     *
      * @return ShippingV3
      */
     public function setVersion(?string $version = null): self
@@ -353,8 +354,7 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Get scheduledValue value
-     * @return ScheduledValue|null
+     * Get scheduledValue value.
      */
     public function getScheduledValue(): ?ScheduledValue
     {
@@ -362,8 +362,10 @@ class ShippingV3 extends AbstractStructBase
     }
 
     /**
-     * Set scheduledValue value
+     * Set scheduledValue value.
+     *
      * @param ScheduledValue $scheduledValue
+     *
      * @return ShippingV3
      */
     public function setScheduledValue(?ScheduledValue $scheduledValue = null): self

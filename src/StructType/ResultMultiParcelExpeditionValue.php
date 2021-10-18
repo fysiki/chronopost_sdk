@@ -7,37 +7,32 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for resultMultiParcelExpeditionValue StructType
- * @subpackage Structs
+ * This class stands for resultMultiParcelExpeditionValue StructType.
  */
 class ResultMultiParcelExpeditionValue extends ResultShippingValue
 {
     /**
      * The ESDFullNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ESDFullNumber = null;
     /**
      * The ESDNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ESDNumber = null;
     /**
      * The pickupDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $pickupDate = null;
     /**
      * The reservationNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $reservationNumber = null;
     /**
@@ -45,18 +40,21 @@ class ResultMultiParcelExpeditionValue extends ResultShippingValue
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * - nillable: true
+     * - nillable: true.
+     *
      * @var ResultMultiParcelValue[]
      */
     protected ?array $resultMultiParcelValue = null;
 
     /**
-     * Constructor method for resultMultiParcelExpeditionValue
-     * @param string $eSDFullNumber
-     * @param string $eSDNumber
-     * @param string $pickupDate
-     * @param string $reservationNumber
+     * Constructor method for resultMultiParcelExpeditionValue.
+     *
+     * @param string                   $eSDFullNumber
+     * @param string                   $eSDNumber
+     * @param string                   $pickupDate
+     * @param string                   $reservationNumber
      * @param ResultMultiParcelValue[] $resultMultiParcelValue
+     *
      * @uses ResultMultiParcelExpeditionValue::setESDFullNumber()
      * @uses ResultMultiParcelExpeditionValue::setESDNumber()
      * @uses ResultMultiParcelExpeditionValue::setPickupDate()
@@ -70,12 +68,12 @@ class ResultMultiParcelExpeditionValue extends ResultShippingValue
             ->setESDNumber($eSDNumber)
             ->setPickupDate($pickupDate)
             ->setReservationNumber($reservationNumber)
-            ->setResultMultiParcelValue($resultMultiParcelValue);
+            ->setResultMultiParcelValue($resultMultiParcelValue)
+        ;
     }
 
     /**
-     * Get ESDFullNumber value
-     * @return string|null
+     * Get ESDFullNumber value.
      */
     public function getESDFullNumber(): ?string
     {
@@ -83,8 +81,10 @@ class ResultMultiParcelExpeditionValue extends ResultShippingValue
     }
 
     /**
-     * Set ESDFullNumber value
+     * Set ESDFullNumber value.
+     *
      * @param string $eSDFullNumber
+     *
      * @return ResultMultiParcelExpeditionValue
      */
     public function setESDFullNumber(?string $eSDFullNumber = null): self
@@ -99,8 +99,7 @@ class ResultMultiParcelExpeditionValue extends ResultShippingValue
     }
 
     /**
-     * Get ESDNumber value
-     * @return string|null
+     * Get ESDNumber value.
      */
     public function getESDNumber(): ?string
     {
@@ -108,8 +107,10 @@ class ResultMultiParcelExpeditionValue extends ResultShippingValue
     }
 
     /**
-     * Set ESDNumber value
+     * Set ESDNumber value.
+     *
      * @param string $eSDNumber
+     *
      * @return ResultMultiParcelExpeditionValue
      */
     public function setESDNumber(?string $eSDNumber = null): self
@@ -124,8 +125,7 @@ class ResultMultiParcelExpeditionValue extends ResultShippingValue
     }
 
     /**
-     * Get pickupDate value
-     * @return string|null
+     * Get pickupDate value.
      */
     public function getPickupDate(): ?string
     {
@@ -133,8 +133,10 @@ class ResultMultiParcelExpeditionValue extends ResultShippingValue
     }
 
     /**
-     * Set pickupDate value
+     * Set pickupDate value.
+     *
      * @param string $pickupDate
+     *
      * @return ResultMultiParcelExpeditionValue
      */
     public function setPickupDate(?string $pickupDate = null): self
@@ -149,8 +151,7 @@ class ResultMultiParcelExpeditionValue extends ResultShippingValue
     }
 
     /**
-     * Get reservationNumber value
-     * @return string|null
+     * Get reservationNumber value.
      */
     public function getReservationNumber(): ?string
     {
@@ -158,8 +159,10 @@ class ResultMultiParcelExpeditionValue extends ResultShippingValue
     }
 
     /**
-     * Set reservationNumber value
+     * Set reservationNumber value.
+     *
      * @param string $reservationNumber
+     *
      * @return ResultMultiParcelExpeditionValue
      */
     public function setReservationNumber(?string $reservationNumber = null): self
@@ -177,7 +180,8 @@ class ResultMultiParcelExpeditionValue extends ResultShippingValue
      * Get resultMultiParcelValue value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
-     * removable from the request (nillable=true+minOccurs=0)
+     * removable from the request (nillable=true+minOccurs=0).
+     *
      * @return ResultMultiParcelValue[]
      */
     public function getResultMultiParcelValue(): ?array
@@ -187,8 +191,10 @@ class ResultMultiParcelExpeditionValue extends ResultShippingValue
 
     /**
      * This method is responsible for validating the values passed to the setResultMultiParcelValue method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setResultMultiParcelValue method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setResultMultiParcelValue method.
+     *
      * @param array $values
+     *
      * @return string A non-empty message if the values does not match the validation rules
      */
     public static function validateResultMultiParcelValueForArrayConstraintsFromSetResultMultiParcelValue(?array $values = []): string
@@ -215,10 +221,13 @@ class ResultMultiParcelExpeditionValue extends ResultShippingValue
     /**
      * Set resultMultiParcelValue value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
-     * if the value assigned to this property is null, it is removed from this object
+     * if the value assigned to this property is null, it is removed from this object.
+     *
      * @param ResultMultiParcelValue[] $resultMultiParcelValue
-     * @return ResultMultiParcelExpeditionValue
+     *
      * @throws InvalidArgumentException
+     *
+     * @return ResultMultiParcelExpeditionValue
      */
     public function setResultMultiParcelValue(?array $resultMultiParcelValue = null): self
     {
@@ -236,10 +245,11 @@ class ResultMultiParcelExpeditionValue extends ResultShippingValue
     }
 
     /**
-     * Add item to resultMultiParcelValue value
-     * @param ResultMultiParcelValue $item
-     * @return ResultMultiParcelExpeditionValue
+     * Add item to resultMultiParcelValue value.
+     *
      * @throws InvalidArgumentException
+     *
+     * @return ResultMultiParcelExpeditionValue
      */
     public function addToResultMultiParcelValue(ResultMultiParcelValue $item): self
     {

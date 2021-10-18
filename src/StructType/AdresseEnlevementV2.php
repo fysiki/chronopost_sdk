@@ -7,33 +7,33 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for adresseEnlevementV2 StructType
- * @subpackage Structs
+ * This class stands for adresseEnlevementV2 StructType.
  */
 class AdresseEnlevementV2 extends AdresseEnlevement
 {
     /**
      * The email
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $email = null;
 
     /**
-     * Constructor method for adresseEnlevementV2
+     * Constructor method for adresseEnlevementV2.
+     *
      * @param string $email
+     *
      * @uses AdresseEnlevementV2::setEmail()
      */
     public function __construct(?string $email = null)
     {
         $this
-            ->setEmail($email);
+            ->setEmail($email)
+        ;
     }
 
     /**
-     * Get email value
-     * @return string|null
+     * Get email value.
      */
     public function getEmail(): ?string
     {
@@ -41,8 +41,10 @@ class AdresseEnlevementV2 extends AdresseEnlevement
     }
 
     /**
-     * Set email value
+     * Set email value.
+     *
      * @param string $email
+     *
      * @return AdresseEnlevementV2
      */
     public function setEmail(?string $email = null): self

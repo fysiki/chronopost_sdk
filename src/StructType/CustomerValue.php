@@ -8,117 +8,102 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for customerValue StructType
- * @subpackage Structs
+ * This class stands for customerValue StructType.
  */
 class CustomerValue extends AbstractStructBase
 {
     /**
      * The customerAdress1
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerAdress1 = null;
     /**
      * The customerAdress2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerAdress2 = null;
     /**
      * The customerCity
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerCity = null;
     /**
      * The customerCivility
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerCivility = null;
     /**
      * The customerContactName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerContactName = null;
     /**
      * The customerCountry
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerCountry = null;
     /**
      * The customerCountryName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerCountryName = null;
     /**
      * The customerEmail
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerEmail = null;
     /**
      * The customerMobilePhone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerMobilePhone = null;
     /**
      * The customerName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerName = null;
     /**
      * The customerName2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerName2 = null;
     /**
      * The customerPhone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerPhone = null;
     /**
-     * The customerPreAlert
-     * @var int|null
+     * The customerPreAlert.
      */
     protected ?int $customerPreAlert = null;
     /**
      * The customerZipCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerZipCode = null;
     /**
      * The printAsSender
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $printAsSender = null;
 
     /**
-     * Constructor method for customerValue
+     * Constructor method for customerValue.
+     *
      * @param string $customerAdress1
      * @param string $customerAdress2
      * @param string $customerCity
@@ -131,9 +116,10 @@ class CustomerValue extends AbstractStructBase
      * @param string $customerName
      * @param string $customerName2
      * @param string $customerPhone
-     * @param int $customerPreAlert
+     * @param int    $customerPreAlert
      * @param string $customerZipCode
      * @param string $printAsSender
+     *
      * @uses CustomerValue::setCustomerAdress1()
      * @uses CustomerValue::setCustomerAdress2()
      * @uses CustomerValue::setCustomerCity()
@@ -167,12 +153,12 @@ class CustomerValue extends AbstractStructBase
             ->setCustomerPhone($customerPhone)
             ->setCustomerPreAlert($customerPreAlert)
             ->setCustomerZipCode($customerZipCode)
-            ->setPrintAsSender($printAsSender);
+            ->setPrintAsSender($printAsSender)
+        ;
     }
 
     /**
-     * Get customerAdress1 value
-     * @return string|null
+     * Get customerAdress1 value.
      */
     public function getCustomerAdress1(): ?string
     {
@@ -180,8 +166,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerAdress1 value
+     * Set customerAdress1 value.
+     *
      * @param string $customerAdress1
+     *
      * @return CustomerValue
      */
     public function setCustomerAdress1(?string $customerAdress1 = null): self
@@ -196,8 +184,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get customerAdress2 value
-     * @return string|null
+     * Get customerAdress2 value.
      */
     public function getCustomerAdress2(): ?string
     {
@@ -205,8 +192,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerAdress2 value
+     * Set customerAdress2 value.
+     *
      * @param string $customerAdress2
+     *
      * @return CustomerValue
      */
     public function setCustomerAdress2(?string $customerAdress2 = null): self
@@ -221,8 +210,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get customerCity value
-     * @return string|null
+     * Get customerCity value.
      */
     public function getCustomerCity(): ?string
     {
@@ -230,8 +218,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerCity value
+     * Set customerCity value.
+     *
      * @param string $customerCity
+     *
      * @return CustomerValue
      */
     public function setCustomerCity(?string $customerCity = null): self
@@ -246,8 +236,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get customerCivility value
-     * @return string|null
+     * Get customerCivility value.
      */
     public function getCustomerCivility(): ?string
     {
@@ -255,8 +244,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerCivility value
+     * Set customerCivility value.
+     *
      * @param string $customerCivility
+     *
      * @return CustomerValue
      */
     public function setCustomerCivility(?string $customerCivility = null): self
@@ -271,8 +262,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get customerContactName value
-     * @return string|null
+     * Get customerContactName value.
      */
     public function getCustomerContactName(): ?string
     {
@@ -280,8 +270,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerContactName value
+     * Set customerContactName value.
+     *
      * @param string $customerContactName
+     *
      * @return CustomerValue
      */
     public function setCustomerContactName(?string $customerContactName = null): self
@@ -296,8 +288,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get customerCountry value
-     * @return string|null
+     * Get customerCountry value.
      */
     public function getCustomerCountry(): ?string
     {
@@ -305,8 +296,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerCountry value
+     * Set customerCountry value.
+     *
      * @param string $customerCountry
+     *
      * @return CustomerValue
      */
     public function setCustomerCountry(?string $customerCountry = null): self
@@ -321,8 +314,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get customerCountryName value
-     * @return string|null
+     * Get customerCountryName value.
      */
     public function getCustomerCountryName(): ?string
     {
@@ -330,8 +322,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerCountryName value
+     * Set customerCountryName value.
+     *
      * @param string $customerCountryName
+     *
      * @return CustomerValue
      */
     public function setCustomerCountryName(?string $customerCountryName = null): self
@@ -346,8 +340,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get customerEmail value
-     * @return string|null
+     * Get customerEmail value.
      */
     public function getCustomerEmail(): ?string
     {
@@ -355,8 +348,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerEmail value
+     * Set customerEmail value.
+     *
      * @param string $customerEmail
+     *
      * @return CustomerValue
      */
     public function setCustomerEmail(?string $customerEmail = null): self
@@ -371,8 +366,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get customerMobilePhone value
-     * @return string|null
+     * Get customerMobilePhone value.
      */
     public function getCustomerMobilePhone(): ?string
     {
@@ -380,8 +374,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerMobilePhone value
+     * Set customerMobilePhone value.
+     *
      * @param string $customerMobilePhone
+     *
      * @return CustomerValue
      */
     public function setCustomerMobilePhone(?string $customerMobilePhone = null): self
@@ -396,8 +392,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get customerName value
-     * @return string|null
+     * Get customerName value.
      */
     public function getCustomerName(): ?string
     {
@@ -405,8 +400,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerName value
+     * Set customerName value.
+     *
      * @param string $customerName
+     *
      * @return CustomerValue
      */
     public function setCustomerName(?string $customerName = null): self
@@ -421,8 +418,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get customerName2 value
-     * @return string|null
+     * Get customerName2 value.
      */
     public function getCustomerName2(): ?string
     {
@@ -430,8 +426,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerName2 value
+     * Set customerName2 value.
+     *
      * @param string $customerName2
+     *
      * @return CustomerValue
      */
     public function setCustomerName2(?string $customerName2 = null): self
@@ -446,8 +444,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get customerPhone value
-     * @return string|null
+     * Get customerPhone value.
      */
     public function getCustomerPhone(): ?string
     {
@@ -455,8 +452,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerPhone value
+     * Set customerPhone value.
+     *
      * @param string $customerPhone
+     *
      * @return CustomerValue
      */
     public function setCustomerPhone(?string $customerPhone = null): self
@@ -471,8 +470,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get customerPreAlert value
-     * @return int|null
+     * Get customerPreAlert value.
      */
     public function getCustomerPreAlert(): ?int
     {
@@ -480,8 +478,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerPreAlert value
+     * Set customerPreAlert value.
+     *
      * @param int $customerPreAlert
+     *
      * @return CustomerValue
      */
     public function setCustomerPreAlert(?int $customerPreAlert = null): self
@@ -496,8 +496,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get customerZipCode value
-     * @return string|null
+     * Get customerZipCode value.
      */
     public function getCustomerZipCode(): ?string
     {
@@ -505,8 +504,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set customerZipCode value
+     * Set customerZipCode value.
+     *
      * @param string $customerZipCode
+     *
      * @return CustomerValue
      */
     public function setCustomerZipCode(?string $customerZipCode = null): self
@@ -521,8 +522,7 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Get printAsSender value
-     * @return string|null
+     * Get printAsSender value.
      */
     public function getPrintAsSender(): ?string
     {
@@ -530,8 +530,10 @@ class CustomerValue extends AbstractStructBase
     }
 
     /**
-     * Set printAsSender value
+     * Set printAsSender value.
+     *
      * @param string $printAsSender
+     *
      * @return CustomerValue
      */
     public function setPrintAsSender(?string $printAsSender = null): self

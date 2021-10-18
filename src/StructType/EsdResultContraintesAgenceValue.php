@@ -8,14 +8,12 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for esdResultContraintesAgenceValue StructType
- * @subpackage Structs
+ * This class stands for esdResultContraintesAgenceValue StructType.
  */
 class EsdResultContraintesAgenceValue extends AbstractStructBase
 {
     /**
-     * The codeErreur
-     * @var int|null
+     * The codeErreur.
      */
     protected ?int $codeErreur = null;
     /**
@@ -23,23 +21,25 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * - nillable: true
+     * - nillable: true.
+     *
      * @var EsdContraintesAgence[]
      */
     protected ?array $esdContraintesAgence = null;
     /**
      * The libelleErreur
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $libelleErreur = null;
 
     /**
-     * Constructor method for esdResultContraintesAgenceValue
-     * @param int $codeErreur
+     * Constructor method for esdResultContraintesAgenceValue.
+     *
+     * @param int                    $codeErreur
      * @param EsdContraintesAgence[] $esdContraintesAgence
-     * @param string $libelleErreur
+     * @param string                 $libelleErreur
+     *
      * @uses EsdResultContraintesAgenceValue::setCodeErreur()
      * @uses EsdResultContraintesAgenceValue::setEsdContraintesAgence()
      * @uses EsdResultContraintesAgenceValue::setLibelleErreur()
@@ -49,12 +49,12 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
         $this
             ->setCodeErreur($codeErreur)
             ->setEsdContraintesAgence($esdContraintesAgence)
-            ->setLibelleErreur($libelleErreur);
+            ->setLibelleErreur($libelleErreur)
+        ;
     }
 
     /**
-     * Get codeErreur value
-     * @return int|null
+     * Get codeErreur value.
      */
     public function getCodeErreur(): ?int
     {
@@ -62,8 +62,10 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
     }
 
     /**
-     * Set codeErreur value
+     * Set codeErreur value.
+     *
      * @param int $codeErreur
+     *
      * @return EsdResultContraintesAgenceValue
      */
     public function setCodeErreur(?int $codeErreur = null): self
@@ -81,7 +83,8 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
      * Get esdContraintesAgence value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
-     * removable from the request (nillable=true+minOccurs=0)
+     * removable from the request (nillable=true+minOccurs=0).
+     *
      * @return EsdContraintesAgence[]
      */
     public function getEsdContraintesAgence(): ?array
@@ -91,8 +94,10 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
 
     /**
      * This method is responsible for validating the values passed to the setEsdContraintesAgence method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setEsdContraintesAgence method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setEsdContraintesAgence method.
+     *
      * @param array $values
+     *
      * @return string A non-empty message if the values does not match the validation rules
      */
     public static function validateEsdContraintesAgenceForArrayConstraintsFromSetEsdContraintesAgence(?array $values = []): string
@@ -119,10 +124,13 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
     /**
      * Set esdContraintesAgence value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
-     * if the value assigned to this property is null, it is removed from this object
+     * if the value assigned to this property is null, it is removed from this object.
+     *
      * @param EsdContraintesAgence[] $esdContraintesAgence
-     * @return EsdResultContraintesAgenceValue
+     *
      * @throws InvalidArgumentException
+     *
+     * @return EsdResultContraintesAgenceValue
      */
     public function setEsdContraintesAgence(?array $esdContraintesAgence = null): self
     {
@@ -140,10 +148,11 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
     }
 
     /**
-     * Add item to esdContraintesAgence value
-     * @param EsdContraintesAgence $item
-     * @return EsdResultContraintesAgenceValue
+     * Add item to esdContraintesAgence value.
+     *
      * @throws InvalidArgumentException
+     *
+     * @return EsdResultContraintesAgenceValue
      */
     public function addToEsdContraintesAgence(EsdContraintesAgence $item): self
     {
@@ -157,8 +166,7 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
     }
 
     /**
-     * Get libelleErreur value
-     * @return string|null
+     * Get libelleErreur value.
      */
     public function getLibelleErreur(): ?string
     {
@@ -166,8 +174,10 @@ class EsdResultContraintesAgenceValue extends AbstractStructBase
     }
 
     /**
-     * Set libelleErreur value
+     * Set libelleErreur value.
+     *
      * @param string $libelleErreur
+     *
      * @return EsdResultContraintesAgenceValue
      */
     public function setLibelleErreur(?string $libelleErreur = null): self

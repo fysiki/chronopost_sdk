@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for getReservedSkybillWithTypeAndModeResponse StructType
  * Meta information extracted from the WSDL
- * - type: tns:getReservedSkybillWithTypeAndModeResponse
- * @subpackage Structs
+ * - type: tns:getReservedSkybillWithTypeAndModeResponse.
  */
 class GetReservedSkybillWithTypeAndModeResponse extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultGetReservedSkybillWithTypeValue|null
+     * - minOccurs: 0.
      */
     protected ?ResultGetReservedSkybillWithTypeValue $return = null;
 
     /**
-     * Constructor method for getReservedSkybillWithTypeAndModeResponse
+     * Constructor method for getReservedSkybillWithTypeAndModeResponse.
+     *
      * @param ResultGetReservedSkybillWithTypeValue $return
+     *
      * @uses GetReservedSkybillWithTypeAndModeResponse::setReturn()
      */
     public function __construct(?ResultGetReservedSkybillWithTypeValue $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultGetReservedSkybillWithTypeValue|null
+     * Get return value.
      */
     public function getReturn(): ?ResultGetReservedSkybillWithTypeValue
     {
@@ -43,8 +43,10 @@ class GetReservedSkybillWithTypeAndModeResponse extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultGetReservedSkybillWithTypeValue $return
+     *
      * @return GetReservedSkybillWithTypeAndModeResponse
      */
     public function setReturn(?ResultGetReservedSkybillWithTypeValue $return = null): self

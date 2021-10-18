@@ -10,70 +10,64 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for creerEnlevementEurope StructType
  * Meta information extracted from the WSDL
- * - type: tns:creerEnlevementEurope
- * @subpackage Structs
+ * - type: tns:creerEnlevementEurope.
  */
 class CreerEnlevementEurope extends AbstractStructBase
 {
     /**
      * The headerValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var HeaderValue|null
+     * - minOccurs: 0.
      */
     protected ?HeaderValue $headerValue = null;
     /**
      * The password
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $password = null;
     /**
      * The datePassage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $datePassage = null;
     /**
      * The donneurDOrdre
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var DonneurDOrdre|null
+     * - minOccurs: 0.
      */
     protected ?DonneurDOrdre $donneurDOrdre = null;
     /**
      * The adresseEnlevement
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var AdresseEnlevementV3|null
+     * - minOccurs: 0.
      */
     protected ?AdresseEnlevementV3 $adresseEnlevement = null;
     /**
      * The destinatairesEsd
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var DestinatairesDpd|null
+     * - minOccurs: 0.
      */
     protected ?DestinatairesDpd $destinatairesEsd = null;
     /**
      * The locale
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $locale = null;
 
     /**
-     * Constructor method for creerEnlevementEurope
-     * @param HeaderValue $headerValue
-     * @param string $password
-     * @param string $datePassage
-     * @param DonneurDOrdre $donneurDOrdre
+     * Constructor method for creerEnlevementEurope.
+     *
+     * @param HeaderValue         $headerValue
+     * @param string              $password
+     * @param string              $datePassage
+     * @param DonneurDOrdre       $donneurDOrdre
      * @param AdresseEnlevementV3 $adresseEnlevement
-     * @param DestinatairesDpd $destinatairesEsd
-     * @param string $locale
+     * @param DestinatairesDpd    $destinatairesEsd
+     * @param string              $locale
+     *
      * @uses CreerEnlevementEurope::setHeaderValue()
      * @uses CreerEnlevementEurope::setPassword()
      * @uses CreerEnlevementEurope::setDatePassage()
@@ -91,12 +85,12 @@ class CreerEnlevementEurope extends AbstractStructBase
             ->setDonneurDOrdre($donneurDOrdre)
             ->setAdresseEnlevement($adresseEnlevement)
             ->setDestinatairesEsd($destinatairesEsd)
-            ->setLocale($locale);
+            ->setLocale($locale)
+        ;
     }
 
     /**
-     * Get headerValue value
-     * @return HeaderValue|null
+     * Get headerValue value.
      */
     public function getHeaderValue(): ?HeaderValue
     {
@@ -104,8 +98,10 @@ class CreerEnlevementEurope extends AbstractStructBase
     }
 
     /**
-     * Set headerValue value
+     * Set headerValue value.
+     *
      * @param HeaderValue $headerValue
+     *
      * @return CreerEnlevementEurope
      */
     public function setHeaderValue(?HeaderValue $headerValue = null): self
@@ -116,8 +112,7 @@ class CreerEnlevementEurope extends AbstractStructBase
     }
 
     /**
-     * Get password value
-     * @return string|null
+     * Get password value.
      */
     public function getPassword(): ?string
     {
@@ -125,8 +120,10 @@ class CreerEnlevementEurope extends AbstractStructBase
     }
 
     /**
-     * Set password value
+     * Set password value.
+     *
      * @param string $password
+     *
      * @return CreerEnlevementEurope
      */
     public function setPassword(?string $password = null): self
@@ -141,8 +138,7 @@ class CreerEnlevementEurope extends AbstractStructBase
     }
 
     /**
-     * Get datePassage value
-     * @return string|null
+     * Get datePassage value.
      */
     public function getDatePassage(): ?string
     {
@@ -150,8 +146,10 @@ class CreerEnlevementEurope extends AbstractStructBase
     }
 
     /**
-     * Set datePassage value
+     * Set datePassage value.
+     *
      * @param string $datePassage
+     *
      * @return CreerEnlevementEurope
      */
     public function setDatePassage(?string $datePassage = null): self
@@ -166,8 +164,7 @@ class CreerEnlevementEurope extends AbstractStructBase
     }
 
     /**
-     * Get donneurDOrdre value
-     * @return DonneurDOrdre|null
+     * Get donneurDOrdre value.
      */
     public function getDonneurDOrdre(): ?DonneurDOrdre
     {
@@ -175,8 +172,10 @@ class CreerEnlevementEurope extends AbstractStructBase
     }
 
     /**
-     * Set donneurDOrdre value
+     * Set donneurDOrdre value.
+     *
      * @param DonneurDOrdre $donneurDOrdre
+     *
      * @return CreerEnlevementEurope
      */
     public function setDonneurDOrdre(?DonneurDOrdre $donneurDOrdre = null): self
@@ -187,8 +186,7 @@ class CreerEnlevementEurope extends AbstractStructBase
     }
 
     /**
-     * Get adresseEnlevement value
-     * @return AdresseEnlevementV3|null
+     * Get adresseEnlevement value.
      */
     public function getAdresseEnlevement(): ?AdresseEnlevementV3
     {
@@ -196,8 +194,10 @@ class CreerEnlevementEurope extends AbstractStructBase
     }
 
     /**
-     * Set adresseEnlevement value
+     * Set adresseEnlevement value.
+     *
      * @param AdresseEnlevementV3 $adresseEnlevement
+     *
      * @return CreerEnlevementEurope
      */
     public function setAdresseEnlevement(?AdresseEnlevementV3 $adresseEnlevement = null): self
@@ -208,8 +208,7 @@ class CreerEnlevementEurope extends AbstractStructBase
     }
 
     /**
-     * Get destinatairesEsd value
-     * @return DestinatairesDpd|null
+     * Get destinatairesEsd value.
      */
     public function getDestinatairesEsd(): ?DestinatairesDpd
     {
@@ -217,8 +216,10 @@ class CreerEnlevementEurope extends AbstractStructBase
     }
 
     /**
-     * Set destinatairesEsd value
+     * Set destinatairesEsd value.
+     *
      * @param DestinatairesDpd $destinatairesEsd
+     *
      * @return CreerEnlevementEurope
      */
     public function setDestinatairesEsd(?DestinatairesDpd $destinatairesEsd = null): self
@@ -229,8 +230,7 @@ class CreerEnlevementEurope extends AbstractStructBase
     }
 
     /**
-     * Get locale value
-     * @return string|null
+     * Get locale value.
      */
     public function getLocale(): ?string
     {
@@ -238,8 +238,10 @@ class CreerEnlevementEurope extends AbstractStructBase
     }
 
     /**
-     * Set locale value
+     * Set locale value.
+     *
      * @param string $locale
+     *
      * @return CreerEnlevementEurope
      */
     public function setLocale(?string $locale = null): self

@@ -8,49 +8,42 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for resultReservationMultiParcelExpeditionValue StructType
- * @subpackage Structs
+ * This class stands for resultReservationMultiParcelExpeditionValue StructType.
  */
 class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
 {
     /**
      * The ESDFullNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ESDFullNumber = null;
     /**
      * The ESDNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ESDNumber = null;
     /**
-     * The errorCode
-     * @var int|null
+     * The errorCode.
      */
     protected ?int $errorCode = null;
     /**
      * The errorMessage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $errorMessage = null;
     /**
      * The pickupDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $pickupDate = null;
     /**
      * The reservationNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $reservationNumber = null;
     /**
@@ -58,20 +51,23 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * - nillable: true
+     * - nillable: true.
+     *
      * @var ResultParcelValue[]
      */
     protected ?array $resultParcelValue = null;
 
     /**
-     * Constructor method for resultReservationMultiParcelExpeditionValue
-     * @param string $eSDFullNumber
-     * @param string $eSDNumber
-     * @param int $errorCode
-     * @param string $errorMessage
-     * @param string $pickupDate
-     * @param string $reservationNumber
+     * Constructor method for resultReservationMultiParcelExpeditionValue.
+     *
+     * @param string              $eSDFullNumber
+     * @param string              $eSDNumber
+     * @param int                 $errorCode
+     * @param string              $errorMessage
+     * @param string              $pickupDate
+     * @param string              $reservationNumber
      * @param ResultParcelValue[] $resultParcelValue
+     *
      * @uses ResultReservationMultiParcelExpeditionValue::setESDFullNumber()
      * @uses ResultReservationMultiParcelExpeditionValue::setESDNumber()
      * @uses ResultReservationMultiParcelExpeditionValue::setErrorCode()
@@ -89,12 +85,12 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
             ->setErrorMessage($errorMessage)
             ->setPickupDate($pickupDate)
             ->setReservationNumber($reservationNumber)
-            ->setResultParcelValue($resultParcelValue);
+            ->setResultParcelValue($resultParcelValue)
+        ;
     }
 
     /**
-     * Get ESDFullNumber value
-     * @return string|null
+     * Get ESDFullNumber value.
      */
     public function getESDFullNumber(): ?string
     {
@@ -102,8 +98,10 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set ESDFullNumber value
+     * Set ESDFullNumber value.
+     *
      * @param string $eSDFullNumber
+     *
      * @return ResultReservationMultiParcelExpeditionValue
      */
     public function setESDFullNumber(?string $eSDFullNumber = null): self
@@ -118,8 +116,7 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get ESDNumber value
-     * @return string|null
+     * Get ESDNumber value.
      */
     public function getESDNumber(): ?string
     {
@@ -127,8 +124,10 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set ESDNumber value
+     * Set ESDNumber value.
+     *
      * @param string $eSDNumber
+     *
      * @return ResultReservationMultiParcelExpeditionValue
      */
     public function setESDNumber(?string $eSDNumber = null): self
@@ -143,8 +142,7 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get errorCode value
-     * @return int|null
+     * Get errorCode value.
      */
     public function getErrorCode(): ?int
     {
@@ -152,8 +150,10 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set errorCode value
+     * Set errorCode value.
+     *
      * @param int $errorCode
+     *
      * @return ResultReservationMultiParcelExpeditionValue
      */
     public function setErrorCode(?int $errorCode = null): self
@@ -168,8 +168,7 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get errorMessage value
-     * @return string|null
+     * Get errorMessage value.
      */
     public function getErrorMessage(): ?string
     {
@@ -177,8 +176,10 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set errorMessage value
+     * Set errorMessage value.
+     *
      * @param string $errorMessage
+     *
      * @return ResultReservationMultiParcelExpeditionValue
      */
     public function setErrorMessage(?string $errorMessage = null): self
@@ -193,8 +194,7 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get pickupDate value
-     * @return string|null
+     * Get pickupDate value.
      */
     public function getPickupDate(): ?string
     {
@@ -202,8 +202,10 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set pickupDate value
+     * Set pickupDate value.
+     *
      * @param string $pickupDate
+     *
      * @return ResultReservationMultiParcelExpeditionValue
      */
     public function setPickupDate(?string $pickupDate = null): self
@@ -218,8 +220,7 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get reservationNumber value
-     * @return string|null
+     * Get reservationNumber value.
      */
     public function getReservationNumber(): ?string
     {
@@ -227,8 +228,10 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set reservationNumber value
+     * Set reservationNumber value.
+     *
      * @param string $reservationNumber
+     *
      * @return ResultReservationMultiParcelExpeditionValue
      */
     public function setReservationNumber(?string $reservationNumber = null): self
@@ -246,7 +249,8 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
      * Get resultParcelValue value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
-     * removable from the request (nillable=true+minOccurs=0)
+     * removable from the request (nillable=true+minOccurs=0).
+     *
      * @return ResultParcelValue[]
      */
     public function getResultParcelValue(): ?array
@@ -256,8 +260,10 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
 
     /**
      * This method is responsible for validating the values passed to the setResultParcelValue method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setResultParcelValue method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setResultParcelValue method.
+     *
      * @param array $values
+     *
      * @return string A non-empty message if the values does not match the validation rules
      */
     public static function validateResultParcelValueForArrayConstraintsFromSetResultParcelValue(?array $values = []): string
@@ -284,10 +290,13 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     /**
      * Set resultParcelValue value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
-     * if the value assigned to this property is null, it is removed from this object
+     * if the value assigned to this property is null, it is removed from this object.
+     *
      * @param ResultParcelValue[] $resultParcelValue
-     * @return ResultReservationMultiParcelExpeditionValue
+     *
      * @throws InvalidArgumentException
+     *
+     * @return ResultReservationMultiParcelExpeditionValue
      */
     public function setResultParcelValue(?array $resultParcelValue = null): self
     {
@@ -305,10 +314,11 @@ class ResultReservationMultiParcelExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Add item to resultParcelValue value
-     * @param ResultParcelValue $item
-     * @return ResultReservationMultiParcelExpeditionValue
+     * Add item to resultParcelValue value.
+     *
      * @throws InvalidArgumentException
+     *
+     * @return ResultReservationMultiParcelExpeditionValue
      */
     public function addToResultParcelValue(ResultParcelValue $item): self
     {

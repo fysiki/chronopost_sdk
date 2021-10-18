@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for shippingMultiParcelWithReservationV3Response StructType
  * Meta information extracted from the WSDL
- * - type: tns:shippingMultiParcelWithReservationV3Response
- * @subpackage Structs
+ * - type: tns:shippingMultiParcelWithReservationV3Response.
  */
 class ShippingMultiParcelWithReservationV3Response extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultReservationMultiParcelExpeditionValueV2|null
+     * - minOccurs: 0.
      */
     protected ?ResultReservationMultiParcelExpeditionValueV2 $return = null;
 
     /**
-     * Constructor method for shippingMultiParcelWithReservationV3Response
+     * Constructor method for shippingMultiParcelWithReservationV3Response.
+     *
      * @param ResultReservationMultiParcelExpeditionValueV2 $return
+     *
      * @uses ShippingMultiParcelWithReservationV3Response::setReturn()
      */
     public function __construct(?ResultReservationMultiParcelExpeditionValueV2 $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultReservationMultiParcelExpeditionValueV2|null
+     * Get return value.
      */
     public function getReturn(): ?ResultReservationMultiParcelExpeditionValueV2
     {
@@ -43,8 +43,10 @@ class ShippingMultiParcelWithReservationV3Response extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultReservationMultiParcelExpeditionValueV2 $return
+     *
      * @return ShippingMultiParcelWithReservationV3Response
      */
     public function setReturn(?ResultReservationMultiParcelExpeditionValueV2 $return = null): self

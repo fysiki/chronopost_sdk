@@ -10,658 +10,566 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for shippingWithReservationAndESDWithRefClientPC StructType
  * Meta information extracted from the WSDL
- * - type: tns:shippingWithReservationAndESDWithRefClientPC
- * @subpackage Structs
+ * - type: tns:shippingWithReservationAndESDWithRefClientPC.
  */
 class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
 {
     /**
      * The refEsdClient
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $refEsdClient = null;
     /**
      * The retrievalDateTime
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $retrievalDateTime = null;
     /**
      * The closingDateTime
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $closingDateTime = null;
     /**
      * The specificInstructions
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $specificInstructions = null;
     /**
      * The height
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $height = null;
     /**
      * The width
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $width = null;
     /**
      * The length
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $length = null;
     /**
      * The shipperCarriesCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperCarriesCode = null;
     /**
      * The shipperBuildingFloor
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperBuildingFloor = null;
     /**
      * The shipperServiceDirection
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperServiceDirection = null;
     /**
      * The nombreDePassageMaximum
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $nombreDePassageMaximum = null;
     /**
      * The ltAImprimerParChronopost
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ltAImprimerParChronopost = null;
     /**
      * The header_idEmit
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $header_idEmit = null;
     /**
      * The accountNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $accountNumber = null;
     /**
      * The subAccount
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $subAccount = null;
     /**
      * The header_identWebPro
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $header_identWebPro = null;
     /**
      * The shipperCivility
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperCivility = null;
     /**
      * The shipperName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperName = null;
     /**
      * The shipperName2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperName2 = null;
     /**
      * The shipperAdress1
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperAdress1 = null;
     /**
      * The shipperAdress2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperAdress2 = null;
     /**
      * The shipperZipCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperZipCode = null;
     /**
      * The shipperCity
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperCity = null;
     /**
      * The shipperCountry
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperCountry = null;
     /**
      * The shipperCountryName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperCountryName = null;
     /**
      * The shipperContactName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperContactName = null;
     /**
      * The shipperEmail
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperEmail = null;
     /**
      * The shipperPhone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperPhone = null;
     /**
      * The shipperMobilePhone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperMobilePhone = null;
     /**
      * The customerCivility
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerCivility = null;
     /**
      * The customerName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerName = null;
     /**
      * The customerName2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerName2 = null;
     /**
      * The customerAdress1
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerAdress1 = null;
     /**
      * The customerAdress2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerAdress2 = null;
     /**
      * The customerZipCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerZipCode = null;
     /**
      * The customerCity
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerCity = null;
     /**
      * The customerCountry
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerCountry = null;
     /**
      * The customerCountryName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerCountryName = null;
     /**
      * The customerContactName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerContactName = null;
     /**
      * The customerEmail
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerEmail = null;
     /**
      * The customerPhone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerPhone = null;
     /**
      * The customerMobilePhone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerMobilePhone = null;
     /**
      * The customerPreAlert
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerPreAlert = null;
     /**
      * The recipientCivility
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientCivility = null;
     /**
      * The recipientName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientName = null;
     /**
      * The recipientName2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientName2 = null;
     /**
      * The recipientAdress1
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientAdress1 = null;
     /**
      * The recipientAdress2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientAdress2 = null;
     /**
      * The recipientZipCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientZipCode = null;
     /**
      * The recipientCity
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientCity = null;
     /**
      * The recipientCountry
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientCountry = null;
     /**
      * The recipientCountryName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientCountryName = null;
     /**
      * The recipientContactName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientContactName = null;
     /**
      * The recipientEmail
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientEmail = null;
     /**
      * The recipientPhone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientPhone = null;
     /**
      * The recipientMobilePhone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientMobilePhone = null;
     /**
      * The recipientPreAlert
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientPreAlert = null;
     /**
      * The shipperRef
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperRef = null;
     /**
      * The recipientRef
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientRef = null;
     /**
      * The customerSkybillNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerSkybillNumber = null;
     /**
      * The evtCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $evtCode = null;
     /**
      * The productCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $productCode = null;
     /**
      * The shipDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipDate = null;
     /**
      * The shipHour
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipHour = null;
     /**
      * The weight
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $weight = null;
     /**
      * The weightUnit
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $weightUnit = null;
     /**
      * The insuredValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $insuredValue = null;
     /**
      * The insuredCurrency
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $insuredCurrency = null;
     /**
      * The codValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codValue = null;
     /**
      * The codCurrency
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codCurrency = null;
     /**
      * The customsValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customsValue = null;
     /**
      * The customsCurrency
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customsCurrency = null;
     /**
      * The service
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $service = null;
     /**
      * The as
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $as = null;
     /**
      * The objectType
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $objectType = null;
     /**
      * The content1
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $content1 = null;
     /**
      * The content2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $content2 = null;
     /**
      * The content3
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $content3 = null;
     /**
      * The content4
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $content4 = null;
     /**
      * The content5
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $content5 = null;
     /**
      * The portValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $portValue = null;
     /**
      * The portCurrency
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $portCurrency = null;
     /**
      * The skybillRank
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $skybillRank = null;
     /**
      * The bulkNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $bulkNumber = null;
     /**
      * The mode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $mode = null;
     /**
      * The password
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $password = null;
     /**
      * The modeRetour
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $modeRetour = null;
     /**
      * The timeSlotStartDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $timeSlotStartDate = null;
     /**
      * The timeSlotEndDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $timeSlotEndDate = null;
     /**
      * The timeSlotTariffLevel
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $timeSlotTariffLevel = null;
     /**
      * The expirationDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $expirationDate = null;
     /**
      * The sellByDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $sellByDate = null;
 
     /**
-     * Constructor method for shippingWithReservationAndESDWithRefClientPC
+     * Constructor method for shippingWithReservationAndESDWithRefClientPC.
+     *
      * @param string $refEsdClient
      * @param string $retrievalDateTime
      * @param string $closingDateTime
@@ -754,6 +662,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
      * @param string $timeSlotTariffLevel
      * @param string $expirationDate
      * @param string $sellByDate
+     *
      * @uses ShippingWithReservationAndESDWithRefClientPC::setRefEsdClient()
      * @uses ShippingWithReservationAndESDWithRefClientPC::setRetrievalDateTime()
      * @uses ShippingWithReservationAndESDWithRefClientPC::setClosingDateTime()
@@ -941,12 +850,12 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
             ->setTimeSlotEndDate($timeSlotEndDate)
             ->setTimeSlotTariffLevel($timeSlotTariffLevel)
             ->setExpirationDate($expirationDate)
-            ->setSellByDate($sellByDate);
+            ->setSellByDate($sellByDate)
+        ;
     }
 
     /**
-     * Get refEsdClient value
-     * @return string|null
+     * Get refEsdClient value.
      */
     public function getRefEsdClient(): ?string
     {
@@ -954,8 +863,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set refEsdClient value
+     * Set refEsdClient value.
+     *
      * @param string $refEsdClient
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRefEsdClient(?string $refEsdClient = null): self
@@ -970,8 +881,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get retrievalDateTime value
-     * @return string|null
+     * Get retrievalDateTime value.
      */
     public function getRetrievalDateTime(): ?string
     {
@@ -979,8 +889,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set retrievalDateTime value
+     * Set retrievalDateTime value.
+     *
      * @param string $retrievalDateTime
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRetrievalDateTime(?string $retrievalDateTime = null): self
@@ -995,8 +907,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get closingDateTime value
-     * @return string|null
+     * Get closingDateTime value.
      */
     public function getClosingDateTime(): ?string
     {
@@ -1004,8 +915,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set closingDateTime value
+     * Set closingDateTime value.
+     *
      * @param string $closingDateTime
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setClosingDateTime(?string $closingDateTime = null): self
@@ -1020,8 +933,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get specificInstructions value
-     * @return string|null
+     * Get specificInstructions value.
      */
     public function getSpecificInstructions(): ?string
     {
@@ -1029,8 +941,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set specificInstructions value
+     * Set specificInstructions value.
+     *
      * @param string $specificInstructions
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setSpecificInstructions(?string $specificInstructions = null): self
@@ -1045,8 +959,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get height value
-     * @return string|null
+     * Get height value.
      */
     public function getHeight(): ?string
     {
@@ -1054,8 +967,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set height value
+     * Set height value.
+     *
      * @param string $height
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setHeight(?string $height = null): self
@@ -1070,8 +985,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get width value
-     * @return string|null
+     * Get width value.
      */
     public function getWidth(): ?string
     {
@@ -1079,8 +993,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set width value
+     * Set width value.
+     *
      * @param string $width
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setWidth(?string $width = null): self
@@ -1095,8 +1011,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get length value
-     * @return string|null
+     * Get length value.
      */
     public function getLength(): ?string
     {
@@ -1104,8 +1019,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set length value
+     * Set length value.
+     *
      * @param string $length
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setLength(?string $length = null): self
@@ -1120,8 +1037,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperCarriesCode value
-     * @return string|null
+     * Get shipperCarriesCode value.
      */
     public function getShipperCarriesCode(): ?string
     {
@@ -1129,8 +1045,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperCarriesCode value
+     * Set shipperCarriesCode value.
+     *
      * @param string $shipperCarriesCode
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperCarriesCode(?string $shipperCarriesCode = null): self
@@ -1145,8 +1063,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperBuildingFloor value
-     * @return string|null
+     * Get shipperBuildingFloor value.
      */
     public function getShipperBuildingFloor(): ?string
     {
@@ -1154,8 +1071,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperBuildingFloor value
+     * Set shipperBuildingFloor value.
+     *
      * @param string $shipperBuildingFloor
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperBuildingFloor(?string $shipperBuildingFloor = null): self
@@ -1170,8 +1089,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperServiceDirection value
-     * @return string|null
+     * Get shipperServiceDirection value.
      */
     public function getShipperServiceDirection(): ?string
     {
@@ -1179,8 +1097,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperServiceDirection value
+     * Set shipperServiceDirection value.
+     *
      * @param string $shipperServiceDirection
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperServiceDirection(?string $shipperServiceDirection = null): self
@@ -1195,8 +1115,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get nombreDePassageMaximum value
-     * @return string|null
+     * Get nombreDePassageMaximum value.
      */
     public function getNombreDePassageMaximum(): ?string
     {
@@ -1204,8 +1123,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set nombreDePassageMaximum value
+     * Set nombreDePassageMaximum value.
+     *
      * @param string $nombreDePassageMaximum
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setNombreDePassageMaximum(?string $nombreDePassageMaximum = null): self
@@ -1220,8 +1141,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get ltAImprimerParChronopost value
-     * @return string|null
+     * Get ltAImprimerParChronopost value.
      */
     public function getLtAImprimerParChronopost(): ?string
     {
@@ -1229,8 +1149,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set ltAImprimerParChronopost value
+     * Set ltAImprimerParChronopost value.
+     *
      * @param string $ltAImprimerParChronopost
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setLtAImprimerParChronopost(?string $ltAImprimerParChronopost = null): self
@@ -1245,8 +1167,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get header_idEmit value
-     * @return string|null
+     * Get header_idEmit value.
      */
     public function getHeader_idEmit(): ?string
     {
@@ -1254,8 +1175,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set header_idEmit value
+     * Set header_idEmit value.
+     *
      * @param string $header_idEmit
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setHeader_idEmit(?string $header_idEmit = null): self
@@ -1270,8 +1193,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get accountNumber value
-     * @return string|null
+     * Get accountNumber value.
      */
     public function getAccountNumber(): ?string
     {
@@ -1279,8 +1201,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set accountNumber value
+     * Set accountNumber value.
+     *
      * @param string $accountNumber
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setAccountNumber(?string $accountNumber = null): self
@@ -1295,8 +1219,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get subAccount value
-     * @return string|null
+     * Get subAccount value.
      */
     public function getSubAccount(): ?string
     {
@@ -1304,8 +1227,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set subAccount value
+     * Set subAccount value.
+     *
      * @param string $subAccount
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setSubAccount(?string $subAccount = null): self
@@ -1320,8 +1245,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get header_identWebPro value
-     * @return string|null
+     * Get header_identWebPro value.
      */
     public function getHeader_identWebPro(): ?string
     {
@@ -1329,8 +1253,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set header_identWebPro value
+     * Set header_identWebPro value.
+     *
      * @param string $header_identWebPro
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setHeader_identWebPro(?string $header_identWebPro = null): self
@@ -1345,8 +1271,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperCivility value
-     * @return string|null
+     * Get shipperCivility value.
      */
     public function getShipperCivility(): ?string
     {
@@ -1354,8 +1279,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperCivility value
+     * Set shipperCivility value.
+     *
      * @param string $shipperCivility
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperCivility(?string $shipperCivility = null): self
@@ -1370,8 +1297,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperName value
-     * @return string|null
+     * Get shipperName value.
      */
     public function getShipperName(): ?string
     {
@@ -1379,8 +1305,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperName value
+     * Set shipperName value.
+     *
      * @param string $shipperName
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperName(?string $shipperName = null): self
@@ -1395,8 +1323,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperName2 value
-     * @return string|null
+     * Get shipperName2 value.
      */
     public function getShipperName2(): ?string
     {
@@ -1404,8 +1331,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperName2 value
+     * Set shipperName2 value.
+     *
      * @param string $shipperName2
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperName2(?string $shipperName2 = null): self
@@ -1420,8 +1349,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperAdress1 value
-     * @return string|null
+     * Get shipperAdress1 value.
      */
     public function getShipperAdress1(): ?string
     {
@@ -1429,8 +1357,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperAdress1 value
+     * Set shipperAdress1 value.
+     *
      * @param string $shipperAdress1
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperAdress1(?string $shipperAdress1 = null): self
@@ -1445,8 +1375,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperAdress2 value
-     * @return string|null
+     * Get shipperAdress2 value.
      */
     public function getShipperAdress2(): ?string
     {
@@ -1454,8 +1383,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperAdress2 value
+     * Set shipperAdress2 value.
+     *
      * @param string $shipperAdress2
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperAdress2(?string $shipperAdress2 = null): self
@@ -1470,8 +1401,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperZipCode value
-     * @return string|null
+     * Get shipperZipCode value.
      */
     public function getShipperZipCode(): ?string
     {
@@ -1479,8 +1409,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperZipCode value
+     * Set shipperZipCode value.
+     *
      * @param string $shipperZipCode
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperZipCode(?string $shipperZipCode = null): self
@@ -1495,8 +1427,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperCity value
-     * @return string|null
+     * Get shipperCity value.
      */
     public function getShipperCity(): ?string
     {
@@ -1504,8 +1435,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperCity value
+     * Set shipperCity value.
+     *
      * @param string $shipperCity
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperCity(?string $shipperCity = null): self
@@ -1520,8 +1453,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperCountry value
-     * @return string|null
+     * Get shipperCountry value.
      */
     public function getShipperCountry(): ?string
     {
@@ -1529,8 +1461,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperCountry value
+     * Set shipperCountry value.
+     *
      * @param string $shipperCountry
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperCountry(?string $shipperCountry = null): self
@@ -1545,8 +1479,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperCountryName value
-     * @return string|null
+     * Get shipperCountryName value.
      */
     public function getShipperCountryName(): ?string
     {
@@ -1554,8 +1487,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperCountryName value
+     * Set shipperCountryName value.
+     *
      * @param string $shipperCountryName
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperCountryName(?string $shipperCountryName = null): self
@@ -1570,8 +1505,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperContactName value
-     * @return string|null
+     * Get shipperContactName value.
      */
     public function getShipperContactName(): ?string
     {
@@ -1579,8 +1513,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperContactName value
+     * Set shipperContactName value.
+     *
      * @param string $shipperContactName
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperContactName(?string $shipperContactName = null): self
@@ -1595,8 +1531,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperEmail value
-     * @return string|null
+     * Get shipperEmail value.
      */
     public function getShipperEmail(): ?string
     {
@@ -1604,8 +1539,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperEmail value
+     * Set shipperEmail value.
+     *
      * @param string $shipperEmail
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperEmail(?string $shipperEmail = null): self
@@ -1620,8 +1557,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperPhone value
-     * @return string|null
+     * Get shipperPhone value.
      */
     public function getShipperPhone(): ?string
     {
@@ -1629,8 +1565,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperPhone value
+     * Set shipperPhone value.
+     *
      * @param string $shipperPhone
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperPhone(?string $shipperPhone = null): self
@@ -1645,8 +1583,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperMobilePhone value
-     * @return string|null
+     * Get shipperMobilePhone value.
      */
     public function getShipperMobilePhone(): ?string
     {
@@ -1654,8 +1591,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperMobilePhone value
+     * Set shipperMobilePhone value.
+     *
      * @param string $shipperMobilePhone
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperMobilePhone(?string $shipperMobilePhone = null): self
@@ -1670,8 +1609,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerCivility value
-     * @return string|null
+     * Get customerCivility value.
      */
     public function getCustomerCivility(): ?string
     {
@@ -1679,8 +1617,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerCivility value
+     * Set customerCivility value.
+     *
      * @param string $customerCivility
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerCivility(?string $customerCivility = null): self
@@ -1695,8 +1635,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerName value
-     * @return string|null
+     * Get customerName value.
      */
     public function getCustomerName(): ?string
     {
@@ -1704,8 +1643,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerName value
+     * Set customerName value.
+     *
      * @param string $customerName
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerName(?string $customerName = null): self
@@ -1720,8 +1661,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerName2 value
-     * @return string|null
+     * Get customerName2 value.
      */
     public function getCustomerName2(): ?string
     {
@@ -1729,8 +1669,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerName2 value
+     * Set customerName2 value.
+     *
      * @param string $customerName2
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerName2(?string $customerName2 = null): self
@@ -1745,8 +1687,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerAdress1 value
-     * @return string|null
+     * Get customerAdress1 value.
      */
     public function getCustomerAdress1(): ?string
     {
@@ -1754,8 +1695,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerAdress1 value
+     * Set customerAdress1 value.
+     *
      * @param string $customerAdress1
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerAdress1(?string $customerAdress1 = null): self
@@ -1770,8 +1713,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerAdress2 value
-     * @return string|null
+     * Get customerAdress2 value.
      */
     public function getCustomerAdress2(): ?string
     {
@@ -1779,8 +1721,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerAdress2 value
+     * Set customerAdress2 value.
+     *
      * @param string $customerAdress2
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerAdress2(?string $customerAdress2 = null): self
@@ -1795,8 +1739,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerZipCode value
-     * @return string|null
+     * Get customerZipCode value.
      */
     public function getCustomerZipCode(): ?string
     {
@@ -1804,8 +1747,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerZipCode value
+     * Set customerZipCode value.
+     *
      * @param string $customerZipCode
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerZipCode(?string $customerZipCode = null): self
@@ -1820,8 +1765,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerCity value
-     * @return string|null
+     * Get customerCity value.
      */
     public function getCustomerCity(): ?string
     {
@@ -1829,8 +1773,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerCity value
+     * Set customerCity value.
+     *
      * @param string $customerCity
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerCity(?string $customerCity = null): self
@@ -1845,8 +1791,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerCountry value
-     * @return string|null
+     * Get customerCountry value.
      */
     public function getCustomerCountry(): ?string
     {
@@ -1854,8 +1799,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerCountry value
+     * Set customerCountry value.
+     *
      * @param string $customerCountry
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerCountry(?string $customerCountry = null): self
@@ -1870,8 +1817,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerCountryName value
-     * @return string|null
+     * Get customerCountryName value.
      */
     public function getCustomerCountryName(): ?string
     {
@@ -1879,8 +1825,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerCountryName value
+     * Set customerCountryName value.
+     *
      * @param string $customerCountryName
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerCountryName(?string $customerCountryName = null): self
@@ -1895,8 +1843,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerContactName value
-     * @return string|null
+     * Get customerContactName value.
      */
     public function getCustomerContactName(): ?string
     {
@@ -1904,8 +1851,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerContactName value
+     * Set customerContactName value.
+     *
      * @param string $customerContactName
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerContactName(?string $customerContactName = null): self
@@ -1920,8 +1869,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerEmail value
-     * @return string|null
+     * Get customerEmail value.
      */
     public function getCustomerEmail(): ?string
     {
@@ -1929,8 +1877,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerEmail value
+     * Set customerEmail value.
+     *
      * @param string $customerEmail
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerEmail(?string $customerEmail = null): self
@@ -1945,8 +1895,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerPhone value
-     * @return string|null
+     * Get customerPhone value.
      */
     public function getCustomerPhone(): ?string
     {
@@ -1954,8 +1903,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerPhone value
+     * Set customerPhone value.
+     *
      * @param string $customerPhone
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerPhone(?string $customerPhone = null): self
@@ -1970,8 +1921,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerMobilePhone value
-     * @return string|null
+     * Get customerMobilePhone value.
      */
     public function getCustomerMobilePhone(): ?string
     {
@@ -1979,8 +1929,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerMobilePhone value
+     * Set customerMobilePhone value.
+     *
      * @param string $customerMobilePhone
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerMobilePhone(?string $customerMobilePhone = null): self
@@ -1995,8 +1947,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerPreAlert value
-     * @return string|null
+     * Get customerPreAlert value.
      */
     public function getCustomerPreAlert(): ?string
     {
@@ -2004,8 +1955,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerPreAlert value
+     * Set customerPreAlert value.
+     *
      * @param string $customerPreAlert
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerPreAlert(?string $customerPreAlert = null): self
@@ -2020,8 +1973,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientCivility value
-     * @return string|null
+     * Get recipientCivility value.
      */
     public function getRecipientCivility(): ?string
     {
@@ -2029,8 +1981,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientCivility value
+     * Set recipientCivility value.
+     *
      * @param string $recipientCivility
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientCivility(?string $recipientCivility = null): self
@@ -2045,8 +1999,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientName value
-     * @return string|null
+     * Get recipientName value.
      */
     public function getRecipientName(): ?string
     {
@@ -2054,8 +2007,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientName value
+     * Set recipientName value.
+     *
      * @param string $recipientName
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientName(?string $recipientName = null): self
@@ -2070,8 +2025,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientName2 value
-     * @return string|null
+     * Get recipientName2 value.
      */
     public function getRecipientName2(): ?string
     {
@@ -2079,8 +2033,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientName2 value
+     * Set recipientName2 value.
+     *
      * @param string $recipientName2
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientName2(?string $recipientName2 = null): self
@@ -2095,8 +2051,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientAdress1 value
-     * @return string|null
+     * Get recipientAdress1 value.
      */
     public function getRecipientAdress1(): ?string
     {
@@ -2104,8 +2059,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientAdress1 value
+     * Set recipientAdress1 value.
+     *
      * @param string $recipientAdress1
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientAdress1(?string $recipientAdress1 = null): self
@@ -2120,8 +2077,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientAdress2 value
-     * @return string|null
+     * Get recipientAdress2 value.
      */
     public function getRecipientAdress2(): ?string
     {
@@ -2129,8 +2085,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientAdress2 value
+     * Set recipientAdress2 value.
+     *
      * @param string $recipientAdress2
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientAdress2(?string $recipientAdress2 = null): self
@@ -2145,8 +2103,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientZipCode value
-     * @return string|null
+     * Get recipientZipCode value.
      */
     public function getRecipientZipCode(): ?string
     {
@@ -2154,8 +2111,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientZipCode value
+     * Set recipientZipCode value.
+     *
      * @param string $recipientZipCode
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientZipCode(?string $recipientZipCode = null): self
@@ -2170,8 +2129,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientCity value
-     * @return string|null
+     * Get recipientCity value.
      */
     public function getRecipientCity(): ?string
     {
@@ -2179,8 +2137,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientCity value
+     * Set recipientCity value.
+     *
      * @param string $recipientCity
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientCity(?string $recipientCity = null): self
@@ -2195,8 +2155,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientCountry value
-     * @return string|null
+     * Get recipientCountry value.
      */
     public function getRecipientCountry(): ?string
     {
@@ -2204,8 +2163,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientCountry value
+     * Set recipientCountry value.
+     *
      * @param string $recipientCountry
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientCountry(?string $recipientCountry = null): self
@@ -2220,8 +2181,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientCountryName value
-     * @return string|null
+     * Get recipientCountryName value.
      */
     public function getRecipientCountryName(): ?string
     {
@@ -2229,8 +2189,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientCountryName value
+     * Set recipientCountryName value.
+     *
      * @param string $recipientCountryName
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientCountryName(?string $recipientCountryName = null): self
@@ -2245,8 +2207,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientContactName value
-     * @return string|null
+     * Get recipientContactName value.
      */
     public function getRecipientContactName(): ?string
     {
@@ -2254,8 +2215,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientContactName value
+     * Set recipientContactName value.
+     *
      * @param string $recipientContactName
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientContactName(?string $recipientContactName = null): self
@@ -2270,8 +2233,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientEmail value
-     * @return string|null
+     * Get recipientEmail value.
      */
     public function getRecipientEmail(): ?string
     {
@@ -2279,8 +2241,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientEmail value
+     * Set recipientEmail value.
+     *
      * @param string $recipientEmail
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientEmail(?string $recipientEmail = null): self
@@ -2295,8 +2259,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientPhone value
-     * @return string|null
+     * Get recipientPhone value.
      */
     public function getRecipientPhone(): ?string
     {
@@ -2304,8 +2267,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientPhone value
+     * Set recipientPhone value.
+     *
      * @param string $recipientPhone
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientPhone(?string $recipientPhone = null): self
@@ -2320,8 +2285,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientMobilePhone value
-     * @return string|null
+     * Get recipientMobilePhone value.
      */
     public function getRecipientMobilePhone(): ?string
     {
@@ -2329,8 +2293,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientMobilePhone value
+     * Set recipientMobilePhone value.
+     *
      * @param string $recipientMobilePhone
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientMobilePhone(?string $recipientMobilePhone = null): self
@@ -2345,8 +2311,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientPreAlert value
-     * @return string|null
+     * Get recipientPreAlert value.
      */
     public function getRecipientPreAlert(): ?string
     {
@@ -2354,8 +2319,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientPreAlert value
+     * Set recipientPreAlert value.
+     *
      * @param string $recipientPreAlert
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientPreAlert(?string $recipientPreAlert = null): self
@@ -2370,8 +2337,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipperRef value
-     * @return string|null
+     * Get shipperRef value.
      */
     public function getShipperRef(): ?string
     {
@@ -2379,8 +2345,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipperRef value
+     * Set shipperRef value.
+     *
      * @param string $shipperRef
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipperRef(?string $shipperRef = null): self
@@ -2395,8 +2363,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get recipientRef value
-     * @return string|null
+     * Get recipientRef value.
      */
     public function getRecipientRef(): ?string
     {
@@ -2404,8 +2371,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set recipientRef value
+     * Set recipientRef value.
+     *
      * @param string $recipientRef
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setRecipientRef(?string $recipientRef = null): self
@@ -2420,8 +2389,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customerSkybillNumber value
-     * @return string|null
+     * Get customerSkybillNumber value.
      */
     public function getCustomerSkybillNumber(): ?string
     {
@@ -2429,8 +2397,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customerSkybillNumber value
+     * Set customerSkybillNumber value.
+     *
      * @param string $customerSkybillNumber
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomerSkybillNumber(?string $customerSkybillNumber = null): self
@@ -2445,8 +2415,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get evtCode value
-     * @return string|null
+     * Get evtCode value.
      */
     public function getEvtCode(): ?string
     {
@@ -2454,8 +2423,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set evtCode value
+     * Set evtCode value.
+     *
      * @param string $evtCode
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setEvtCode(?string $evtCode = null): self
@@ -2470,8 +2441,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get productCode value
-     * @return string|null
+     * Get productCode value.
      */
     public function getProductCode(): ?string
     {
@@ -2479,8 +2449,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set productCode value
+     * Set productCode value.
+     *
      * @param string $productCode
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setProductCode(?string $productCode = null): self
@@ -2495,8 +2467,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipDate value
-     * @return string|null
+     * Get shipDate value.
      */
     public function getShipDate(): ?string
     {
@@ -2504,8 +2475,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipDate value
+     * Set shipDate value.
+     *
      * @param string $shipDate
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipDate(?string $shipDate = null): self
@@ -2520,8 +2493,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get shipHour value
-     * @return string|null
+     * Get shipHour value.
      */
     public function getShipHour(): ?string
     {
@@ -2529,8 +2501,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set shipHour value
+     * Set shipHour value.
+     *
      * @param string $shipHour
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setShipHour(?string $shipHour = null): self
@@ -2545,8 +2519,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get weight value
-     * @return string|null
+     * Get weight value.
      */
     public function getWeight(): ?string
     {
@@ -2554,8 +2527,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set weight value
+     * Set weight value.
+     *
      * @param string $weight
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setWeight(?string $weight = null): self
@@ -2570,8 +2545,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get weightUnit value
-     * @return string|null
+     * Get weightUnit value.
      */
     public function getWeightUnit(): ?string
     {
@@ -2579,8 +2553,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set weightUnit value
+     * Set weightUnit value.
+     *
      * @param string $weightUnit
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setWeightUnit(?string $weightUnit = null): self
@@ -2595,8 +2571,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get insuredValue value
-     * @return string|null
+     * Get insuredValue value.
      */
     public function getInsuredValue(): ?string
     {
@@ -2604,8 +2579,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set insuredValue value
+     * Set insuredValue value.
+     *
      * @param string $insuredValue
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setInsuredValue(?string $insuredValue = null): self
@@ -2620,8 +2597,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get insuredCurrency value
-     * @return string|null
+     * Get insuredCurrency value.
      */
     public function getInsuredCurrency(): ?string
     {
@@ -2629,8 +2605,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set insuredCurrency value
+     * Set insuredCurrency value.
+     *
      * @param string $insuredCurrency
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setInsuredCurrency(?string $insuredCurrency = null): self
@@ -2645,8 +2623,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get codValue value
-     * @return string|null
+     * Get codValue value.
      */
     public function getCodValue(): ?string
     {
@@ -2654,8 +2631,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set codValue value
+     * Set codValue value.
+     *
      * @param string $codValue
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCodValue(?string $codValue = null): self
@@ -2670,8 +2649,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get codCurrency value
-     * @return string|null
+     * Get codCurrency value.
      */
     public function getCodCurrency(): ?string
     {
@@ -2679,8 +2657,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set codCurrency value
+     * Set codCurrency value.
+     *
      * @param string $codCurrency
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCodCurrency(?string $codCurrency = null): self
@@ -2695,8 +2675,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customsValue value
-     * @return string|null
+     * Get customsValue value.
      */
     public function getCustomsValue(): ?string
     {
@@ -2704,8 +2683,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customsValue value
+     * Set customsValue value.
+     *
      * @param string $customsValue
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomsValue(?string $customsValue = null): self
@@ -2720,8 +2701,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get customsCurrency value
-     * @return string|null
+     * Get customsCurrency value.
      */
     public function getCustomsCurrency(): ?string
     {
@@ -2729,8 +2709,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set customsCurrency value
+     * Set customsCurrency value.
+     *
      * @param string $customsCurrency
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setCustomsCurrency(?string $customsCurrency = null): self
@@ -2745,8 +2727,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get service value
-     * @return string|null
+     * Get service value.
      */
     public function getService(): ?string
     {
@@ -2754,8 +2735,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set service value
+     * Set service value.
+     *
      * @param string $service
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setService(?string $service = null): self
@@ -2770,8 +2753,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get as value
-     * @return string|null
+     * Get as value.
      */
     public function getAs(): ?string
     {
@@ -2779,8 +2761,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set as value
+     * Set as value.
+     *
      * @param string $as
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setAs(?string $as = null): self
@@ -2795,8 +2779,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get objectType value
-     * @return string|null
+     * Get objectType value.
      */
     public function getObjectType(): ?string
     {
@@ -2804,8 +2787,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set objectType value
+     * Set objectType value.
+     *
      * @param string $objectType
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setObjectType(?string $objectType = null): self
@@ -2820,8 +2805,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get content1 value
-     * @return string|null
+     * Get content1 value.
      */
     public function getContent1(): ?string
     {
@@ -2829,8 +2813,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set content1 value
+     * Set content1 value.
+     *
      * @param string $content1
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setContent1(?string $content1 = null): self
@@ -2845,8 +2831,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get content2 value
-     * @return string|null
+     * Get content2 value.
      */
     public function getContent2(): ?string
     {
@@ -2854,8 +2839,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set content2 value
+     * Set content2 value.
+     *
      * @param string $content2
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setContent2(?string $content2 = null): self
@@ -2870,8 +2857,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get content3 value
-     * @return string|null
+     * Get content3 value.
      */
     public function getContent3(): ?string
     {
@@ -2879,8 +2865,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set content3 value
+     * Set content3 value.
+     *
      * @param string $content3
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setContent3(?string $content3 = null): self
@@ -2895,8 +2883,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get content4 value
-     * @return string|null
+     * Get content4 value.
      */
     public function getContent4(): ?string
     {
@@ -2904,8 +2891,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set content4 value
+     * Set content4 value.
+     *
      * @param string $content4
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setContent4(?string $content4 = null): self
@@ -2920,8 +2909,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get content5 value
-     * @return string|null
+     * Get content5 value.
      */
     public function getContent5(): ?string
     {
@@ -2929,8 +2917,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set content5 value
+     * Set content5 value.
+     *
      * @param string $content5
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setContent5(?string $content5 = null): self
@@ -2945,8 +2935,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get portValue value
-     * @return string|null
+     * Get portValue value.
      */
     public function getPortValue(): ?string
     {
@@ -2954,8 +2943,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set portValue value
+     * Set portValue value.
+     *
      * @param string $portValue
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setPortValue(?string $portValue = null): self
@@ -2970,8 +2961,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get portCurrency value
-     * @return string|null
+     * Get portCurrency value.
      */
     public function getPortCurrency(): ?string
     {
@@ -2979,8 +2969,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set portCurrency value
+     * Set portCurrency value.
+     *
      * @param string $portCurrency
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setPortCurrency(?string $portCurrency = null): self
@@ -2995,8 +2987,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get skybillRank value
-     * @return string|null
+     * Get skybillRank value.
      */
     public function getSkybillRank(): ?string
     {
@@ -3004,8 +2995,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set skybillRank value
+     * Set skybillRank value.
+     *
      * @param string $skybillRank
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setSkybillRank(?string $skybillRank = null): self
@@ -3020,8 +3013,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get bulkNumber value
-     * @return string|null
+     * Get bulkNumber value.
      */
     public function getBulkNumber(): ?string
     {
@@ -3029,8 +3021,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set bulkNumber value
+     * Set bulkNumber value.
+     *
      * @param string $bulkNumber
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setBulkNumber(?string $bulkNumber = null): self
@@ -3045,8 +3039,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get mode value
-     * @return string|null
+     * Get mode value.
      */
     public function getMode(): ?string
     {
@@ -3054,8 +3047,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set mode value
+     * Set mode value.
+     *
      * @param string $mode
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setMode(?string $mode = null): self
@@ -3070,8 +3065,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get password value
-     * @return string|null
+     * Get password value.
      */
     public function getPassword(): ?string
     {
@@ -3079,8 +3073,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set password value
+     * Set password value.
+     *
      * @param string $password
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setPassword(?string $password = null): self
@@ -3095,8 +3091,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get modeRetour value
-     * @return string|null
+     * Get modeRetour value.
      */
     public function getModeRetour(): ?string
     {
@@ -3104,8 +3099,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set modeRetour value
+     * Set modeRetour value.
+     *
      * @param string $modeRetour
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setModeRetour(?string $modeRetour = null): self
@@ -3120,8 +3117,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get timeSlotStartDate value
-     * @return string|null
+     * Get timeSlotStartDate value.
      */
     public function getTimeSlotStartDate(): ?string
     {
@@ -3129,8 +3125,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set timeSlotStartDate value
+     * Set timeSlotStartDate value.
+     *
      * @param string $timeSlotStartDate
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setTimeSlotStartDate(?string $timeSlotStartDate = null): self
@@ -3145,8 +3143,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get timeSlotEndDate value
-     * @return string|null
+     * Get timeSlotEndDate value.
      */
     public function getTimeSlotEndDate(): ?string
     {
@@ -3154,8 +3151,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set timeSlotEndDate value
+     * Set timeSlotEndDate value.
+     *
      * @param string $timeSlotEndDate
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setTimeSlotEndDate(?string $timeSlotEndDate = null): self
@@ -3170,8 +3169,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get timeSlotTariffLevel value
-     * @return string|null
+     * Get timeSlotTariffLevel value.
      */
     public function getTimeSlotTariffLevel(): ?string
     {
@@ -3179,8 +3177,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set timeSlotTariffLevel value
+     * Set timeSlotTariffLevel value.
+     *
      * @param string $timeSlotTariffLevel
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setTimeSlotTariffLevel(?string $timeSlotTariffLevel = null): self
@@ -3195,8 +3195,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get expirationDate value
-     * @return string|null
+     * Get expirationDate value.
      */
     public function getExpirationDate(): ?string
     {
@@ -3204,8 +3203,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set expirationDate value
+     * Set expirationDate value.
+     *
      * @param string $expirationDate
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setExpirationDate(?string $expirationDate = null): self
@@ -3220,8 +3221,7 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Get sellByDate value
-     * @return string|null
+     * Get sellByDate value.
      */
     public function getSellByDate(): ?string
     {
@@ -3229,8 +3229,10 @@ class ShippingWithReservationAndESDWithRefClientPC extends AbstractStructBase
     }
 
     /**
-     * Set sellByDate value
+     * Set sellByDate value.
+     *
      * @param string $sellByDate
+     *
      * @return ShippingWithReservationAndESDWithRefClientPC
      */
     public function setSellByDate(?string $sellByDate = null): self

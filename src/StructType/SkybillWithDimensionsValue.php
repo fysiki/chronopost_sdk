@@ -7,32 +7,30 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for skybillWithDimensionsValue StructType
- * @subpackage Structs
+ * This class stands for skybillWithDimensionsValue StructType.
  */
 class SkybillWithDimensionsValue extends SkybillValue
 {
     /**
-     * The height
-     * @var float|null
+     * The height.
      */
     protected ?float $height = null;
     /**
-     * The length
-     * @var float|null
+     * The length.
      */
     protected ?float $length = null;
     /**
-     * The width
-     * @var float|null
+     * The width.
      */
     protected ?float $width = null;
 
     /**
-     * Constructor method for skybillWithDimensionsValue
+     * Constructor method for skybillWithDimensionsValue.
+     *
      * @param float $height
      * @param float $length
      * @param float $width
+     *
      * @uses SkybillWithDimensionsValue::setHeight()
      * @uses SkybillWithDimensionsValue::setLength()
      * @uses SkybillWithDimensionsValue::setWidth()
@@ -42,12 +40,12 @@ class SkybillWithDimensionsValue extends SkybillValue
         $this
             ->setHeight($height)
             ->setLength($length)
-            ->setWidth($width);
+            ->setWidth($width)
+        ;
     }
 
     /**
-     * Get height value
-     * @return float|null
+     * Get height value.
      */
     public function getHeight(): ?float
     {
@@ -55,8 +53,10 @@ class SkybillWithDimensionsValue extends SkybillValue
     }
 
     /**
-     * Set height value
+     * Set height value.
+     *
      * @param float $height
+     *
      * @return SkybillWithDimensionsValue
      */
     public function setHeight(?float $height = null): self
@@ -71,8 +71,7 @@ class SkybillWithDimensionsValue extends SkybillValue
     }
 
     /**
-     * Get length value
-     * @return float|null
+     * Get length value.
      */
     public function getLength(): ?float
     {
@@ -80,8 +79,10 @@ class SkybillWithDimensionsValue extends SkybillValue
     }
 
     /**
-     * Set length value
+     * Set length value.
+     *
      * @param float $length
+     *
      * @return SkybillWithDimensionsValue
      */
     public function setLength(?float $length = null): self
@@ -96,8 +97,7 @@ class SkybillWithDimensionsValue extends SkybillValue
     }
 
     /**
-     * Get width value
-     * @return float|null
+     * Get width value.
      */
     public function getWidth(): ?float
     {
@@ -105,8 +105,10 @@ class SkybillWithDimensionsValue extends SkybillValue
     }
 
     /**
-     * Set width value
+     * Set width value.
+     *
      * @param float $width
+     *
      * @return SkybillWithDimensionsValue
      */
     public function setWidth(?float $width = null): self

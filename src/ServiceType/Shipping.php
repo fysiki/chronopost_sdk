@@ -49,15 +49,15 @@ use StructType\ShippingWithReservationV2Response;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
 /**
- * This class stands for Shipping ServiceType
- * @subpackage Services
+ * This class stands for Shipping ServiceType.
  */
 class Shipping extends AbstractSoapClientBase
 {
     /**
-     * Method to call the operation originally named shippingV2
-     * @param ShippingV2 $parameters
-     * @return ShippingV2Response|bool
+     * Method to call the operation originally named shippingV2.
+     *
+     * @return bool|ShippingV2Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -78,9 +78,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingV3
-     * @param ShippingV3 $parameters
-     * @return ShippingV3Response|bool
+     * Method to call the operation originally named shippingV3.
+     *
+     * @return bool|ShippingV3Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -101,9 +102,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingMultiParcel
-     * @param ShippingMultiParcel $parameters
-     * @return ShippingMultiParcelResponse|bool
+     * Method to call the operation originally named shippingMultiParcel.
+     *
+     * @return bool|ShippingMultiParcelResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -124,9 +126,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingWithESDOnlyV2
-     * @param ShippingWithESDOnlyV2 $parameters
-     * @return ShippingWithESDOnlyV2Response|bool
+     * Method to call the operation originally named shippingWithESDOnlyV2.
+     *
+     * @return bool|ShippingWithESDOnlyV2Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -147,9 +150,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingWithReservationV2
-     * @param ShippingWithReservationV2 $parameters
-     * @return ShippingWithReservationV2Response|bool
+     * Method to call the operation originally named shippingWithReservationV2.
+     *
+     * @return bool|ShippingWithReservationV2Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -170,9 +174,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shipping
-     * @param \StructType\Shipping $parameters
-     * @return ShippingResponse|bool
+     * Method to call the operation originally named shipping.
+     *
+     * @return bool|ShippingResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -193,9 +198,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingMultiParcelWithReservation
-     * @param ShippingMultiParcelWithReservation $parameters
-     * @return ShippingMultiParcelWithReservationResponse|bool
+     * Method to call the operation originally named shippingMultiParcelWithReservation.
+     *
+     * @return bool|ShippingMultiParcelWithReservationResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -216,9 +222,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingMultiParcelV4
-     * @param ShippingMultiParcelV4 $parameters
-     * @return ShippingMultiParcelV4Response|bool
+     * Method to call the operation originally named shippingMultiParcelV4.
+     *
+     * @return bool|ShippingMultiParcelV4Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -239,9 +246,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingMultiParcelV5
-     * @param ShippingMultiParcelV5 $parameters
-     * @return ShippingMultiParcelV5Response|bool
+     * Method to call the operation originally named shippingMultiParcelV5.
+     *
+     * @return bool|ShippingMultiParcelV5Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -263,9 +271,10 @@ class Shipping extends AbstractSoapClientBase
 
     /**
      * Method to call the operation originally named
-     * shippingMultiParcelWithReservationV3
-     * @param ShippingMultiParcelWithReservationV3 $parameters
-     * @return ShippingMultiParcelWithReservationV3Response|bool
+     * shippingMultiParcelWithReservationV3.
+     *
+     * @return bool|ShippingMultiParcelWithReservationV3Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -286,9 +295,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingMultiParcelV2
-     * @param ShippingMultiParcelV2 $parameters
-     * @return ShippingMultiParcelV2Response|bool
+     * Method to call the operation originally named shippingMultiParcelV2.
+     *
+     * @return bool|ShippingMultiParcelV2Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -309,9 +319,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingV6
-     * @param ShippingV6 $parameters
-     * @return ShippingV6Response|bool
+     * Method to call the operation originally named shippingV6.
+     *
+     * @return bool|ShippingV6Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -332,9 +343,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingWithReservation
-     * @param ShippingWithReservation $parameters
-     * @return ShippingWithReservationResponse|bool
+     * Method to call the operation originally named shippingWithReservation.
+     *
+     * @return bool|ShippingWithReservationResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -355,9 +367,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingV7
-     * @param ShippingV7 $parameters
-     * @return ShippingV7Response|bool
+     * Method to call the operation originally named shippingV7.
+     *
+     * @return bool|ShippingV7Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -379,9 +392,10 @@ class Shipping extends AbstractSoapClientBase
 
     /**
      * Method to call the operation originally named
-     * shippingWithReservationAndESDWithRefClient
-     * @param ShippingWithReservationAndESDWithRefClient $parameters
-     * @return ShippingWithReservationAndESDWithRefClientResponse|bool
+     * shippingWithReservationAndESDWithRefClient.
+     *
+     * @return bool|ShippingWithReservationAndESDWithRefClientResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -402,9 +416,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingV4
-     * @param ShippingV4 $parameters
-     * @return ShippingV4Response|bool
+     * Method to call the operation originally named shippingV4.
+     *
+     * @return bool|ShippingV4Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -425,9 +440,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingV5
-     * @param ShippingV5 $parameters
-     * @return ShippingV5Response|bool
+     * Method to call the operation originally named shippingV5.
+     *
+     * @return bool|ShippingV5Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -449,9 +465,10 @@ class Shipping extends AbstractSoapClientBase
 
     /**
      * Method to call the operation originally named
-     * shippingWithReservationAndESDWithRefClientPC
-     * @param ShippingWithReservationAndESDWithRefClientPC $parameters
-     * @return ShippingWithReservationAndESDWithRefClientPCResponse|bool
+     * shippingWithReservationAndESDWithRefClientPC.
+     *
+     * @return bool|ShippingWithReservationAndESDWithRefClientPCResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -473,9 +490,10 @@ class Shipping extends AbstractSoapClientBase
 
     /**
      * Method to call the operation originally named
-     * shippingMultiParcelWithReservationV2
-     * @param ShippingMultiParcelWithReservationV2 $parameters
-     * @return ShippingMultiParcelWithReservationV2Response|bool
+     * shippingMultiParcelWithReservationV2.
+     *
+     * @return bool|ShippingMultiParcelWithReservationV2Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -496,9 +514,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingWithESDOnly
-     * @param ShippingWithESDOnly $parameters
-     * @return ShippingWithESDOnlyResponse|bool
+     * Method to call the operation originally named shippingWithESDOnly.
+     *
+     * @return bool|ShippingWithESDOnlyResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -519,9 +538,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Method to call the operation originally named shippingMultiParcelV3
-     * @param ShippingMultiParcelV3 $parameters
-     * @return ShippingMultiParcelV3Response|bool
+     * Method to call the operation originally named shippingMultiParcelV3.
+     *
+     * @return bool|ShippingMultiParcelV3Response
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -542,8 +562,10 @@ class Shipping extends AbstractSoapClientBase
     }
 
     /**
-     * Returns the result
+     * Returns the result.
+     *
      * @return ShippingMultiParcelResponse|ShippingMultiParcelV2Response|ShippingMultiParcelV3Response|ShippingMultiParcelV4Response|ShippingMultiParcelV5Response|ShippingMultiParcelWithReservationResponse|ShippingMultiParcelWithReservationV2Response|ShippingMultiParcelWithReservationV3Response|ShippingResponse|ShippingV2Response|ShippingV3Response|ShippingV4Response|ShippingV5Response|ShippingV6Response|ShippingV7Response|ShippingWithESDOnlyResponse|ShippingWithESDOnlyV2Response|ShippingWithReservationAndESDWithRefClientPCResponse|ShippingWithReservationAndESDWithRefClientResponse|ShippingWithReservationResponse|ShippingWithReservationV2Response
+     *
      * @see AbstractSoapClientBase::getResult()
      */
     public function getResult()

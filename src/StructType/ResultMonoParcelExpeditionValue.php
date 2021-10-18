@@ -7,33 +7,33 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for resultMonoParcelExpeditionValue StructType
- * @subpackage Structs
+ * This class stands for resultMonoParcelExpeditionValue StructType.
  */
 class ResultMonoParcelExpeditionValue extends ResultExpeditionValueV3
 {
     /**
      * The pdfEtiquette
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $pdfEtiquette = null;
 
     /**
-     * Constructor method for resultMonoParcelExpeditionValue
+     * Constructor method for resultMonoParcelExpeditionValue.
+     *
      * @param string $pdfEtiquette
+     *
      * @uses ResultMonoParcelExpeditionValue::setPdfEtiquette()
      */
     public function __construct(?string $pdfEtiquette = null)
     {
         $this
-            ->setPdfEtiquette($pdfEtiquette);
+            ->setPdfEtiquette($pdfEtiquette)
+        ;
     }
 
     /**
-     * Get pdfEtiquette value
-     * @return string|null
+     * Get pdfEtiquette value.
      */
     public function getPdfEtiquette(): ?string
     {
@@ -41,8 +41,10 @@ class ResultMonoParcelExpeditionValue extends ResultExpeditionValueV3
     }
 
     /**
-     * Set pdfEtiquette value
+     * Set pdfEtiquette value.
+     *
      * @param string $pdfEtiquette
+     *
      * @return ResultMonoParcelExpeditionValue
      */
     public function setPdfEtiquette(?string $pdfEtiquette = null): self

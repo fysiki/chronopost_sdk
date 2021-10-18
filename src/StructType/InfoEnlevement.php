@@ -8,100 +8,90 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for infoEnlevement StructType
- * @subpackage Structs
+ * This class stands for infoEnlevement StructType.
  */
 class InfoEnlevement extends AbstractStructBase
 {
     /**
      * The ancienNumeroESD
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ancienNumeroESD = null;
     /**
      * The codeBu
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeBu = null;
     /**
      * The codeDepot
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeDepot = null;
     /**
      * The codePostal
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codePostal = null;
     /**
      * The dateCreation
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $dateCreation = null;
     /**
      * The datePassage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $datePassage = null;
     /**
-     * The idEnlevement
-     * @var int|null
+     * The idEnlevement.
      */
     protected ?int $idEnlevement = null;
     /**
      * The numeroUniqueESD
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $numeroUniqueESD = null;
     /**
      * The refDestinataire
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $refDestinataire = null;
     /**
      * The refEsdClient
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $refEsdClient = null;
     /**
      * The ville
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ville = null;
 
     /**
-     * Constructor method for infoEnlevement
+     * Constructor method for infoEnlevement.
+     *
      * @param string $ancienNumeroESD
      * @param string $codeBu
      * @param string $codeDepot
      * @param string $codePostal
      * @param string $dateCreation
      * @param string $datePassage
-     * @param int $idEnlevement
+     * @param int    $idEnlevement
      * @param string $numeroUniqueESD
      * @param string $refDestinataire
      * @param string $refEsdClient
      * @param string $ville
+     *
      * @uses InfoEnlevement::setAncienNumeroESD()
      * @uses InfoEnlevement::setCodeBu()
      * @uses InfoEnlevement::setCodeDepot()
@@ -127,12 +117,12 @@ class InfoEnlevement extends AbstractStructBase
             ->setNumeroUniqueESD($numeroUniqueESD)
             ->setRefDestinataire($refDestinataire)
             ->setRefEsdClient($refEsdClient)
-            ->setVille($ville);
+            ->setVille($ville)
+        ;
     }
 
     /**
-     * Get ancienNumeroESD value
-     * @return string|null
+     * Get ancienNumeroESD value.
      */
     public function getAncienNumeroESD(): ?string
     {
@@ -140,8 +130,10 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set ancienNumeroESD value
+     * Set ancienNumeroESD value.
+     *
      * @param string $ancienNumeroESD
+     *
      * @return InfoEnlevement
      */
     public function setAncienNumeroESD(?string $ancienNumeroESD = null): self
@@ -156,8 +148,7 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get codeBu value
-     * @return string|null
+     * Get codeBu value.
      */
     public function getCodeBu(): ?string
     {
@@ -165,8 +156,10 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set codeBu value
+     * Set codeBu value.
+     *
      * @param string $codeBu
+     *
      * @return InfoEnlevement
      */
     public function setCodeBu(?string $codeBu = null): self
@@ -181,8 +174,7 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get codeDepot value
-     * @return string|null
+     * Get codeDepot value.
      */
     public function getCodeDepot(): ?string
     {
@@ -190,8 +182,10 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set codeDepot value
+     * Set codeDepot value.
+     *
      * @param string $codeDepot
+     *
      * @return InfoEnlevement
      */
     public function setCodeDepot(?string $codeDepot = null): self
@@ -206,8 +200,7 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get codePostal value
-     * @return string|null
+     * Get codePostal value.
      */
     public function getCodePostal(): ?string
     {
@@ -215,8 +208,10 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set codePostal value
+     * Set codePostal value.
+     *
      * @param string $codePostal
+     *
      * @return InfoEnlevement
      */
     public function setCodePostal(?string $codePostal = null): self
@@ -231,8 +226,7 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get dateCreation value
-     * @return string|null
+     * Get dateCreation value.
      */
     public function getDateCreation(): ?string
     {
@@ -240,8 +234,10 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set dateCreation value
+     * Set dateCreation value.
+     *
      * @param string $dateCreation
+     *
      * @return InfoEnlevement
      */
     public function setDateCreation(?string $dateCreation = null): self
@@ -256,8 +252,7 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get datePassage value
-     * @return string|null
+     * Get datePassage value.
      */
     public function getDatePassage(): ?string
     {
@@ -265,8 +260,10 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set datePassage value
+     * Set datePassage value.
+     *
      * @param string $datePassage
+     *
      * @return InfoEnlevement
      */
     public function setDatePassage(?string $datePassage = null): self
@@ -281,8 +278,7 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get idEnlevement value
-     * @return int|null
+     * Get idEnlevement value.
      */
     public function getIdEnlevement(): ?int
     {
@@ -290,8 +286,10 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set idEnlevement value
+     * Set idEnlevement value.
+     *
      * @param int $idEnlevement
+     *
      * @return InfoEnlevement
      */
     public function setIdEnlevement(?int $idEnlevement = null): self
@@ -306,8 +304,7 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get numeroUniqueESD value
-     * @return string|null
+     * Get numeroUniqueESD value.
      */
     public function getNumeroUniqueESD(): ?string
     {
@@ -315,8 +312,10 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set numeroUniqueESD value
+     * Set numeroUniqueESD value.
+     *
      * @param string $numeroUniqueESD
+     *
      * @return InfoEnlevement
      */
     public function setNumeroUniqueESD(?string $numeroUniqueESD = null): self
@@ -331,8 +330,7 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get refDestinataire value
-     * @return string|null
+     * Get refDestinataire value.
      */
     public function getRefDestinataire(): ?string
     {
@@ -340,8 +338,10 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set refDestinataire value
+     * Set refDestinataire value.
+     *
      * @param string $refDestinataire
+     *
      * @return InfoEnlevement
      */
     public function setRefDestinataire(?string $refDestinataire = null): self
@@ -356,8 +356,7 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get refEsdClient value
-     * @return string|null
+     * Get refEsdClient value.
      */
     public function getRefEsdClient(): ?string
     {
@@ -365,8 +364,10 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set refEsdClient value
+     * Set refEsdClient value.
+     *
      * @param string $refEsdClient
+     *
      * @return InfoEnlevement
      */
     public function setRefEsdClient(?string $refEsdClient = null): self
@@ -381,8 +382,7 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get ville value
-     * @return string|null
+     * Get ville value.
      */
     public function getVille(): ?string
     {
@@ -390,8 +390,10 @@ class InfoEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set ville value
+     * Set ville value.
+     *
      * @param string $ville
+     *
      * @return InfoEnlevement
      */
     public function setVille(?string $ville = null): self

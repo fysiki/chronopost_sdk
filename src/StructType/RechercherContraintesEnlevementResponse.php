@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for rechercherContraintesEnlevementResponse StructType
  * Meta information extracted from the WSDL
- * - type: tns:rechercherContraintesEnlevementResponse
- * @subpackage Structs
+ * - type: tns:rechercherContraintesEnlevementResponse.
  */
 class RechercherContraintesEnlevementResponse extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var EsdResultContraintesAgenceValue|null
+     * - minOccurs: 0.
      */
     protected ?EsdResultContraintesAgenceValue $return = null;
 
     /**
-     * Constructor method for rechercherContraintesEnlevementResponse
+     * Constructor method for rechercherContraintesEnlevementResponse.
+     *
      * @param EsdResultContraintesAgenceValue $return
+     *
      * @uses RechercherContraintesEnlevementResponse::setReturn()
      */
     public function __construct(?EsdResultContraintesAgenceValue $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return EsdResultContraintesAgenceValue|null
+     * Get return value.
      */
     public function getReturn(): ?EsdResultContraintesAgenceValue
     {
@@ -43,8 +43,10 @@ class RechercherContraintesEnlevementResponse extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param EsdResultContraintesAgenceValue $return
+     *
      * @return RechercherContraintesEnlevementResponse
      */
     public function setReturn(?EsdResultContraintesAgenceValue $return = null): self

@@ -8,77 +8,68 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for shippingInfo StructType
- * @subpackage Structs
+ * This class stands for shippingInfo StructType.
  */
 class ShippingInfo extends AbstractStructBase
 {
     /**
      * The asCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $asCode = null;
     /**
      * The codeService
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeService = null;
     /**
      * The destinationDepot
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $destinationDepot = null;
     /**
      * The groupingPriorityLabel
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $groupingPriorityLabel = null;
     /**
      * The serviceMark
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $serviceMark = null;
     /**
      * The serviceName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $serviceName = null;
     /**
      * The signaletiqueProduit
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $signaletiqueProduit = null;
     /**
      * The dSort
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $dSort = null;
     /**
      * The oSort
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $oSort = null;
 
     /**
-     * Constructor method for shippingInfo
+     * Constructor method for shippingInfo.
+     *
      * @param string $asCode
      * @param string $codeService
      * @param string $destinationDepot
@@ -88,6 +79,7 @@ class ShippingInfo extends AbstractStructBase
      * @param string $signaletiqueProduit
      * @param string $dSort
      * @param string $oSort
+     *
      * @uses ShippingInfo::setAsCode()
      * @uses ShippingInfo::setCodeService()
      * @uses ShippingInfo::setDestinationDepot()
@@ -109,12 +101,12 @@ class ShippingInfo extends AbstractStructBase
             ->setServiceName($serviceName)
             ->setSignaletiqueProduit($signaletiqueProduit)
             ->setDSort($dSort)
-            ->setOSort($oSort);
+            ->setOSort($oSort)
+        ;
     }
 
     /**
-     * Get asCode value
-     * @return string|null
+     * Get asCode value.
      */
     public function getAsCode(): ?string
     {
@@ -122,8 +114,10 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Set asCode value
+     * Set asCode value.
+     *
      * @param string $asCode
+     *
      * @return ShippingInfo
      */
     public function setAsCode(?string $asCode = null): self
@@ -138,8 +132,7 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Get codeService value
-     * @return string|null
+     * Get codeService value.
      */
     public function getCodeService(): ?string
     {
@@ -147,8 +140,10 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Set codeService value
+     * Set codeService value.
+     *
      * @param string $codeService
+     *
      * @return ShippingInfo
      */
     public function setCodeService(?string $codeService = null): self
@@ -163,8 +158,7 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Get destinationDepot value
-     * @return string|null
+     * Get destinationDepot value.
      */
     public function getDestinationDepot(): ?string
     {
@@ -172,8 +166,10 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Set destinationDepot value
+     * Set destinationDepot value.
+     *
      * @param string $destinationDepot
+     *
      * @return ShippingInfo
      */
     public function setDestinationDepot(?string $destinationDepot = null): self
@@ -188,8 +184,7 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Get groupingPriorityLabel value
-     * @return string|null
+     * Get groupingPriorityLabel value.
      */
     public function getGroupingPriorityLabel(): ?string
     {
@@ -197,8 +192,10 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Set groupingPriorityLabel value
+     * Set groupingPriorityLabel value.
+     *
      * @param string $groupingPriorityLabel
+     *
      * @return ShippingInfo
      */
     public function setGroupingPriorityLabel(?string $groupingPriorityLabel = null): self
@@ -213,8 +210,7 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Get serviceMark value
-     * @return string|null
+     * Get serviceMark value.
      */
     public function getServiceMark(): ?string
     {
@@ -222,8 +218,10 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Set serviceMark value
+     * Set serviceMark value.
+     *
      * @param string $serviceMark
+     *
      * @return ShippingInfo
      */
     public function setServiceMark(?string $serviceMark = null): self
@@ -238,8 +236,7 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Get serviceName value
-     * @return string|null
+     * Get serviceName value.
      */
     public function getServiceName(): ?string
     {
@@ -247,8 +244,10 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Set serviceName value
+     * Set serviceName value.
+     *
      * @param string $serviceName
+     *
      * @return ShippingInfo
      */
     public function setServiceName(?string $serviceName = null): self
@@ -263,8 +262,7 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Get signaletiqueProduit value
-     * @return string|null
+     * Get signaletiqueProduit value.
      */
     public function getSignaletiqueProduit(): ?string
     {
@@ -272,8 +270,10 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Set signaletiqueProduit value
+     * Set signaletiqueProduit value.
+     *
      * @param string $signaletiqueProduit
+     *
      * @return ShippingInfo
      */
     public function setSignaletiqueProduit(?string $signaletiqueProduit = null): self
@@ -288,8 +288,7 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Get dSort value
-     * @return string|null
+     * Get dSort value.
      */
     public function getDSort(): ?string
     {
@@ -297,8 +296,10 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Set dSort value
+     * Set dSort value.
+     *
      * @param string $dSort
+     *
      * @return ShippingInfo
      */
     public function setDSort(?string $dSort = null): self
@@ -313,8 +314,7 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Get oSort value
-     * @return string|null
+     * Get oSort value.
      */
     public function getOSort(): ?string
     {
@@ -322,8 +322,10 @@ class ShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Set oSort value
+     * Set oSort value.
+     *
      * @param string $oSort
+     *
      * @return ShippingInfo
      */
     public function setOSort(?string $oSort = null): self

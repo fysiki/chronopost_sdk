@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for getReservedSkybillResponse StructType
  * Meta information extracted from the WSDL
- * - type: tns:getReservedSkybillResponse
- * @subpackage Structs
+ * - type: tns:getReservedSkybillResponse.
  */
 class GetReservedSkybillResponse extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultGetReservedSkybillValue|null
+     * - minOccurs: 0.
      */
     protected ?ResultGetReservedSkybillValue $return = null;
 
     /**
-     * Constructor method for getReservedSkybillResponse
+     * Constructor method for getReservedSkybillResponse.
+     *
      * @param ResultGetReservedSkybillValue $return
+     *
      * @uses GetReservedSkybillResponse::setReturn()
      */
     public function __construct(?ResultGetReservedSkybillValue $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultGetReservedSkybillValue|null
+     * Get return value.
      */
     public function getReturn(): ?ResultGetReservedSkybillValue
     {
@@ -43,8 +43,10 @@ class GetReservedSkybillResponse extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultGetReservedSkybillValue $return
+     *
      * @return GetReservedSkybillResponse
      */
     public function setReturn(?ResultGetReservedSkybillValue $return = null): self

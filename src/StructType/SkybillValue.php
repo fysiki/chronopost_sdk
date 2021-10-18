@@ -8,236 +8,209 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for skybillValue StructType
- * @subpackage Structs
+ * This class stands for skybillValue StructType.
  */
 class SkybillValue extends AbstractStructBase
 {
     /**
      * The bulkNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $bulkNumber = null;
     /**
      * The codCurrency
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codCurrency = null;
     /**
      * The codValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var float|null
+     * - minOccurs: 0.
      */
     protected ?float $codValue = null;
     /**
      * The content1
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $content1 = null;
     /**
      * The content2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $content2 = null;
     /**
      * The content3
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $content3 = null;
     /**
      * The content4
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $content4 = null;
     /**
      * The content5
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $content5 = null;
     /**
      * The customsCurrency
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customsCurrency = null;
     /**
      * The customsValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var float|null
+     * - minOccurs: 0.
      */
     protected ?float $customsValue = null;
     /**
      * The evtCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $evtCode = null;
     /**
      * The insuredCurrency
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $insuredCurrency = null;
     /**
      * The insuredValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var float|null
+     * - minOccurs: 0.
      */
     protected ?float $insuredValue = null;
     /**
      * The latitude
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $latitude = null;
     /**
      * The longitude
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $longitude = null;
     /**
      * The masterSkybillNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $masterSkybillNumber = null;
     /**
      * The objectType
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $objectType = null;
     /**
      * The portCurrency
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $portCurrency = null;
     /**
      * The portValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var float|null
+     * - minOccurs: 0.
      */
     protected ?float $portValue = null;
     /**
      * The productCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $productCode = null;
     /**
      * The qualite
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $qualite = null;
     /**
      * The service
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $service = null;
     /**
      * The shipDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipDate = null;
     /**
-     * The shipHour
-     * @var int|null
+     * The shipHour.
      */
     protected ?int $shipHour = null;
     /**
      * The skybillRank
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $skybillRank = null;
     /**
      * The source
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $source = null;
     /**
      * The weight
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var float|null
+     * - minOccurs: 0.
      */
     protected ?float $weight = null;
     /**
      * The weightUnit
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $weightUnit = null;
 
     /**
-     * Constructor method for skybillValue
+     * Constructor method for skybillValue.
+     *
      * @param string $bulkNumber
      * @param string $codCurrency
-     * @param float $codValue
+     * @param float  $codValue
      * @param string $content1
      * @param string $content2
      * @param string $content3
      * @param string $content4
      * @param string $content5
      * @param string $customsCurrency
-     * @param float $customsValue
+     * @param float  $customsValue
      * @param string $evtCode
      * @param string $insuredCurrency
-     * @param float $insuredValue
+     * @param float  $insuredValue
      * @param string $latitude
      * @param string $longitude
      * @param string $masterSkybillNumber
      * @param string $objectType
      * @param string $portCurrency
-     * @param float $portValue
+     * @param float  $portValue
      * @param string $productCode
      * @param string $qualite
      * @param string $service
      * @param string $shipDate
-     * @param int $shipHour
+     * @param int    $shipHour
      * @param string $skybillRank
      * @param string $source
-     * @param float $weight
+     * @param float  $weight
      * @param string $weightUnit
+     *
      * @uses SkybillValue::setBulkNumber()
      * @uses SkybillValue::setCodCurrency()
      * @uses SkybillValue::setCodValue()
@@ -297,12 +270,12 @@ class SkybillValue extends AbstractStructBase
             ->setSkybillRank($skybillRank)
             ->setSource($source)
             ->setWeight($weight)
-            ->setWeightUnit($weightUnit);
+            ->setWeightUnit($weightUnit)
+        ;
     }
 
     /**
-     * Get bulkNumber value
-     * @return string|null
+     * Get bulkNumber value.
      */
     public function getBulkNumber(): ?string
     {
@@ -310,8 +283,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set bulkNumber value
+     * Set bulkNumber value.
+     *
      * @param string $bulkNumber
+     *
      * @return SkybillValue
      */
     public function setBulkNumber(?string $bulkNumber = null): self
@@ -326,8 +301,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get codCurrency value
-     * @return string|null
+     * Get codCurrency value.
      */
     public function getCodCurrency(): ?string
     {
@@ -335,8 +309,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set codCurrency value
+     * Set codCurrency value.
+     *
      * @param string $codCurrency
+     *
      * @return SkybillValue
      */
     public function setCodCurrency(?string $codCurrency = null): self
@@ -351,8 +327,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get codValue value
-     * @return float|null
+     * Get codValue value.
      */
     public function getCodValue(): ?float
     {
@@ -360,8 +335,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set codValue value
+     * Set codValue value.
+     *
      * @param float $codValue
+     *
      * @return SkybillValue
      */
     public function setCodValue(?float $codValue = null): self
@@ -376,8 +353,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get content1 value
-     * @return string|null
+     * Get content1 value.
      */
     public function getContent1(): ?string
     {
@@ -385,8 +361,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set content1 value
+     * Set content1 value.
+     *
      * @param string $content1
+     *
      * @return SkybillValue
      */
     public function setContent1(?string $content1 = null): self
@@ -401,8 +379,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get content2 value
-     * @return string|null
+     * Get content2 value.
      */
     public function getContent2(): ?string
     {
@@ -410,8 +387,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set content2 value
+     * Set content2 value.
+     *
      * @param string $content2
+     *
      * @return SkybillValue
      */
     public function setContent2(?string $content2 = null): self
@@ -426,8 +405,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get content3 value
-     * @return string|null
+     * Get content3 value.
      */
     public function getContent3(): ?string
     {
@@ -435,8 +413,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set content3 value
+     * Set content3 value.
+     *
      * @param string $content3
+     *
      * @return SkybillValue
      */
     public function setContent3(?string $content3 = null): self
@@ -451,8 +431,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get content4 value
-     * @return string|null
+     * Get content4 value.
      */
     public function getContent4(): ?string
     {
@@ -460,8 +439,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set content4 value
+     * Set content4 value.
+     *
      * @param string $content4
+     *
      * @return SkybillValue
      */
     public function setContent4(?string $content4 = null): self
@@ -476,8 +457,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get content5 value
-     * @return string|null
+     * Get content5 value.
      */
     public function getContent5(): ?string
     {
@@ -485,8 +465,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set content5 value
+     * Set content5 value.
+     *
      * @param string $content5
+     *
      * @return SkybillValue
      */
     public function setContent5(?string $content5 = null): self
@@ -501,8 +483,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get customsCurrency value
-     * @return string|null
+     * Get customsCurrency value.
      */
     public function getCustomsCurrency(): ?string
     {
@@ -510,8 +491,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set customsCurrency value
+     * Set customsCurrency value.
+     *
      * @param string $customsCurrency
+     *
      * @return SkybillValue
      */
     public function setCustomsCurrency(?string $customsCurrency = null): self
@@ -526,8 +509,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get customsValue value
-     * @return float|null
+     * Get customsValue value.
      */
     public function getCustomsValue(): ?float
     {
@@ -535,8 +517,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set customsValue value
+     * Set customsValue value.
+     *
      * @param float $customsValue
+     *
      * @return SkybillValue
      */
     public function setCustomsValue(?float $customsValue = null): self
@@ -551,8 +535,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get evtCode value
-     * @return string|null
+     * Get evtCode value.
      */
     public function getEvtCode(): ?string
     {
@@ -560,8 +543,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set evtCode value
+     * Set evtCode value.
+     *
      * @param string $evtCode
+     *
      * @return SkybillValue
      */
     public function setEvtCode(?string $evtCode = null): self
@@ -576,8 +561,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get insuredCurrency value
-     * @return string|null
+     * Get insuredCurrency value.
      */
     public function getInsuredCurrency(): ?string
     {
@@ -585,8 +569,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set insuredCurrency value
+     * Set insuredCurrency value.
+     *
      * @param string $insuredCurrency
+     *
      * @return SkybillValue
      */
     public function setInsuredCurrency(?string $insuredCurrency = null): self
@@ -601,8 +587,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get insuredValue value
-     * @return float|null
+     * Get insuredValue value.
      */
     public function getInsuredValue(): ?float
     {
@@ -610,8 +595,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set insuredValue value
+     * Set insuredValue value.
+     *
      * @param float $insuredValue
+     *
      * @return SkybillValue
      */
     public function setInsuredValue(?float $insuredValue = null): self
@@ -626,8 +613,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get latitude value
-     * @return string|null
+     * Get latitude value.
      */
     public function getLatitude(): ?string
     {
@@ -635,8 +621,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set latitude value
+     * Set latitude value.
+     *
      * @param string $latitude
+     *
      * @return SkybillValue
      */
     public function setLatitude(?string $latitude = null): self
@@ -651,8 +639,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get longitude value
-     * @return string|null
+     * Get longitude value.
      */
     public function getLongitude(): ?string
     {
@@ -660,8 +647,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set longitude value
+     * Set longitude value.
+     *
      * @param string $longitude
+     *
      * @return SkybillValue
      */
     public function setLongitude(?string $longitude = null): self
@@ -676,8 +665,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get masterSkybillNumber value
-     * @return string|null
+     * Get masterSkybillNumber value.
      */
     public function getMasterSkybillNumber(): ?string
     {
@@ -685,8 +673,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set masterSkybillNumber value
+     * Set masterSkybillNumber value.
+     *
      * @param string $masterSkybillNumber
+     *
      * @return SkybillValue
      */
     public function setMasterSkybillNumber(?string $masterSkybillNumber = null): self
@@ -701,8 +691,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get objectType value
-     * @return string|null
+     * Get objectType value.
      */
     public function getObjectType(): ?string
     {
@@ -710,8 +699,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set objectType value
+     * Set objectType value.
+     *
      * @param string $objectType
+     *
      * @return SkybillValue
      */
     public function setObjectType(?string $objectType = null): self
@@ -726,8 +717,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get portCurrency value
-     * @return string|null
+     * Get portCurrency value.
      */
     public function getPortCurrency(): ?string
     {
@@ -735,8 +725,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set portCurrency value
+     * Set portCurrency value.
+     *
      * @param string $portCurrency
+     *
      * @return SkybillValue
      */
     public function setPortCurrency(?string $portCurrency = null): self
@@ -751,8 +743,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get portValue value
-     * @return float|null
+     * Get portValue value.
      */
     public function getPortValue(): ?float
     {
@@ -760,8 +751,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set portValue value
+     * Set portValue value.
+     *
      * @param float $portValue
+     *
      * @return SkybillValue
      */
     public function setPortValue(?float $portValue = null): self
@@ -776,8 +769,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get productCode value
-     * @return string|null
+     * Get productCode value.
      */
     public function getProductCode(): ?string
     {
@@ -785,8 +777,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set productCode value
+     * Set productCode value.
+     *
      * @param string $productCode
+     *
      * @return SkybillValue
      */
     public function setProductCode(?string $productCode = null): self
@@ -801,8 +795,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get qualite value
-     * @return string|null
+     * Get qualite value.
      */
     public function getQualite(): ?string
     {
@@ -810,8 +803,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set qualite value
+     * Set qualite value.
+     *
      * @param string $qualite
+     *
      * @return SkybillValue
      */
     public function setQualite(?string $qualite = null): self
@@ -826,8 +821,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get service value
-     * @return string|null
+     * Get service value.
      */
     public function getService(): ?string
     {
@@ -835,8 +829,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set service value
+     * Set service value.
+     *
      * @param string $service
+     *
      * @return SkybillValue
      */
     public function setService(?string $service = null): self
@@ -851,8 +847,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get shipDate value
-     * @return string|null
+     * Get shipDate value.
      */
     public function getShipDate(): ?string
     {
@@ -860,8 +855,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set shipDate value
+     * Set shipDate value.
+     *
      * @param string $shipDate
+     *
      * @return SkybillValue
      */
     public function setShipDate(?string $shipDate = null): self
@@ -876,8 +873,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get shipHour value
-     * @return int|null
+     * Get shipHour value.
      */
     public function getShipHour(): ?int
     {
@@ -885,8 +881,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set shipHour value
+     * Set shipHour value.
+     *
      * @param int $shipHour
+     *
      * @return SkybillValue
      */
     public function setShipHour(?int $shipHour = null): self
@@ -901,8 +899,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get skybillRank value
-     * @return string|null
+     * Get skybillRank value.
      */
     public function getSkybillRank(): ?string
     {
@@ -910,8 +907,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set skybillRank value
+     * Set skybillRank value.
+     *
      * @param string $skybillRank
+     *
      * @return SkybillValue
      */
     public function setSkybillRank(?string $skybillRank = null): self
@@ -926,8 +925,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get source value
-     * @return string|null
+     * Get source value.
      */
     public function getSource(): ?string
     {
@@ -935,8 +933,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set source value
+     * Set source value.
+     *
      * @param string $source
+     *
      * @return SkybillValue
      */
     public function setSource(?string $source = null): self
@@ -951,8 +951,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get weight value
-     * @return float|null
+     * Get weight value.
      */
     public function getWeight(): ?float
     {
@@ -960,8 +959,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set weight value
+     * Set weight value.
+     *
      * @param float $weight
+     *
      * @return SkybillValue
      */
     public function setWeight(?float $weight = null): self
@@ -976,8 +977,7 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Get weightUnit value
-     * @return string|null
+     * Get weightUnit value.
      */
     public function getWeightUnit(): ?string
     {
@@ -985,8 +985,10 @@ class SkybillValue extends AbstractStructBase
     }
 
     /**
-     * Set weightUnit value
+     * Set weightUnit value.
+     *
      * @param string $weightUnit
+     *
      * @return SkybillValue
      */
     public function setWeightUnit(?string $weightUnit = null): self

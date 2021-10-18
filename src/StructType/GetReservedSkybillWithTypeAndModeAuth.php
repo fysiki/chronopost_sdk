@@ -10,44 +10,41 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for getReservedSkybillWithTypeAndModeAuth StructType
  * Meta information extracted from the WSDL
- * - type: tns:getReservedSkybillWithTypeAndModeAuth
- * @subpackage Structs
+ * - type: tns:getReservedSkybillWithTypeAndModeAuth.
  */
 class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
 {
     /**
      * The numberSearch
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $numberSearch = null;
     /**
      * The mode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $mode = null;
     /**
-     * The accountNumber
-     * @var int|null
+     * The accountNumber.
      */
     protected ?int $accountNumber = null;
     /**
      * The password
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $password = null;
 
     /**
-     * Constructor method for getReservedSkybillWithTypeAndModeAuth
+     * Constructor method for getReservedSkybillWithTypeAndModeAuth.
+     *
      * @param string $numberSearch
      * @param string $mode
-     * @param int $accountNumber
+     * @param int    $accountNumber
      * @param string $password
+     *
      * @uses GetReservedSkybillWithTypeAndModeAuth::setNumberSearch()
      * @uses GetReservedSkybillWithTypeAndModeAuth::setMode()
      * @uses GetReservedSkybillWithTypeAndModeAuth::setAccountNumber()
@@ -59,12 +56,12 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
             ->setNumberSearch($numberSearch)
             ->setMode($mode)
             ->setAccountNumber($accountNumber)
-            ->setPassword($password);
+            ->setPassword($password)
+        ;
     }
 
     /**
-     * Get numberSearch value
-     * @return string|null
+     * Get numberSearch value.
      */
     public function getNumberSearch(): ?string
     {
@@ -72,8 +69,10 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
     }
 
     /**
-     * Set numberSearch value
+     * Set numberSearch value.
+     *
      * @param string $numberSearch
+     *
      * @return GetReservedSkybillWithTypeAndModeAuth
      */
     public function setNumberSearch(?string $numberSearch = null): self
@@ -88,8 +87,7 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
     }
 
     /**
-     * Get mode value
-     * @return string|null
+     * Get mode value.
      */
     public function getMode(): ?string
     {
@@ -97,8 +95,10 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
     }
 
     /**
-     * Set mode value
+     * Set mode value.
+     *
      * @param string $mode
+     *
      * @return GetReservedSkybillWithTypeAndModeAuth
      */
     public function setMode(?string $mode = null): self
@@ -113,8 +113,7 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
     }
 
     /**
-     * Get accountNumber value
-     * @return int|null
+     * Get accountNumber value.
      */
     public function getAccountNumber(): ?int
     {
@@ -122,8 +121,10 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
     }
 
     /**
-     * Set accountNumber value
+     * Set accountNumber value.
+     *
      * @param int $accountNumber
+     *
      * @return GetReservedSkybillWithTypeAndModeAuth
      */
     public function setAccountNumber(?int $accountNumber = null): self
@@ -138,8 +139,7 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
     }
 
     /**
-     * Get password value
-     * @return string|null
+     * Get password value.
      */
     public function getPassword(): ?string
     {
@@ -147,8 +147,10 @@ class GetReservedSkybillWithTypeAndModeAuth extends AbstractStructBase
     }
 
     /**
-     * Set password value
+     * Set password value.
+     *
      * @param string $password
+     *
      * @return GetReservedSkybillWithTypeAndModeAuth
      */
     public function setPassword(?string $password = null): self

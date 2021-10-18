@@ -10,63 +10,56 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for getRouting StructType
  * Meta information extracted from the WSDL
- * - type: tns:getRouting
- * @subpackage Structs
+ * - type: tns:getRouting.
  */
 class GetRouting extends AbstractStructBase
 {
     /**
      * The accountNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $accountNumber = null;
     /**
      * The password
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $password = null;
     /**
      * The shipperDepot
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperDepot = null;
     /**
      * The countryCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $countryCode = null;
     /**
      * The zipCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $zipCode = null;
     /**
      * The socode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $socode = null;
     /**
      * The ascode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ascode = null;
 
     /**
-     * Constructor method for getRouting
+     * Constructor method for getRouting.
+     *
      * @param string $accountNumber
      * @param string $password
      * @param string $shipperDepot
@@ -74,6 +67,7 @@ class GetRouting extends AbstractStructBase
      * @param string $zipCode
      * @param string $socode
      * @param string $ascode
+     *
      * @uses GetRouting::setAccountNumber()
      * @uses GetRouting::setPassword()
      * @uses GetRouting::setShipperDepot()
@@ -91,12 +85,12 @@ class GetRouting extends AbstractStructBase
             ->setCountryCode($countryCode)
             ->setZipCode($zipCode)
             ->setSocode($socode)
-            ->setAscode($ascode);
+            ->setAscode($ascode)
+        ;
     }
 
     /**
-     * Get accountNumber value
-     * @return string|null
+     * Get accountNumber value.
      */
     public function getAccountNumber(): ?string
     {
@@ -104,8 +98,10 @@ class GetRouting extends AbstractStructBase
     }
 
     /**
-     * Set accountNumber value
+     * Set accountNumber value.
+     *
      * @param string $accountNumber
+     *
      * @return GetRouting
      */
     public function setAccountNumber(?string $accountNumber = null): self
@@ -120,8 +116,7 @@ class GetRouting extends AbstractStructBase
     }
 
     /**
-     * Get password value
-     * @return string|null
+     * Get password value.
      */
     public function getPassword(): ?string
     {
@@ -129,8 +124,10 @@ class GetRouting extends AbstractStructBase
     }
 
     /**
-     * Set password value
+     * Set password value.
+     *
      * @param string $password
+     *
      * @return GetRouting
      */
     public function setPassword(?string $password = null): self
@@ -145,8 +142,7 @@ class GetRouting extends AbstractStructBase
     }
 
     /**
-     * Get shipperDepot value
-     * @return string|null
+     * Get shipperDepot value.
      */
     public function getShipperDepot(): ?string
     {
@@ -154,8 +150,10 @@ class GetRouting extends AbstractStructBase
     }
 
     /**
-     * Set shipperDepot value
+     * Set shipperDepot value.
+     *
      * @param string $shipperDepot
+     *
      * @return GetRouting
      */
     public function setShipperDepot(?string $shipperDepot = null): self
@@ -170,8 +168,7 @@ class GetRouting extends AbstractStructBase
     }
 
     /**
-     * Get countryCode value
-     * @return string|null
+     * Get countryCode value.
      */
     public function getCountryCode(): ?string
     {
@@ -179,8 +176,10 @@ class GetRouting extends AbstractStructBase
     }
 
     /**
-     * Set countryCode value
+     * Set countryCode value.
+     *
      * @param string $countryCode
+     *
      * @return GetRouting
      */
     public function setCountryCode(?string $countryCode = null): self
@@ -195,8 +194,7 @@ class GetRouting extends AbstractStructBase
     }
 
     /**
-     * Get zipCode value
-     * @return string|null
+     * Get zipCode value.
      */
     public function getZipCode(): ?string
     {
@@ -204,8 +202,10 @@ class GetRouting extends AbstractStructBase
     }
 
     /**
-     * Set zipCode value
+     * Set zipCode value.
+     *
      * @param string $zipCode
+     *
      * @return GetRouting
      */
     public function setZipCode(?string $zipCode = null): self
@@ -220,8 +220,7 @@ class GetRouting extends AbstractStructBase
     }
 
     /**
-     * Get socode value
-     * @return string|null
+     * Get socode value.
      */
     public function getSocode(): ?string
     {
@@ -229,8 +228,10 @@ class GetRouting extends AbstractStructBase
     }
 
     /**
-     * Set socode value
+     * Set socode value.
+     *
      * @param string $socode
+     *
      * @return GetRouting
      */
     public function setSocode(?string $socode = null): self
@@ -245,8 +246,7 @@ class GetRouting extends AbstractStructBase
     }
 
     /**
-     * Get ascode value
-     * @return string|null
+     * Get ascode value.
      */
     public function getAscode(): ?string
     {
@@ -254,8 +254,10 @@ class GetRouting extends AbstractStructBase
     }
 
     /**
-     * Set ascode value
+     * Set ascode value.
+     *
      * @param string $ascode
+     *
      * @return GetRouting
      */
     public function setAscode(?string $ascode = null): self

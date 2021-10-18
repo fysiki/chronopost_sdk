@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for shippingWithReservationResponse StructType
  * Meta information extracted from the WSDL
- * - type: tns:shippingWithReservationResponse
- * @subpackage Structs
+ * - type: tns:shippingWithReservationResponse.
  */
 class ShippingWithReservationResponse extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultReservationExpeditionValue|null
+     * - minOccurs: 0.
      */
     protected ?ResultReservationExpeditionValue $return = null;
 
     /**
-     * Constructor method for shippingWithReservationResponse
+     * Constructor method for shippingWithReservationResponse.
+     *
      * @param ResultReservationExpeditionValue $return
+     *
      * @uses ShippingWithReservationResponse::setReturn()
      */
     public function __construct(?ResultReservationExpeditionValue $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultReservationExpeditionValue|null
+     * Get return value.
      */
     public function getReturn(): ?ResultReservationExpeditionValue
     {
@@ -43,8 +43,10 @@ class ShippingWithReservationResponse extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultReservationExpeditionValue $return
+     *
      * @return ShippingWithReservationResponse
      */
     public function setReturn(?ResultReservationExpeditionValue $return = null): self

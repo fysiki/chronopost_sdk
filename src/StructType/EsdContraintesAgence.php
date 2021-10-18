@@ -8,97 +8,85 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for esdContraintesAgence StructType
- * @subpackage Structs
+ * This class stands for esdContraintesAgence StructType.
  */
 class EsdContraintesAgence extends AbstractStructBase
 {
     /**
      * The battement
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var int|null
+     * - minOccurs: 0.
      */
     protected ?int $battement = null;
     /**
      * The battementEnHeure
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $battementEnHeure = null;
     /**
      * The codeAgence
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeAgence = null;
     /**
      * The codePays
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codePays = null;
     /**
      * The codePostal
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codePostal = null;
     /**
      * The hla
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $hla = null;
     /**
      * The hlp
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $hlp = null;
     /**
      * The hppt
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $hppt = null;
     /**
      * The nomAgence
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $nomAgence = null;
     /**
      * The raisonNonActivite
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $raisonNonActivite = null;
     /**
      * The ville
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ville = null;
     /**
-     * The zoneA
-     * @var bool|null
+     * The zoneA.
      */
     protected ?bool $zoneA = null;
 
     /**
-     * Constructor method for esdContraintesAgence
-     * @param int $battement
+     * Constructor method for esdContraintesAgence.
+     *
+     * @param int    $battement
      * @param string $battementEnHeure
      * @param string $codeAgence
      * @param string $codePays
@@ -109,7 +97,8 @@ class EsdContraintesAgence extends AbstractStructBase
      * @param string $nomAgence
      * @param string $raisonNonActivite
      * @param string $ville
-     * @param bool $zoneA
+     * @param bool   $zoneA
+     *
      * @uses EsdContraintesAgence::setBattement()
      * @uses EsdContraintesAgence::setBattementEnHeure()
      * @uses EsdContraintesAgence::setCodeAgence()
@@ -137,12 +126,12 @@ class EsdContraintesAgence extends AbstractStructBase
             ->setNomAgence($nomAgence)
             ->setRaisonNonActivite($raisonNonActivite)
             ->setVille($ville)
-            ->setZoneA($zoneA);
+            ->setZoneA($zoneA)
+        ;
     }
 
     /**
-     * Get battement value
-     * @return int|null
+     * Get battement value.
      */
     public function getBattement(): ?int
     {
@@ -150,8 +139,10 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Set battement value
+     * Set battement value.
+     *
      * @param int $battement
+     *
      * @return EsdContraintesAgence
      */
     public function setBattement(?int $battement = null): self
@@ -166,8 +157,7 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Get battementEnHeure value
-     * @return string|null
+     * Get battementEnHeure value.
      */
     public function getBattementEnHeure(): ?string
     {
@@ -175,8 +165,10 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Set battementEnHeure value
+     * Set battementEnHeure value.
+     *
      * @param string $battementEnHeure
+     *
      * @return EsdContraintesAgence
      */
     public function setBattementEnHeure(?string $battementEnHeure = null): self
@@ -191,8 +183,7 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Get codeAgence value
-     * @return string|null
+     * Get codeAgence value.
      */
     public function getCodeAgence(): ?string
     {
@@ -200,8 +191,10 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Set codeAgence value
+     * Set codeAgence value.
+     *
      * @param string $codeAgence
+     *
      * @return EsdContraintesAgence
      */
     public function setCodeAgence(?string $codeAgence = null): self
@@ -216,8 +209,7 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Get codePays value
-     * @return string|null
+     * Get codePays value.
      */
     public function getCodePays(): ?string
     {
@@ -225,8 +217,10 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Set codePays value
+     * Set codePays value.
+     *
      * @param string $codePays
+     *
      * @return EsdContraintesAgence
      */
     public function setCodePays(?string $codePays = null): self
@@ -241,8 +235,7 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Get codePostal value
-     * @return string|null
+     * Get codePostal value.
      */
     public function getCodePostal(): ?string
     {
@@ -250,8 +243,10 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Set codePostal value
+     * Set codePostal value.
+     *
      * @param string $codePostal
+     *
      * @return EsdContraintesAgence
      */
     public function setCodePostal(?string $codePostal = null): self
@@ -266,8 +261,7 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Get hla value
-     * @return string|null
+     * Get hla value.
      */
     public function getHla(): ?string
     {
@@ -275,8 +269,10 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Set hla value
+     * Set hla value.
+     *
      * @param string $hla
+     *
      * @return EsdContraintesAgence
      */
     public function setHla(?string $hla = null): self
@@ -291,8 +287,7 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Get hlp value
-     * @return string|null
+     * Get hlp value.
      */
     public function getHlp(): ?string
     {
@@ -300,8 +295,10 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Set hlp value
+     * Set hlp value.
+     *
      * @param string $hlp
+     *
      * @return EsdContraintesAgence
      */
     public function setHlp(?string $hlp = null): self
@@ -316,8 +313,7 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Get hppt value
-     * @return string|null
+     * Get hppt value.
      */
     public function getHppt(): ?string
     {
@@ -325,8 +321,10 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Set hppt value
+     * Set hppt value.
+     *
      * @param string $hppt
+     *
      * @return EsdContraintesAgence
      */
     public function setHppt(?string $hppt = null): self
@@ -341,8 +339,7 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Get nomAgence value
-     * @return string|null
+     * Get nomAgence value.
      */
     public function getNomAgence(): ?string
     {
@@ -350,8 +347,10 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Set nomAgence value
+     * Set nomAgence value.
+     *
      * @param string $nomAgence
+     *
      * @return EsdContraintesAgence
      */
     public function setNomAgence(?string $nomAgence = null): self
@@ -366,8 +365,7 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Get raisonNonActivite value
-     * @return string|null
+     * Get raisonNonActivite value.
      */
     public function getRaisonNonActivite(): ?string
     {
@@ -375,8 +373,10 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Set raisonNonActivite value
+     * Set raisonNonActivite value.
+     *
      * @param string $raisonNonActivite
+     *
      * @return EsdContraintesAgence
      */
     public function setRaisonNonActivite(?string $raisonNonActivite = null): self
@@ -391,8 +391,7 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Get ville value
-     * @return string|null
+     * Get ville value.
      */
     public function getVille(): ?string
     {
@@ -400,8 +399,10 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Set ville value
+     * Set ville value.
+     *
      * @param string $ville
+     *
      * @return EsdContraintesAgence
      */
     public function setVille(?string $ville = null): self
@@ -416,8 +417,7 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Get zoneA value
-     * @return bool|null
+     * Get zoneA value.
      */
     public function getZoneA(): ?bool
     {
@@ -425,8 +425,10 @@ class EsdContraintesAgence extends AbstractStructBase
     }
 
     /**
-     * Set zoneA value
+     * Set zoneA value.
+     *
      * @param bool $zoneA
+     *
      * @return EsdContraintesAgence
      */
     public function setZoneA(?bool $zoneA = null): self

@@ -8,52 +8,47 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for particularites StructType
- * @subpackage Structs
+ * This class stands for particularites StructType.
  */
 class Particularites extends AbstractStructBase
 {
     /**
-     * The hauteur
-     * @var float|null
+     * The hauteur.
      */
     protected ?float $hauteur = null;
     /**
      * The instructionsParticulieres
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $instructionsParticulieres = null;
     /**
-     * The largeur
-     * @var float|null
+     * The largeur.
      */
     protected ?float $largeur = null;
     /**
-     * The longueur
-     * @var float|null
+     * The longueur.
      */
     protected ?float $longueur = null;
     /**
-     * The nombreEnvois
-     * @var int|null
+     * The nombreEnvois.
      */
     protected ?int $nombreEnvois = null;
     /**
-     * The poids
-     * @var float|null
+     * The poids.
      */
     protected ?float $poids = null;
 
     /**
-     * Constructor method for particularites
-     * @param float $hauteur
+     * Constructor method for particularites.
+     *
+     * @param float  $hauteur
      * @param string $instructionsParticulieres
-     * @param float $largeur
-     * @param float $longueur
-     * @param int $nombreEnvois
-     * @param float $poids
+     * @param float  $largeur
+     * @param float  $longueur
+     * @param int    $nombreEnvois
+     * @param float  $poids
+     *
      * @uses Particularites::setHauteur()
      * @uses Particularites::setInstructionsParticulieres()
      * @uses Particularites::setLargeur()
@@ -69,12 +64,12 @@ class Particularites extends AbstractStructBase
             ->setLargeur($largeur)
             ->setLongueur($longueur)
             ->setNombreEnvois($nombreEnvois)
-            ->setPoids($poids);
+            ->setPoids($poids)
+        ;
     }
 
     /**
-     * Get hauteur value
-     * @return float|null
+     * Get hauteur value.
      */
     public function getHauteur(): ?float
     {
@@ -82,8 +77,10 @@ class Particularites extends AbstractStructBase
     }
 
     /**
-     * Set hauteur value
+     * Set hauteur value.
+     *
      * @param float $hauteur
+     *
      * @return Particularites
      */
     public function setHauteur(?float $hauteur = null): self
@@ -98,8 +95,7 @@ class Particularites extends AbstractStructBase
     }
 
     /**
-     * Get instructionsParticulieres value
-     * @return string|null
+     * Get instructionsParticulieres value.
      */
     public function getInstructionsParticulieres(): ?string
     {
@@ -107,8 +103,10 @@ class Particularites extends AbstractStructBase
     }
 
     /**
-     * Set instructionsParticulieres value
+     * Set instructionsParticulieres value.
+     *
      * @param string $instructionsParticulieres
+     *
      * @return Particularites
      */
     public function setInstructionsParticulieres(?string $instructionsParticulieres = null): self
@@ -123,8 +121,7 @@ class Particularites extends AbstractStructBase
     }
 
     /**
-     * Get largeur value
-     * @return float|null
+     * Get largeur value.
      */
     public function getLargeur(): ?float
     {
@@ -132,8 +129,10 @@ class Particularites extends AbstractStructBase
     }
 
     /**
-     * Set largeur value
+     * Set largeur value.
+     *
      * @param float $largeur
+     *
      * @return Particularites
      */
     public function setLargeur(?float $largeur = null): self
@@ -148,8 +147,7 @@ class Particularites extends AbstractStructBase
     }
 
     /**
-     * Get longueur value
-     * @return float|null
+     * Get longueur value.
      */
     public function getLongueur(): ?float
     {
@@ -157,8 +155,10 @@ class Particularites extends AbstractStructBase
     }
 
     /**
-     * Set longueur value
+     * Set longueur value.
+     *
      * @param float $longueur
+     *
      * @return Particularites
      */
     public function setLongueur(?float $longueur = null): self
@@ -173,8 +173,7 @@ class Particularites extends AbstractStructBase
     }
 
     /**
-     * Get nombreEnvois value
-     * @return int|null
+     * Get nombreEnvois value.
      */
     public function getNombreEnvois(): ?int
     {
@@ -182,8 +181,10 @@ class Particularites extends AbstractStructBase
     }
 
     /**
-     * Set nombreEnvois value
+     * Set nombreEnvois value.
+     *
      * @param int $nombreEnvois
+     *
      * @return Particularites
      */
     public function setNombreEnvois(?int $nombreEnvois = null): self
@@ -198,8 +199,7 @@ class Particularites extends AbstractStructBase
     }
 
     /**
-     * Get poids value
-     * @return float|null
+     * Get poids value.
      */
     public function getPoids(): ?float
     {
@@ -207,8 +207,10 @@ class Particularites extends AbstractStructBase
     }
 
     /**
-     * Set poids value
+     * Set poids value.
+     *
      * @param float $poids
+     *
      * @return Particularites
      */
     public function setPoids(?float $poids = null): self

@@ -8,30 +8,29 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for entry StructType
- * @subpackage Structs
+ * This class stands for entry StructType.
  */
 class Entry extends AbstractStructBase
 {
     /**
      * The key
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $key = null;
     /**
      * The value
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $value = null;
 
     /**
-     * Constructor method for entry
+     * Constructor method for entry.
+     *
      * @param string $key
      * @param string $value
+     *
      * @uses Entry::setKey()
      * @uses Entry::setValue()
      */
@@ -39,12 +38,12 @@ class Entry extends AbstractStructBase
     {
         $this
             ->setKey($key)
-            ->setValue($value);
+            ->setValue($value)
+        ;
     }
 
     /**
-     * Get key value
-     * @return string|null
+     * Get key value.
      */
     public function getKey(): ?string
     {
@@ -52,8 +51,10 @@ class Entry extends AbstractStructBase
     }
 
     /**
-     * Set key value
+     * Set key value.
+     *
      * @param string $key
+     *
      * @return Entry
      */
     public function setKey(?string $key = null): self
@@ -68,8 +69,7 @@ class Entry extends AbstractStructBase
     }
 
     /**
-     * Get value value
-     * @return string|null
+     * Get value value.
      */
     public function getValue(): ?string
     {
@@ -77,8 +77,10 @@ class Entry extends AbstractStructBase
     }
 
     /**
-     * Set value value
+     * Set value value.
+     *
      * @param string $value
+     *
      * @return Entry
      */
     public function setValue(?string $value = null): self

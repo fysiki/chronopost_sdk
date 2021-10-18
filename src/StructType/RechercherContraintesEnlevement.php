@@ -10,38 +10,36 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for rechercherContraintesEnlevement StructType
  * Meta information extracted from the WSDL
- * - type: tns:rechercherContraintesEnlevement
- * @subpackage Structs
+ * - type: tns:rechercherContraintesEnlevement.
  */
 class RechercherContraintesEnlevement extends AbstractStructBase
 {
     /**
      * The country
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $country = null;
     /**
      * The zipCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $zipCode = null;
     /**
      * The city
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $city = null;
 
     /**
-     * Constructor method for rechercherContraintesEnlevement
+     * Constructor method for rechercherContraintesEnlevement.
+     *
      * @param string $country
      * @param string $zipCode
      * @param string $city
+     *
      * @uses RechercherContraintesEnlevement::setCountry()
      * @uses RechercherContraintesEnlevement::setZipCode()
      * @uses RechercherContraintesEnlevement::setCity()
@@ -51,12 +49,12 @@ class RechercherContraintesEnlevement extends AbstractStructBase
         $this
             ->setCountry($country)
             ->setZipCode($zipCode)
-            ->setCity($city);
+            ->setCity($city)
+        ;
     }
 
     /**
-     * Get country value
-     * @return string|null
+     * Get country value.
      */
     public function getCountry(): ?string
     {
@@ -64,8 +62,10 @@ class RechercherContraintesEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set country value
+     * Set country value.
+     *
      * @param string $country
+     *
      * @return RechercherContraintesEnlevement
      */
     public function setCountry(?string $country = null): self
@@ -80,8 +80,7 @@ class RechercherContraintesEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get zipCode value
-     * @return string|null
+     * Get zipCode value.
      */
     public function getZipCode(): ?string
     {
@@ -89,8 +88,10 @@ class RechercherContraintesEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set zipCode value
+     * Set zipCode value.
+     *
      * @param string $zipCode
+     *
      * @return RechercherContraintesEnlevement
      */
     public function setZipCode(?string $zipCode = null): self
@@ -105,8 +106,7 @@ class RechercherContraintesEnlevement extends AbstractStructBase
     }
 
     /**
-     * Get city value
-     * @return string|null
+     * Get city value.
      */
     public function getCity(): ?string
     {
@@ -114,8 +114,10 @@ class RechercherContraintesEnlevement extends AbstractStructBase
     }
 
     /**
-     * Set city value
+     * Set city value.
+     *
      * @param string $city
+     *
      * @return RechercherContraintesEnlevement
      */
     public function setCity(?string $city = null): self

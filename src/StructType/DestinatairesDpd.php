@@ -8,8 +8,7 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for destinatairesDpd StructType
- * @subpackage Structs
+ * This class stands for destinatairesDpd StructType.
  */
 class DestinatairesDpd extends AbstractStructBase
 {
@@ -18,27 +17,32 @@ class DestinatairesDpd extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * - nillable: true
+     * - nillable: true.
+     *
      * @var DestinataireDpd[]
      */
     protected ?array $destinataireDpd = null;
 
     /**
-     * Constructor method for destinatairesDpd
+     * Constructor method for destinatairesDpd.
+     *
      * @param DestinataireDpd[] $destinataireDpd
+     *
      * @uses DestinatairesDpd::setDestinataireDpd()
      */
     public function __construct(?array $destinataireDpd = null)
     {
         $this
-            ->setDestinataireDpd($destinataireDpd);
+            ->setDestinataireDpd($destinataireDpd)
+        ;
     }
 
     /**
      * Get destinataireDpd value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
-     * removable from the request (nillable=true+minOccurs=0)
+     * removable from the request (nillable=true+minOccurs=0).
+     *
      * @return DestinataireDpd[]
      */
     public function getDestinataireDpd(): ?array
@@ -48,8 +52,10 @@ class DestinatairesDpd extends AbstractStructBase
 
     /**
      * This method is responsible for validating the values passed to the setDestinataireDpd method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setDestinataireDpd method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setDestinataireDpd method.
+     *
      * @param array $values
+     *
      * @return string A non-empty message if the values does not match the validation rules
      */
     public static function validateDestinataireDpdForArrayConstraintsFromSetDestinataireDpd(?array $values = []): string
@@ -76,10 +82,13 @@ class DestinatairesDpd extends AbstractStructBase
     /**
      * Set destinataireDpd value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
-     * if the value assigned to this property is null, it is removed from this object
+     * if the value assigned to this property is null, it is removed from this object.
+     *
      * @param DestinataireDpd[] $destinataireDpd
-     * @return DestinatairesDpd
+     *
      * @throws InvalidArgumentException
+     *
+     * @return DestinatairesDpd
      */
     public function setDestinataireDpd(?array $destinataireDpd = null): self
     {
@@ -97,10 +106,11 @@ class DestinatairesDpd extends AbstractStructBase
     }
 
     /**
-     * Add item to destinataireDpd value
-     * @param DestinataireDpd $item
-     * @return DestinatairesDpd
+     * Add item to destinataireDpd value.
+     *
      * @throws InvalidArgumentException
+     *
+     * @return DestinatairesDpd
      */
     public function addToDestinataireDpd(DestinataireDpd $item): self
     {

@@ -7,30 +7,29 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for esdValue3 StructType
- * @subpackage Structs
+ * This class stands for esdValue3 StructType.
  */
 class EsdValue3 extends EsdWithRefClientValue
 {
     /**
      * The codeDepotColReq
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeDepotColReq = null;
     /**
      * The numColReq
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $numColReq = null;
 
     /**
-     * Constructor method for esdValue3
+     * Constructor method for esdValue3.
+     *
      * @param string $codeDepotColReq
      * @param string $numColReq
+     *
      * @uses EsdValue3::setCodeDepotColReq()
      * @uses EsdValue3::setNumColReq()
      */
@@ -38,12 +37,12 @@ class EsdValue3 extends EsdWithRefClientValue
     {
         $this
             ->setCodeDepotColReq($codeDepotColReq)
-            ->setNumColReq($numColReq);
+            ->setNumColReq($numColReq)
+        ;
     }
 
     /**
-     * Get codeDepotColReq value
-     * @return string|null
+     * Get codeDepotColReq value.
      */
     public function getCodeDepotColReq(): ?string
     {
@@ -51,8 +50,10 @@ class EsdValue3 extends EsdWithRefClientValue
     }
 
     /**
-     * Set codeDepotColReq value
+     * Set codeDepotColReq value.
+     *
      * @param string $codeDepotColReq
+     *
      * @return EsdValue3
      */
     public function setCodeDepotColReq(?string $codeDepotColReq = null): self
@@ -67,8 +68,7 @@ class EsdValue3 extends EsdWithRefClientValue
     }
 
     /**
-     * Get numColReq value
-     * @return string|null
+     * Get numColReq value.
      */
     public function getNumColReq(): ?string
     {
@@ -76,8 +76,10 @@ class EsdValue3 extends EsdWithRefClientValue
     }
 
     /**
-     * Set numColReq value
+     * Set numColReq value.
+     *
      * @param string $numColReq
+     *
      * @return EsdValue3
      */
     public function setNumColReq(?string $numColReq = null): self

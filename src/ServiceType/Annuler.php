@@ -10,15 +10,15 @@ use StructType\AnnulerEnlevementsResponse;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
 /**
- * This class stands for Annuler ServiceType
- * @subpackage Services
+ * This class stands for Annuler ServiceType.
  */
 class Annuler extends AbstractSoapClientBase
 {
     /**
-     * Method to call the operation originally named annulerEnlevements
-     * @param AnnulerEnlevements $parameters
+     * Method to call the operation originally named annulerEnlevements.
+     *
      * @return AnnulerEnlevementsResponse|bool
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -39,8 +39,10 @@ class Annuler extends AbstractSoapClientBase
     }
 
     /**
-     * Returns the result
+     * Returns the result.
+     *
      * @return AnnulerEnlevementsResponse
+     *
      * @see AbstractSoapClientBase::getResult()
      */
     public function getResult()

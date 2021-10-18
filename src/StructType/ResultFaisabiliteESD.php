@@ -8,28 +8,27 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for resultFaisabiliteESD StructType
- * @subpackage Structs
+ * This class stands for resultFaisabiliteESD StructType.
  */
 class ResultFaisabiliteESD extends AbstractStructBase
 {
     /**
-     * The errorCode
-     * @var int|null
+     * The errorCode.
      */
     protected ?int $errorCode = null;
     /**
      * The errorMessage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $errorMessage = null;
 
     /**
-     * Constructor method for resultFaisabiliteESD
-     * @param int $errorCode
+     * Constructor method for resultFaisabiliteESD.
+     *
+     * @param int    $errorCode
      * @param string $errorMessage
+     *
      * @uses ResultFaisabiliteESD::setErrorCode()
      * @uses ResultFaisabiliteESD::setErrorMessage()
      */
@@ -37,12 +36,12 @@ class ResultFaisabiliteESD extends AbstractStructBase
     {
         $this
             ->setErrorCode($errorCode)
-            ->setErrorMessage($errorMessage);
+            ->setErrorMessage($errorMessage)
+        ;
     }
 
     /**
-     * Get errorCode value
-     * @return int|null
+     * Get errorCode value.
      */
     public function getErrorCode(): ?int
     {
@@ -50,8 +49,10 @@ class ResultFaisabiliteESD extends AbstractStructBase
     }
 
     /**
-     * Set errorCode value
+     * Set errorCode value.
+     *
      * @param int $errorCode
+     *
      * @return ResultFaisabiliteESD
      */
     public function setErrorCode(?int $errorCode = null): self
@@ -66,8 +67,7 @@ class ResultFaisabiliteESD extends AbstractStructBase
     }
 
     /**
-     * Get errorMessage value
-     * @return string|null
+     * Get errorMessage value.
      */
     public function getErrorMessage(): ?string
     {
@@ -75,8 +75,10 @@ class ResultFaisabiliteESD extends AbstractStructBase
     }
 
     /**
-     * Set errorMessage value
+     * Set errorMessage value.
+     *
      * @param string $errorMessage
+     *
      * @return ResultFaisabiliteESD
      */
     public function setErrorMessage(?string $errorMessage = null): self

@@ -10,110 +10,99 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for shippingWithReservationAndESDWithRefClient StructType
  * Meta information extracted from the WSDL
- * - type: tns:shippingWithReservationAndESDWithRefClient
- * @subpackage Structs
+ * - type: tns:shippingWithReservationAndESDWithRefClient.
  */
 class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
 {
     /**
      * The esdValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var EsdWithRefClientValue|null
+     * - minOccurs: 0.
      */
     protected ?EsdWithRefClientValue $esdValue = null;
     /**
      * The headerValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var HeaderValue|null
+     * - minOccurs: 0.
      */
     protected ?HeaderValue $headerValue = null;
     /**
      * The shipperValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ShipperValue|null
+     * - minOccurs: 0.
      */
     protected ?ShipperValue $shipperValue = null;
     /**
      * The customerValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var CustomerValue|null
+     * - minOccurs: 0.
      */
     protected ?CustomerValue $customerValue = null;
     /**
      * The recipientValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var RecipientValue|null
+     * - minOccurs: 0.
      */
     protected ?RecipientValue $recipientValue = null;
     /**
      * The refValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var RefValue|null
+     * - minOccurs: 0.
      */
     protected ?RefValue $refValue = null;
     /**
      * The skybillValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var SkybillValue|null
+     * - minOccurs: 0.
      */
     protected ?SkybillValue $skybillValue = null;
     /**
      * The skybillParamsValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var SkybillParamsValue|null
+     * - minOccurs: 0.
      */
     protected ?SkybillParamsValue $skybillParamsValue = null;
     /**
      * The password
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $password = null;
     /**
      * The modeRetour
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $modeRetour = null;
     /**
      * The version
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $version = null;
     /**
      * The scheduledValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ScheduledValue|null
+     * - minOccurs: 0.
      */
     protected ?ScheduledValue $scheduledValue = null;
 
     /**
-     * Constructor method for shippingWithReservationAndESDWithRefClient
+     * Constructor method for shippingWithReservationAndESDWithRefClient.
+     *
      * @param EsdWithRefClientValue $esdValue
-     * @param HeaderValue $headerValue
-     * @param ShipperValue $shipperValue
-     * @param CustomerValue $customerValue
-     * @param RecipientValue $recipientValue
-     * @param RefValue $refValue
-     * @param SkybillValue $skybillValue
-     * @param SkybillParamsValue $skybillParamsValue
-     * @param string $password
-     * @param string $modeRetour
-     * @param string $version
-     * @param ScheduledValue $scheduledValue
+     * @param HeaderValue           $headerValue
+     * @param ShipperValue          $shipperValue
+     * @param CustomerValue         $customerValue
+     * @param RecipientValue        $recipientValue
+     * @param RefValue              $refValue
+     * @param SkybillValue          $skybillValue
+     * @param SkybillParamsValue    $skybillParamsValue
+     * @param string                $password
+     * @param string                $modeRetour
+     * @param string                $version
+     * @param ScheduledValue        $scheduledValue
+     *
      * @uses ShippingWithReservationAndESDWithRefClient::setEsdValue()
      * @uses ShippingWithReservationAndESDWithRefClient::setHeaderValue()
      * @uses ShippingWithReservationAndESDWithRefClient::setShipperValue()
@@ -141,12 +130,12 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
             ->setPassword($password)
             ->setModeRetour($modeRetour)
             ->setVersion($version)
-            ->setScheduledValue($scheduledValue);
+            ->setScheduledValue($scheduledValue)
+        ;
     }
 
     /**
-     * Get esdValue value
-     * @return EsdWithRefClientValue|null
+     * Get esdValue value.
      */
     public function getEsdValue(): ?EsdWithRefClientValue
     {
@@ -154,8 +143,10 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Set esdValue value
+     * Set esdValue value.
+     *
      * @param EsdWithRefClientValue $esdValue
+     *
      * @return ShippingWithReservationAndESDWithRefClient
      */
     public function setEsdValue(?EsdWithRefClientValue $esdValue = null): self
@@ -166,8 +157,7 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Get headerValue value
-     * @return HeaderValue|null
+     * Get headerValue value.
      */
     public function getHeaderValue(): ?HeaderValue
     {
@@ -175,8 +165,10 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Set headerValue value
+     * Set headerValue value.
+     *
      * @param HeaderValue $headerValue
+     *
      * @return ShippingWithReservationAndESDWithRefClient
      */
     public function setHeaderValue(?HeaderValue $headerValue = null): self
@@ -187,8 +179,7 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Get shipperValue value
-     * @return ShipperValue|null
+     * Get shipperValue value.
      */
     public function getShipperValue(): ?ShipperValue
     {
@@ -196,8 +187,10 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Set shipperValue value
+     * Set shipperValue value.
+     *
      * @param ShipperValue $shipperValue
+     *
      * @return ShippingWithReservationAndESDWithRefClient
      */
     public function setShipperValue(?ShipperValue $shipperValue = null): self
@@ -208,8 +201,7 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Get customerValue value
-     * @return CustomerValue|null
+     * Get customerValue value.
      */
     public function getCustomerValue(): ?CustomerValue
     {
@@ -217,8 +209,10 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Set customerValue value
+     * Set customerValue value.
+     *
      * @param CustomerValue $customerValue
+     *
      * @return ShippingWithReservationAndESDWithRefClient
      */
     public function setCustomerValue(?CustomerValue $customerValue = null): self
@@ -229,8 +223,7 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Get recipientValue value
-     * @return RecipientValue|null
+     * Get recipientValue value.
      */
     public function getRecipientValue(): ?RecipientValue
     {
@@ -238,8 +231,10 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Set recipientValue value
+     * Set recipientValue value.
+     *
      * @param RecipientValue $recipientValue
+     *
      * @return ShippingWithReservationAndESDWithRefClient
      */
     public function setRecipientValue(?RecipientValue $recipientValue = null): self
@@ -250,8 +245,7 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Get refValue value
-     * @return RefValue|null
+     * Get refValue value.
      */
     public function getRefValue(): ?RefValue
     {
@@ -259,8 +253,10 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Set refValue value
+     * Set refValue value.
+     *
      * @param RefValue $refValue
+     *
      * @return ShippingWithReservationAndESDWithRefClient
      */
     public function setRefValue(?RefValue $refValue = null): self
@@ -271,8 +267,7 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Get skybillValue value
-     * @return SkybillValue|null
+     * Get skybillValue value.
      */
     public function getSkybillValue(): ?SkybillValue
     {
@@ -280,8 +275,10 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Set skybillValue value
+     * Set skybillValue value.
+     *
      * @param SkybillValue $skybillValue
+     *
      * @return ShippingWithReservationAndESDWithRefClient
      */
     public function setSkybillValue(?SkybillValue $skybillValue = null): self
@@ -292,8 +289,7 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Get skybillParamsValue value
-     * @return SkybillParamsValue|null
+     * Get skybillParamsValue value.
      */
     public function getSkybillParamsValue(): ?SkybillParamsValue
     {
@@ -301,8 +297,10 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Set skybillParamsValue value
+     * Set skybillParamsValue value.
+     *
      * @param SkybillParamsValue $skybillParamsValue
+     *
      * @return ShippingWithReservationAndESDWithRefClient
      */
     public function setSkybillParamsValue(?SkybillParamsValue $skybillParamsValue = null): self
@@ -313,8 +311,7 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Get password value
-     * @return string|null
+     * Get password value.
      */
     public function getPassword(): ?string
     {
@@ -322,8 +319,10 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Set password value
+     * Set password value.
+     *
      * @param string $password
+     *
      * @return ShippingWithReservationAndESDWithRefClient
      */
     public function setPassword(?string $password = null): self
@@ -338,8 +337,7 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Get modeRetour value
-     * @return string|null
+     * Get modeRetour value.
      */
     public function getModeRetour(): ?string
     {
@@ -347,8 +345,10 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Set modeRetour value
+     * Set modeRetour value.
+     *
      * @param string $modeRetour
+     *
      * @return ShippingWithReservationAndESDWithRefClient
      */
     public function setModeRetour(?string $modeRetour = null): self
@@ -363,8 +363,7 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Get version value
-     * @return string|null
+     * Get version value.
      */
     public function getVersion(): ?string
     {
@@ -372,8 +371,10 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Set version value
+     * Set version value.
+     *
      * @param string $version
+     *
      * @return ShippingWithReservationAndESDWithRefClient
      */
     public function setVersion(?string $version = null): self
@@ -388,8 +389,7 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Get scheduledValue value
-     * @return ScheduledValue|null
+     * Get scheduledValue value.
      */
     public function getScheduledValue(): ?ScheduledValue
     {
@@ -397,8 +397,10 @@ class ShippingWithReservationAndESDWithRefClient extends AbstractStructBase
     }
 
     /**
-     * Set scheduledValue value
+     * Set scheduledValue value.
+     *
      * @param ScheduledValue $scheduledValue
+     *
      * @return ShippingWithReservationAndESDWithRefClient
      */
     public function setScheduledValue(?ScheduledValue $scheduledValue = null): self

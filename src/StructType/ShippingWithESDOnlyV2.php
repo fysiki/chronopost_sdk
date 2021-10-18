@@ -10,102 +10,92 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for shippingWithESDOnlyV2 StructType
  * Meta information extracted from the WSDL
- * - type: tns:shippingWithESDOnlyV2
- * @subpackage Structs
+ * - type: tns:shippingWithESDOnlyV2.
  */
 class ShippingWithESDOnlyV2 extends AbstractStructBase
 {
     /**
      * The esdValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var EsdWithRefClientValueV2|null
+     * - minOccurs: 0.
      */
     protected ?EsdWithRefClientValueV2 $esdValue = null;
     /**
      * The headerValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var HeaderValue|null
+     * - minOccurs: 0.
      */
     protected ?HeaderValue $headerValue = null;
     /**
      * The shipperValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ShipperValue|null
+     * - minOccurs: 0.
      */
     protected ?ShipperValue $shipperValue = null;
     /**
      * The customerValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var CustomerValue|null
+     * - minOccurs: 0.
      */
     protected ?CustomerValue $customerValue = null;
     /**
      * The recipientValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var RecipientValue|null
+     * - minOccurs: 0.
      */
     protected ?RecipientValue $recipientValue = null;
     /**
      * The refValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var RefValue|null
+     * - minOccurs: 0.
      */
     protected ?RefValue $refValue = null;
     /**
      * The skybillValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var SkybillValue|null
+     * - minOccurs: 0.
      */
     protected ?SkybillValue $skybillValue = null;
     /**
      * The skybillParamsValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var SkybillParamsValue|null
+     * - minOccurs: 0.
      */
     protected ?SkybillParamsValue $skybillParamsValue = null;
     /**
      * The password
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $password = null;
     /**
      * The modeRetour
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $modeRetour = null;
     /**
      * The version
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $version = null;
 
     /**
-     * Constructor method for shippingWithESDOnlyV2
+     * Constructor method for shippingWithESDOnlyV2.
+     *
      * @param EsdWithRefClientValueV2 $esdValue
-     * @param HeaderValue $headerValue
-     * @param ShipperValue $shipperValue
-     * @param CustomerValue $customerValue
-     * @param RecipientValue $recipientValue
-     * @param RefValue $refValue
-     * @param SkybillValue $skybillValue
-     * @param SkybillParamsValue $skybillParamsValue
-     * @param string $password
-     * @param string $modeRetour
-     * @param string $version
+     * @param HeaderValue             $headerValue
+     * @param ShipperValue            $shipperValue
+     * @param CustomerValue           $customerValue
+     * @param RecipientValue          $recipientValue
+     * @param RefValue                $refValue
+     * @param SkybillValue            $skybillValue
+     * @param SkybillParamsValue      $skybillParamsValue
+     * @param string                  $password
+     * @param string                  $modeRetour
+     * @param string                  $version
+     *
      * @uses ShippingWithESDOnlyV2::setEsdValue()
      * @uses ShippingWithESDOnlyV2::setHeaderValue()
      * @uses ShippingWithESDOnlyV2::setShipperValue()
@@ -131,12 +121,12 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
             ->setSkybillParamsValue($skybillParamsValue)
             ->setPassword($password)
             ->setModeRetour($modeRetour)
-            ->setVersion($version);
+            ->setVersion($version)
+        ;
     }
 
     /**
-     * Get esdValue value
-     * @return EsdWithRefClientValueV2|null
+     * Get esdValue value.
      */
     public function getEsdValue(): ?EsdWithRefClientValueV2
     {
@@ -144,8 +134,10 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Set esdValue value
+     * Set esdValue value.
+     *
      * @param EsdWithRefClientValueV2 $esdValue
+     *
      * @return ShippingWithESDOnlyV2
      */
     public function setEsdValue(?EsdWithRefClientValueV2 $esdValue = null): self
@@ -156,8 +148,7 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Get headerValue value
-     * @return HeaderValue|null
+     * Get headerValue value.
      */
     public function getHeaderValue(): ?HeaderValue
     {
@@ -165,8 +156,10 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Set headerValue value
+     * Set headerValue value.
+     *
      * @param HeaderValue $headerValue
+     *
      * @return ShippingWithESDOnlyV2
      */
     public function setHeaderValue(?HeaderValue $headerValue = null): self
@@ -177,8 +170,7 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Get shipperValue value
-     * @return ShipperValue|null
+     * Get shipperValue value.
      */
     public function getShipperValue(): ?ShipperValue
     {
@@ -186,8 +178,10 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Set shipperValue value
+     * Set shipperValue value.
+     *
      * @param ShipperValue $shipperValue
+     *
      * @return ShippingWithESDOnlyV2
      */
     public function setShipperValue(?ShipperValue $shipperValue = null): self
@@ -198,8 +192,7 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Get customerValue value
-     * @return CustomerValue|null
+     * Get customerValue value.
      */
     public function getCustomerValue(): ?CustomerValue
     {
@@ -207,8 +200,10 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Set customerValue value
+     * Set customerValue value.
+     *
      * @param CustomerValue $customerValue
+     *
      * @return ShippingWithESDOnlyV2
      */
     public function setCustomerValue(?CustomerValue $customerValue = null): self
@@ -219,8 +214,7 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Get recipientValue value
-     * @return RecipientValue|null
+     * Get recipientValue value.
      */
     public function getRecipientValue(): ?RecipientValue
     {
@@ -228,8 +222,10 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Set recipientValue value
+     * Set recipientValue value.
+     *
      * @param RecipientValue $recipientValue
+     *
      * @return ShippingWithESDOnlyV2
      */
     public function setRecipientValue(?RecipientValue $recipientValue = null): self
@@ -240,8 +236,7 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Get refValue value
-     * @return RefValue|null
+     * Get refValue value.
      */
     public function getRefValue(): ?RefValue
     {
@@ -249,8 +244,10 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Set refValue value
+     * Set refValue value.
+     *
      * @param RefValue $refValue
+     *
      * @return ShippingWithESDOnlyV2
      */
     public function setRefValue(?RefValue $refValue = null): self
@@ -261,8 +258,7 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Get skybillValue value
-     * @return SkybillValue|null
+     * Get skybillValue value.
      */
     public function getSkybillValue(): ?SkybillValue
     {
@@ -270,8 +266,10 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Set skybillValue value
+     * Set skybillValue value.
+     *
      * @param SkybillValue $skybillValue
+     *
      * @return ShippingWithESDOnlyV2
      */
     public function setSkybillValue(?SkybillValue $skybillValue = null): self
@@ -282,8 +280,7 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Get skybillParamsValue value
-     * @return SkybillParamsValue|null
+     * Get skybillParamsValue value.
      */
     public function getSkybillParamsValue(): ?SkybillParamsValue
     {
@@ -291,8 +288,10 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Set skybillParamsValue value
+     * Set skybillParamsValue value.
+     *
      * @param SkybillParamsValue $skybillParamsValue
+     *
      * @return ShippingWithESDOnlyV2
      */
     public function setSkybillParamsValue(?SkybillParamsValue $skybillParamsValue = null): self
@@ -303,8 +302,7 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Get password value
-     * @return string|null
+     * Get password value.
      */
     public function getPassword(): ?string
     {
@@ -312,8 +310,10 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Set password value
+     * Set password value.
+     *
      * @param string $password
+     *
      * @return ShippingWithESDOnlyV2
      */
     public function setPassword(?string $password = null): self
@@ -328,8 +328,7 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Get modeRetour value
-     * @return string|null
+     * Get modeRetour value.
      */
     public function getModeRetour(): ?string
     {
@@ -337,8 +336,10 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Set modeRetour value
+     * Set modeRetour value.
+     *
      * @param string $modeRetour
+     *
      * @return ShippingWithESDOnlyV2
      */
     public function setModeRetour(?string $modeRetour = null): self
@@ -353,8 +354,7 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Get version value
-     * @return string|null
+     * Get version value.
      */
     public function getVersion(): ?string
     {
@@ -362,8 +362,10 @@ class ShippingWithESDOnlyV2 extends AbstractStructBase
     }
 
     /**
-     * Set version value
+     * Set version value.
+     *
      * @param string $version
+     *
      * @return ShippingWithESDOnlyV2
      */
     public function setVersion(?string $version = null): self

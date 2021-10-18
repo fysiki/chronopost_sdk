@@ -8,126 +8,110 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for donneurDOrdre StructType
- * @subpackage Structs
+ * This class stands for donneurDOrdre StructType.
  */
 class DonneurDOrdre extends AbstractStructBase
 {
     /**
      * The autreTelephone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $autreTelephone = null;
     /**
      * The batiment
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $batiment = null;
     /**
      * The codeCivilite
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeCivilite = null;
     /**
      * The codeNaf
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeNaf = null;
     /**
      * The codePays
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codePays = null;
     /**
      * The codePostal
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codePostal = null;
     /**
      * The EMail
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $EMail = null;
     /**
      * The fax
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $fax = null;
     /**
      * The lieuDit
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $lieuDit = null;
     /**
      * The nom
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $nom = null;
     /**
      * The prenom
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $prenom = null;
     /**
      * The raisonSociale
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $raisonSociale = null;
     /**
      * The service
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $service = null;
     /**
      * The telephone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $telephone = null;
     /**
      * The ville
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ville = null;
     /**
      * The voie
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $voie = null;
 
     /**
-     * Constructor method for donneurDOrdre
+     * Constructor method for donneurDOrdre.
+     *
      * @param string $autreTelephone
      * @param string $batiment
      * @param string $codeCivilite
@@ -144,6 +128,7 @@ class DonneurDOrdre extends AbstractStructBase
      * @param string $telephone
      * @param string $ville
      * @param string $voie
+     *
      * @uses DonneurDOrdre::setAutreTelephone()
      * @uses DonneurDOrdre::setBatiment()
      * @uses DonneurDOrdre::setCodeCivilite()
@@ -179,12 +164,12 @@ class DonneurDOrdre extends AbstractStructBase
             ->setService($service)
             ->setTelephone($telephone)
             ->setVille($ville)
-            ->setVoie($voie);
+            ->setVoie($voie)
+        ;
     }
 
     /**
-     * Get autreTelephone value
-     * @return string|null
+     * Get autreTelephone value.
      */
     public function getAutreTelephone(): ?string
     {
@@ -192,8 +177,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set autreTelephone value
+     * Set autreTelephone value.
+     *
      * @param string $autreTelephone
+     *
      * @return DonneurDOrdre
      */
     public function setAutreTelephone(?string $autreTelephone = null): self
@@ -208,8 +195,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get batiment value
-     * @return string|null
+     * Get batiment value.
      */
     public function getBatiment(): ?string
     {
@@ -217,8 +203,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set batiment value
+     * Set batiment value.
+     *
      * @param string $batiment
+     *
      * @return DonneurDOrdre
      */
     public function setBatiment(?string $batiment = null): self
@@ -233,8 +221,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get codeCivilite value
-     * @return string|null
+     * Get codeCivilite value.
      */
     public function getCodeCivilite(): ?string
     {
@@ -242,8 +229,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set codeCivilite value
+     * Set codeCivilite value.
+     *
      * @param string $codeCivilite
+     *
      * @return DonneurDOrdre
      */
     public function setCodeCivilite(?string $codeCivilite = null): self
@@ -258,8 +247,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get codeNaf value
-     * @return string|null
+     * Get codeNaf value.
      */
     public function getCodeNaf(): ?string
     {
@@ -267,8 +255,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set codeNaf value
+     * Set codeNaf value.
+     *
      * @param string $codeNaf
+     *
      * @return DonneurDOrdre
      */
     public function setCodeNaf(?string $codeNaf = null): self
@@ -283,8 +273,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get codePays value
-     * @return string|null
+     * Get codePays value.
      */
     public function getCodePays(): ?string
     {
@@ -292,8 +281,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set codePays value
+     * Set codePays value.
+     *
      * @param string $codePays
+     *
      * @return DonneurDOrdre
      */
     public function setCodePays(?string $codePays = null): self
@@ -308,8 +299,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get codePostal value
-     * @return string|null
+     * Get codePostal value.
      */
     public function getCodePostal(): ?string
     {
@@ -317,8 +307,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set codePostal value
+     * Set codePostal value.
+     *
      * @param string $codePostal
+     *
      * @return DonneurDOrdre
      */
     public function setCodePostal(?string $codePostal = null): self
@@ -333,8 +325,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get EMail value
-     * @return string|null
+     * Get EMail value.
      */
     public function getEMail(): ?string
     {
@@ -342,8 +333,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set EMail value
+     * Set EMail value.
+     *
      * @param string $eMail
+     *
      * @return DonneurDOrdre
      */
     public function setEMail(?string $eMail = null): self
@@ -358,8 +351,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get fax value
-     * @return string|null
+     * Get fax value.
      */
     public function getFax(): ?string
     {
@@ -367,8 +359,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set fax value
+     * Set fax value.
+     *
      * @param string $fax
+     *
      * @return DonneurDOrdre
      */
     public function setFax(?string $fax = null): self
@@ -383,8 +377,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get lieuDit value
-     * @return string|null
+     * Get lieuDit value.
      */
     public function getLieuDit(): ?string
     {
@@ -392,8 +385,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set lieuDit value
+     * Set lieuDit value.
+     *
      * @param string $lieuDit
+     *
      * @return DonneurDOrdre
      */
     public function setLieuDit(?string $lieuDit = null): self
@@ -408,8 +403,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get nom value
-     * @return string|null
+     * Get nom value.
      */
     public function getNom(): ?string
     {
@@ -417,8 +411,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set nom value
+     * Set nom value.
+     *
      * @param string $nom
+     *
      * @return DonneurDOrdre
      */
     public function setNom(?string $nom = null): self
@@ -433,8 +429,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get prenom value
-     * @return string|null
+     * Get prenom value.
      */
     public function getPrenom(): ?string
     {
@@ -442,8 +437,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set prenom value
+     * Set prenom value.
+     *
      * @param string $prenom
+     *
      * @return DonneurDOrdre
      */
     public function setPrenom(?string $prenom = null): self
@@ -458,8 +455,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get raisonSociale value
-     * @return string|null
+     * Get raisonSociale value.
      */
     public function getRaisonSociale(): ?string
     {
@@ -467,8 +463,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set raisonSociale value
+     * Set raisonSociale value.
+     *
      * @param string $raisonSociale
+     *
      * @return DonneurDOrdre
      */
     public function setRaisonSociale(?string $raisonSociale = null): self
@@ -483,8 +481,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get service value
-     * @return string|null
+     * Get service value.
      */
     public function getService(): ?string
     {
@@ -492,8 +489,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set service value
+     * Set service value.
+     *
      * @param string $service
+     *
      * @return DonneurDOrdre
      */
     public function setService(?string $service = null): self
@@ -508,8 +507,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get telephone value
-     * @return string|null
+     * Get telephone value.
      */
     public function getTelephone(): ?string
     {
@@ -517,8 +515,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set telephone value
+     * Set telephone value.
+     *
      * @param string $telephone
+     *
      * @return DonneurDOrdre
      */
     public function setTelephone(?string $telephone = null): self
@@ -533,8 +533,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get ville value
-     * @return string|null
+     * Get ville value.
      */
     public function getVille(): ?string
     {
@@ -542,8 +541,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set ville value
+     * Set ville value.
+     *
      * @param string $ville
+     *
      * @return DonneurDOrdre
      */
     public function setVille(?string $ville = null): self
@@ -558,8 +559,7 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Get voie value
-     * @return string|null
+     * Get voie value.
      */
     public function getVoie(): ?string
     {
@@ -567,8 +567,10 @@ class DonneurDOrdre extends AbstractStructBase
     }
 
     /**
-     * Set voie value
+     * Set voie value.
+     *
      * @param string $voie
+     *
      * @return DonneurDOrdre
      */
     public function setVoie(?string $voie = null): self

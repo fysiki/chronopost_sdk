@@ -7,14 +7,12 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for esdWithRefClientValueV2 StructType
- * @subpackage Structs
+ * This class stands for esdWithRefClientValueV2 StructType.
  */
 class EsdWithRefClientValueV2 extends EsdWithRefClientValue
 {
     /**
-     * The numberOfParcel
-     * @var int|null
+     * The numberOfParcel.
      */
     protected ?int $numberOfParcel = null;
     /**
@@ -22,15 +20,18 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * - nillable: true
+     * - nillable: true.
+     *
      * @var string[]
      */
     protected ?array $parcelsNumber = null;
 
     /**
-     * Constructor method for esdWithRefClientValueV2
-     * @param int $numberOfParcel
+     * Constructor method for esdWithRefClientValueV2.
+     *
+     * @param int      $numberOfParcel
      * @param string[] $parcelsNumber
+     *
      * @uses EsdWithRefClientValueV2::setNumberOfParcel()
      * @uses EsdWithRefClientValueV2::setParcelsNumber()
      */
@@ -38,12 +39,12 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
     {
         $this
             ->setNumberOfParcel($numberOfParcel)
-            ->setParcelsNumber($parcelsNumber);
+            ->setParcelsNumber($parcelsNumber)
+        ;
     }
 
     /**
-     * Get numberOfParcel value
-     * @return int|null
+     * Get numberOfParcel value.
      */
     public function getNumberOfParcel(): ?int
     {
@@ -51,8 +52,10 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
     }
 
     /**
-     * Set numberOfParcel value
+     * Set numberOfParcel value.
+     *
      * @param int $numberOfParcel
+     *
      * @return EsdWithRefClientValueV2
      */
     public function setNumberOfParcel(?int $numberOfParcel = null): self
@@ -70,7 +73,8 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
      * Get parcelsNumber value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
-     * removable from the request (nillable=true+minOccurs=0)
+     * removable from the request (nillable=true+minOccurs=0).
+     *
      * @return string[]
      */
     public function getParcelsNumber(): ?array
@@ -80,8 +84,10 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
 
     /**
      * This method is responsible for validating the values passed to the setParcelsNumber method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setParcelsNumber method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setParcelsNumber method.
+     *
      * @param array $values
+     *
      * @return string A non-empty message if the values does not match the validation rules
      */
     public static function validateParcelsNumberForArrayConstraintsFromSetParcelsNumber(?array $values = []): string
@@ -108,10 +114,13 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
     /**
      * Set parcelsNumber value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
-     * if the value assigned to this property is null, it is removed from this object
+     * if the value assigned to this property is null, it is removed from this object.
+     *
      * @param string[] $parcelsNumber
-     * @return EsdWithRefClientValueV2
+     *
      * @throws InvalidArgumentException
+     *
+     * @return EsdWithRefClientValueV2
      */
     public function setParcelsNumber(?array $parcelsNumber = null): self
     {
@@ -129,10 +138,11 @@ class EsdWithRefClientValueV2 extends EsdWithRefClientValue
     }
 
     /**
-     * Add item to parcelsNumber value
-     * @param string $item
-     * @return EsdWithRefClientValueV2
+     * Add item to parcelsNumber value.
+     *
      * @throws InvalidArgumentException
+     *
+     * @return EsdWithRefClientValueV2
      */
     public function addToParcelsNumber(string $item): self
     {

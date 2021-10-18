@@ -10,15 +10,15 @@ use StructType\RechercherContraintesEnlevementResponse;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
 /**
- * This class stands for Rechercher ServiceType
- * @subpackage Services
+ * This class stands for Rechercher ServiceType.
  */
 class Rechercher extends AbstractSoapClientBase
 {
     /**
-     * Method to call the operation originally named rechercherContraintesEnlevement
-     * @param RechercherContraintesEnlevement $parameters
-     * @return RechercherContraintesEnlevementResponse|bool
+     * Method to call the operation originally named rechercherContraintesEnlevement.
+     *
+     * @return bool|RechercherContraintesEnlevementResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -39,8 +39,10 @@ class Rechercher extends AbstractSoapClientBase
     }
 
     /**
-     * Returns the result
+     * Returns the result.
+     *
      * @return RechercherContraintesEnlevementResponse
+     *
      * @see AbstractSoapClientBase::getResult()
      */
     public function getResult()

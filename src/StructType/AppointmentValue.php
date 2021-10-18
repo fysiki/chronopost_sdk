@@ -8,38 +8,36 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for appointmentValue StructType
- * @subpackage Structs
+ * This class stands for appointmentValue StructType.
  */
 class AppointmentValue extends AbstractStructBase
 {
     /**
      * The timeSlotEndDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $timeSlotEndDate = null;
     /**
      * The timeSlotStartDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $timeSlotStartDate = null;
     /**
      * The timeSlotTariffLevel
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $timeSlotTariffLevel = null;
 
     /**
-     * Constructor method for appointmentValue
+     * Constructor method for appointmentValue.
+     *
      * @param string $timeSlotEndDate
      * @param string $timeSlotStartDate
      * @param string $timeSlotTariffLevel
+     *
      * @uses AppointmentValue::setTimeSlotEndDate()
      * @uses AppointmentValue::setTimeSlotStartDate()
      * @uses AppointmentValue::setTimeSlotTariffLevel()
@@ -49,12 +47,12 @@ class AppointmentValue extends AbstractStructBase
         $this
             ->setTimeSlotEndDate($timeSlotEndDate)
             ->setTimeSlotStartDate($timeSlotStartDate)
-            ->setTimeSlotTariffLevel($timeSlotTariffLevel);
+            ->setTimeSlotTariffLevel($timeSlotTariffLevel)
+        ;
     }
 
     /**
-     * Get timeSlotEndDate value
-     * @return string|null
+     * Get timeSlotEndDate value.
      */
     public function getTimeSlotEndDate(): ?string
     {
@@ -62,8 +60,10 @@ class AppointmentValue extends AbstractStructBase
     }
 
     /**
-     * Set timeSlotEndDate value
+     * Set timeSlotEndDate value.
+     *
      * @param string $timeSlotEndDate
+     *
      * @return AppointmentValue
      */
     public function setTimeSlotEndDate(?string $timeSlotEndDate = null): self
@@ -78,8 +78,7 @@ class AppointmentValue extends AbstractStructBase
     }
 
     /**
-     * Get timeSlotStartDate value
-     * @return string|null
+     * Get timeSlotStartDate value.
      */
     public function getTimeSlotStartDate(): ?string
     {
@@ -87,8 +86,10 @@ class AppointmentValue extends AbstractStructBase
     }
 
     /**
-     * Set timeSlotStartDate value
+     * Set timeSlotStartDate value.
+     *
      * @param string $timeSlotStartDate
+     *
      * @return AppointmentValue
      */
     public function setTimeSlotStartDate(?string $timeSlotStartDate = null): self
@@ -103,8 +104,7 @@ class AppointmentValue extends AbstractStructBase
     }
 
     /**
-     * Get timeSlotTariffLevel value
-     * @return string|null
+     * Get timeSlotTariffLevel value.
      */
     public function getTimeSlotTariffLevel(): ?string
     {
@@ -112,8 +112,10 @@ class AppointmentValue extends AbstractStructBase
     }
 
     /**
-     * Set timeSlotTariffLevel value
+     * Set timeSlotTariffLevel value.
+     *
      * @param string $timeSlotTariffLevel
+     *
      * @return AppointmentValue
      */
     public function setTimeSlotTariffLevel(?string $timeSlotTariffLevel = null): self

@@ -10,54 +10,50 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for getShippingInformation StructType
  * Meta information extracted from the WSDL
- * - type: tns:getShippingInformation
- * @subpackage Structs
+ * - type: tns:getShippingInformation.
  */
 class GetShippingInformation extends AbstractStructBase
 {
     /**
      * The headerValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var HeaderValue|null
+     * - minOccurs: 0.
      */
     protected ?HeaderValue $headerValue = null;
     /**
      * The shipperValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ShipperValue|null
+     * - minOccurs: 0.
      */
     protected ?ShipperValue $shipperValue = null;
     /**
      * The recipientValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var RecipientValue|null
+     * - minOccurs: 0.
      */
     protected ?RecipientValue $recipientValue = null;
     /**
      * The skybillValueBase
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var SkybillValueBase|null
+     * - minOccurs: 0.
      */
     protected ?SkybillValueBase $skybillValueBase = null;
     /**
      * The password
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $password = null;
 
     /**
-     * Constructor method for getShippingInformation
-     * @param HeaderValue $headerValue
-     * @param ShipperValue $shipperValue
-     * @param RecipientValue $recipientValue
+     * Constructor method for getShippingInformation.
+     *
+     * @param HeaderValue      $headerValue
+     * @param ShipperValue     $shipperValue
+     * @param RecipientValue   $recipientValue
      * @param SkybillValueBase $skybillValueBase
-     * @param string $password
+     * @param string           $password
+     *
      * @uses GetShippingInformation::setHeaderValue()
      * @uses GetShippingInformation::setShipperValue()
      * @uses GetShippingInformation::setRecipientValue()
@@ -71,12 +67,12 @@ class GetShippingInformation extends AbstractStructBase
             ->setShipperValue($shipperValue)
             ->setRecipientValue($recipientValue)
             ->setSkybillValueBase($skybillValueBase)
-            ->setPassword($password);
+            ->setPassword($password)
+        ;
     }
 
     /**
-     * Get headerValue value
-     * @return HeaderValue|null
+     * Get headerValue value.
      */
     public function getHeaderValue(): ?HeaderValue
     {
@@ -84,8 +80,10 @@ class GetShippingInformation extends AbstractStructBase
     }
 
     /**
-     * Set headerValue value
+     * Set headerValue value.
+     *
      * @param HeaderValue $headerValue
+     *
      * @return GetShippingInformation
      */
     public function setHeaderValue(?HeaderValue $headerValue = null): self
@@ -96,8 +94,7 @@ class GetShippingInformation extends AbstractStructBase
     }
 
     /**
-     * Get shipperValue value
-     * @return ShipperValue|null
+     * Get shipperValue value.
      */
     public function getShipperValue(): ?ShipperValue
     {
@@ -105,8 +102,10 @@ class GetShippingInformation extends AbstractStructBase
     }
 
     /**
-     * Set shipperValue value
+     * Set shipperValue value.
+     *
      * @param ShipperValue $shipperValue
+     *
      * @return GetShippingInformation
      */
     public function setShipperValue(?ShipperValue $shipperValue = null): self
@@ -117,8 +116,7 @@ class GetShippingInformation extends AbstractStructBase
     }
 
     /**
-     * Get recipientValue value
-     * @return RecipientValue|null
+     * Get recipientValue value.
      */
     public function getRecipientValue(): ?RecipientValue
     {
@@ -126,8 +124,10 @@ class GetShippingInformation extends AbstractStructBase
     }
 
     /**
-     * Set recipientValue value
+     * Set recipientValue value.
+     *
      * @param RecipientValue $recipientValue
+     *
      * @return GetShippingInformation
      */
     public function setRecipientValue(?RecipientValue $recipientValue = null): self
@@ -138,8 +138,7 @@ class GetShippingInformation extends AbstractStructBase
     }
 
     /**
-     * Get skybillValueBase value
-     * @return SkybillValueBase|null
+     * Get skybillValueBase value.
      */
     public function getSkybillValueBase(): ?SkybillValueBase
     {
@@ -147,8 +146,10 @@ class GetShippingInformation extends AbstractStructBase
     }
 
     /**
-     * Set skybillValueBase value
+     * Set skybillValueBase value.
+     *
      * @param SkybillValueBase $skybillValueBase
+     *
      * @return GetShippingInformation
      */
     public function setSkybillValueBase(?SkybillValueBase $skybillValueBase = null): self
@@ -159,8 +160,7 @@ class GetShippingInformation extends AbstractStructBase
     }
 
     /**
-     * Get password value
-     * @return string|null
+     * Get password value.
      */
     public function getPassword(): ?string
     {
@@ -168,8 +168,10 @@ class GetShippingInformation extends AbstractStructBase
     }
 
     /**
-     * Set password value
+     * Set password value.
+     *
      * @param string $password
+     *
      * @return GetShippingInformation
      */
     public function setPassword(?string $password = null): self

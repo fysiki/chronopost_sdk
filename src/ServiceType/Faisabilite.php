@@ -10,15 +10,15 @@ use StructType\FaisabiliteESDResponse;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
 /**
- * This class stands for Faisabilite ServiceType
- * @subpackage Services
+ * This class stands for Faisabilite ServiceType.
  */
 class Faisabilite extends AbstractSoapClientBase
 {
     /**
-     * Method to call the operation originally named faisabiliteESD
-     * @param FaisabiliteESD $parameters
-     * @return FaisabiliteESDResponse|bool
+     * Method to call the operation originally named faisabiliteESD.
+     *
+     * @return bool|FaisabiliteESDResponse
+     *
      * @uses AbstractSoapClientBase::saveLastError()
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -39,8 +39,10 @@ class Faisabilite extends AbstractSoapClientBase
     }
 
     /**
-     * Returns the result
+     * Returns the result.
+     *
      * @return FaisabiliteESDResponse
+     *
      * @see AbstractSoapClientBase::getResult()
      */
     public function getResult()

@@ -10,33 +10,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for shippingWithReservationAndESDWithRefClientPCResponse
  * StructType
  * Meta information extracted from the WSDL
- * - type: tns:shippingWithReservationAndESDWithRefClientPCResponse
- * @subpackage Structs
+ * - type: tns:shippingWithReservationAndESDWithRefClientPCResponse.
  */
 class ShippingWithReservationAndESDWithRefClientPCResponse extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultReservationExpeditionValue|null
+     * - minOccurs: 0.
      */
     protected ?ResultReservationExpeditionValue $return = null;
 
     /**
-     * Constructor method for shippingWithReservationAndESDWithRefClientPCResponse
+     * Constructor method for shippingWithReservationAndESDWithRefClientPCResponse.
+     *
      * @param ResultReservationExpeditionValue $return
+     *
      * @uses ShippingWithReservationAndESDWithRefClientPCResponse::setReturn()
      */
     public function __construct(?ResultReservationExpeditionValue $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultReservationExpeditionValue|null
+     * Get return value.
      */
     public function getReturn(): ?ResultReservationExpeditionValue
     {
@@ -44,8 +44,10 @@ class ShippingWithReservationAndESDWithRefClientPCResponse extends AbstractStruc
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultReservationExpeditionValue $return
+     *
      * @return ShippingWithReservationAndESDWithRefClientPCResponse
      */
     public function setReturn(?ResultReservationExpeditionValue $return = null): self

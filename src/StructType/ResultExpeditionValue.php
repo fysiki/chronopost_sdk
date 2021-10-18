@@ -8,68 +8,62 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for resultExpeditionValue StructType
- * @subpackage Structs
+ * This class stands for resultExpeditionValue StructType.
  */
 class ResultExpeditionValue extends AbstractStructBase
 {
     /**
      * The ESDFullNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ESDFullNumber = null;
     /**
      * The ESDNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ESDNumber = null;
     /**
-     * The errorCode
-     * @var int|null
+     * The errorCode.
      */
     protected ?int $errorCode = null;
     /**
      * The errorMessage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $errorMessage = null;
     /**
      * The pickupDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $pickupDate = null;
     /**
      * The skybill
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $skybill = null;
     /**
      * The skybillNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $skybillNumber = null;
 
     /**
-     * Constructor method for resultExpeditionValue
+     * Constructor method for resultExpeditionValue.
+     *
      * @param string $eSDFullNumber
      * @param string $eSDNumber
-     * @param int $errorCode
+     * @param int    $errorCode
      * @param string $errorMessage
      * @param string $pickupDate
      * @param string $skybill
      * @param string $skybillNumber
+     *
      * @uses ResultExpeditionValue::setESDFullNumber()
      * @uses ResultExpeditionValue::setESDNumber()
      * @uses ResultExpeditionValue::setErrorCode()
@@ -87,12 +81,12 @@ class ResultExpeditionValue extends AbstractStructBase
             ->setErrorMessage($errorMessage)
             ->setPickupDate($pickupDate)
             ->setSkybill($skybill)
-            ->setSkybillNumber($skybillNumber);
+            ->setSkybillNumber($skybillNumber)
+        ;
     }
 
     /**
-     * Get ESDFullNumber value
-     * @return string|null
+     * Get ESDFullNumber value.
      */
     public function getESDFullNumber(): ?string
     {
@@ -100,8 +94,10 @@ class ResultExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set ESDFullNumber value
+     * Set ESDFullNumber value.
+     *
      * @param string $eSDFullNumber
+     *
      * @return ResultExpeditionValue
      */
     public function setESDFullNumber(?string $eSDFullNumber = null): self
@@ -116,8 +112,7 @@ class ResultExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get ESDNumber value
-     * @return string|null
+     * Get ESDNumber value.
      */
     public function getESDNumber(): ?string
     {
@@ -125,8 +120,10 @@ class ResultExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set ESDNumber value
+     * Set ESDNumber value.
+     *
      * @param string $eSDNumber
+     *
      * @return ResultExpeditionValue
      */
     public function setESDNumber(?string $eSDNumber = null): self
@@ -141,8 +138,7 @@ class ResultExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get errorCode value
-     * @return int|null
+     * Get errorCode value.
      */
     public function getErrorCode(): ?int
     {
@@ -150,8 +146,10 @@ class ResultExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set errorCode value
+     * Set errorCode value.
+     *
      * @param int $errorCode
+     *
      * @return ResultExpeditionValue
      */
     public function setErrorCode(?int $errorCode = null): self
@@ -166,8 +164,7 @@ class ResultExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get errorMessage value
-     * @return string|null
+     * Get errorMessage value.
      */
     public function getErrorMessage(): ?string
     {
@@ -175,8 +172,10 @@ class ResultExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set errorMessage value
+     * Set errorMessage value.
+     *
      * @param string $errorMessage
+     *
      * @return ResultExpeditionValue
      */
     public function setErrorMessage(?string $errorMessage = null): self
@@ -191,8 +190,7 @@ class ResultExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get pickupDate value
-     * @return string|null
+     * Get pickupDate value.
      */
     public function getPickupDate(): ?string
     {
@@ -200,8 +198,10 @@ class ResultExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set pickupDate value
+     * Set pickupDate value.
+     *
      * @param string $pickupDate
+     *
      * @return ResultExpeditionValue
      */
     public function setPickupDate(?string $pickupDate = null): self
@@ -216,8 +216,7 @@ class ResultExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get skybill value
-     * @return string|null
+     * Get skybill value.
      */
     public function getSkybill(): ?string
     {
@@ -225,8 +224,10 @@ class ResultExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set skybill value
+     * Set skybill value.
+     *
      * @param string $skybill
+     *
      * @return ResultExpeditionValue
      */
     public function setSkybill(?string $skybill = null): self
@@ -241,8 +242,7 @@ class ResultExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get skybillNumber value
-     * @return string|null
+     * Get skybillNumber value.
      */
     public function getSkybillNumber(): ?string
     {
@@ -250,8 +250,10 @@ class ResultExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set skybillNumber value
+     * Set skybillNumber value.
+     *
      * @param string $skybillNumber
+     *
      * @return ResultExpeditionValue
      */
     public function setSkybillNumber(?string $skybillNumber = null): self

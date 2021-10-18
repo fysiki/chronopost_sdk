@@ -8,30 +8,29 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for skybillParamsValue StructType
- * @subpackage Structs
+ * This class stands for skybillParamsValue StructType.
  */
 class SkybillParamsValue extends AbstractStructBase
 {
     /**
      * The duplicata
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $duplicata = null;
     /**
      * The mode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $mode = null;
 
     /**
-     * Constructor method for skybillParamsValue
+     * Constructor method for skybillParamsValue.
+     *
      * @param string $duplicata
      * @param string $mode
+     *
      * @uses SkybillParamsValue::setDuplicata()
      * @uses SkybillParamsValue::setMode()
      */
@@ -39,12 +38,12 @@ class SkybillParamsValue extends AbstractStructBase
     {
         $this
             ->setDuplicata($duplicata)
-            ->setMode($mode);
+            ->setMode($mode)
+        ;
     }
 
     /**
-     * Get duplicata value
-     * @return string|null
+     * Get duplicata value.
      */
     public function getDuplicata(): ?string
     {
@@ -52,8 +51,10 @@ class SkybillParamsValue extends AbstractStructBase
     }
 
     /**
-     * Set duplicata value
+     * Set duplicata value.
+     *
      * @param string $duplicata
+     *
      * @return SkybillParamsValue
      */
     public function setDuplicata(?string $duplicata = null): self
@@ -68,8 +69,7 @@ class SkybillParamsValue extends AbstractStructBase
     }
 
     /**
-     * Get mode value
-     * @return string|null
+     * Get mode value.
      */
     public function getMode(): ?string
     {
@@ -77,8 +77,10 @@ class SkybillParamsValue extends AbstractStructBase
     }
 
     /**
-     * Set mode value
+     * Set mode value.
+     *
      * @param string $mode
+     *
      * @return SkybillParamsValue
      */
     public function setMode(?string $mode = null): self

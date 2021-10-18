@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for getShippingInformationResponse StructType
  * Meta information extracted from the WSDL
- * - type: tns:getShippingInformationResponse
- * @subpackage Structs
+ * - type: tns:getShippingInformationResponse.
  */
 class GetShippingInformationResponse extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultShippingInfo|null
+     * - minOccurs: 0.
      */
     protected ?ResultShippingInfo $return = null;
 
     /**
-     * Constructor method for getShippingInformationResponse
+     * Constructor method for getShippingInformationResponse.
+     *
      * @param ResultShippingInfo $return
+     *
      * @uses GetShippingInformationResponse::setReturn()
      */
     public function __construct(?ResultShippingInfo $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultShippingInfo|null
+     * Get return value.
      */
     public function getReturn(): ?ResultShippingInfo
     {
@@ -43,8 +43,10 @@ class GetShippingInformationResponse extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultShippingInfo $return
+     *
      * @return GetShippingInformationResponse
      */
     public function setReturn(?ResultShippingInfo $return = null): self

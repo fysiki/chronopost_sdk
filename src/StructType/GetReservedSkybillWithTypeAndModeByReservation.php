@@ -10,30 +10,29 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for getReservedSkybillWithTypeAndModeByReservation StructType
  * Meta information extracted from the WSDL
- * - type: tns:getReservedSkybillWithTypeAndModeByReservation
- * @subpackage Structs
+ * - type: tns:getReservedSkybillWithTypeAndModeByReservation.
  */
 class GetReservedSkybillWithTypeAndModeByReservation extends AbstractStructBase
 {
     /**
      * The reservationNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $reservationNumber = null;
     /**
      * The mode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $mode = null;
 
     /**
-     * Constructor method for getReservedSkybillWithTypeAndModeByReservation
+     * Constructor method for getReservedSkybillWithTypeAndModeByReservation.
+     *
      * @param string $reservationNumber
      * @param string $mode
+     *
      * @uses GetReservedSkybillWithTypeAndModeByReservation::setReservationNumber()
      * @uses GetReservedSkybillWithTypeAndModeByReservation::setMode()
      */
@@ -41,12 +40,12 @@ class GetReservedSkybillWithTypeAndModeByReservation extends AbstractStructBase
     {
         $this
             ->setReservationNumber($reservationNumber)
-            ->setMode($mode);
+            ->setMode($mode)
+        ;
     }
 
     /**
-     * Get reservationNumber value
-     * @return string|null
+     * Get reservationNumber value.
      */
     public function getReservationNumber(): ?string
     {
@@ -54,8 +53,10 @@ class GetReservedSkybillWithTypeAndModeByReservation extends AbstractStructBase
     }
 
     /**
-     * Set reservationNumber value
+     * Set reservationNumber value.
+     *
      * @param string $reservationNumber
+     *
      * @return GetReservedSkybillWithTypeAndModeByReservation
      */
     public function setReservationNumber(?string $reservationNumber = null): self
@@ -70,8 +71,7 @@ class GetReservedSkybillWithTypeAndModeByReservation extends AbstractStructBase
     }
 
     /**
-     * Get mode value
-     * @return string|null
+     * Get mode value.
      */
     public function getMode(): ?string
     {
@@ -79,8 +79,10 @@ class GetReservedSkybillWithTypeAndModeByReservation extends AbstractStructBase
     }
 
     /**
-     * Set mode value
+     * Set mode value.
+     *
      * @param string $mode
+     *
      * @return GetReservedSkybillWithTypeAndModeByReservation
      */
     public function setMode(?string $mode = null): self

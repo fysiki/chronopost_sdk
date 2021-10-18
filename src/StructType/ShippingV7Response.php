@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for shippingV7Response StructType
  * Meta information extracted from the WSDL
- * - type: tns:shippingV7Response
- * @subpackage Structs
+ * - type: tns:shippingV7Response.
  */
 class ShippingV7Response extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultMonoParcelExpeditionValue|null
+     * - minOccurs: 0.
      */
     protected ?ResultMonoParcelExpeditionValue $return = null;
 
     /**
-     * Constructor method for shippingV7Response
+     * Constructor method for shippingV7Response.
+     *
      * @param ResultMonoParcelExpeditionValue $return
+     *
      * @uses ShippingV7Response::setReturn()
      */
     public function __construct(?ResultMonoParcelExpeditionValue $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultMonoParcelExpeditionValue|null
+     * Get return value.
      */
     public function getReturn(): ?ResultMonoParcelExpeditionValue
     {
@@ -43,8 +43,10 @@ class ShippingV7Response extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultMonoParcelExpeditionValue $return
+     *
      * @return ShippingV7Response
      */
     public function setReturn(?ResultMonoParcelExpeditionValue $return = null): self

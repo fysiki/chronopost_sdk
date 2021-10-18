@@ -8,38 +8,36 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for scheduledValue StructType
- * @subpackage Structs
+ * This class stands for scheduledValue StructType.
  */
 class ScheduledValue extends AbstractStructBase
 {
     /**
      * The appointmentValue
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var AppointmentValue|null
+     * - minOccurs: 0.
      */
     protected ?AppointmentValue $appointmentValue = null;
     /**
      * The expirationDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $expirationDate = null;
     /**
      * The sellByDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $sellByDate = null;
 
     /**
-     * Constructor method for scheduledValue
+     * Constructor method for scheduledValue.
+     *
      * @param AppointmentValue $appointmentValue
-     * @param string $expirationDate
-     * @param string $sellByDate
+     * @param string           $expirationDate
+     * @param string           $sellByDate
+     *
      * @uses ScheduledValue::setAppointmentValue()
      * @uses ScheduledValue::setExpirationDate()
      * @uses ScheduledValue::setSellByDate()
@@ -49,12 +47,12 @@ class ScheduledValue extends AbstractStructBase
         $this
             ->setAppointmentValue($appointmentValue)
             ->setExpirationDate($expirationDate)
-            ->setSellByDate($sellByDate);
+            ->setSellByDate($sellByDate)
+        ;
     }
 
     /**
-     * Get appointmentValue value
-     * @return AppointmentValue|null
+     * Get appointmentValue value.
      */
     public function getAppointmentValue(): ?AppointmentValue
     {
@@ -62,8 +60,10 @@ class ScheduledValue extends AbstractStructBase
     }
 
     /**
-     * Set appointmentValue value
+     * Set appointmentValue value.
+     *
      * @param AppointmentValue $appointmentValue
+     *
      * @return ScheduledValue
      */
     public function setAppointmentValue(?AppointmentValue $appointmentValue = null): self
@@ -74,8 +74,7 @@ class ScheduledValue extends AbstractStructBase
     }
 
     /**
-     * Get expirationDate value
-     * @return string|null
+     * Get expirationDate value.
      */
     public function getExpirationDate(): ?string
     {
@@ -83,8 +82,10 @@ class ScheduledValue extends AbstractStructBase
     }
 
     /**
-     * Set expirationDate value
+     * Set expirationDate value.
+     *
      * @param string $expirationDate
+     *
      * @return ScheduledValue
      */
     public function setExpirationDate(?string $expirationDate = null): self
@@ -99,8 +100,7 @@ class ScheduledValue extends AbstractStructBase
     }
 
     /**
-     * Get sellByDate value
-     * @return string|null
+     * Get sellByDate value.
      */
     public function getSellByDate(): ?string
     {
@@ -108,8 +108,10 @@ class ScheduledValue extends AbstractStructBase
     }
 
     /**
-     * Set sellByDate value
+     * Set sellByDate value.
+     *
      * @param string $sellByDate
+     *
      * @return ScheduledValue
      */
     public function setSellByDate(?string $sellByDate = null): self

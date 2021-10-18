@@ -8,19 +8,16 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for resultPickupOrCollectionRequest StructType
- * @subpackage Structs
+ * This class stands for resultPickupOrCollectionRequest StructType.
  */
 class ResultPickupOrCollectionRequest extends AbstractStructBase
 {
     /**
-     * The codeErreur
-     * @var int|null
+     * The codeErreur.
      */
     protected ?int $codeErreur = null;
     /**
-     * The collectionRequest
-     * @var bool|null
+     * The collectionRequest.
      */
     protected ?bool $collectionRequest = null;
     /**
@@ -28,24 +25,26 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * - nillable: true
+     * - nillable: true.
+     *
      * @var InfoEnlevement[]
      */
     protected ?array $infoEnlevements = null;
     /**
      * The libelleErreur
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $libelleErreur = null;
 
     /**
-     * Constructor method for resultPickupOrCollectionRequest
-     * @param int $codeErreur
-     * @param bool $collectionRequest
+     * Constructor method for resultPickupOrCollectionRequest.
+     *
+     * @param int              $codeErreur
+     * @param bool             $collectionRequest
      * @param InfoEnlevement[] $infoEnlevements
-     * @param string $libelleErreur
+     * @param string           $libelleErreur
+     *
      * @uses ResultPickupOrCollectionRequest::setCodeErreur()
      * @uses ResultPickupOrCollectionRequest::setCollectionRequest()
      * @uses ResultPickupOrCollectionRequest::setInfoEnlevements()
@@ -57,12 +56,12 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
             ->setCodeErreur($codeErreur)
             ->setCollectionRequest($collectionRequest)
             ->setInfoEnlevements($infoEnlevements)
-            ->setLibelleErreur($libelleErreur);
+            ->setLibelleErreur($libelleErreur)
+        ;
     }
 
     /**
-     * Get codeErreur value
-     * @return int|null
+     * Get codeErreur value.
      */
     public function getCodeErreur(): ?int
     {
@@ -70,8 +69,10 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
     }
 
     /**
-     * Set codeErreur value
+     * Set codeErreur value.
+     *
      * @param int $codeErreur
+     *
      * @return ResultPickupOrCollectionRequest
      */
     public function setCodeErreur(?int $codeErreur = null): self
@@ -86,8 +87,7 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
     }
 
     /**
-     * Get collectionRequest value
-     * @return bool|null
+     * Get collectionRequest value.
      */
     public function getCollectionRequest(): ?bool
     {
@@ -95,8 +95,10 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
     }
 
     /**
-     * Set collectionRequest value
+     * Set collectionRequest value.
+     *
      * @param bool $collectionRequest
+     *
      * @return ResultPickupOrCollectionRequest
      */
     public function setCollectionRequest(?bool $collectionRequest = null): self
@@ -114,7 +116,8 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
      * Get infoEnlevements value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
-     * removable from the request (nillable=true+minOccurs=0)
+     * removable from the request (nillable=true+minOccurs=0).
+     *
      * @return InfoEnlevement[]
      */
     public function getInfoEnlevements(): ?array
@@ -124,8 +127,10 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
 
     /**
      * This method is responsible for validating the values passed to the setInfoEnlevements method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setInfoEnlevements method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setInfoEnlevements method.
+     *
      * @param array $values
+     *
      * @return string A non-empty message if the values does not match the validation rules
      */
     public static function validateInfoEnlevementsForArrayConstraintsFromSetInfoEnlevements(?array $values = []): string
@@ -152,10 +157,13 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
     /**
      * Set infoEnlevements value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
-     * if the value assigned to this property is null, it is removed from this object
+     * if the value assigned to this property is null, it is removed from this object.
+     *
      * @param InfoEnlevement[] $infoEnlevements
-     * @return ResultPickupOrCollectionRequest
+     *
      * @throws InvalidArgumentException
+     *
+     * @return ResultPickupOrCollectionRequest
      */
     public function setInfoEnlevements(?array $infoEnlevements = null): self
     {
@@ -173,10 +181,11 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
     }
 
     /**
-     * Add item to infoEnlevements value
-     * @param InfoEnlevement $item
-     * @return ResultPickupOrCollectionRequest
+     * Add item to infoEnlevements value.
+     *
      * @throws InvalidArgumentException
+     *
+     * @return ResultPickupOrCollectionRequest
      */
     public function addToInfoEnlevements(InfoEnlevement $item): self
     {
@@ -190,8 +199,7 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
     }
 
     /**
-     * Get libelleErreur value
-     * @return string|null
+     * Get libelleErreur value.
      */
     public function getLibelleErreur(): ?string
     {
@@ -199,8 +207,10 @@ class ResultPickupOrCollectionRequest extends AbstractStructBase
     }
 
     /**
-     * Set libelleErreur value
+     * Set libelleErreur value.
+     *
      * @param string $libelleErreur
+     *
      * @return ResultPickupOrCollectionRequest
      */
     public function setLibelleErreur(?string $libelleErreur = null): self

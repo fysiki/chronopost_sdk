@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for creerEnlevementEuropeResponse StructType
  * Meta information extracted from the WSDL
- * - type: tns:creerEnlevementEuropeResponse
- * @subpackage Structs
+ * - type: tns:creerEnlevementEuropeResponse.
  */
 class CreerEnlevementEuropeResponse extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultPickupOrCollectionRequest|null
+     * - minOccurs: 0.
      */
     protected ?ResultPickupOrCollectionRequest $return = null;
 
     /**
-     * Constructor method for creerEnlevementEuropeResponse
+     * Constructor method for creerEnlevementEuropeResponse.
+     *
      * @param ResultPickupOrCollectionRequest $return
+     *
      * @uses CreerEnlevementEuropeResponse::setReturn()
      */
     public function __construct(?ResultPickupOrCollectionRequest $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultPickupOrCollectionRequest|null
+     * Get return value.
      */
     public function getReturn(): ?ResultPickupOrCollectionRequest
     {
@@ -43,8 +43,10 @@ class CreerEnlevementEuropeResponse extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultPickupOrCollectionRequest $return
+     *
      * @return CreerEnlevementEuropeResponse
      */
     public function setReturn(?ResultPickupOrCollectionRequest $return = null): self

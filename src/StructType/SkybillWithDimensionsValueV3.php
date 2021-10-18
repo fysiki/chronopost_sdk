@@ -7,30 +7,29 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for skybillWithDimensionsValueV3 StructType
- * @subpackage Structs
+ * This class stands for skybillWithDimensionsValueV3 StructType.
  */
 class SkybillWithDimensionsValueV3 extends SkybillWithDimensionsValueV2
 {
     /**
      * The subAccount
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $subAccount = null;
     /**
      * The toTheOrderOf
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $toTheOrderOf = null;
 
     /**
-     * Constructor method for skybillWithDimensionsValueV3
+     * Constructor method for skybillWithDimensionsValueV3.
+     *
      * @param string $subAccount
      * @param string $toTheOrderOf
+     *
      * @uses SkybillWithDimensionsValueV3::setSubAccount()
      * @uses SkybillWithDimensionsValueV3::setToTheOrderOf()
      */
@@ -38,12 +37,12 @@ class SkybillWithDimensionsValueV3 extends SkybillWithDimensionsValueV2
     {
         $this
             ->setSubAccount($subAccount)
-            ->setToTheOrderOf($toTheOrderOf);
+            ->setToTheOrderOf($toTheOrderOf)
+        ;
     }
 
     /**
-     * Get subAccount value
-     * @return string|null
+     * Get subAccount value.
      */
     public function getSubAccount(): ?string
     {
@@ -51,8 +50,10 @@ class SkybillWithDimensionsValueV3 extends SkybillWithDimensionsValueV2
     }
 
     /**
-     * Set subAccount value
+     * Set subAccount value.
+     *
      * @param string $subAccount
+     *
      * @return SkybillWithDimensionsValueV3
      */
     public function setSubAccount(?string $subAccount = null): self
@@ -67,8 +68,7 @@ class SkybillWithDimensionsValueV3 extends SkybillWithDimensionsValueV2
     }
 
     /**
-     * Get toTheOrderOf value
-     * @return string|null
+     * Get toTheOrderOf value.
      */
     public function getToTheOrderOf(): ?string
     {
@@ -76,8 +76,10 @@ class SkybillWithDimensionsValueV3 extends SkybillWithDimensionsValueV2
     }
 
     /**
-     * Set toTheOrderOf value
+     * Set toTheOrderOf value.
+     *
      * @param string $toTheOrderOf
+     *
      * @return SkybillWithDimensionsValueV3
      */
     public function setToTheOrderOf(?string $toTheOrderOf = null): self

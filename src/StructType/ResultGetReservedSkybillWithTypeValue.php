@@ -8,44 +8,41 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for resultGetReservedSkybillWithTypeValue StructType
- * @subpackage Structs
+ * This class stands for resultGetReservedSkybillWithTypeValue StructType.
  */
 class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
 {
     /**
-     * The errorCode
-     * @var int|null
+     * The errorCode.
      */
     protected ?int $errorCode = null;
     /**
      * The errorMessage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $errorMessage = null;
     /**
      * The skybill
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $skybill = null;
     /**
      * The type
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $type = null;
 
     /**
-     * Constructor method for resultGetReservedSkybillWithTypeValue
-     * @param int $errorCode
+     * Constructor method for resultGetReservedSkybillWithTypeValue.
+     *
+     * @param int    $errorCode
      * @param string $errorMessage
      * @param string $skybill
      * @param string $type
+     *
      * @uses ResultGetReservedSkybillWithTypeValue::setErrorCode()
      * @uses ResultGetReservedSkybillWithTypeValue::setErrorMessage()
      * @uses ResultGetReservedSkybillWithTypeValue::setSkybill()
@@ -57,12 +54,12 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
             ->setErrorCode($errorCode)
             ->setErrorMessage($errorMessage)
             ->setSkybill($skybill)
-            ->setType($type);
+            ->setType($type)
+        ;
     }
 
     /**
-     * Get errorCode value
-     * @return int|null
+     * Get errorCode value.
      */
     public function getErrorCode(): ?int
     {
@@ -70,8 +67,10 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
     }
 
     /**
-     * Set errorCode value
+     * Set errorCode value.
+     *
      * @param int $errorCode
+     *
      * @return ResultGetReservedSkybillWithTypeValue
      */
     public function setErrorCode(?int $errorCode = null): self
@@ -86,8 +85,7 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
     }
 
     /**
-     * Get errorMessage value
-     * @return string|null
+     * Get errorMessage value.
      */
     public function getErrorMessage(): ?string
     {
@@ -95,8 +93,10 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
     }
 
     /**
-     * Set errorMessage value
+     * Set errorMessage value.
+     *
      * @param string $errorMessage
+     *
      * @return ResultGetReservedSkybillWithTypeValue
      */
     public function setErrorMessage(?string $errorMessage = null): self
@@ -111,8 +111,7 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
     }
 
     /**
-     * Get skybill value
-     * @return string|null
+     * Get skybill value.
      */
     public function getSkybill(): ?string
     {
@@ -120,8 +119,10 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
     }
 
     /**
-     * Set skybill value
+     * Set skybill value.
+     *
      * @param string $skybill
+     *
      * @return ResultGetReservedSkybillWithTypeValue
      */
     public function setSkybill(?string $skybill = null): self
@@ -136,8 +137,7 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
     }
 
     /**
-     * Get type value
-     * @return string|null
+     * Get type value.
      */
     public function getType(): ?string
     {
@@ -145,8 +145,10 @@ class ResultGetReservedSkybillWithTypeValue extends AbstractStructBase
     }
 
     /**
-     * Set type value
+     * Set type value.
+     *
      * @param string $type
+     *
      * @return ResultGetReservedSkybillWithTypeValue
      */
     public function setType(?string $type = null): self

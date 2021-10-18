@@ -8,62 +8,57 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for skybillValueBase StructType
- * @subpackage Structs
+ * This class stands for skybillValueBase StructType.
  */
 class SkybillValueBase extends AbstractStructBase
 {
     /**
      * The as
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $as = null;
     /**
      * The objectType
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $objectType = null;
     /**
      * The productCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $productCode = null;
     /**
      * The service
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $service = null;
     /**
      * The shipDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipDate = null;
     /**
      * The weight
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var float|null
+     * - minOccurs: 0.
      */
     protected ?float $weight = null;
 
     /**
-     * Constructor method for skybillValueBase
+     * Constructor method for skybillValueBase.
+     *
      * @param string $as
      * @param string $objectType
      * @param string $productCode
      * @param string $service
      * @param string $shipDate
-     * @param float $weight
+     * @param float  $weight
+     *
      * @uses SkybillValueBase::setAs()
      * @uses SkybillValueBase::setObjectType()
      * @uses SkybillValueBase::setProductCode()
@@ -79,12 +74,12 @@ class SkybillValueBase extends AbstractStructBase
             ->setProductCode($productCode)
             ->setService($service)
             ->setShipDate($shipDate)
-            ->setWeight($weight);
+            ->setWeight($weight)
+        ;
     }
 
     /**
-     * Get as value
-     * @return string|null
+     * Get as value.
      */
     public function getAs(): ?string
     {
@@ -92,8 +87,10 @@ class SkybillValueBase extends AbstractStructBase
     }
 
     /**
-     * Set as value
+     * Set as value.
+     *
      * @param string $as
+     *
      * @return SkybillValueBase
      */
     public function setAs(?string $as = null): self
@@ -108,8 +105,7 @@ class SkybillValueBase extends AbstractStructBase
     }
 
     /**
-     * Get objectType value
-     * @return string|null
+     * Get objectType value.
      */
     public function getObjectType(): ?string
     {
@@ -117,8 +113,10 @@ class SkybillValueBase extends AbstractStructBase
     }
 
     /**
-     * Set objectType value
+     * Set objectType value.
+     *
      * @param string $objectType
+     *
      * @return SkybillValueBase
      */
     public function setObjectType(?string $objectType = null): self
@@ -133,8 +131,7 @@ class SkybillValueBase extends AbstractStructBase
     }
 
     /**
-     * Get productCode value
-     * @return string|null
+     * Get productCode value.
      */
     public function getProductCode(): ?string
     {
@@ -142,8 +139,10 @@ class SkybillValueBase extends AbstractStructBase
     }
 
     /**
-     * Set productCode value
+     * Set productCode value.
+     *
      * @param string $productCode
+     *
      * @return SkybillValueBase
      */
     public function setProductCode(?string $productCode = null): self
@@ -158,8 +157,7 @@ class SkybillValueBase extends AbstractStructBase
     }
 
     /**
-     * Get service value
-     * @return string|null
+     * Get service value.
      */
     public function getService(): ?string
     {
@@ -167,8 +165,10 @@ class SkybillValueBase extends AbstractStructBase
     }
 
     /**
-     * Set service value
+     * Set service value.
+     *
      * @param string $service
+     *
      * @return SkybillValueBase
      */
     public function setService(?string $service = null): self
@@ -183,8 +183,7 @@ class SkybillValueBase extends AbstractStructBase
     }
 
     /**
-     * Get shipDate value
-     * @return string|null
+     * Get shipDate value.
      */
     public function getShipDate(): ?string
     {
@@ -192,8 +191,10 @@ class SkybillValueBase extends AbstractStructBase
     }
 
     /**
-     * Set shipDate value
+     * Set shipDate value.
+     *
      * @param string $shipDate
+     *
      * @return SkybillValueBase
      */
     public function setShipDate(?string $shipDate = null): self
@@ -208,8 +209,7 @@ class SkybillValueBase extends AbstractStructBase
     }
 
     /**
-     * Get weight value
-     * @return float|null
+     * Get weight value.
      */
     public function getWeight(): ?float
     {
@@ -217,8 +217,10 @@ class SkybillValueBase extends AbstractStructBase
     }
 
     /**
-     * Set weight value
+     * Set weight value.
+     *
      * @param float $weight
+     *
      * @return SkybillValueBase
      */
     public function setWeight(?float $weight = null): self

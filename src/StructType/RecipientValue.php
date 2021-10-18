@@ -8,103 +8,90 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for recipientValue StructType
- * @subpackage Structs
+ * This class stands for recipientValue StructType.
  */
 class RecipientValue extends AbstractStructBase
 {
     /**
      * The recipientAdress1
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientAdress1 = null;
     /**
      * The recipientAdress2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientAdress2 = null;
     /**
      * The recipientCity
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientCity = null;
     /**
      * The recipientContactName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientContactName = null;
     /**
      * The recipientCountry
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientCountry = null;
     /**
      * The recipientCountryName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientCountryName = null;
     /**
      * The recipientEmail
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientEmail = null;
     /**
      * The recipientMobilePhone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientMobilePhone = null;
     /**
      * The recipientName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientName = null;
     /**
      * The recipientName2
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientName2 = null;
     /**
      * The recipientPhone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientPhone = null;
     /**
-     * The recipientPreAlert
-     * @var int|null
+     * The recipientPreAlert.
      */
     protected ?int $recipientPreAlert = null;
     /**
      * The recipientZipCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientZipCode = null;
 
     /**
-     * Constructor method for recipientValue
+     * Constructor method for recipientValue.
+     *
      * @param string $recipientAdress1
      * @param string $recipientAdress2
      * @param string $recipientCity
@@ -116,8 +103,9 @@ class RecipientValue extends AbstractStructBase
      * @param string $recipientName
      * @param string $recipientName2
      * @param string $recipientPhone
-     * @param int $recipientPreAlert
+     * @param int    $recipientPreAlert
      * @param string $recipientZipCode
+     *
      * @uses RecipientValue::setRecipientAdress1()
      * @uses RecipientValue::setRecipientAdress2()
      * @uses RecipientValue::setRecipientCity()
@@ -147,12 +135,12 @@ class RecipientValue extends AbstractStructBase
             ->setRecipientName2($recipientName2)
             ->setRecipientPhone($recipientPhone)
             ->setRecipientPreAlert($recipientPreAlert)
-            ->setRecipientZipCode($recipientZipCode);
+            ->setRecipientZipCode($recipientZipCode)
+        ;
     }
 
     /**
-     * Get recipientAdress1 value
-     * @return string|null
+     * Get recipientAdress1 value.
      */
     public function getRecipientAdress1(): ?string
     {
@@ -160,8 +148,10 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientAdress1 value
+     * Set recipientAdress1 value.
+     *
      * @param string $recipientAdress1
+     *
      * @return RecipientValue
      */
     public function setRecipientAdress1(?string $recipientAdress1 = null): self
@@ -176,8 +166,7 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Get recipientAdress2 value
-     * @return string|null
+     * Get recipientAdress2 value.
      */
     public function getRecipientAdress2(): ?string
     {
@@ -185,8 +174,10 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientAdress2 value
+     * Set recipientAdress2 value.
+     *
      * @param string $recipientAdress2
+     *
      * @return RecipientValue
      */
     public function setRecipientAdress2(?string $recipientAdress2 = null): self
@@ -201,8 +192,7 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Get recipientCity value
-     * @return string|null
+     * Get recipientCity value.
      */
     public function getRecipientCity(): ?string
     {
@@ -210,8 +200,10 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientCity value
+     * Set recipientCity value.
+     *
      * @param string $recipientCity
+     *
      * @return RecipientValue
      */
     public function setRecipientCity(?string $recipientCity = null): self
@@ -226,8 +218,7 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Get recipientContactName value
-     * @return string|null
+     * Get recipientContactName value.
      */
     public function getRecipientContactName(): ?string
     {
@@ -235,8 +226,10 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientContactName value
+     * Set recipientContactName value.
+     *
      * @param string $recipientContactName
+     *
      * @return RecipientValue
      */
     public function setRecipientContactName(?string $recipientContactName = null): self
@@ -251,8 +244,7 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Get recipientCountry value
-     * @return string|null
+     * Get recipientCountry value.
      */
     public function getRecipientCountry(): ?string
     {
@@ -260,8 +252,10 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientCountry value
+     * Set recipientCountry value.
+     *
      * @param string $recipientCountry
+     *
      * @return RecipientValue
      */
     public function setRecipientCountry(?string $recipientCountry = null): self
@@ -276,8 +270,7 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Get recipientCountryName value
-     * @return string|null
+     * Get recipientCountryName value.
      */
     public function getRecipientCountryName(): ?string
     {
@@ -285,8 +278,10 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientCountryName value
+     * Set recipientCountryName value.
+     *
      * @param string $recipientCountryName
+     *
      * @return RecipientValue
      */
     public function setRecipientCountryName(?string $recipientCountryName = null): self
@@ -301,8 +296,7 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Get recipientEmail value
-     * @return string|null
+     * Get recipientEmail value.
      */
     public function getRecipientEmail(): ?string
     {
@@ -310,8 +304,10 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientEmail value
+     * Set recipientEmail value.
+     *
      * @param string $recipientEmail
+     *
      * @return RecipientValue
      */
     public function setRecipientEmail(?string $recipientEmail = null): self
@@ -326,8 +322,7 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Get recipientMobilePhone value
-     * @return string|null
+     * Get recipientMobilePhone value.
      */
     public function getRecipientMobilePhone(): ?string
     {
@@ -335,8 +330,10 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientMobilePhone value
+     * Set recipientMobilePhone value.
+     *
      * @param string $recipientMobilePhone
+     *
      * @return RecipientValue
      */
     public function setRecipientMobilePhone(?string $recipientMobilePhone = null): self
@@ -351,8 +348,7 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Get recipientName value
-     * @return string|null
+     * Get recipientName value.
      */
     public function getRecipientName(): ?string
     {
@@ -360,8 +356,10 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientName value
+     * Set recipientName value.
+     *
      * @param string $recipientName
+     *
      * @return RecipientValue
      */
     public function setRecipientName(?string $recipientName = null): self
@@ -376,8 +374,7 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Get recipientName2 value
-     * @return string|null
+     * Get recipientName2 value.
      */
     public function getRecipientName2(): ?string
     {
@@ -385,8 +382,10 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientName2 value
+     * Set recipientName2 value.
+     *
      * @param string $recipientName2
+     *
      * @return RecipientValue
      */
     public function setRecipientName2(?string $recipientName2 = null): self
@@ -401,8 +400,7 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Get recipientPhone value
-     * @return string|null
+     * Get recipientPhone value.
      */
     public function getRecipientPhone(): ?string
     {
@@ -410,8 +408,10 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientPhone value
+     * Set recipientPhone value.
+     *
      * @param string $recipientPhone
+     *
      * @return RecipientValue
      */
     public function setRecipientPhone(?string $recipientPhone = null): self
@@ -426,8 +426,7 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Get recipientPreAlert value
-     * @return int|null
+     * Get recipientPreAlert value.
      */
     public function getRecipientPreAlert(): ?int
     {
@@ -435,8 +434,10 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientPreAlert value
+     * Set recipientPreAlert value.
+     *
      * @param int $recipientPreAlert
+     *
      * @return RecipientValue
      */
     public function setRecipientPreAlert(?int $recipientPreAlert = null): self
@@ -451,8 +452,7 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Get recipientZipCode value
-     * @return string|null
+     * Get recipientZipCode value.
      */
     public function getRecipientZipCode(): ?string
     {
@@ -460,8 +460,10 @@ class RecipientValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientZipCode value
+     * Set recipientZipCode value.
+     *
      * @param string $recipientZipCode
+     *
      * @return RecipientValue
      */
     public function setRecipientZipCode(?string $recipientZipCode = null): self

@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for shippingMultiParcelV5Response StructType
  * Meta information extracted from the WSDL
- * - type: tns:shippingMultiParcelV5Response
- * @subpackage Structs
+ * - type: tns:shippingMultiParcelV5Response.
  */
 class ShippingMultiParcelV5Response extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultMultiParcelExpeditionValue|null
+     * - minOccurs: 0.
      */
     protected ?ResultMultiParcelExpeditionValue $return = null;
 
     /**
-     * Constructor method for shippingMultiParcelV5Response
+     * Constructor method for shippingMultiParcelV5Response.
+     *
      * @param ResultMultiParcelExpeditionValue $return
+     *
      * @uses ShippingMultiParcelV5Response::setReturn()
      */
     public function __construct(?ResultMultiParcelExpeditionValue $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultMultiParcelExpeditionValue|null
+     * Get return value.
      */
     public function getReturn(): ?ResultMultiParcelExpeditionValue
     {
@@ -43,8 +43,10 @@ class ShippingMultiParcelV5Response extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultMultiParcelExpeditionValue $return
+     *
      * @return ShippingMultiParcelV5Response
      */
     public function setReturn(?ResultMultiParcelExpeditionValue $return = null): self

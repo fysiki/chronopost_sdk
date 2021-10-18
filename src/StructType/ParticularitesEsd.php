@@ -8,80 +8,71 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for particularitesEsd StructType
- * @subpackage Structs
+ * This class stands for particularitesEsd StructType.
  */
 class ParticularitesEsd extends AbstractStructBase
 {
     /**
-     * The etudeDeFaisabilite
-     * @var bool|null
+     * The etudeDeFaisabilite.
      */
     protected ?bool $etudeDeFaisabilite = null;
     /**
-     * The grosVolume
-     * @var bool|null
+     * The grosVolume.
      */
     protected ?bool $grosVolume = null;
     /**
-     * The hauteur
-     * @var int|null
+     * The hauteur.
      */
     protected ?int $hauteur = null;
     /**
      * The instructionsParticulieres
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $instructionsParticulieres = null;
     /**
-     * The largeur
-     * @var int|null
+     * The largeur.
      */
     protected ?int $largeur = null;
     /**
      * The listeColisAnnonces
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $listeColisAnnonces = null;
     /**
-     * The longueur
-     * @var int|null
+     * The longueur.
      */
     protected ?int $longueur = null;
     /**
-     * The nombreEnvois
-     * @var int|null
+     * The nombreEnvois.
      */
     protected ?int $nombreEnvois = null;
     /**
-     * The poids
-     * @var float|null
+     * The poids.
      */
     protected ?float $poids = null;
     /**
      * The volume
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $volume = null;
 
     /**
-     * Constructor method for particularitesEsd
-     * @param bool $etudeDeFaisabilite
-     * @param bool $grosVolume
-     * @param int $hauteur
+     * Constructor method for particularitesEsd.
+     *
+     * @param bool   $etudeDeFaisabilite
+     * @param bool   $grosVolume
+     * @param int    $hauteur
      * @param string $instructionsParticulieres
-     * @param int $largeur
+     * @param int    $largeur
      * @param string $listeColisAnnonces
-     * @param int $longueur
-     * @param int $nombreEnvois
-     * @param float $poids
+     * @param int    $longueur
+     * @param int    $nombreEnvois
+     * @param float  $poids
      * @param string $volume
+     *
      * @uses ParticularitesEsd::setEtudeDeFaisabilite()
      * @uses ParticularitesEsd::setGrosVolume()
      * @uses ParticularitesEsd::setHauteur()
@@ -105,12 +96,12 @@ class ParticularitesEsd extends AbstractStructBase
             ->setLongueur($longueur)
             ->setNombreEnvois($nombreEnvois)
             ->setPoids($poids)
-            ->setVolume($volume);
+            ->setVolume($volume)
+        ;
     }
 
     /**
-     * Get etudeDeFaisabilite value
-     * @return bool|null
+     * Get etudeDeFaisabilite value.
      */
     public function getEtudeDeFaisabilite(): ?bool
     {
@@ -118,8 +109,10 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Set etudeDeFaisabilite value
+     * Set etudeDeFaisabilite value.
+     *
      * @param bool $etudeDeFaisabilite
+     *
      * @return ParticularitesEsd
      */
     public function setEtudeDeFaisabilite(?bool $etudeDeFaisabilite = null): self
@@ -134,8 +127,7 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Get grosVolume value
-     * @return bool|null
+     * Get grosVolume value.
      */
     public function getGrosVolume(): ?bool
     {
@@ -143,8 +135,10 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Set grosVolume value
+     * Set grosVolume value.
+     *
      * @param bool $grosVolume
+     *
      * @return ParticularitesEsd
      */
     public function setGrosVolume(?bool $grosVolume = null): self
@@ -159,8 +153,7 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Get hauteur value
-     * @return int|null
+     * Get hauteur value.
      */
     public function getHauteur(): ?int
     {
@@ -168,8 +161,10 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Set hauteur value
+     * Set hauteur value.
+     *
      * @param int $hauteur
+     *
      * @return ParticularitesEsd
      */
     public function setHauteur(?int $hauteur = null): self
@@ -184,8 +179,7 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Get instructionsParticulieres value
-     * @return string|null
+     * Get instructionsParticulieres value.
      */
     public function getInstructionsParticulieres(): ?string
     {
@@ -193,8 +187,10 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Set instructionsParticulieres value
+     * Set instructionsParticulieres value.
+     *
      * @param string $instructionsParticulieres
+     *
      * @return ParticularitesEsd
      */
     public function setInstructionsParticulieres(?string $instructionsParticulieres = null): self
@@ -209,8 +205,7 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Get largeur value
-     * @return int|null
+     * Get largeur value.
      */
     public function getLargeur(): ?int
     {
@@ -218,8 +213,10 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Set largeur value
+     * Set largeur value.
+     *
      * @param int $largeur
+     *
      * @return ParticularitesEsd
      */
     public function setLargeur(?int $largeur = null): self
@@ -234,8 +231,7 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Get listeColisAnnonces value
-     * @return string|null
+     * Get listeColisAnnonces value.
      */
     public function getListeColisAnnonces(): ?string
     {
@@ -243,8 +239,10 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Set listeColisAnnonces value
+     * Set listeColisAnnonces value.
+     *
      * @param string $listeColisAnnonces
+     *
      * @return ParticularitesEsd
      */
     public function setListeColisAnnonces(?string $listeColisAnnonces = null): self
@@ -259,8 +257,7 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Get longueur value
-     * @return int|null
+     * Get longueur value.
      */
     public function getLongueur(): ?int
     {
@@ -268,8 +265,10 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Set longueur value
+     * Set longueur value.
+     *
      * @param int $longueur
+     *
      * @return ParticularitesEsd
      */
     public function setLongueur(?int $longueur = null): self
@@ -284,8 +283,7 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Get nombreEnvois value
-     * @return int|null
+     * Get nombreEnvois value.
      */
     public function getNombreEnvois(): ?int
     {
@@ -293,8 +291,10 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Set nombreEnvois value
+     * Set nombreEnvois value.
+     *
      * @param int $nombreEnvois
+     *
      * @return ParticularitesEsd
      */
     public function setNombreEnvois(?int $nombreEnvois = null): self
@@ -309,8 +309,7 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Get poids value
-     * @return float|null
+     * Get poids value.
      */
     public function getPoids(): ?float
     {
@@ -318,8 +317,10 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Set poids value
+     * Set poids value.
+     *
      * @param float $poids
+     *
      * @return ParticularitesEsd
      */
     public function setPoids(?float $poids = null): self
@@ -334,8 +335,7 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Get volume value
-     * @return string|null
+     * Get volume value.
      */
     public function getVolume(): ?string
     {
@@ -343,8 +343,10 @@ class ParticularitesEsd extends AbstractStructBase
     }
 
     /**
-     * Set volume value
+     * Set volume value.
+     *
      * @param string $volume
+     *
      * @return ParticularitesEsd
      */
     public function setVolume(?string $volume = null): self

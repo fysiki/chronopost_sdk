@@ -8,112 +8,98 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for resultMultiParcelValue StructType
- * @subpackage Structs
+ * This class stands for resultMultiParcelValue StructType.
  */
 class ResultMultiParcelValue extends AbstractStructBase
 {
     /**
      * The asCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $asCode = null;
     /**
      * The codeDepot
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeDepot = null;
     /**
      * The codeService
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeService = null;
     /**
      * The destinationDepot
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $destinationDepot = null;
     /**
      * The geoPostCodeBarre
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $geoPostCodeBarre = null;
     /**
      * The geoPostNumeroColis
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $geoPostNumeroColis = null;
     /**
      * The groupingPriorityLabel
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $groupingPriorityLabel = null;
     /**
      * The pdfEtiquette
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $pdfEtiquette = null;
     /**
      * The serviceMark
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $serviceMark = null;
     /**
      * The serviceName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $serviceName = null;
     /**
      * The signaletiqueProduit
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $signaletiqueProduit = null;
     /**
      * The skybillNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $skybillNumber = null;
     /**
      * The dSort
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $dSort = null;
     /**
      * The oSort
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $oSort = null;
 
     /**
-     * Constructor method for resultMultiParcelValue
+     * Constructor method for resultMultiParcelValue.
+     *
      * @param string $asCode
      * @param string $codeDepot
      * @param string $codeService
@@ -128,6 +114,7 @@ class ResultMultiParcelValue extends AbstractStructBase
      * @param string $skybillNumber
      * @param string $dSort
      * @param string $oSort
+     *
      * @uses ResultMultiParcelValue::setAsCode()
      * @uses ResultMultiParcelValue::setCodeDepot()
      * @uses ResultMultiParcelValue::setCodeService()
@@ -159,12 +146,12 @@ class ResultMultiParcelValue extends AbstractStructBase
             ->setSignaletiqueProduit($signaletiqueProduit)
             ->setSkybillNumber($skybillNumber)
             ->setDSort($dSort)
-            ->setOSort($oSort);
+            ->setOSort($oSort)
+        ;
     }
 
     /**
-     * Get asCode value
-     * @return string|null
+     * Get asCode value.
      */
     public function getAsCode(): ?string
     {
@@ -172,8 +159,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set asCode value
+     * Set asCode value.
+     *
      * @param string $asCode
+     *
      * @return ResultMultiParcelValue
      */
     public function setAsCode(?string $asCode = null): self
@@ -188,8 +177,7 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Get codeDepot value
-     * @return string|null
+     * Get codeDepot value.
      */
     public function getCodeDepot(): ?string
     {
@@ -197,8 +185,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set codeDepot value
+     * Set codeDepot value.
+     *
      * @param string $codeDepot
+     *
      * @return ResultMultiParcelValue
      */
     public function setCodeDepot(?string $codeDepot = null): self
@@ -213,8 +203,7 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Get codeService value
-     * @return string|null
+     * Get codeService value.
      */
     public function getCodeService(): ?string
     {
@@ -222,8 +211,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set codeService value
+     * Set codeService value.
+     *
      * @param string $codeService
+     *
      * @return ResultMultiParcelValue
      */
     public function setCodeService(?string $codeService = null): self
@@ -238,8 +229,7 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Get destinationDepot value
-     * @return string|null
+     * Get destinationDepot value.
      */
     public function getDestinationDepot(): ?string
     {
@@ -247,8 +237,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set destinationDepot value
+     * Set destinationDepot value.
+     *
      * @param string $destinationDepot
+     *
      * @return ResultMultiParcelValue
      */
     public function setDestinationDepot(?string $destinationDepot = null): self
@@ -263,8 +255,7 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Get geoPostCodeBarre value
-     * @return string|null
+     * Get geoPostCodeBarre value.
      */
     public function getGeoPostCodeBarre(): ?string
     {
@@ -272,8 +263,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set geoPostCodeBarre value
+     * Set geoPostCodeBarre value.
+     *
      * @param string $geoPostCodeBarre
+     *
      * @return ResultMultiParcelValue
      */
     public function setGeoPostCodeBarre(?string $geoPostCodeBarre = null): self
@@ -288,8 +281,7 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Get geoPostNumeroColis value
-     * @return string|null
+     * Get geoPostNumeroColis value.
      */
     public function getGeoPostNumeroColis(): ?string
     {
@@ -297,8 +289,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set geoPostNumeroColis value
+     * Set geoPostNumeroColis value.
+     *
      * @param string $geoPostNumeroColis
+     *
      * @return ResultMultiParcelValue
      */
     public function setGeoPostNumeroColis(?string $geoPostNumeroColis = null): self
@@ -313,8 +307,7 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Get groupingPriorityLabel value
-     * @return string|null
+     * Get groupingPriorityLabel value.
      */
     public function getGroupingPriorityLabel(): ?string
     {
@@ -322,8 +315,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set groupingPriorityLabel value
+     * Set groupingPriorityLabel value.
+     *
      * @param string $groupingPriorityLabel
+     *
      * @return ResultMultiParcelValue
      */
     public function setGroupingPriorityLabel(?string $groupingPriorityLabel = null): self
@@ -338,8 +333,7 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Get pdfEtiquette value
-     * @return string|null
+     * Get pdfEtiquette value.
      */
     public function getPdfEtiquette(): ?string
     {
@@ -347,8 +341,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set pdfEtiquette value
+     * Set pdfEtiquette value.
+     *
      * @param string $pdfEtiquette
+     *
      * @return ResultMultiParcelValue
      */
     public function setPdfEtiquette(?string $pdfEtiquette = null): self
@@ -363,8 +359,7 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Get serviceMark value
-     * @return string|null
+     * Get serviceMark value.
      */
     public function getServiceMark(): ?string
     {
@@ -372,8 +367,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set serviceMark value
+     * Set serviceMark value.
+     *
      * @param string $serviceMark
+     *
      * @return ResultMultiParcelValue
      */
     public function setServiceMark(?string $serviceMark = null): self
@@ -388,8 +385,7 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Get serviceName value
-     * @return string|null
+     * Get serviceName value.
      */
     public function getServiceName(): ?string
     {
@@ -397,8 +393,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set serviceName value
+     * Set serviceName value.
+     *
      * @param string $serviceName
+     *
      * @return ResultMultiParcelValue
      */
     public function setServiceName(?string $serviceName = null): self
@@ -413,8 +411,7 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Get signaletiqueProduit value
-     * @return string|null
+     * Get signaletiqueProduit value.
      */
     public function getSignaletiqueProduit(): ?string
     {
@@ -422,8 +419,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set signaletiqueProduit value
+     * Set signaletiqueProduit value.
+     *
      * @param string $signaletiqueProduit
+     *
      * @return ResultMultiParcelValue
      */
     public function setSignaletiqueProduit(?string $signaletiqueProduit = null): self
@@ -438,8 +437,7 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Get skybillNumber value
-     * @return string|null
+     * Get skybillNumber value.
      */
     public function getSkybillNumber(): ?string
     {
@@ -447,8 +445,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set skybillNumber value
+     * Set skybillNumber value.
+     *
      * @param string $skybillNumber
+     *
      * @return ResultMultiParcelValue
      */
     public function setSkybillNumber(?string $skybillNumber = null): self
@@ -463,8 +463,7 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Get dSort value
-     * @return string|null
+     * Get dSort value.
      */
     public function getDSort(): ?string
     {
@@ -472,8 +471,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set dSort value
+     * Set dSort value.
+     *
      * @param string $dSort
+     *
      * @return ResultMultiParcelValue
      */
     public function setDSort(?string $dSort = null): self
@@ -488,8 +489,7 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Get oSort value
-     * @return string|null
+     * Get oSort value.
      */
     public function getOSort(): ?string
     {
@@ -497,8 +497,10 @@ class ResultMultiParcelValue extends AbstractStructBase
     }
 
     /**
-     * Set oSort value
+     * Set oSort value.
+     *
      * @param string $oSort
+     *
      * @return ResultMultiParcelValue
      */
     public function setOSort(?string $oSort = null): self

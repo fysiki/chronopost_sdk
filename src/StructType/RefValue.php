@@ -8,46 +8,43 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for refValue StructType
- * @subpackage Structs
+ * This class stands for refValue StructType.
  */
 class RefValue extends AbstractStructBase
 {
     /**
      * The customerSkybillNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $customerSkybillNumber = null;
     /**
      * The PCardTransactionNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $PCardTransactionNumber = null;
     /**
      * The recipientRef
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $recipientRef = null;
     /**
      * The shipperRef
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $shipperRef = null;
 
     /**
-     * Constructor method for refValue
+     * Constructor method for refValue.
+     *
      * @param string $customerSkybillNumber
      * @param string $pCardTransactionNumber
      * @param string $recipientRef
      * @param string $shipperRef
+     *
      * @uses RefValue::setCustomerSkybillNumber()
      * @uses RefValue::setPCardTransactionNumber()
      * @uses RefValue::setRecipientRef()
@@ -59,12 +56,12 @@ class RefValue extends AbstractStructBase
             ->setCustomerSkybillNumber($customerSkybillNumber)
             ->setPCardTransactionNumber($pCardTransactionNumber)
             ->setRecipientRef($recipientRef)
-            ->setShipperRef($shipperRef);
+            ->setShipperRef($shipperRef)
+        ;
     }
 
     /**
-     * Get customerSkybillNumber value
-     * @return string|null
+     * Get customerSkybillNumber value.
      */
     public function getCustomerSkybillNumber(): ?string
     {
@@ -72,8 +69,10 @@ class RefValue extends AbstractStructBase
     }
 
     /**
-     * Set customerSkybillNumber value
+     * Set customerSkybillNumber value.
+     *
      * @param string $customerSkybillNumber
+     *
      * @return RefValue
      */
     public function setCustomerSkybillNumber(?string $customerSkybillNumber = null): self
@@ -88,8 +87,7 @@ class RefValue extends AbstractStructBase
     }
 
     /**
-     * Get PCardTransactionNumber value
-     * @return string|null
+     * Get PCardTransactionNumber value.
      */
     public function getPCardTransactionNumber(): ?string
     {
@@ -97,8 +95,10 @@ class RefValue extends AbstractStructBase
     }
 
     /**
-     * Set PCardTransactionNumber value
+     * Set PCardTransactionNumber value.
+     *
      * @param string $pCardTransactionNumber
+     *
      * @return RefValue
      */
     public function setPCardTransactionNumber(?string $pCardTransactionNumber = null): self
@@ -113,8 +113,7 @@ class RefValue extends AbstractStructBase
     }
 
     /**
-     * Get recipientRef value
-     * @return string|null
+     * Get recipientRef value.
      */
     public function getRecipientRef(): ?string
     {
@@ -122,8 +121,10 @@ class RefValue extends AbstractStructBase
     }
 
     /**
-     * Set recipientRef value
+     * Set recipientRef value.
+     *
      * @param string $recipientRef
+     *
      * @return RefValue
      */
     public function setRecipientRef(?string $recipientRef = null): self
@@ -138,8 +139,7 @@ class RefValue extends AbstractStructBase
     }
 
     /**
-     * Get shipperRef value
-     * @return string|null
+     * Get shipperRef value.
      */
     public function getShipperRef(): ?string
     {
@@ -147,8 +147,10 @@ class RefValue extends AbstractStructBase
     }
 
     /**
-     * Set shipperRef value
+     * Set shipperRef value.
+     *
      * @param string $shipperRef
+     *
      * @return RefValue
      */
     public function setShipperRef(?string $shipperRef = null): self

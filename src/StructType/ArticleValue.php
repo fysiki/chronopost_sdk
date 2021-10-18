@@ -8,94 +8,85 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for articleValue StructType
- * @subpackage Structs
+ * This class stands for articleValue StructType.
  */
 class ArticleValue extends AbstractStructBase
 {
     /**
      * The content
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $content = null;
     /**
      * The contentInLanguage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $contentInLanguage = null;
     /**
      * The grossWeight
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var float|null
+     * - minOccurs: 0.
      */
     protected ?float $grossWeight = null;
     /**
      * The hscode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $hscode = null;
     /**
      * The netWeight
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var float|null
+     * - minOccurs: 0.
      */
     protected ?float $netWeight = null;
     /**
      * The origin
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $origin = null;
     /**
      * The position
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var int|null
+     * - minOccurs: 0.
      */
     protected ?int $position = null;
     /**
      * The quantity
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var int|null
+     * - minOccurs: 0.
      */
     protected ?int $quantity = null;
     /**
      * The regime
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $regime = null;
     /**
      * The value
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var float|null
+     * - minOccurs: 0.
      */
     protected ?float $value = null;
 
     /**
-     * Constructor method for articleValue
+     * Constructor method for articleValue.
+     *
      * @param string $content
      * @param string $contentInLanguage
-     * @param float $grossWeight
+     * @param float  $grossWeight
      * @param string $hscode
-     * @param float $netWeight
+     * @param float  $netWeight
      * @param string $origin
-     * @param int $position
-     * @param int $quantity
+     * @param int    $position
+     * @param int    $quantity
      * @param string $regime
-     * @param float $value
+     * @param float  $value
+     *
      * @uses ArticleValue::setContent()
      * @uses ArticleValue::setContentInLanguage()
      * @uses ArticleValue::setGrossWeight()
@@ -119,12 +110,12 @@ class ArticleValue extends AbstractStructBase
             ->setPosition($position)
             ->setQuantity($quantity)
             ->setRegime($regime)
-            ->setValue($value);
+            ->setValue($value)
+        ;
     }
 
     /**
-     * Get content value
-     * @return string|null
+     * Get content value.
      */
     public function getContent(): ?string
     {
@@ -132,8 +123,10 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Set content value
+     * Set content value.
+     *
      * @param string $content
+     *
      * @return ArticleValue
      */
     public function setContent(?string $content = null): self
@@ -148,8 +141,7 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Get contentInLanguage value
-     * @return string|null
+     * Get contentInLanguage value.
      */
     public function getContentInLanguage(): ?string
     {
@@ -157,8 +149,10 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Set contentInLanguage value
+     * Set contentInLanguage value.
+     *
      * @param string $contentInLanguage
+     *
      * @return ArticleValue
      */
     public function setContentInLanguage(?string $contentInLanguage = null): self
@@ -173,8 +167,7 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Get grossWeight value
-     * @return float|null
+     * Get grossWeight value.
      */
     public function getGrossWeight(): ?float
     {
@@ -182,8 +175,10 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Set grossWeight value
+     * Set grossWeight value.
+     *
      * @param float $grossWeight
+     *
      * @return ArticleValue
      */
     public function setGrossWeight(?float $grossWeight = null): self
@@ -198,8 +193,7 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Get hscode value
-     * @return string|null
+     * Get hscode value.
      */
     public function getHscode(): ?string
     {
@@ -207,8 +201,10 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Set hscode value
+     * Set hscode value.
+     *
      * @param string $hscode
+     *
      * @return ArticleValue
      */
     public function setHscode(?string $hscode = null): self
@@ -223,8 +219,7 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Get netWeight value
-     * @return float|null
+     * Get netWeight value.
      */
     public function getNetWeight(): ?float
     {
@@ -232,8 +227,10 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Set netWeight value
+     * Set netWeight value.
+     *
      * @param float $netWeight
+     *
      * @return ArticleValue
      */
     public function setNetWeight(?float $netWeight = null): self
@@ -248,8 +245,7 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Get origin value
-     * @return string|null
+     * Get origin value.
      */
     public function getOrigin(): ?string
     {
@@ -257,8 +253,10 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Set origin value
+     * Set origin value.
+     *
      * @param string $origin
+     *
      * @return ArticleValue
      */
     public function setOrigin(?string $origin = null): self
@@ -273,8 +271,7 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Get position value
-     * @return int|null
+     * Get position value.
      */
     public function getPosition(): ?int
     {
@@ -282,8 +279,10 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Set position value
+     * Set position value.
+     *
      * @param int $position
+     *
      * @return ArticleValue
      */
     public function setPosition(?int $position = null): self
@@ -298,8 +297,7 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Get quantity value
-     * @return int|null
+     * Get quantity value.
      */
     public function getQuantity(): ?int
     {
@@ -307,8 +305,10 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Set quantity value
+     * Set quantity value.
+     *
      * @param int $quantity
+     *
      * @return ArticleValue
      */
     public function setQuantity(?int $quantity = null): self
@@ -323,8 +323,7 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Get regime value
-     * @return string|null
+     * Get regime value.
      */
     public function getRegime(): ?string
     {
@@ -332,8 +331,10 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Set regime value
+     * Set regime value.
+     *
      * @param string $regime
+     *
      * @return ArticleValue
      */
     public function setRegime(?string $regime = null): self
@@ -348,8 +349,7 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Get value value
-     * @return float|null
+     * Get value value.
      */
     public function getValue(): ?float
     {
@@ -357,8 +357,10 @@ class ArticleValue extends AbstractStructBase
     }
 
     /**
-     * Set value value
+     * Set value value.
+     *
      * @param float $value
+     *
      * @return ArticleValue
      */
     public function setValue(?float $value = null): self

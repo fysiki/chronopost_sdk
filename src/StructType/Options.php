@@ -8,38 +8,35 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for options StructType
- * @subpackage Structs
+ * This class stands for options StructType.
  */
 class Options extends AbstractStructBase
 {
     /**
-     * The aviserSurRealisation
-     * @var bool|null
+     * The aviserSurRealisation.
      */
     protected ?bool $aviserSurRealisation = null;
     /**
-     * The chezUnTiers
-     * @var bool|null
+     * The chezUnTiers.
      */
     protected ?bool $chezUnTiers = null;
     /**
-     * The envoyerLtParMail
-     * @var bool|null
+     * The envoyerLtParMail.
      */
     protected ?bool $envoyerLtParMail = null;
     /**
-     * The LTaImprimerParChronopost
-     * @var bool|null
+     * The LTaImprimerParChronopost.
      */
     protected ?bool $LTaImprimerParChronopost = null;
 
     /**
-     * Constructor method for options
+     * Constructor method for options.
+     *
      * @param bool $aviserSurRealisation
      * @param bool $chezUnTiers
      * @param bool $envoyerLtParMail
      * @param bool $lTaImprimerParChronopost
+     *
      * @uses Options::setAviserSurRealisation()
      * @uses Options::setChezUnTiers()
      * @uses Options::setEnvoyerLtParMail()
@@ -51,12 +48,12 @@ class Options extends AbstractStructBase
             ->setAviserSurRealisation($aviserSurRealisation)
             ->setChezUnTiers($chezUnTiers)
             ->setEnvoyerLtParMail($envoyerLtParMail)
-            ->setLTaImprimerParChronopost($lTaImprimerParChronopost);
+            ->setLTaImprimerParChronopost($lTaImprimerParChronopost)
+        ;
     }
 
     /**
-     * Get aviserSurRealisation value
-     * @return bool|null
+     * Get aviserSurRealisation value.
      */
     public function getAviserSurRealisation(): ?bool
     {
@@ -64,8 +61,10 @@ class Options extends AbstractStructBase
     }
 
     /**
-     * Set aviserSurRealisation value
+     * Set aviserSurRealisation value.
+     *
      * @param bool $aviserSurRealisation
+     *
      * @return Options
      */
     public function setAviserSurRealisation(?bool $aviserSurRealisation = null): self
@@ -80,8 +79,7 @@ class Options extends AbstractStructBase
     }
 
     /**
-     * Get chezUnTiers value
-     * @return bool|null
+     * Get chezUnTiers value.
      */
     public function getChezUnTiers(): ?bool
     {
@@ -89,8 +87,10 @@ class Options extends AbstractStructBase
     }
 
     /**
-     * Set chezUnTiers value
+     * Set chezUnTiers value.
+     *
      * @param bool $chezUnTiers
+     *
      * @return Options
      */
     public function setChezUnTiers(?bool $chezUnTiers = null): self
@@ -105,8 +105,7 @@ class Options extends AbstractStructBase
     }
 
     /**
-     * Get envoyerLtParMail value
-     * @return bool|null
+     * Get envoyerLtParMail value.
      */
     public function getEnvoyerLtParMail(): ?bool
     {
@@ -114,8 +113,10 @@ class Options extends AbstractStructBase
     }
 
     /**
-     * Set envoyerLtParMail value
+     * Set envoyerLtParMail value.
+     *
      * @param bool $envoyerLtParMail
+     *
      * @return Options
      */
     public function setEnvoyerLtParMail(?bool $envoyerLtParMail = null): self
@@ -130,8 +131,7 @@ class Options extends AbstractStructBase
     }
 
     /**
-     * Get LTaImprimerParChronopost value
-     * @return bool|null
+     * Get LTaImprimerParChronopost value.
      */
     public function getLTaImprimerParChronopost(): ?bool
     {
@@ -139,8 +139,10 @@ class Options extends AbstractStructBase
     }
 
     /**
-     * Set LTaImprimerParChronopost value
+     * Set LTaImprimerParChronopost value.
+     *
      * @param bool $lTaImprimerParChronopost
+     *
      * @return Options
      */
     public function setLTaImprimerParChronopost(?bool $lTaImprimerParChronopost = null): self

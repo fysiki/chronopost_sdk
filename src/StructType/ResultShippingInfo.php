@@ -7,30 +7,29 @@ namespace StructType;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for resultShippingInfo StructType
- * @subpackage Structs
+ * This class stands for resultShippingInfo StructType.
  */
 class ResultShippingInfo extends AbstractStructBase
 {
     /**
      * The error
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var Error|null
+     * - minOccurs: 0.
      */
     protected ?Error $error = null;
     /**
      * The shippingInfo
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ShippingInfo|null
+     * - minOccurs: 0.
      */
     protected ?ShippingInfo $shippingInfo = null;
 
     /**
-     * Constructor method for resultShippingInfo
-     * @param Error $error
+     * Constructor method for resultShippingInfo.
+     *
+     * @param Error        $error
      * @param ShippingInfo $shippingInfo
+     *
      * @uses ResultShippingInfo::setError()
      * @uses ResultShippingInfo::setShippingInfo()
      */
@@ -38,12 +37,12 @@ class ResultShippingInfo extends AbstractStructBase
     {
         $this
             ->setError($error)
-            ->setShippingInfo($shippingInfo);
+            ->setShippingInfo($shippingInfo)
+        ;
     }
 
     /**
-     * Get error value
-     * @return Error|null
+     * Get error value.
      */
     public function getError(): ?Error
     {
@@ -51,8 +50,10 @@ class ResultShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Set error value
+     * Set error value.
+     *
      * @param Error $error
+     *
      * @return ResultShippingInfo
      */
     public function setError(?Error $error = null): self
@@ -63,8 +64,7 @@ class ResultShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Get shippingInfo value
-     * @return ShippingInfo|null
+     * Get shippingInfo value.
      */
     public function getShippingInfo(): ?ShippingInfo
     {
@@ -72,8 +72,10 @@ class ResultShippingInfo extends AbstractStructBase
     }
 
     /**
-     * Set shippingInfo value
+     * Set shippingInfo value.
+     *
      * @param ShippingInfo $shippingInfo
+     *
      * @return ResultShippingInfo
      */
     public function setShippingInfo(?ShippingInfo $shippingInfo = null): self

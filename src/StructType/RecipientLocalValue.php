@@ -7,38 +7,36 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for recipientLocalValue StructType
- * @subpackage Structs
+ * This class stands for recipientLocalValue StructType.
  */
 class RecipientLocalValue extends RecipientValue
 {
     /**
      * The identityCardNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $identityCardNumber = null;
     /**
      * The language
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $language = null;
     /**
      * The province
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $province = null;
 
     /**
-     * Constructor method for recipientLocalValue
+     * Constructor method for recipientLocalValue.
+     *
      * @param string $identityCardNumber
      * @param string $language
      * @param string $province
+     *
      * @uses RecipientLocalValue::setIdentityCardNumber()
      * @uses RecipientLocalValue::setLanguage()
      * @uses RecipientLocalValue::setProvince()
@@ -48,12 +46,12 @@ class RecipientLocalValue extends RecipientValue
         $this
             ->setIdentityCardNumber($identityCardNumber)
             ->setLanguage($language)
-            ->setProvince($province);
+            ->setProvince($province)
+        ;
     }
 
     /**
-     * Get identityCardNumber value
-     * @return string|null
+     * Get identityCardNumber value.
      */
     public function getIdentityCardNumber(): ?string
     {
@@ -61,8 +59,10 @@ class RecipientLocalValue extends RecipientValue
     }
 
     /**
-     * Set identityCardNumber value
+     * Set identityCardNumber value.
+     *
      * @param string $identityCardNumber
+     *
      * @return RecipientLocalValue
      */
     public function setIdentityCardNumber(?string $identityCardNumber = null): self
@@ -77,8 +77,7 @@ class RecipientLocalValue extends RecipientValue
     }
 
     /**
-     * Get language value
-     * @return string|null
+     * Get language value.
      */
     public function getLanguage(): ?string
     {
@@ -86,8 +85,10 @@ class RecipientLocalValue extends RecipientValue
     }
 
     /**
-     * Set language value
+     * Set language value.
+     *
      * @param string $language
+     *
      * @return RecipientLocalValue
      */
     public function setLanguage(?string $language = null): self
@@ -102,8 +103,7 @@ class RecipientLocalValue extends RecipientValue
     }
 
     /**
-     * Get province value
-     * @return string|null
+     * Get province value.
      */
     public function getProvince(): ?string
     {
@@ -111,8 +111,10 @@ class RecipientLocalValue extends RecipientValue
     }
 
     /**
-     * Set province value
+     * Set province value.
+     *
      * @param string $province
+     *
      * @return RecipientLocalValue
      */
     public function setProvince(?string $province = null): self

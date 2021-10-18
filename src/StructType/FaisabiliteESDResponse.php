@@ -9,33 +9,33 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for faisabiliteESDResponse StructType
  * Meta information extracted from the WSDL
- * - type: tns:faisabiliteESDResponse
- * @subpackage Structs
+ * - type: tns:faisabiliteESDResponse.
  */
 class FaisabiliteESDResponse extends AbstractStructBase
 {
     /**
      * The return
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ResultFaisabiliteESD|null
+     * - minOccurs: 0.
      */
     protected ?ResultFaisabiliteESD $return = null;
 
     /**
-     * Constructor method for faisabiliteESDResponse
+     * Constructor method for faisabiliteESDResponse.
+     *
      * @param ResultFaisabiliteESD $return
+     *
      * @uses FaisabiliteESDResponse::setReturn()
      */
     public function __construct(?ResultFaisabiliteESD $return = null)
     {
         $this
-            ->setReturn($return);
+            ->setReturn($return)
+        ;
     }
 
     /**
-     * Get return value
-     * @return ResultFaisabiliteESD|null
+     * Get return value.
      */
     public function getReturn(): ?ResultFaisabiliteESD
     {
@@ -43,8 +43,10 @@ class FaisabiliteESDResponse extends AbstractStructBase
     }
 
     /**
-     * Set return value
+     * Set return value.
+     *
      * @param ResultFaisabiliteESD $return
+     *
      * @return FaisabiliteESDResponse
      */
     public function setReturn(?ResultFaisabiliteESD $return = null): self

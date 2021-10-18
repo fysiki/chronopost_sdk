@@ -8,8 +8,7 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for customsValue StructType
- * @subpackage Structs
+ * This class stands for customsValue StructType.
  */
 class CustomsValue extends AbstractStructBase
 {
@@ -18,102 +17,94 @@ class CustomsValue extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * - nillable: true
+     * - nillable: true.
+     *
      * @var ArticleValue[]
      */
     protected ?array $articlesValue = null;
     /**
      * The bagNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $bagNumber = null;
     /**
      * The clearanceCleared
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $clearanceCleared = null;
     /**
      * The currency
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $currency = null;
     /**
      * The description
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $description = null;
     /**
      * The descriptionInLanguage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $descriptionInLanguage = null;
     /**
      * The eori
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $eori = null;
     /**
      * The incoterm
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $incoterm = null;
     /**
      * The language
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $language = null;
     /**
      * The numberOfItems
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var int|null
+     * - minOccurs: 0.
      */
     protected ?int $numberOfItems = null;
     /**
      * The value
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var float|null
+     * - minOccurs: 0.
      */
     protected ?float $value = null;
     /**
      * The vatNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $vatNumber = null;
 
     /**
-     * Constructor method for customsValue
+     * Constructor method for customsValue.
+     *
      * @param ArticleValue[] $articlesValue
-     * @param string $bagNumber
-     * @param string $clearanceCleared
-     * @param string $currency
-     * @param string $description
-     * @param string $descriptionInLanguage
-     * @param string $eori
-     * @param string $incoterm
-     * @param string $language
-     * @param int $numberOfItems
-     * @param float $value
-     * @param string $vatNumber
+     * @param string         $bagNumber
+     * @param string         $clearanceCleared
+     * @param string         $currency
+     * @param string         $description
+     * @param string         $descriptionInLanguage
+     * @param string         $eori
+     * @param string         $incoterm
+     * @param string         $language
+     * @param int            $numberOfItems
+     * @param float          $value
+     * @param string         $vatNumber
+     *
      * @uses CustomsValue::setArticlesValue()
      * @uses CustomsValue::setBagNumber()
      * @uses CustomsValue::setClearanceCleared()
@@ -141,14 +132,16 @@ class CustomsValue extends AbstractStructBase
             ->setLanguage($language)
             ->setNumberOfItems($numberOfItems)
             ->setValue($value)
-            ->setVatNumber($vatNumber);
+            ->setVatNumber($vatNumber)
+        ;
     }
 
     /**
      * Get articlesValue value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
-     * removable from the request (nillable=true+minOccurs=0)
+     * removable from the request (nillable=true+minOccurs=0).
+     *
      * @return ArticleValue[]
      */
     public function getArticlesValue(): ?array
@@ -158,8 +151,10 @@ class CustomsValue extends AbstractStructBase
 
     /**
      * This method is responsible for validating the values passed to the setArticlesValue method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setArticlesValue method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setArticlesValue method.
+     *
      * @param array $values
+     *
      * @return string A non-empty message if the values does not match the validation rules
      */
     public static function validateArticlesValueForArrayConstraintsFromSetArticlesValue(?array $values = []): string
@@ -186,10 +181,13 @@ class CustomsValue extends AbstractStructBase
     /**
      * Set articlesValue value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
-     * if the value assigned to this property is null, it is removed from this object
+     * if the value assigned to this property is null, it is removed from this object.
+     *
      * @param ArticleValue[] $articlesValue
-     * @return CustomsValue
+     *
      * @throws InvalidArgumentException
+     *
+     * @return CustomsValue
      */
     public function setArticlesValue(?array $articlesValue = null): self
     {
@@ -207,10 +205,11 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Add item to articlesValue value
-     * @param ArticleValue $item
-     * @return CustomsValue
+     * Add item to articlesValue value.
+     *
      * @throws InvalidArgumentException
+     *
+     * @return CustomsValue
      */
     public function addToArticlesValue(ArticleValue $item): self
     {
@@ -224,8 +223,7 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Get bagNumber value
-     * @return string|null
+     * Get bagNumber value.
      */
     public function getBagNumber(): ?string
     {
@@ -233,8 +231,10 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Set bagNumber value
+     * Set bagNumber value.
+     *
      * @param string $bagNumber
+     *
      * @return CustomsValue
      */
     public function setBagNumber(?string $bagNumber = null): self
@@ -249,8 +249,7 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Get clearanceCleared value
-     * @return string|null
+     * Get clearanceCleared value.
      */
     public function getClearanceCleared(): ?string
     {
@@ -258,8 +257,10 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Set clearanceCleared value
+     * Set clearanceCleared value.
+     *
      * @param string $clearanceCleared
+     *
      * @return CustomsValue
      */
     public function setClearanceCleared(?string $clearanceCleared = null): self
@@ -274,8 +275,7 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Get currency value
-     * @return string|null
+     * Get currency value.
      */
     public function getCurrency(): ?string
     {
@@ -283,8 +283,10 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Set currency value
+     * Set currency value.
+     *
      * @param string $currency
+     *
      * @return CustomsValue
      */
     public function setCurrency(?string $currency = null): self
@@ -299,8 +301,7 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Get description value
-     * @return string|null
+     * Get description value.
      */
     public function getDescription(): ?string
     {
@@ -308,8 +309,10 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Set description value
+     * Set description value.
+     *
      * @param string $description
+     *
      * @return CustomsValue
      */
     public function setDescription(?string $description = null): self
@@ -324,8 +327,7 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Get descriptionInLanguage value
-     * @return string|null
+     * Get descriptionInLanguage value.
      */
     public function getDescriptionInLanguage(): ?string
     {
@@ -333,8 +335,10 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Set descriptionInLanguage value
+     * Set descriptionInLanguage value.
+     *
      * @param string $descriptionInLanguage
+     *
      * @return CustomsValue
      */
     public function setDescriptionInLanguage(?string $descriptionInLanguage = null): self
@@ -349,8 +353,7 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Get eori value
-     * @return string|null
+     * Get eori value.
      */
     public function getEori(): ?string
     {
@@ -358,8 +361,10 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Set eori value
+     * Set eori value.
+     *
      * @param string $eori
+     *
      * @return CustomsValue
      */
     public function setEori(?string $eori = null): self
@@ -374,8 +379,7 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Get incoterm value
-     * @return string|null
+     * Get incoterm value.
      */
     public function getIncoterm(): ?string
     {
@@ -383,8 +387,10 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Set incoterm value
+     * Set incoterm value.
+     *
      * @param string $incoterm
+     *
      * @return CustomsValue
      */
     public function setIncoterm(?string $incoterm = null): self
@@ -399,8 +405,7 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Get language value
-     * @return string|null
+     * Get language value.
      */
     public function getLanguage(): ?string
     {
@@ -408,8 +413,10 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Set language value
+     * Set language value.
+     *
      * @param string $language
+     *
      * @return CustomsValue
      */
     public function setLanguage(?string $language = null): self
@@ -424,8 +431,7 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Get numberOfItems value
-     * @return int|null
+     * Get numberOfItems value.
      */
     public function getNumberOfItems(): ?int
     {
@@ -433,8 +439,10 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Set numberOfItems value
+     * Set numberOfItems value.
+     *
      * @param int $numberOfItems
+     *
      * @return CustomsValue
      */
     public function setNumberOfItems(?int $numberOfItems = null): self
@@ -449,8 +457,7 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Get value value
-     * @return float|null
+     * Get value value.
      */
     public function getValue(): ?float
     {
@@ -458,8 +465,10 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Set value value
+     * Set value value.
+     *
      * @param float $value
+     *
      * @return CustomsValue
      */
     public function setValue(?float $value = null): self
@@ -474,8 +483,7 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Get vatNumber value
-     * @return string|null
+     * Get vatNumber value.
      */
     public function getVatNumber(): ?string
     {
@@ -483,8 +491,10 @@ class CustomsValue extends AbstractStructBase
     }
 
     /**
-     * Set vatNumber value
+     * Set vatNumber value.
+     *
      * @param string $vatNumber
+     *
      * @return CustomsValue
      */
     public function setVatNumber(?string $vatNumber = null): self

@@ -7,46 +7,43 @@ namespace StructType;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for destinataireDpd StructType
- * @subpackage Structs
+ * This class stands for destinataireDpd StructType.
  */
 class DestinataireDpd extends AbstractStructBase
 {
     /**
      * The adresseDestinataire
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var AdresseDestinataire|null
+     * - minOccurs: 0.
      */
     protected ?AdresseDestinataire $adresseDestinataire = null;
     /**
      * The infoClient
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var InfoClient|null
+     * - minOccurs: 0.
      */
     protected ?InfoClient $infoClient = null;
     /**
      * The particularites
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var Particularites|null
+     * - minOccurs: 0.
      */
     protected ?Particularites $particularites = null;
     /**
      * The particularitesColisDpd
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var ParticularitesColisDpd|null
+     * - minOccurs: 0.
      */
     protected ?ParticularitesColisDpd $particularitesColisDpd = null;
 
     /**
-     * Constructor method for destinataireDpd
-     * @param AdresseDestinataire $adresseDestinataire
-     * @param InfoClient $infoClient
-     * @param Particularites $particularites
+     * Constructor method for destinataireDpd.
+     *
+     * @param AdresseDestinataire    $adresseDestinataire
+     * @param InfoClient             $infoClient
+     * @param Particularites         $particularites
      * @param ParticularitesColisDpd $particularitesColisDpd
+     *
      * @uses DestinataireDpd::setAdresseDestinataire()
      * @uses DestinataireDpd::setInfoClient()
      * @uses DestinataireDpd::setParticularites()
@@ -58,12 +55,12 @@ class DestinataireDpd extends AbstractStructBase
             ->setAdresseDestinataire($adresseDestinataire)
             ->setInfoClient($infoClient)
             ->setParticularites($particularites)
-            ->setParticularitesColisDpd($particularitesColisDpd);
+            ->setParticularitesColisDpd($particularitesColisDpd)
+        ;
     }
 
     /**
-     * Get adresseDestinataire value
-     * @return AdresseDestinataire|null
+     * Get adresseDestinataire value.
      */
     public function getAdresseDestinataire(): ?AdresseDestinataire
     {
@@ -71,8 +68,10 @@ class DestinataireDpd extends AbstractStructBase
     }
 
     /**
-     * Set adresseDestinataire value
+     * Set adresseDestinataire value.
+     *
      * @param AdresseDestinataire $adresseDestinataire
+     *
      * @return DestinataireDpd
      */
     public function setAdresseDestinataire(?AdresseDestinataire $adresseDestinataire = null): self
@@ -83,8 +82,7 @@ class DestinataireDpd extends AbstractStructBase
     }
 
     /**
-     * Get infoClient value
-     * @return InfoClient|null
+     * Get infoClient value.
      */
     public function getInfoClient(): ?InfoClient
     {
@@ -92,8 +90,10 @@ class DestinataireDpd extends AbstractStructBase
     }
 
     /**
-     * Set infoClient value
+     * Set infoClient value.
+     *
      * @param InfoClient $infoClient
+     *
      * @return DestinataireDpd
      */
     public function setInfoClient(?InfoClient $infoClient = null): self
@@ -104,8 +104,7 @@ class DestinataireDpd extends AbstractStructBase
     }
 
     /**
-     * Get particularites value
-     * @return Particularites|null
+     * Get particularites value.
      */
     public function getParticularites(): ?Particularites
     {
@@ -113,8 +112,10 @@ class DestinataireDpd extends AbstractStructBase
     }
 
     /**
-     * Set particularites value
+     * Set particularites value.
+     *
      * @param Particularites $particularites
+     *
      * @return DestinataireDpd
      */
     public function setParticularites(?Particularites $particularites = null): self
@@ -125,8 +126,7 @@ class DestinataireDpd extends AbstractStructBase
     }
 
     /**
-     * Get particularitesColisDpd value
-     * @return ParticularitesColisDpd|null
+     * Get particularitesColisDpd value.
      */
     public function getParticularitesColisDpd(): ?ParticularitesColisDpd
     {
@@ -134,8 +134,10 @@ class DestinataireDpd extends AbstractStructBase
     }
 
     /**
-     * Set particularitesColisDpd value
+     * Set particularitesColisDpd value.
+     *
      * @param ParticularitesColisDpd $particularitesColisDpd
+     *
      * @return DestinataireDpd
      */
     public function setParticularitesColisDpd(?ParticularitesColisDpd $particularitesColisDpd = null): self

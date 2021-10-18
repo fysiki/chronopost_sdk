@@ -8,42 +8,39 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for headerValue StructType
- * @subpackage Structs
+ * This class stands for headerValue StructType.
  */
 class HeaderValue extends AbstractStructBase
 {
     /**
-     * The accountNumber
-     * @var int|null
+     * The accountNumber.
      */
     protected ?int $accountNumber = null;
     /**
      * The idEmit
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $idEmit = null;
     /**
      * The identWebPro
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $identWebPro = null;
     /**
-     * The subAccount
-     * @var int|null
+     * The subAccount.
      */
     protected ?int $subAccount = null;
 
     /**
-     * Constructor method for headerValue
-     * @param int $accountNumber
+     * Constructor method for headerValue.
+     *
+     * @param int    $accountNumber
      * @param string $idEmit
      * @param string $identWebPro
-     * @param int $subAccount
+     * @param int    $subAccount
+     *
      * @uses HeaderValue::setAccountNumber()
      * @uses HeaderValue::setIdEmit()
      * @uses HeaderValue::setIdentWebPro()
@@ -55,12 +52,12 @@ class HeaderValue extends AbstractStructBase
             ->setAccountNumber($accountNumber)
             ->setIdEmit($idEmit)
             ->setIdentWebPro($identWebPro)
-            ->setSubAccount($subAccount);
+            ->setSubAccount($subAccount)
+        ;
     }
 
     /**
-     * Get accountNumber value
-     * @return int|null
+     * Get accountNumber value.
      */
     public function getAccountNumber(): ?int
     {
@@ -68,8 +65,10 @@ class HeaderValue extends AbstractStructBase
     }
 
     /**
-     * Set accountNumber value
+     * Set accountNumber value.
+     *
      * @param int $accountNumber
+     *
      * @return HeaderValue
      */
     public function setAccountNumber(?int $accountNumber = null): self
@@ -84,8 +83,7 @@ class HeaderValue extends AbstractStructBase
     }
 
     /**
-     * Get idEmit value
-     * @return string|null
+     * Get idEmit value.
      */
     public function getIdEmit(): ?string
     {
@@ -93,8 +91,10 @@ class HeaderValue extends AbstractStructBase
     }
 
     /**
-     * Set idEmit value
+     * Set idEmit value.
+     *
      * @param string $idEmit
+     *
      * @return HeaderValue
      */
     public function setIdEmit(?string $idEmit = null): self
@@ -109,8 +109,7 @@ class HeaderValue extends AbstractStructBase
     }
 
     /**
-     * Get identWebPro value
-     * @return string|null
+     * Get identWebPro value.
      */
     public function getIdentWebPro(): ?string
     {
@@ -118,8 +117,10 @@ class HeaderValue extends AbstractStructBase
     }
 
     /**
-     * Set identWebPro value
+     * Set identWebPro value.
+     *
      * @param string $identWebPro
+     *
      * @return HeaderValue
      */
     public function setIdentWebPro(?string $identWebPro = null): self
@@ -134,8 +135,7 @@ class HeaderValue extends AbstractStructBase
     }
 
     /**
-     * Get subAccount value
-     * @return int|null
+     * Get subAccount value.
      */
     public function getSubAccount(): ?int
     {
@@ -143,8 +143,10 @@ class HeaderValue extends AbstractStructBase
     }
 
     /**
-     * Set subAccount value
+     * Set subAccount value.
+     *
      * @param int $subAccount
+     *
      * @return HeaderValue
      */
     public function setSubAccount(?int $subAccount = null): self

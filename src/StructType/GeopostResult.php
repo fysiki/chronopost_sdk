@@ -8,140 +8,122 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for geopostResult StructType
- * @subpackage Structs
+ * This class stands for geopostResult StructType.
  */
 class GeopostResult extends AbstractStructBase
 {
     /**
      * The barcodeId
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $barcodeId = null;
     /**
      * The barcodePostcode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $barcodePostcode = null;
     /**
      * The buAlphaString
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $buAlphaString = null;
     /**
      * The buCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $buCode = null;
     /**
      * The CSort
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $CSort = null;
     /**
      * The DCountry
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $DCountry = null;
     /**
      * The DDepot
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $DDepot = null;
     /**
      * The DDepotCountry
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $DDepotCountry = null;
     /**
      * The DDepotStr
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $DDepotStr = null;
     /**
      * The DSort
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $DSort = null;
     /**
      * The groupingPriority
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $groupingPriority = null;
     /**
      * The networkCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $networkCode = null;
     /**
      * The OSort
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $OSort = null;
     /**
      * The partnerCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $partnerCode = null;
     /**
      * The SSort
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $SSort = null;
     /**
      * The serviceMark
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $serviceMark = null;
     /**
      * The serviceText
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $serviceText = null;
     /**
      * The version
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $version = null;
 
     /**
-     * Constructor method for geopostResult
+     * Constructor method for geopostResult.
+     *
      * @param string $barcodeId
      * @param string $barcodePostcode
      * @param string $buAlphaString
@@ -160,6 +142,7 @@ class GeopostResult extends AbstractStructBase
      * @param string $serviceMark
      * @param string $serviceText
      * @param string $version
+     *
      * @uses GeopostResult::setBarcodeId()
      * @uses GeopostResult::setBarcodePostcode()
      * @uses GeopostResult::setBuAlphaString()
@@ -199,12 +182,12 @@ class GeopostResult extends AbstractStructBase
             ->setSSort($sSort)
             ->setServiceMark($serviceMark)
             ->setServiceText($serviceText)
-            ->setVersion($version);
+            ->setVersion($version)
+        ;
     }
 
     /**
-     * Get barcodeId value
-     * @return string|null
+     * Get barcodeId value.
      */
     public function getBarcodeId(): ?string
     {
@@ -212,8 +195,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set barcodeId value
+     * Set barcodeId value.
+     *
      * @param string $barcodeId
+     *
      * @return GeopostResult
      */
     public function setBarcodeId(?string $barcodeId = null): self
@@ -228,8 +213,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get barcodePostcode value
-     * @return string|null
+     * Get barcodePostcode value.
      */
     public function getBarcodePostcode(): ?string
     {
@@ -237,8 +221,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set barcodePostcode value
+     * Set barcodePostcode value.
+     *
      * @param string $barcodePostcode
+     *
      * @return GeopostResult
      */
     public function setBarcodePostcode(?string $barcodePostcode = null): self
@@ -253,8 +239,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get buAlphaString value
-     * @return string|null
+     * Get buAlphaString value.
      */
     public function getBuAlphaString(): ?string
     {
@@ -262,8 +247,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set buAlphaString value
+     * Set buAlphaString value.
+     *
      * @param string $buAlphaString
+     *
      * @return GeopostResult
      */
     public function setBuAlphaString(?string $buAlphaString = null): self
@@ -278,8 +265,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get buCode value
-     * @return string|null
+     * Get buCode value.
      */
     public function getBuCode(): ?string
     {
@@ -287,8 +273,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set buCode value
+     * Set buCode value.
+     *
      * @param string $buCode
+     *
      * @return GeopostResult
      */
     public function setBuCode(?string $buCode = null): self
@@ -303,8 +291,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get CSort value
-     * @return string|null
+     * Get CSort value.
      */
     public function getCSort(): ?string
     {
@@ -312,8 +299,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set CSort value
+     * Set CSort value.
+     *
      * @param string $cSort
+     *
      * @return GeopostResult
      */
     public function setCSort(?string $cSort = null): self
@@ -328,8 +317,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get DCountry value
-     * @return string|null
+     * Get DCountry value.
      */
     public function getDCountry(): ?string
     {
@@ -337,8 +325,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set DCountry value
+     * Set DCountry value.
+     *
      * @param string $dCountry
+     *
      * @return GeopostResult
      */
     public function setDCountry(?string $dCountry = null): self
@@ -353,8 +343,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get DDepot value
-     * @return string|null
+     * Get DDepot value.
      */
     public function getDDepot(): ?string
     {
@@ -362,8 +351,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set DDepot value
+     * Set DDepot value.
+     *
      * @param string $dDepot
+     *
      * @return GeopostResult
      */
     public function setDDepot(?string $dDepot = null): self
@@ -378,8 +369,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get DDepotCountry value
-     * @return string|null
+     * Get DDepotCountry value.
      */
     public function getDDepotCountry(): ?string
     {
@@ -387,8 +377,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set DDepotCountry value
+     * Set DDepotCountry value.
+     *
      * @param string $dDepotCountry
+     *
      * @return GeopostResult
      */
     public function setDDepotCountry(?string $dDepotCountry = null): self
@@ -403,8 +395,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get DDepotStr value
-     * @return string|null
+     * Get DDepotStr value.
      */
     public function getDDepotStr(): ?string
     {
@@ -412,8 +403,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set DDepotStr value
+     * Set DDepotStr value.
+     *
      * @param string $dDepotStr
+     *
      * @return GeopostResult
      */
     public function setDDepotStr(?string $dDepotStr = null): self
@@ -428,8 +421,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get DSort value
-     * @return string|null
+     * Get DSort value.
      */
     public function getDSort(): ?string
     {
@@ -437,8 +429,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set DSort value
+     * Set DSort value.
+     *
      * @param string $dSort
+     *
      * @return GeopostResult
      */
     public function setDSort(?string $dSort = null): self
@@ -453,8 +447,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get groupingPriority value
-     * @return string|null
+     * Get groupingPriority value.
      */
     public function getGroupingPriority(): ?string
     {
@@ -462,8 +455,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set groupingPriority value
+     * Set groupingPriority value.
+     *
      * @param string $groupingPriority
+     *
      * @return GeopostResult
      */
     public function setGroupingPriority(?string $groupingPriority = null): self
@@ -478,8 +473,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get networkCode value
-     * @return string|null
+     * Get networkCode value.
      */
     public function getNetworkCode(): ?string
     {
@@ -487,8 +481,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set networkCode value
+     * Set networkCode value.
+     *
      * @param string $networkCode
+     *
      * @return GeopostResult
      */
     public function setNetworkCode(?string $networkCode = null): self
@@ -503,8 +499,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get OSort value
-     * @return string|null
+     * Get OSort value.
      */
     public function getOSort(): ?string
     {
@@ -512,8 +507,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set OSort value
+     * Set OSort value.
+     *
      * @param string $oSort
+     *
      * @return GeopostResult
      */
     public function setOSort(?string $oSort = null): self
@@ -528,8 +525,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get partnerCode value
-     * @return string|null
+     * Get partnerCode value.
      */
     public function getPartnerCode(): ?string
     {
@@ -537,8 +533,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set partnerCode value
+     * Set partnerCode value.
+     *
      * @param string $partnerCode
+     *
      * @return GeopostResult
      */
     public function setPartnerCode(?string $partnerCode = null): self
@@ -553,8 +551,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get SSort value
-     * @return string|null
+     * Get SSort value.
      */
     public function getSSort(): ?string
     {
@@ -562,8 +559,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set SSort value
+     * Set SSort value.
+     *
      * @param string $sSort
+     *
      * @return GeopostResult
      */
     public function setSSort(?string $sSort = null): self
@@ -578,8 +577,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get serviceMark value
-     * @return string|null
+     * Get serviceMark value.
      */
     public function getServiceMark(): ?string
     {
@@ -587,8 +585,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set serviceMark value
+     * Set serviceMark value.
+     *
      * @param string $serviceMark
+     *
      * @return GeopostResult
      */
     public function setServiceMark(?string $serviceMark = null): self
@@ -603,8 +603,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get serviceText value
-     * @return string|null
+     * Get serviceText value.
      */
     public function getServiceText(): ?string
     {
@@ -612,8 +611,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set serviceText value
+     * Set serviceText value.
+     *
      * @param string $serviceText
+     *
      * @return GeopostResult
      */
     public function setServiceText(?string $serviceText = null): self
@@ -628,8 +629,7 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Get version value
-     * @return string|null
+     * Get version value.
      */
     public function getVersion(): ?string
     {
@@ -637,8 +637,10 @@ class GeopostResult extends AbstractStructBase
     }
 
     /**
-     * Set version value
+     * Set version value.
+     *
      * @param string $version
+     *
      * @return GeopostResult
      */
     public function setVersion(?string $version = null): self

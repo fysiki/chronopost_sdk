@@ -7,30 +7,29 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for skybillWithDimensionsValueV6 StructType
- * @subpackage Structs
+ * This class stands for skybillWithDimensionsValueV6 StructType.
  */
 class SkybillWithDimensionsValueV6 extends SkybillWithDimensionsValueV5
 {
     /**
      * The alternateProductCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $alternateProductCode = null;
     /**
      * The labelNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $labelNumber = null;
 
     /**
-     * Constructor method for skybillWithDimensionsValueV6
+     * Constructor method for skybillWithDimensionsValueV6.
+     *
      * @param string $alternateProductCode
      * @param string $labelNumber
+     *
      * @uses SkybillWithDimensionsValueV6::setAlternateProductCode()
      * @uses SkybillWithDimensionsValueV6::setLabelNumber()
      */
@@ -38,12 +37,12 @@ class SkybillWithDimensionsValueV6 extends SkybillWithDimensionsValueV5
     {
         $this
             ->setAlternateProductCode($alternateProductCode)
-            ->setLabelNumber($labelNumber);
+            ->setLabelNumber($labelNumber)
+        ;
     }
 
     /**
-     * Get alternateProductCode value
-     * @return string|null
+     * Get alternateProductCode value.
      */
     public function getAlternateProductCode(): ?string
     {
@@ -51,8 +50,10 @@ class SkybillWithDimensionsValueV6 extends SkybillWithDimensionsValueV5
     }
 
     /**
-     * Set alternateProductCode value
+     * Set alternateProductCode value.
+     *
      * @param string $alternateProductCode
+     *
      * @return SkybillWithDimensionsValueV6
      */
     public function setAlternateProductCode(?string $alternateProductCode = null): self
@@ -67,8 +68,7 @@ class SkybillWithDimensionsValueV6 extends SkybillWithDimensionsValueV5
     }
 
     /**
-     * Get labelNumber value
-     * @return string|null
+     * Get labelNumber value.
      */
     public function getLabelNumber(): ?string
     {
@@ -76,8 +76,10 @@ class SkybillWithDimensionsValueV6 extends SkybillWithDimensionsValueV5
     }
 
     /**
-     * Set labelNumber value
+     * Set labelNumber value.
+     *
      * @param string $labelNumber
+     *
      * @return SkybillWithDimensionsValueV6
      */
     public function setLabelNumber(?string $labelNumber = null): self

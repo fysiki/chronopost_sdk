@@ -8,36 +8,34 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for resultEnlevementNational StructType
- * @subpackage Structs
+ * This class stands for resultEnlevementNational StructType.
  */
 class ResultEnlevementNational extends AbstractStructBase
 {
     /**
-     * The codeErreur
-     * @var int|null
+     * The codeErreur.
      */
     protected ?int $codeErreur = null;
     /**
      * The infoEnlevement
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var InfoEnlevement|null
+     * - minOccurs: 0.
      */
     protected ?InfoEnlevement $infoEnlevement = null;
     /**
      * The libelleErreur
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $libelleErreur = null;
 
     /**
-     * Constructor method for resultEnlevementNational
-     * @param int $codeErreur
+     * Constructor method for resultEnlevementNational.
+     *
+     * @param int            $codeErreur
      * @param InfoEnlevement $infoEnlevement
-     * @param string $libelleErreur
+     * @param string         $libelleErreur
+     *
      * @uses ResultEnlevementNational::setCodeErreur()
      * @uses ResultEnlevementNational::setInfoEnlevement()
      * @uses ResultEnlevementNational::setLibelleErreur()
@@ -47,12 +45,12 @@ class ResultEnlevementNational extends AbstractStructBase
         $this
             ->setCodeErreur($codeErreur)
             ->setInfoEnlevement($infoEnlevement)
-            ->setLibelleErreur($libelleErreur);
+            ->setLibelleErreur($libelleErreur)
+        ;
     }
 
     /**
-     * Get codeErreur value
-     * @return int|null
+     * Get codeErreur value.
      */
     public function getCodeErreur(): ?int
     {
@@ -60,8 +58,10 @@ class ResultEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set codeErreur value
+     * Set codeErreur value.
+     *
      * @param int $codeErreur
+     *
      * @return ResultEnlevementNational
      */
     public function setCodeErreur(?int $codeErreur = null): self
@@ -76,8 +76,7 @@ class ResultEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Get infoEnlevement value
-     * @return InfoEnlevement|null
+     * Get infoEnlevement value.
      */
     public function getInfoEnlevement(): ?InfoEnlevement
     {
@@ -85,8 +84,10 @@ class ResultEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set infoEnlevement value
+     * Set infoEnlevement value.
+     *
      * @param InfoEnlevement $infoEnlevement
+     *
      * @return ResultEnlevementNational
      */
     public function setInfoEnlevement(?InfoEnlevement $infoEnlevement = null): self
@@ -97,8 +98,7 @@ class ResultEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Get libelleErreur value
-     * @return string|null
+     * Get libelleErreur value.
      */
     public function getLibelleErreur(): ?string
     {
@@ -106,8 +106,10 @@ class ResultEnlevementNational extends AbstractStructBase
     }
 
     /**
-     * Set libelleErreur value
+     * Set libelleErreur value.
+     *
      * @param string $libelleErreur
+     *
      * @return ResultEnlevementNational
      */
     public function setLibelleErreur(?string $libelleErreur = null): self

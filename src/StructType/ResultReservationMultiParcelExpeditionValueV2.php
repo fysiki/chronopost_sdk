@@ -7,33 +7,33 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for resultReservationMultiParcelExpeditionValueV2 StructType
- * @subpackage Structs
+ * This class stands for resultReservationMultiParcelExpeditionValueV2 StructType.
  */
 class ResultReservationMultiParcelExpeditionValueV2 extends ResultReservationMultiParcelExpeditionValue
 {
     /**
      * The asCode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $asCode = null;
 
     /**
-     * Constructor method for resultReservationMultiParcelExpeditionValueV2
+     * Constructor method for resultReservationMultiParcelExpeditionValueV2.
+     *
      * @param string $asCode
+     *
      * @uses ResultReservationMultiParcelExpeditionValueV2::setAsCode()
      */
     public function __construct(?string $asCode = null)
     {
         $this
-            ->setAsCode($asCode);
+            ->setAsCode($asCode)
+        ;
     }
 
     /**
-     * Get asCode value
-     * @return string|null
+     * Get asCode value.
      */
     public function getAsCode(): ?string
     {
@@ -41,8 +41,10 @@ class ResultReservationMultiParcelExpeditionValueV2 extends ResultReservationMul
     }
 
     /**
-     * Set asCode value
+     * Set asCode value.
+     *
      * @param string $asCode
+     *
      * @return ResultReservationMultiParcelExpeditionValueV2
      */
     public function setAsCode(?string $asCode = null): self

@@ -7,33 +7,33 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for refValueV2 StructType
- * @subpackage Structs
+ * This class stands for refValueV2 StructType.
  */
 class RefValueV2 extends RefValue
 {
     /**
      * The idRelais
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $idRelais = null;
 
     /**
-     * Constructor method for refValueV2
+     * Constructor method for refValueV2.
+     *
      * @param string $idRelais
+     *
      * @uses RefValueV2::setIdRelais()
      */
     public function __construct(?string $idRelais = null)
     {
         $this
-            ->setIdRelais($idRelais);
+            ->setIdRelais($idRelais)
+        ;
     }
 
     /**
-     * Get idRelais value
-     * @return string|null
+     * Get idRelais value.
      */
     public function getIdRelais(): ?string
     {
@@ -41,8 +41,10 @@ class RefValueV2 extends RefValue
     }
 
     /**
-     * Set idRelais value
+     * Set idRelais value.
+     *
      * @param string $idRelais
+     *
      * @return RefValueV2
      */
     public function setIdRelais(?string $idRelais = null): self

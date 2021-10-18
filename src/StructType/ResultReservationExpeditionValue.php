@@ -8,145 +8,127 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for resultReservationExpeditionValue StructType
- * @subpackage Structs
+ * This class stands for resultReservationExpeditionValue StructType.
  */
 class ResultReservationExpeditionValue extends AbstractStructBase
 {
     /**
      * The codeDepot
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeDepot = null;
     /**
      * The codeService
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codeService = null;
     /**
      * The DSort
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $DSort = null;
     /**
      * The destinationDepot
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $destinationDepot = null;
     /**
      * The ESDFullNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ESDFullNumber = null;
     /**
      * The ESDNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ESDNumber = null;
     /**
-     * The errorCode
-     * @var int|null
+     * The errorCode.
      */
     protected ?int $errorCode = null;
     /**
      * The errorMessage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $errorMessage = null;
     /**
      * The geoPostCodeBarre
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $geoPostCodeBarre = null;
     /**
      * The geoPostNumeroColis
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $geoPostNumeroColis = null;
     /**
      * The groupingPriorityLabel
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $groupingPriorityLabel = null;
     /**
      * The OSort
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $OSort = null;
     /**
      * The pickupDate
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $pickupDate = null;
     /**
      * The reservationNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $reservationNumber = null;
     /**
      * The serviceMark
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $serviceMark = null;
     /**
      * The serviceName
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $serviceName = null;
     /**
      * The signaletiqueProduit
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $signaletiqueProduit = null;
     /**
      * The skybillNumber
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $skybillNumber = null;
 
     /**
-     * Constructor method for resultReservationExpeditionValue
+     * Constructor method for resultReservationExpeditionValue.
+     *
      * @param string $codeDepot
      * @param string $codeService
      * @param string $dSort
      * @param string $destinationDepot
      * @param string $eSDFullNumber
      * @param string $eSDNumber
-     * @param int $errorCode
+     * @param int    $errorCode
      * @param string $errorMessage
      * @param string $geoPostCodeBarre
      * @param string $geoPostNumeroColis
@@ -158,6 +140,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
      * @param string $serviceName
      * @param string $signaletiqueProduit
      * @param string $skybillNumber
+     *
      * @uses ResultReservationExpeditionValue::setCodeDepot()
      * @uses ResultReservationExpeditionValue::setCodeService()
      * @uses ResultReservationExpeditionValue::setDSort()
@@ -197,12 +180,12 @@ class ResultReservationExpeditionValue extends AbstractStructBase
             ->setServiceMark($serviceMark)
             ->setServiceName($serviceName)
             ->setSignaletiqueProduit($signaletiqueProduit)
-            ->setSkybillNumber($skybillNumber);
+            ->setSkybillNumber($skybillNumber)
+        ;
     }
 
     /**
-     * Get codeDepot value
-     * @return string|null
+     * Get codeDepot value.
      */
     public function getCodeDepot(): ?string
     {
@@ -210,8 +193,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set codeDepot value
+     * Set codeDepot value.
+     *
      * @param string $codeDepot
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setCodeDepot(?string $codeDepot = null): self
@@ -226,8 +211,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get codeService value
-     * @return string|null
+     * Get codeService value.
      */
     public function getCodeService(): ?string
     {
@@ -235,8 +219,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set codeService value
+     * Set codeService value.
+     *
      * @param string $codeService
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setCodeService(?string $codeService = null): self
@@ -251,8 +237,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get DSort value
-     * @return string|null
+     * Get DSort value.
      */
     public function getDSort(): ?string
     {
@@ -260,8 +245,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set DSort value
+     * Set DSort value.
+     *
      * @param string $dSort
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setDSort(?string $dSort = null): self
@@ -276,8 +263,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get destinationDepot value
-     * @return string|null
+     * Get destinationDepot value.
      */
     public function getDestinationDepot(): ?string
     {
@@ -285,8 +271,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set destinationDepot value
+     * Set destinationDepot value.
+     *
      * @param string $destinationDepot
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setDestinationDepot(?string $destinationDepot = null): self
@@ -301,8 +289,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get ESDFullNumber value
-     * @return string|null
+     * Get ESDFullNumber value.
      */
     public function getESDFullNumber(): ?string
     {
@@ -310,8 +297,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set ESDFullNumber value
+     * Set ESDFullNumber value.
+     *
      * @param string $eSDFullNumber
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setESDFullNumber(?string $eSDFullNumber = null): self
@@ -326,8 +315,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get ESDNumber value
-     * @return string|null
+     * Get ESDNumber value.
      */
     public function getESDNumber(): ?string
     {
@@ -335,8 +323,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set ESDNumber value
+     * Set ESDNumber value.
+     *
      * @param string $eSDNumber
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setESDNumber(?string $eSDNumber = null): self
@@ -351,8 +341,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get errorCode value
-     * @return int|null
+     * Get errorCode value.
      */
     public function getErrorCode(): ?int
     {
@@ -360,8 +349,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set errorCode value
+     * Set errorCode value.
+     *
      * @param int $errorCode
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setErrorCode(?int $errorCode = null): self
@@ -376,8 +367,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get errorMessage value
-     * @return string|null
+     * Get errorMessage value.
      */
     public function getErrorMessage(): ?string
     {
@@ -385,8 +375,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set errorMessage value
+     * Set errorMessage value.
+     *
      * @param string $errorMessage
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setErrorMessage(?string $errorMessage = null): self
@@ -401,8 +393,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get geoPostCodeBarre value
-     * @return string|null
+     * Get geoPostCodeBarre value.
      */
     public function getGeoPostCodeBarre(): ?string
     {
@@ -410,8 +401,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set geoPostCodeBarre value
+     * Set geoPostCodeBarre value.
+     *
      * @param string $geoPostCodeBarre
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setGeoPostCodeBarre(?string $geoPostCodeBarre = null): self
@@ -426,8 +419,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get geoPostNumeroColis value
-     * @return string|null
+     * Get geoPostNumeroColis value.
      */
     public function getGeoPostNumeroColis(): ?string
     {
@@ -435,8 +427,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set geoPostNumeroColis value
+     * Set geoPostNumeroColis value.
+     *
      * @param string $geoPostNumeroColis
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setGeoPostNumeroColis(?string $geoPostNumeroColis = null): self
@@ -451,8 +445,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get groupingPriorityLabel value
-     * @return string|null
+     * Get groupingPriorityLabel value.
      */
     public function getGroupingPriorityLabel(): ?string
     {
@@ -460,8 +453,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set groupingPriorityLabel value
+     * Set groupingPriorityLabel value.
+     *
      * @param string $groupingPriorityLabel
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setGroupingPriorityLabel(?string $groupingPriorityLabel = null): self
@@ -476,8 +471,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get OSort value
-     * @return string|null
+     * Get OSort value.
      */
     public function getOSort(): ?string
     {
@@ -485,8 +479,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set OSort value
+     * Set OSort value.
+     *
      * @param string $oSort
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setOSort(?string $oSort = null): self
@@ -501,8 +497,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get pickupDate value
-     * @return string|null
+     * Get pickupDate value.
      */
     public function getPickupDate(): ?string
     {
@@ -510,8 +505,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set pickupDate value
+     * Set pickupDate value.
+     *
      * @param string $pickupDate
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setPickupDate(?string $pickupDate = null): self
@@ -526,8 +523,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get reservationNumber value
-     * @return string|null
+     * Get reservationNumber value.
      */
     public function getReservationNumber(): ?string
     {
@@ -535,8 +531,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set reservationNumber value
+     * Set reservationNumber value.
+     *
      * @param string $reservationNumber
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setReservationNumber(?string $reservationNumber = null): self
@@ -551,8 +549,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get serviceMark value
-     * @return string|null
+     * Get serviceMark value.
      */
     public function getServiceMark(): ?string
     {
@@ -560,8 +557,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set serviceMark value
+     * Set serviceMark value.
+     *
      * @param string $serviceMark
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setServiceMark(?string $serviceMark = null): self
@@ -576,8 +575,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get serviceName value
-     * @return string|null
+     * Get serviceName value.
      */
     public function getServiceName(): ?string
     {
@@ -585,8 +583,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set serviceName value
+     * Set serviceName value.
+     *
      * @param string $serviceName
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setServiceName(?string $serviceName = null): self
@@ -601,8 +601,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get signaletiqueProduit value
-     * @return string|null
+     * Get signaletiqueProduit value.
      */
     public function getSignaletiqueProduit(): ?string
     {
@@ -610,8 +609,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set signaletiqueProduit value
+     * Set signaletiqueProduit value.
+     *
      * @param string $signaletiqueProduit
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setSignaletiqueProduit(?string $signaletiqueProduit = null): self
@@ -626,8 +627,7 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Get skybillNumber value
-     * @return string|null
+     * Get skybillNumber value.
      */
     public function getSkybillNumber(): ?string
     {
@@ -635,8 +635,10 @@ class ResultReservationExpeditionValue extends AbstractStructBase
     }
 
     /**
-     * Set skybillNumber value
+     * Set skybillNumber value.
+     *
      * @param string $skybillNumber
+     *
      * @return ResultReservationExpeditionValue
      */
     public function setSkybillNumber(?string $skybillNumber = null): self

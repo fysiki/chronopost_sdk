@@ -8,112 +8,98 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for adresseDestinataire StructType
- * @subpackage Structs
+ * This class stands for adresseDestinataire StructType.
  */
 class AdresseDestinataire extends AbstractStructBase
 {
     /**
      * The adresse
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $adresse = null;
     /**
      * The adresseSuite
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $adresseSuite = null;
     /**
      * The codePays
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codePays = null;
     /**
      * The codePostal
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $codePostal = null;
     /**
      * The digicode
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $digicode = null;
     /**
      * The etage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $etage = null;
     /**
      * The mail
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $mail = null;
     /**
      * The nom
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $nom = null;
     /**
      * The poids
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var float|null
+     * - minOccurs: 0.
      */
     protected ?float $poids = null;
     /**
      * The prenom
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $prenom = null;
     /**
      * The raisonSociale
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $raisonSociale = null;
     /**
      * The referenceDestinataire
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $referenceDestinataire = null;
     /**
      * The telephone
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $telephone = null;
     /**
      * The ville
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $ville = null;
 
     /**
-     * Constructor method for adresseDestinataire
+     * Constructor method for adresseDestinataire.
+     *
      * @param string $adresse
      * @param string $adresseSuite
      * @param string $codePays
@@ -122,12 +108,13 @@ class AdresseDestinataire extends AbstractStructBase
      * @param string $etage
      * @param string $mail
      * @param string $nom
-     * @param float $poids
+     * @param float  $poids
      * @param string $prenom
      * @param string $raisonSociale
      * @param string $referenceDestinataire
      * @param string $telephone
      * @param string $ville
+     *
      * @uses AdresseDestinataire::setAdresse()
      * @uses AdresseDestinataire::setAdresseSuite()
      * @uses AdresseDestinataire::setCodePays()
@@ -159,12 +146,12 @@ class AdresseDestinataire extends AbstractStructBase
             ->setRaisonSociale($raisonSociale)
             ->setReferenceDestinataire($referenceDestinataire)
             ->setTelephone($telephone)
-            ->setVille($ville);
+            ->setVille($ville)
+        ;
     }
 
     /**
-     * Get adresse value
-     * @return string|null
+     * Get adresse value.
      */
     public function getAdresse(): ?string
     {
@@ -172,8 +159,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set adresse value
+     * Set adresse value.
+     *
      * @param string $adresse
+     *
      * @return AdresseDestinataire
      */
     public function setAdresse(?string $adresse = null): self
@@ -188,8 +177,7 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Get adresseSuite value
-     * @return string|null
+     * Get adresseSuite value.
      */
     public function getAdresseSuite(): ?string
     {
@@ -197,8 +185,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set adresseSuite value
+     * Set adresseSuite value.
+     *
      * @param string $adresseSuite
+     *
      * @return AdresseDestinataire
      */
     public function setAdresseSuite(?string $adresseSuite = null): self
@@ -213,8 +203,7 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Get codePays value
-     * @return string|null
+     * Get codePays value.
      */
     public function getCodePays(): ?string
     {
@@ -222,8 +211,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set codePays value
+     * Set codePays value.
+     *
      * @param string $codePays
+     *
      * @return AdresseDestinataire
      */
     public function setCodePays(?string $codePays = null): self
@@ -238,8 +229,7 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Get codePostal value
-     * @return string|null
+     * Get codePostal value.
      */
     public function getCodePostal(): ?string
     {
@@ -247,8 +237,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set codePostal value
+     * Set codePostal value.
+     *
      * @param string $codePostal
+     *
      * @return AdresseDestinataire
      */
     public function setCodePostal(?string $codePostal = null): self
@@ -263,8 +255,7 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Get digicode value
-     * @return string|null
+     * Get digicode value.
      */
     public function getDigicode(): ?string
     {
@@ -272,8 +263,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set digicode value
+     * Set digicode value.
+     *
      * @param string $digicode
+     *
      * @return AdresseDestinataire
      */
     public function setDigicode(?string $digicode = null): self
@@ -288,8 +281,7 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Get etage value
-     * @return string|null
+     * Get etage value.
      */
     public function getEtage(): ?string
     {
@@ -297,8 +289,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set etage value
+     * Set etage value.
+     *
      * @param string $etage
+     *
      * @return AdresseDestinataire
      */
     public function setEtage(?string $etage = null): self
@@ -313,8 +307,7 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Get mail value
-     * @return string|null
+     * Get mail value.
      */
     public function getMail(): ?string
     {
@@ -322,8 +315,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set mail value
+     * Set mail value.
+     *
      * @param string $mail
+     *
      * @return AdresseDestinataire
      */
     public function setMail(?string $mail = null): self
@@ -338,8 +333,7 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Get nom value
-     * @return string|null
+     * Get nom value.
      */
     public function getNom(): ?string
     {
@@ -347,8 +341,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set nom value
+     * Set nom value.
+     *
      * @param string $nom
+     *
      * @return AdresseDestinataire
      */
     public function setNom(?string $nom = null): self
@@ -363,8 +359,7 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Get poids value
-     * @return float|null
+     * Get poids value.
      */
     public function getPoids(): ?float
     {
@@ -372,8 +367,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set poids value
+     * Set poids value.
+     *
      * @param float $poids
+     *
      * @return AdresseDestinataire
      */
     public function setPoids(?float $poids = null): self
@@ -388,8 +385,7 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Get prenom value
-     * @return string|null
+     * Get prenom value.
      */
     public function getPrenom(): ?string
     {
@@ -397,8 +393,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set prenom value
+     * Set prenom value.
+     *
      * @param string $prenom
+     *
      * @return AdresseDestinataire
      */
     public function setPrenom(?string $prenom = null): self
@@ -413,8 +411,7 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Get raisonSociale value
-     * @return string|null
+     * Get raisonSociale value.
      */
     public function getRaisonSociale(): ?string
     {
@@ -422,8 +419,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set raisonSociale value
+     * Set raisonSociale value.
+     *
      * @param string $raisonSociale
+     *
      * @return AdresseDestinataire
      */
     public function setRaisonSociale(?string $raisonSociale = null): self
@@ -438,8 +437,7 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Get referenceDestinataire value
-     * @return string|null
+     * Get referenceDestinataire value.
      */
     public function getReferenceDestinataire(): ?string
     {
@@ -447,8 +445,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set referenceDestinataire value
+     * Set referenceDestinataire value.
+     *
      * @param string $referenceDestinataire
+     *
      * @return AdresseDestinataire
      */
     public function setReferenceDestinataire(?string $referenceDestinataire = null): self
@@ -463,8 +463,7 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Get telephone value
-     * @return string|null
+     * Get telephone value.
      */
     public function getTelephone(): ?string
     {
@@ -472,8 +471,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set telephone value
+     * Set telephone value.
+     *
      * @param string $telephone
+     *
      * @return AdresseDestinataire
      */
     public function setTelephone(?string $telephone = null): self
@@ -488,8 +489,7 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Get ville value
-     * @return string|null
+     * Get ville value.
      */
     public function getVille(): ?string
     {
@@ -497,8 +497,10 @@ class AdresseDestinataire extends AbstractStructBase
     }
 
     /**
-     * Set ville value
+     * Set ville value.
+     *
      * @param string $ville
+     *
      * @return AdresseDestinataire
      */
     public function setVille(?string $ville = null): self

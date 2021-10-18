@@ -8,44 +8,41 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for resultGetRouting StructType
- * @subpackage Structs
+ * This class stands for resultGetRouting StructType.
  */
 class ResultGetRouting extends AbstractStructBase
 {
     /**
-     * The errorCode
-     * @var int|null
+     * The errorCode.
      */
     protected ?int $errorCode = null;
     /**
      * The errorMessage
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $errorMessage = null;
     /**
      * The geopostResult
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var GeopostResult|null
+     * - minOccurs: 0.
      */
     protected ?GeopostResult $geopostResult = null;
     /**
      * The posteComptable
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $posteComptable = null;
 
     /**
-     * Constructor method for resultGetRouting
-     * @param int $errorCode
-     * @param string $errorMessage
+     * Constructor method for resultGetRouting.
+     *
+     * @param int           $errorCode
+     * @param string        $errorMessage
      * @param GeopostResult $geopostResult
-     * @param string $posteComptable
+     * @param string        $posteComptable
+     *
      * @uses ResultGetRouting::setErrorCode()
      * @uses ResultGetRouting::setErrorMessage()
      * @uses ResultGetRouting::setGeopostResult()
@@ -57,12 +54,12 @@ class ResultGetRouting extends AbstractStructBase
             ->setErrorCode($errorCode)
             ->setErrorMessage($errorMessage)
             ->setGeopostResult($geopostResult)
-            ->setPosteComptable($posteComptable);
+            ->setPosteComptable($posteComptable)
+        ;
     }
 
     /**
-     * Get errorCode value
-     * @return int|null
+     * Get errorCode value.
      */
     public function getErrorCode(): ?int
     {
@@ -70,8 +67,10 @@ class ResultGetRouting extends AbstractStructBase
     }
 
     /**
-     * Set errorCode value
+     * Set errorCode value.
+     *
      * @param int $errorCode
+     *
      * @return ResultGetRouting
      */
     public function setErrorCode(?int $errorCode = null): self
@@ -86,8 +85,7 @@ class ResultGetRouting extends AbstractStructBase
     }
 
     /**
-     * Get errorMessage value
-     * @return string|null
+     * Get errorMessage value.
      */
     public function getErrorMessage(): ?string
     {
@@ -95,8 +93,10 @@ class ResultGetRouting extends AbstractStructBase
     }
 
     /**
-     * Set errorMessage value
+     * Set errorMessage value.
+     *
      * @param string $errorMessage
+     *
      * @return ResultGetRouting
      */
     public function setErrorMessage(?string $errorMessage = null): self
@@ -111,8 +111,7 @@ class ResultGetRouting extends AbstractStructBase
     }
 
     /**
-     * Get geopostResult value
-     * @return GeopostResult|null
+     * Get geopostResult value.
      */
     public function getGeopostResult(): ?GeopostResult
     {
@@ -120,8 +119,10 @@ class ResultGetRouting extends AbstractStructBase
     }
 
     /**
-     * Set geopostResult value
+     * Set geopostResult value.
+     *
      * @param GeopostResult $geopostResult
+     *
      * @return ResultGetRouting
      */
     public function setGeopostResult(?GeopostResult $geopostResult = null): self
@@ -132,8 +133,7 @@ class ResultGetRouting extends AbstractStructBase
     }
 
     /**
-     * Get posteComptable value
-     * @return string|null
+     * Get posteComptable value.
      */
     public function getPosteComptable(): ?string
     {
@@ -141,8 +141,10 @@ class ResultGetRouting extends AbstractStructBase
     }
 
     /**
-     * Set posteComptable value
+     * Set posteComptable value.
+     *
      * @param string $posteComptable
+     *
      * @return ResultGetRouting
      */
     public function setPosteComptable(?string $posteComptable = null): self

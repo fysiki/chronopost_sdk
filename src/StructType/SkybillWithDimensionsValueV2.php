@@ -7,33 +7,33 @@ namespace StructType;
 use InvalidArgumentException;
 
 /**
- * This class stands for skybillWithDimensionsValueV2 StructType
- * @subpackage Structs
+ * This class stands for skybillWithDimensionsValueV2 StructType.
  */
 class SkybillWithDimensionsValueV2 extends SkybillWithDimensionsValue
 {
     /**
      * The as
      * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string|null
+     * - minOccurs: 0.
      */
     protected ?string $as = null;
 
     /**
-     * Constructor method for skybillWithDimensionsValueV2
+     * Constructor method for skybillWithDimensionsValueV2.
+     *
      * @param string $as
+     *
      * @uses SkybillWithDimensionsValueV2::setAs()
      */
     public function __construct(?string $as = null)
     {
         $this
-            ->setAs($as);
+            ->setAs($as)
+        ;
     }
 
     /**
-     * Get as value
-     * @return string|null
+     * Get as value.
      */
     public function getAs(): ?string
     {
@@ -41,8 +41,10 @@ class SkybillWithDimensionsValueV2 extends SkybillWithDimensionsValue
     }
 
     /**
-     * Set as value
+     * Set as value.
+     *
      * @param string $as
+     *
      * @return SkybillWithDimensionsValueV2
      */
     public function setAs(?string $as = null): self
