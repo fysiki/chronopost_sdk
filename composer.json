@@ -1,6 +1,7 @@
 {
     "name": "fysiki/chronopost_sdk",
     "description": "Package generated from https://ws.chronopost.fr/shipping-cxf/ShippingServiceWS?wsdl using wsdltophp/packagegenerator",
+    "type": "library",
     "require": {
         "php": "^8.0",
         "ext-dom": "*",
@@ -10,7 +11,7 @@
     },
     "autoload": {
         "psr-4": {
-            "": "./src/"
+            "Chronopost\\": "./src/"
         }
     },
     "require-dev": {
