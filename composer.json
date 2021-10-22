@@ -11,10 +11,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Chronopost\\": "./src/"
+            "Chronopost\\": "./src/Chronopost"
         }
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.2"
+        "friendsofphp/php-cs-fixer": "^3.2",
+        "wsdltophp/packagegenerator": "^4.1"
+    },
+    "scripts": {
+        "generate": [
+            "@php generate.php",
+            "php-cs-fixer fix --config .php-cs-fixer.dist.php"
+        ]
     }
 }
