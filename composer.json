@@ -19,8 +19,12 @@
         "wsdltophp/packagegenerator": "^4.1"
     },
     "scripts": {
-        "generate": [
-            "@php generate.php",
+        "generate:tracking": [
+            "@php generate-tracking.php",
+            "php-cs-fixer fix --config .php-cs-fixer.dist.php"
+        ],
+        "generate:shipping": [
+            "@php generate-shipping.php",
             "php-cs-fixer fix --config .php-cs-fixer.dist.php"
         ]
     }
